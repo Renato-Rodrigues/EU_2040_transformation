@@ -22,7 +22,7 @@ Rodrigues, R., Pietzcker, R., Luderer, G., Sitarz, J., Merfort, A., Hasse, R., H
 # Charts used in the paper
 
 - Charts created for the paper can be created by runing the R markdown `paperCharts.Rmd`.
-- Use knit `rmarkdown::render("paperCHarts.Rmd")`.
+- Use knit `rmarkdown::render("paperCharts.Rmd")`.
 - The script will try to install all required libraries. In case you need to install them manually, all packages can be installed via `install.packages`
 
 ```R
