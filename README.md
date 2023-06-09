@@ -12,7 +12,7 @@ Rodrigues, R., Pietzcker, R., Luderer, G., Sitarz, J., Merfort, A., Hasse, R., H
 
 ## results post-processing:
 - Paper results include an ex-post correction applied to emissions and Carbon management variables to reflect more closely EU-27 historical numbers. 
-- Renewables shares are re-scaled to fit 2020 historical values from Eurostat.   
+- Renewables share results in the chart are re-scaled to fit 2020 historical values from Eurostat.   
 
 # Results used in the paper
 
