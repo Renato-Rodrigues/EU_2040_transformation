@@ -31,5 +31,5 @@ install.packages(pkgs)
 ```
 
 - Raster image files, pngs, and vectorial image files, svgs, will be saved to the output folder.
-- Additionaly, An html report file will be derated containing all charts used in the paper.
+- Additionaly, an html report file will be created containing all charts used in the paper.
 
