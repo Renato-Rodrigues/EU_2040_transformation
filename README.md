@@ -1,9 +1,9 @@
 # EU_2040_transformation
 
 Data and visualizations created for the paper: 
-```
+
 Rodrigues, R., Pietzcker, R., Luderer, G., Sitarz, J., Merfort, A., Hasse, R., Hoppe, J., Pehl, M., Ershad, A. M., Baumstark, L. 2040 greenhouse gas reduction targets and energy transitions in line with the EU Green Deal. in preparation (2023). 
-```
+
 
 # Model version
 
