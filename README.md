@@ -5,11 +5,14 @@ Data and visualizations created for the paper:
 Rodrigues, R., Pietzcker, R., Luderer, G., Sitarz, J., Merfort, A., Hasse, R., Hoppe, J., Pehl, M., Ershad, A. M., Baumstark, L. 2040 greenhouse gas reduction targets and energy transitions in line with the EU Green Deal. in preparation (2023). 
 
 
-# Model version
+# Model version and results
 
 - Results were created using REMIND version 3.2 with 21 regions (REMIND-EU).
-- The runs can be found a: `/p/projects/ecemf/REMIND/2040_scenarios/v04_2023_06_02` 
-- Paper results include an ex-post correction applied to emissions and Carbon management variables to reflect more closely EU-27 historical numbers.   
+- The runs can be found at: `/p/projects/ecemf/REMIND/2040_scenarios/v04_2023_06_02` 
+
+## results post-processing:
+- Paper results include an ex-post correction applied to emissions and Carbon management variables to reflect more closely EU-27 historical numbers. 
+- Renewables shares are re-scaled to fit 2020 historical values from Eurostat.   
 
 # Results used in the paper
 
