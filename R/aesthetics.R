@@ -41,6 +41,10 @@ options$aesthetics <- list(
       "Gases - Fossil"  = "#999959", # #a1a161",
       "Gases - Biomass" = "#999959", # "#999959",
       "Gases - Efuel"   = "#999959", # "#caca8a",
+      "Syngas"   = "#fef3da", # "#caca8a",
+      "Biogas" = "#00cc00", # "#999959",
+      "Natural gas"  = "#999959", # #a1a161",
+      
       "Heat"        = "#cc0000",
       "Hydrogen"    = "#5ed5b0",
       "Liquids"     = "#0000cc",
