@@ -15,8 +15,10 @@
 # conversion factor
 Mtoe2TWa <- 41.868 * 0.001 * (1/31.526) # GJ/toe * (Mtoe/toe*EJ/GJ = 1e6/1e9) * EJ/TWa
 
+referenceScenario2020 <- (787/(1-0.09) + 750/(1-0.13)) / 2
+
 effTgt <- data.frame(target = c("reference","FitFor55 eff","RePowerEU eff"), #,"FitFor55 rev eff","RePowerEU rev eff"
                      Final_Energy_Mtoe = c(846, 787, 750)) %>% #, round(748), round(712))) %>%
-  mutate(Final_Energy_Twa = c(round(Final_Energy_Mtoe*Mtoe2TWa,4)))
-
-#846*Mtoe2TWa
+  mutate(
+    Final_Energy_Twa = c(round(Final_Energy_Mtoe*Mtoe2TWa,4)),
+    reduction_from_2020_Reference_Scenario = round(1-(Final_Energy_Mtoe/referenceScenario2020),2))
