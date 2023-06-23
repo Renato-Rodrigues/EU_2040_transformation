@@ -31,7 +31,7 @@ Rodrigues, R., Pietzcker, R., Luderer, G., Sitarz, J., Merfort, A., Hasse, R., H
 
 forceUpdateData = FALSE
 
-mainScen <- "Nzero_55_bio7p5" # "Nzero_55_ff55Eff_bio7p5" #Nzero_55_ff55Eff_bio12" # #Nzero_55_bio12" #"Nzero_55_ff55Eff_bio12"
+mainScen <- "Nzero_57_bio7p5" # "Nzero_55_ff55Eff_bio7p5" #Nzero_55_ff55Eff_bio12" # #Nzero_55_bio12" #"Nzero_55_ff55Eff_bio12"
 
 tgt2030Scen <- c(55,57,59)
 
@@ -251,7 +251,7 @@ electricity_demand_increase <- left_join(
   mutate(upscale = value/base)
 
 electricity_demand_upscale <- data.frame(
-  wind_and_Solar_gen_upscale=c("2030","2040"),
+  electricity_demand_upscale=c("2030","2040"),
   reference_value=c(
     round(electricity_demand_increase %>% filter(scenario == mainScen, period == "2030") %>% pull(upscale)*100),
     round(electricity_demand_increase %>% filter(scenario == mainScen, period == "2040") %>% pull(upscale)*100)
@@ -371,14 +371,15 @@ nuclear_in_generation <- left_join(
   mutate(percentage = value/total)
 
 Generation <- data.frame(
-  Electricity_Generation=c("coal_in_generation_(%)","gas_in_generation_(%)","nuclear_in_generation_(%)","wind_and_Solar_gen_(%)","wind_and_Solar_cap_(TW)"),
+  Electricity_Generation=c("coal_in_generation_(%)","gas_in_generation_(%)","nuclear_in_generation_(%)","wind_and_Solar_gen_(%)","wind_and_Solar_cap_(TW)"), #,"Solar_gen_(TWh)_2030","Solar_gen_(TWh)_2040"
   reference_value=c(
     round(coal_in_generation %>% filter(scenario == mainScen) %>% pull(percentage)*100,1),
     round(gas_in_generation %>% filter(scenario == mainScen) %>% pull(percentage)*100,1),
     round(nuclear_in_generation %>% filter(scenario == mainScen) %>% pull(percentage)*100,1),
     round(wind_and_Solar_gen %>% filter(scenario == mainScen) %>% pull(percentage)*100,1),
-    round(wind_and_Solar_cap %>% filter(scenario == mainScen) %>% pull(value)/ 1000,1)
-    
+    round(wind_and_Solar_cap %>% filter(scenario == mainScen) %>% pull(value)/ 1000,1)#,
+    #round(df %>% filter(region == "EU27", period == 2030, variable == "SE|Electricity|Solar", scenario == mainScen) %>% mutate(value = round(value * 1/0.0036)) %>% pull(value)/1000,2),
+    #round(df %>% filter(region == "EU27", period == 2045, variable == "SE|Electricity|Solar", scenario == mainScen) %>% mutate(value = round(value * 1/0.0036)) %>% pull(value)/1000,2)
     ),
   min = c(
    round(min(coal_in_generation %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),1),
@@ -1853,7 +1854,7 @@ plotColor <- c(
   "BEV" = "#F3E16B",
   "FCEV" = "#82c9d9",
   "Hybrid Electric" =	"#F37A5E",
-  "Gases" = "#F7EFE8", 
+  "Gases" = "#dddddd" , #"#F7EFE8", 
   "Liquids" = "#282828"
 )
 
@@ -1904,14 +1905,14 @@ g[["LDV Sales"]] <-
   geom_bar(aes(fill=variable, alpha=factor(period)),stat='identity') +
   geom_line(data=stockData, aes(color=variable),linetype=11, lwd = 1) +
 # geom_line(data=h,linetype="dashed", linewidth = 1, color="black") +
- geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 1) +
+ geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
  geom_label_repel(data=data.frame(period=2030,value=stockData %>% filter(period == 2030) %>% pull(value)), label = "Stock",
                   #box.padding = 0.1,
                   #segment.curvature = -0.1,
                   #segment.square = TRUE,
                   #point.padding = 0.6,
                   nudge_x = 5,
-                  nudge_y = 5,
+                  nudge_y = 0.05,
                   #nudge_y = -0.02,
                   #force = 0.5,
                   hjust = 0,
@@ -1925,27 +1926,34 @@ g[["LDV Sales"]] <-
  # theme(legend.margin=margin(l = -2, unit='cm')) + 
  #theme(legend.position="right", legend.justification = "bottom") +
  #theme(axis.title.y = element_blank()) +
- scale_y_continuous(limits = c(0, 1.1), breaks=c(0,1), name = "Sales", # - Million vehicles", 
-                     #breaks = c(round(emi1990), round(emi1990*0.6), round(emi1990*0.45), round(emi1990*0.3), round(emi1990*0.15), 0),
-                     sec.axis = sec_axis( trans=~.*1, name="Stock")) +
+scale_y_continuous(limits = c(0, 1.1), breaks=c(0,1), labels = scales::percent, name = "Sales") +
                                           #, labels = scales::percent, breaks = c(1,0.4,0.55,0.7,0.85, 0))) +
+  # scale_y_continuous(limits = c(0, 1.1), breaks=c(0,1), labels = scales::percent, name = "Sales", # - Million vehicles", 
+ #                     #breaks = c(round(emi1990), round(emi1990*0.6), round(emi1990*0.45), round(emi1990*0.3), round(emi1990*0.15), 0),
+ #                     sec.axis = sec_axis( trans=~.*1, breaks=c(0,1), name="Stock", labels = scales::percent)) +
+ #                                          #, labels = scales::percent, breaks = c(1,0.4,0.55,0.7,0.85, 0))) +
   theme(legend.text=element_text(size=theme.double.text.size),
-        legend.spacing.x = unit(0.2, 'cm'))  +
+        legend.spacing.x = unit(0.4, 'cm'))  +
   guides(color = "none") +
-  theme(axis.title.y = element_text(colour = "#666666"))
+  theme(axis.title.y = element_text(colour = "#666666")) +
+  theme(legend.text=element_text(size=theme.single.text.size)) +
+  theme(legend.key.height = unit(0.7, "cm"),
+    legend.key.width = unit(0.7,"cm")) +
+  theme(axis.title.y = element_blank()) +
+  theme(legend.margin=margin(t = -0.4, unit='cm'))  
 
 #+
  # theme(legend.key.height = unit(0.7, "cm"),
  #   legend.key.width = unit(0.4,"cm")) 
 
-ggsave(paste0(outFolder,"/LDV Sales.svg"), g[["LDV Sales"]] , device="svg", width = 6, height = 5, dpi=100, units = "in")
-ggsave(paste0(outFolder,"/LDV Sales.png"), g[["LDV Sales"]] , device="png", width = 6, height = 5, dpi=300, units = "in")
+ggsave(paste0(outFolder,"/LDV Sales.svg"), g[["LDV Sales"]] , device="svg", width = 6, height = 4.5, dpi=100, units = "in")
+ggsave(paste0(outFolder,"/LDV Sales.png"), g[["LDV Sales"]] , device="png", width = 6, height = 4.5, dpi=300, units = "in")
  
 
 
 ```
 
-```{r, echo=FALSE, fig.width=6, fig.height=5}
+```{r, echo=FALSE, fig.width=6, fig.height=4.5}
  
    g[["LDV Sales"]]
 
