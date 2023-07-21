@@ -142,6 +142,9 @@ dataFolder <- rownames(folders)[which.max(folders$mtime)]
 outFolder <- paste0("./output/",gsub("./data/","",dataFolder))
 dir.create(outFolder, recursive = TRUE, showWarnings = FALSE)
 
+outFolder_conference <- paste0("./output/",gsub("./data/","",dataFolder), "/conference")
+dir.create(outFolder_conference, recursive = TRUE, showWarnings = FALSE)
+
 if((forceUpdateData) || ! file.exists(paste0(dataFolder,"/data_EU27andDEU.rds"))){
   
   ### Load data 

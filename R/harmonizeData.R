@@ -27,6 +27,28 @@ harmonizeData <- function(data,scaleFactor){ #,nzero=NULL
   # }
   # #})
   
+  
+  #Adjust gas trade to real world magnitudes
+  #https://ec.europa.eu/eurostat/databrowser/bookmark/ff60b17b-792b-4a89-b352-fe04bcf2dbac?lang=en
+  prodPeGas <- left_join(
+    data %>% filter(region == "EU27")  %>% calc_addVariable("`Prod|PE|Gas`" = "`PE|Gas` - `Trade|Imports|Gas` + `Trade|Exports|Gas`", units = "EJ/yr", only.new=T)
+    ,
+    data.frame(period = seq(2005,2060,5),
+               max = c(4.53, 4.53, 3.70, 1.44, 1.22, 1, 0.75, 0.50, 0.50, 0.50, 0.50, 0.50))
+    ,
+    by = join_by(period == period)
+  ) %>% rowwise() %>% mutate(value = min(value, max)) %>% select(-max) 
+  
+  ExportsAdj <- data %>% filter(variable %in% "Trade|Exports|Gas", region == "EU27") %>% mutate(value = value + ifelse(period <= 2010, 1, 8), variable = "Trade|Exports|Gas|Adj")
+  
+  data <- rbind(data,
+              prodPeGas,
+              ExportsAdj)
+  
+  data <- rbind(data,
+              data %>% filter(region == "EU27")  %>% calc_addVariable("`Trade|Imports|Gas|Adj`" = "`PE|Gas` - `Prod|PE|Gas` + `Trade|Exports|Gas|Adj`", units = "EJ/yr", only.new=T)
+  )
+  
   return(data)
 }
 

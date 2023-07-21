@@ -1,5 +1,5 @@
 ---
-title: "2040 greenhouse gas reduction targets"
+title: "2040 greenhouse gas reduction targets and energy transitions in line with the EU Green Deal"
 output:
   html_document:
     theme: paper
@@ -23,7 +23,7 @@ output:
 Description:
 Charts created for the paper:
 
-Rodrigues, R., Pietzcker, R., Luderer, G., Sitarz, J., Merfort, A., Hasse, R., Hoppe, J., Pehl, M., Ershad, A. M., Baumstark, L. 2040 greenhouse gas reduction targets and energy transitions in line with the EU Green Deal. in preparation (2023). 
+Rodrigues, R., Pietzcker, R., Sitarz, J., Merfort, A., Hasse, R., Hoppe, J., Pehl, M., Ershad, A. M., Baumstark, L., Luderer, G. 2040 greenhouse gas reduction targets and energy transitions in line with the EU Green Deal. under revision (2023). 
 
 
 <!-- Options -->
@@ -268,14 +268,17 @@ electricity_demand_upscale <- data.frame(
 
 
 electricity_share_in_FE <- data.frame(
-  electricity_share_in_FE = c("2040"),
+  electricity_share_in_FE = c("2030","2040"),
   reference_value=c(
+    round(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share"), scenario == mainScen) %>% pull(value)*100),
     round(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share"), scenario == mainScen) %>% pull(value)*100)
   ),
   min=c(
+    round(min(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100)),
     round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100))
   ),
   max=c(
+    round(max(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100)),
     round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100))
   )
 )
@@ -310,6 +313,33 @@ gen_upscale <- data.frame(
    )
 )
 
+wind_and_Solar_participation <- left_join(
+  df %>%
+  filter(region == "EU27", period == 2040, variable %in% c("SE|Electricity|Wind|Offshore", "SE|Electricity|Wind|Onshore", "SE|Electricity|Solar|PV", "SE|Electricity|Solar|CSP"), tgt2030 %in% tgt2030Scen) %>%
+  group_by(scenario,period) %>%
+  summarize(value = sum(value),.groups = "keep") %>%
+  select(scenario,period,value)
+  ,
+  df %>%
+  filter(region == "EU27", period == 2040, variable == "SE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+  mutate(total = value) %>%  
+  select(scenario,period,total)
+  , by = join_by(scenario == scenario,period == period)
+) %>%
+  mutate(pctg = value/total)
+
+wind_and_Solar_participation <- data.frame(
+  result=c("Wind_and_Solar_participation_2040_%"),
+  reference_value=c(
+    round((wind_and_Solar_participation %>% filter(scenario == mainScen) %>% pull(pctg))*100)
+  ),
+  min = c(
+    round((min(wind_and_Solar_participation %>% pull(pctg)))*100)
+  ),
+  max = c(
+    round((max(wind_and_Solar_participation %>% pull(pctg)))*100)
+  )
+)
 
 coal_in_generation <- left_join(
   df %>%
@@ -616,6 +646,28 @@ share_of_build_FE_in_relation_to_2020 <- data.frame(
 )
 
 
+BEVs_in_LDV_data <- left_join(
+  df %>% 
+  filter(region == "EU27", period == 2040, variable %in% c("Stock|Transport|LDV|BEV"), tgt2030 %in% tgt2030Scen) %>%
+  group_by(scenario) %>%    
+  summarize(value = sum(value),.groups = "keep")
+  ,
+  df %>% 
+  filter(region == "EU27", period == 2040, variable %in% c("Stock|Transport|LDV|BEV","Stock|Transport|LDV|FCEV","Stock|Transport|LDV|Hybrid Electric","Stock|Transport|LDV|Liquids","Stock|Transport|LDV|NG"), tgt2030 %in% tgt2030Scen) %>%
+  group_by(scenario) %>%  
+  summarize(total = sum(value)) %>% 
+  select(scenario,total)  
+  ,
+  by = join_by(scenario == scenario)
+) %>% 
+  mutate(pctg = value/total)
+
+BEVs_in_LDV <- data.frame(
+  FE=c("share_of_EVs_in_LDVs_(%)"),
+  reference_value=c(round(BEVs_in_LDV_data %>% filter(scenario == mainScen) %>% pull(pctg)*100 )),
+  min = c(round(min((BEVs_in_LDV_data %>% pull(pctg)) *100))),
+  max = c(round(max((BEVs_in_LDV_data %>% pull(pctg)) *100)))
+)
 
 ```
 
@@ -636,6 +688,10 @@ electricity_share_in_FE %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
 
 gen_upscale %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
+wind_and_Solar_participation %>% 
   kbl() %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
 
@@ -666,6 +722,11 @@ share_of_build_UE_heating %>%
 share_of_build_FE_in_relation_to_2020 %>% 
   kbl() %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
+BEVs_in_LDV %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
 
 ```
 
@@ -742,14 +803,14 @@ CDR <- data.frame(
     round(min(df %>% filter(region == "EU27", period == 2040, variable == "Carbon Management|Storage", tgt2030 %in% tgt2030Scen) %>% pull(value))),
     round((min(rateCCS %>% pull(rate))-1)*100),
     round((min(rateCDR %>% pull(rate))-1)*100),
-    round(min(totalCDR %>% pull(value)))
+    round(min(totalCDR %>% filter(period == 2040) %>% pull(value)))
   ),
   max = c(
     round(max(df %>% filter(region == "EU27", period == 2030, variable == "Carbon Management|Storage", tgt2030 %in% tgt2030Scen) %>% pull(value))),
     round(max(df %>% filter(region == "EU27", period == 2040, variable == "Carbon Management|Storage", tgt2030 %in% tgt2030Scen) %>% pull(value))),
     round((max(rateCCS %>% pull(rate))-1)*100),
     round((max(rateCDR %>% pull(rate))-1)*100),
-    round(max(totalCDR %>% pull(value)))
+    round(max(totalCDR %>% filter(period == 2040) %>% pull(value)))
   )
 )
   
@@ -762,6 +823,490 @@ CDR <- data.frame(
 ```{r, echo=FALSE, fig.width=12, fig.height=5}
 
 CDR %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
+```
+
+---
+
+## Milestones upscaling rates
+
+```{r, echo=FALSE}
+
+# Final Energy
+FEbySector <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2040, variable %in% c("FE|Transport","FE|Buildings","FE|Industry"), tgt2030 %in% tgt2030Scen) %>%
+    mutate(end=value) %>%
+    select(variable,scenario,end)
+  ,
+  df %>%
+    filter(region == "EU27", period == 2020, variable %in% c("FE|Transport","FE|Buildings","FE|Industry"), tgt2030 %in% tgt2030Scen) %>%
+    mutate(base=value) %>%
+    select(variable,scenario,base)
+  , by = join_by(scenario == scenario, variable == variable)
+) %>%
+  mutate(percentage = (end-base)/base)
+
+FEbySector_change <- data.frame(
+  result=c("FE_Transport_change_%","FE_Buildings_change_%","FE_Industry_change_%"),
+  reference_value=c(
+    round((FEbySector %>% filter(scenario == mainScen, variable == "FE|Transport") %>% pull(percentage))*100),
+    round((FEbySector %>% filter(scenario == mainScen, variable == "FE|Buildings") %>% pull(percentage))*100),
+    round((FEbySector %>% filter(scenario == mainScen, variable == "FE|Industry") %>% pull(percentage))*100)
+  ),
+  min = c(
+    round((min(FEbySector %>% filter(variable == "FE|Transport") %>% pull(percentage)))*100),
+    round((min(FEbySector %>% filter(variable == "FE|Buildings") %>% pull(percentage)))*100),
+    round((min(FEbySector %>% filter(variable == "FE|Industry") %>% pull(percentage)))*100)
+  ),
+  max = c(
+    round((max(FEbySector %>% filter(variable == "FE|Transport") %>% pull(percentage)))*100),
+    round((max(FEbySector %>% filter(variable == "FE|Buildings") %>% pull(percentage)))*100),
+    round((max(FEbySector %>% filter(variable == "FE|Industry") %>% pull(percentage)))*100)
+  )
+)
+
+
+# Renewables Share in Final Energy
+rate2030_2040RenewablesShare <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2040, variable == "SE|Renewables Share", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator)
+  ,
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "SE|Renewables Share", tgt2030 %in% tgt2030Scen) %>%
+    mutate(denominator=value) %>%
+    select(scenario,denominator)
+  , by = join_by(scenario == scenario)
+) %>%
+  mutate(percentage = numerator/denominator,
+         rate = percentage ^ (1/10))
+
+rate2021_2030RenewablesShare <- 
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "SE|Renewables Share", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator) %>%
+    mutate(denominator=addHist$res %>% filter(type == "RES", period == 2021) %>% pull(value)) %>%
+    mutate(percentage = numerator/denominator,
+           rate = percentage ^ (1/9))
+
+renewablesShare <- data.frame(
+  result=c("Renewables_Share_upscaling_rates_2021_to_2030_%","Renewables_Share_upscaling_rates_2030_to_2040_%"),
+  reference_value=c(
+    round((rate2021_2030RenewablesShare %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
+    round((rate2030_2040RenewablesShare %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1)
+  ),
+  min = c(
+    round((min(rate2021_2030RenewablesShare %>% pull(rate))-1)*100,1),
+    round((min(rate2030_2040RenewablesShare %>% pull(rate))-1)*100,1)
+  ),
+  max = c(
+    round((max(rate2021_2030RenewablesShare %>% pull(rate))-1)*100,1),
+    round((max(rate2030_2040RenewablesShare %>% pull(rate))-1)*100,1)
+  )
+)
+
+# Electricity Share in Final Energy
+rate2030_2040ElectricityShare <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share","Final Energy|Transport|Electricity Share","Final Energy|Industry|Electricity Share","Final Energy|Buildings|Electricity Share"), tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(variable,scenario,numerator)
+  ,
+  df %>%
+    filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share","Final Energy|Transport|Electricity Share","Final Energy|Industry|Electricity Share","Final Energy|Buildings|Electricity Share"), tgt2030 %in% tgt2030Scen) %>%
+    mutate(denominator=value) %>%
+    select(variable,scenario,denominator)
+  , by = join_by(scenario == scenario, variable == variable)
+) %>%
+  mutate(percentage = numerator/denominator,
+         rate = percentage ^ (1/10))
+
+#estimation of historical share in 2021 for FE electricity / FE with non-energy use and with bunkers
+h <- (
+      2550461.10 *1000 / 8.76E+09 * 31.536  # https://ec.europa.eu/eurostat/databrowser/bookmark/12d54df4-7c35-47eb-a103-dd8994d26b80?lang=en
+     ) / (
+      addHist$FE_consumption %>% mutate(value = value/1000000) %>% filter(period==2021) %>% pull(value) + # FE|w/o Non-energy Use w/o Bunkers - EJ
+      df %>% filter(region == "EU27", period == 2020, scenario == "Npi", variable == "FE|Transport|Bunkers") %>% pull(value) +
+      df %>% filter(region == "EU27", period == 2020, scenario == "Npi", variable == "FE|Non-energy Use|Industry") %>% pull(value)
+     )
+
+rate2021_2030ElectricityShare <- 
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "Final Energy|Electricity Share", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator) %>%
+    mutate(denominator=h) %>%
+    mutate(percentage = numerator/denominator,
+           rate = percentage ^ (1/9))
+
+ElectricityShare <- data.frame(
+  result=c("Electricity_Share_upscaling_rates_2021_to_2030_%","Electricity_Share_upscaling_rates_2030_to_2040_%","Transport_Electricity_Share_upscaling_rates_2030_to_2040_%","Buildings_Electricity_Share_upscaling_rates_2030_to_2040_%","Industry_Electricity_Share_upscaling_rates_2030_to_2040_%"),
+  reference_value=c(
+    round((rate2021_2030ElectricityShare %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
+    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|Electricity Share") %>% pull(rate)-1)*100,1),
+    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|Transport|Electricity Share") %>% pull(rate)-1)*100,1),
+    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|Buildings|Electricity Share") %>% pull(rate)-1)*100,1),
+    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|Industry|Electricity Share") %>% pull(rate)-1)*100,1)
+  ),
+  min = c(
+    round((min(rate2021_2030ElectricityShare %>% pull(rate))-1)*100,1),
+    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Transport|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Buildings|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Industry|Electricity Share") %>% pull(rate))-1)*100,1)
+  ),
+  max = c(
+    round((max(rate2021_2030ElectricityShare %>% pull(rate))-1)*100,1),
+    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Transport|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Buildings|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Industry|Electricity Share") %>% pull(rate))-1)*100,1)
+  )
+)
+
+# Hydrogen production
+rate2030_2040hydrogenProduction <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2040, variable == "SE|Hydrogen", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator)
+  ,
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "SE|Hydrogen", tgt2030 %in% tgt2030Scen) %>%
+    mutate(denominator=value) %>%
+    select(scenario,denominator)
+  , by = join_by(scenario == scenario)
+) %>%
+  mutate(percentage = numerator/denominator,
+         rate = percentage ^ (1/10))
+
+rate2040_2050hydrogenProduction <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2050, variable == "SE|Hydrogen", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator)
+  ,
+  df %>%
+    filter(region == "EU27", period == 2040, variable == "SE|Hydrogen", tgt2030 %in% tgt2030Scen) %>%
+    mutate(denominator=value) %>%
+    select(scenario,denominator)
+  , by = join_by(scenario == scenario)
+) %>%
+  mutate(percentage = numerator/denominator,
+         rate = percentage ^ (1/10))
+
+hydrogenProduction <- data.frame(
+  result=c("Hydrogen_upscaling_rates_2030_to_2040_%","Hydrogen_upscaling_rates_2040_to_2050_%"),
+  reference_value=c(
+    round((rate2030_2040hydrogenProduction %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
+    round((rate2040_2050hydrogenProduction %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1)
+  ),
+  min = c(
+    round((min(rate2030_2040hydrogenProduction %>% pull(rate))-1)*100,1),
+    round((min(rate2040_2050hydrogenProduction %>% pull(rate))-1)*100,1)
+  ),
+  max = c(
+    round((max(rate2030_2040hydrogenProduction %>% pull(rate))-1)*100,1),
+    round((max(rate2040_2050hydrogenProduction %>% pull(rate))-1)*100,1)
+  )
+)
+
+# Electricity Demand
+rate2030_2040ElectricityDemand <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2040, variable == "FE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator = value * 1/0.0036) %>%
+    select(scenario,numerator)
+  ,
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "FE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+    mutate(denominator = value * 1/0.0036) %>%
+    select(scenario,denominator)
+  , by = join_by(scenario == scenario)
+) %>%
+  mutate(diff = (numerator - denominator)/10,
+         percentage = numerator/denominator,
+         rate = percentage ^ (1/10))
+
+#2022 = 2469471.42 GWh = 2469471.42 *1000 / 8.76E+09 * 31.536 EJ - FE electricity - https://ec.europa.eu/eurostat/databrowser/bookmark/d19a01c7-6099-4b88-8ccd-c6bcc01c3ddc?lang=en
+h <- 2469471.42 /1000
+
+rate2022_2030ElectricityDemand <- 
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "FE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator = value * 1/0.0036) %>%
+    select(scenario,numerator) %>%
+    mutate(denominator=h) %>%
+    mutate(diff = (numerator - denominator)/8,
+           percentage = numerator/denominator,
+           rate = percentage ^ (1/8))
+
+rate2020_2030ElectricityDemand <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "FE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator = value * 1/0.0036) %>%
+    select(scenario,numerator)
+  ,
+  df %>%
+    filter(region == "EU27", period == 2020, variable == "FE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+    mutate(denominator = value * 1/0.0036) %>%
+    select(scenario,denominator)
+  , by = join_by(scenario == scenario)
+) %>%
+  mutate(diff = (numerator - denominator)/10,
+         percentage = numerator/denominator,
+         rate = percentage ^ (1/10))
+
+ElectricityDemand <- data.frame(
+  result=c("Electricity_Demand_yearly_install_2022_to_2030_(Twh)","Electricity_Demand_yearly_install_2030_to_2040_(Twh)","Electricity_Demand_upscaling_rates_2022_to_2030_%","Electricity_Demand_upscaling_rates_2020_to_2030_%","Electricity_Demand_upscaling_rates_2030_to_2040_%"),
+  reference_value=c(
+    round(rate2022_2030ElectricityDemand %>% filter(scenario == mainScen) %>% pull(diff)),
+    round(rate2030_2040ElectricityDemand %>% filter(scenario == mainScen) %>% pull(diff)),
+    round((rate2022_2030ElectricityDemand %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
+    round((rate2020_2030ElectricityDemand %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
+    round((rate2030_2040ElectricityDemand %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1)
+  ),
+  min = c(
+    round((min(rate2022_2030ElectricityDemand %>% pull(diff)))),
+    round((min(rate2030_2040ElectricityDemand %>% pull(diff)))),
+    round((min(rate2022_2030ElectricityDemand %>% pull(rate))-1)*100,1),
+    round((min(rate2020_2030ElectricityDemand %>% pull(rate))-1)*100,1),
+    round((min(rate2030_2040ElectricityDemand %>% pull(rate))-1)*100,1)
+  ),
+  max = c(
+    round((max(rate2022_2030ElectricityDemand %>% pull(diff)))),
+    round((max(rate2030_2040ElectricityDemand %>% pull(diff)))),
+    round((max(rate2022_2030ElectricityDemand %>% pull(rate))-1)*100,1),
+    round((max(rate2020_2030ElectricityDemand %>% pull(rate))-1)*100,1),
+    round((max(rate2030_2040ElectricityDemand %>% pull(rate))-1)*100,1)
+  )
+)
+
+# # Electricity Supply
+# rate2030_2040ElectricitySupply <- left_join(
+#   df %>%
+#     filter(region == "EU27", period == 2040, variable == "SE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+#     mutate(numerator = value * 1/0.0036) %>%
+#     select(scenario,numerator)
+#   ,
+#   df %>%
+#     filter(region == "EU27", period == 2030, variable == "SE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+#     mutate(denominator = value * 1/0.0036) %>%
+#     select(scenario,denominator)
+#   , by = join_by(scenario == scenario)
+# ) %>%
+#   mutate(percentage = numerator/denominator,
+#          rate = percentage ^ (1/10))
+# 
+# rate2020_2030ElectricitySupply <- left_join(
+#   df %>%
+#     filter(region == "EU27", period == 2030, variable == "SE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+#     mutate(numerator = value * 1/0.0036) %>%
+#     select(scenario,numerator)
+#   ,
+#   df %>%
+#     filter(region == "EU27", period == 2020, variable == "SE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+#     mutate(denominator = value * 1/0.0036) %>%
+#     select(scenario,denominator)
+#   , by = join_by(scenario == scenario)
+# ) %>%
+#   mutate(percentage = numerator/denominator,
+#          rate = percentage ^ (1/10))
+# 
+# # #2022 = 2469471.42 GWh = 2469471.42 *1000 / 8.76E+09 * 31.536 EJ - FE electricity - https://ec.europa.eu/eurostat/databrowser/bookmark/d19a01c7-6099-4b88-8ccd-c6bcc01c3ddc?lang=en
+# # h <- 2469471.42 /1000
+# # 
+# # rate2022_2030ElectricitySupply <- 
+# #   df %>%
+# #     filter(region == "EU27", period == 2030, variable == "SE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+# #     mutate(numerator = value * 1/0.0036) %>%
+# #     select(scenario,numerator) %>%
+# #     mutate(denominator=h) %>%
+# #     mutate(percentage = numerator/denominator,
+# #            rate = percentage ^ (1/8))
+# 
+# ElectricitySupply <- data.frame(
+#   result=c("Electricity_Supply_upscaling_rates_2022_to_2030_%","Electricity_Supply_upscaling_rates_2030_to_2040_%"),
+#   reference_value=c(
+#     round((rate2022_2030ElectricitySupply %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
+#     round((rate2030_2040ElectricitySupply %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1)
+#   ),
+#   min = c(
+#     round((min(rate2022_2030ElectricitySupply %>% pull(rate))-1)*100,1),
+#     round((min(rate2030_2040ElectricitySupply %>% pull(rate))-1)*100,1)
+#   ),
+#   max = c(
+#     round((max(rate2022_2030ElectricitySupply %>% pull(rate))-1)*100,1),
+#     round((max(rate2030_2040ElectricitySupply %>% pull(rate))-1)*100,1)
+#   )
+# )
+
+# Solar Photovoltaics
+rate2030_2040SolarPV <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2040, variable == "Cap|Electricity|Solar|PV", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator)
+  ,
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "Cap|Electricity|Solar|PV", tgt2030 %in% tgt2030Scen) %>%
+    mutate(denominator=value) %>%
+    select(scenario,denominator)
+  , by = join_by(scenario == scenario)
+) %>%
+  mutate(percentage = numerator/denominator,
+         rate = percentage ^ (1/10))
+
+rate2022_2030SolarPV <- 
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "Cap|Electricity|Solar|PV", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator) %>%
+    mutate(denominator=208.9) %>%
+    mutate(percentage = numerator/denominator,
+           rate = percentage ^ (1/8))
+
+rate2022_2040SolarPV <- 
+  df %>%
+    filter(region == "EU27", period == 2040, variable == "Cap|Electricity|Solar|PV", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator) %>%
+    mutate(denominator=208.9) %>%
+    mutate(percentage = numerator/denominator,
+           rate = percentage ^ (1/18))
+
+SolarPV <- data.frame(
+  result=c("SolarPV_2022_vs_2040_X", "SolarPV_upscaling_rates_2030_to_2040_%","SolarPV_upscaling_rates_2022_to_2040_%","SolarPV_upscaling_rates_2022_to_2030_%"),
+  reference_value=c(
+    round((rate2022_2040SolarPV %>% filter(scenario == mainScen) %>% pull(percentage)),1),
+    round((rate2030_2040SolarPV %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
+    round((rate2022_2040SolarPV %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
+    round((rate2022_2030SolarPV %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1)
+  ),
+  min = c(
+    round((min(rate2022_2040SolarPV %>% pull(percentage))),1),
+    round((min(rate2030_2040SolarPV %>% pull(rate))-1)*100,1),
+    round((min(rate2022_2040SolarPV %>% pull(rate))-1)*100,1),
+    round((min(rate2022_2030SolarPV %>% pull(rate))-1)*100,1)
+  ),
+  max = c(
+    round((max(rate2022_2040SolarPV %>% pull(percentage))),1),
+    round((max(rate2030_2040SolarPV %>% pull(rate))-1)*100,1),
+    round((max(rate2022_2040SolarPV %>% pull(rate))-1)*100,1),
+    round((max(rate2022_2030SolarPV %>% pull(rate))-1)*100,1)
+  )
+)
+
+# Wind
+rate2030_2040Wind <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2040, variable == "Cap|Electricity|Wind", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator)
+  ,
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "Cap|Electricity|Wind", tgt2030 %in% tgt2030Scen) %>%
+    mutate(denominator=value) %>%
+    select(scenario,denominator)
+  , by = join_by(scenario == scenario)
+) %>%
+  mutate(percentage = numerator/denominator,
+         rate = percentage ^ (1/10))
+
+rate2022_2030Wind <- 
+  df %>%
+    filter(region == "EU27", period == 2030, variable == "Cap|Electricity|Wind", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator) %>%
+    mutate(denominator=255) %>%
+    mutate(percentage = numerator/denominator,
+           rate = percentage ^ (1/8))
+
+rate2022_2040Wind <- 
+  df %>%
+    filter(region == "EU27", period == 2040, variable == "Cap|Electricity|Wind", tgt2030 %in% tgt2030Scen) %>%
+    mutate(numerator=value) %>%
+    select(scenario,numerator) %>%
+    mutate(denominator=255) %>%
+    mutate(percentage = numerator/denominator,
+           rate = percentage ^ (1/18))
+
+Wind <- data.frame(
+  result=c("wind_2022_vs_2040_X","Wind_upscaling_rates_2030_to_2040_%","Wind_upscaling_rates_2022_to_2040_%","Wind_upscaling_rates_2022_to_2030_%"),
+  reference_value=c(
+    round((rate2022_2040Wind %>% filter(scenario == mainScen) %>% pull(percentage)),1),
+    round((rate2030_2040Wind %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
+    round((rate2022_2040Wind %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
+    round((rate2022_2030Wind %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1)
+  ),
+  min = c(
+    round((min(rate2022_2040Wind %>% pull(percentage))),1),
+    round((min(rate2030_2040Wind %>% pull(rate))-1)*100,1),
+    round((min(rate2022_2040Wind %>% pull(rate))-1)*100,1),
+    round((min(rate2022_2030Wind %>% pull(rate))-1)*100,1)
+  ),
+  max = c(
+    round((max(rate2022_2040Wind %>% pull(percentage))),1),
+    round((max(rate2030_2040Wind %>% pull(rate))-1)*100,1),
+    round((max(rate2022_2040Wind %>% pull(rate))-1)*100,1),
+    round((max(rate2022_2030Wind %>% pull(rate))-1)*100,1)
+  )
+)
+
+
+#residual fossils
+residualFossils <- data.frame(
+  result=c("residual_fossil_MtCO2_2030","residual_fossil_MtCO2_2040","residual_fossil_MtCO2_2050"),
+  reference_value=c(
+    round((df %>% filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% filter(scenario == mainScen) %>% pull(value))),
+    round((df %>% filter(region == "EU27", period == 2040, tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% filter(scenario == mainScen) %>% pull(value))),
+    round((df %>% filter(region == "EU27", period == 2050, tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% filter(scenario == mainScen) %>% pull(value)))
+  ),
+  min = c(
+    round((min(df %>% filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% pull(value)))),
+    round((min(df %>% filter(region == "EU27", period == 2040, tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% pull(value)))),
+    round((min(df %>% filter(region == "EU27", period == 2050, tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% pull(value))))
+  ),
+  max = c(
+    round((max(df %>% filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% pull(value)))),
+    round((max(df %>% filter(region == "EU27", period == 2040, tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% pull(value)))),
+    round((max(df %>% filter(region == "EU27", period == 2050, tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% pull(value))))
+  )
+)
+
+
+```
+
+
+
+```{r, echo=FALSE, fig.width=12, fig.height=5}
+
+renewablesShare %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
+ElectricityShare %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
+hydrogenProduction %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
+ElectricityDemand %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
+SolarPV %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
+Wind %>% 
   kbl() %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
 
@@ -807,22 +1352,37 @@ h <- refEmi %>% filter(variable == "Emissions with LULUCF and with international
 
 emi1990 <- tgt %>% filter(target == "Emissions with LULUCF and with international transport") %>% pull(reference)
 
+linearProjection <- data.frame(period=c(2030,2035,2040,2045,2050),value=((1-seq(0,1,1/4))*(emi1990*(1-0.57))))
+
 g[["GHG emi"]] <- ggplot(plotData, aes(x=period,y=value)) +
     geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
     geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
-     geom_ribbon(aes(ymax = ribbon.max, ymin = ribbon.min), alpha = 0.5, fill = "#545454") + 
-     geom_segment(data=plotData %>% filter(scenario == mainScen, period == 2040), aes(x=2040, xend=2040, y=0, yend=value), linetype="dashed", color="black") +
-     geom_line(data=plotData %>% filter(scenario == mainScen), linewidth=1.5) +
-     #geom_line(data=plotData, color= "#545454", linewidth=0.2, alpha=0.2, aes(group=scenario)) +
-     geom_line(data=h,linewidth=0.7,linetype="dashed") +
-     geom_point(data=plotData %>% filter(scenario == mainScen, period == 2040),size=3,shape=21,fill="white",stroke=1.5) +
-     theme_doubleColumn() +
-#    ggtitle("GHG Emissions") +
+    geom_ribbon(aes(ymax = ribbon.max, ymin = ribbon.min), alpha = 0.5, fill = "#545454") + 
+    geom_line(data=plotData %>% filter(scenario == mainScen), linewidth=1.5) +
+    #geom_line(data=plotData, color= "#545454", linewidth=0.2, alpha=0.2, aes(group=scenario)) +
+    geom_line(data=h,linewidth=0.7,linetype="dashed") +
+    geom_line(data=linearProjection,linewidth=0.8,linetype="dashed") +
+    #geom_segment(data=plotData %>% filter(scenario == mainScen, period == 2040), aes(x=2040, xend=2040, y=0, yend=value), linetype="dashed", color="black") +
+    geom_segment(data=linearProjection %>% filter(period == 2040), aes(x=2040, xend=2040, y=0, yend=value), linetype="dashed", color="black") +
+    geom_point(data=plotData %>% filter(scenario == mainScen, period == 2040),size=3,shape=21,fill="white",stroke=1.5) +
+    geom_point(data=linearProjection %>% filter(period == 2040),size=3,shape=21,fill="white",stroke=1.5) +
+    geom_label_repel(data=data.frame(period=c(2042),value=(((2050-2042)/20)*(emi1990*(1-0.57)))), label = "linear reduction",
+                     nudge_x = 10,
+                     nudge_y = 800,
+                     segment.square = TRUE,
+                     point.padding = 0.6,
+                     hjust = 0,
+                     direction="y",
+                     size = geom.text.double.size*0.9) + 
+    theme_doubleColumn() +
+#   ggtitle("GHG Emissions") +
     theme(axis.title.y=element_blank()) +
-     expand_limits(y=emi1990) +
-#     ylab(expression(paste("Mt ", CO[2],"eq/yr"))) +
-     scale_y_continuous(breaks = c(0,1000,2000,3000,4000,5000)) +
-  scale_x_continuous(breaks = seq(1990,2060,10))
+    expand_limits(y=emi1990) +
+#   ylab(expression(paste("Mt ", CO[2],"eq/yr"))) +
+    scale_y_continuous(breaks = c(0,1000,2000,3000,4000,5000)) +
+    scale_x_continuous(breaks = seq(1990,2060,10))
+
+
 
 plotData <- rbind(
   df %>% 
@@ -1001,7 +1561,7 @@ g[["2040 Emissions - Energy and Industrial Processes - horizontal bar"]] <- plot
   scale_color_manual(values = c(setNames(plotColor[names(vars)],vars)), labels = setNames(names(vars), vars)) +
   theme_doubleColumn() +
   theme(legend.position = "none") +
-  scale_y_continuous(breaks=c(2020,2030,2040), labels=c("today",2030,2040), minor_breaks = NULL, limits=c(2008,2047)) +
+  scale_y_continuous(breaks=c(2020,2030,2040), labels=c("current",2030,2040), minor_breaks = NULL, limits=c(2008,2047)) +
   theme(axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank(),
@@ -1120,7 +1680,10 @@ g[["Electricity Generation"]] <-
   guides(fill=guide_legend(nrow=8,override.aes = list(alpha=1), byrow = TRUE)) +
   #annotate(geom = "text", x = 2022, y = plotDataRenewables[plotDataRenewables$period == 2020,]$percentage + 0.06, label = "renewables", color = "#888888",angle = 28, hjust=0, vjust=-0.5, size = 12) +
   #annotate(geom = "text", x = 2023, y = plotDataRenewables[plotDataRenewables$period == 2020,]$percentage - 0.06, label = "and nuclear", color = "#888888",angle = 28, hjust=0, vjust=-0.5, size = 12) +
-  annotate(geom = "text", x = 2020, y = plotDataRenewables[plotDataRenewables$period == 2020,]$percentage, label = "renewables\nand nuclear", color = "#666666",angle = 26, hjust=0, vjust=1, size=geom.text.double.size) +
+  #annotate(geom = "text", x = 2020, y = plotDataRenewables[plotDataRenewables$period == 2020,]$percentage, label = "renewables\nand nuclear", color = "#666666",angle = 26, hjust=0, vjust=1, size=geom.text.double.size) +
+  annotate(geom = "text", x = 2020, y = plotDataRenewables[plotDataRenewables$period == 2020,]$percentage/2, label = "renewables\nand nuclear", color = "#666666",angle = 90, hjust=0.5, vjust=-0.5, size=geom.text.double.size, lineheight = 0.8) +
+  annotate(geom = "text", x = 2020, y = (1-plotDataRenewables[plotDataRenewables$period == 2020,]$percentage)/2+plotDataRenewables[plotDataRenewables$period == 2020,]$percentage, label = "fossil", color = "#666666",angle = 90, hjust=0.5, vjust=-2, size=geom.text.double.size) +
+  annotation_custom(grob = linesGrob(gp=gpar(col="#666666",lwd = 3,lty="dashed")), xmin = 2016, xmax = 2019.8, ymin = plotDataRenewables[plotDataRenewables$period == 2020,]$percentage, ymax = plotDataRenewables[plotDataRenewables$period == 2020,]$percentage) +
   theme(axis.text.y=element_blank()) +
   theme(legend.key.height = unit(0.8, "cm"),
     legend.key.width = unit(0.8,"cm")) +
@@ -1131,11 +1694,38 @@ g[["Electricity Generation"]] <-
   coord_cartesian(clip = 'off') +
   theme(plot.margin = margin(t = 0, r = 0, b = 0, l = 20, unit = "pt")
         #,legend.margin=margin(l = -2, unit='cm')
-        )
+        ) #+
+  #annotation_custom(
+  #  grob = textGrob(label = "renewables\nand nuclear",hjust=0.5, vjust=-0.5, rot = 90, gp=gpar(col="#666666", fontsize=geom.text.double.size)),
+  #  ymin = plotDataRenewables[plotDataRenewables$period == 2020,]$percentage/2, ymax = plotDataRenewables[plotDataRenewables$period == 2020,]$percentage/2,
+  #  xmin = 2020, xmax = 2020)
 
   
 ggsave(paste0(outFolder,"/Electricity Generation.svg"), g[["Electricity Generation"]] , device="svg", width = 6, height = 10, dpi=100, units = "in")
 ggsave(paste0(outFolder,"/Electricity Generation.png"), g[["Electricity Generation"]] , device="png", width = 6, height = 10, dpi=300, units = "in")
+
+
+g[["Electricity Generation - wide"]] <- 
+  ggplot(plotData,aes(x=period,y=percentage)) +
+  geom_area(aes(fill=variable),alpha=0.4) +
+  geom_line(data=plotDataRenewables, linetype = "dashed", linewidth = 1.5, color="#666666") +
+  geom_bar(data=plotData2040,aes(fill=variable),stat='identity', show.legend = FALSE, alpha = 0.7, color="white", width = 3, linewidth = 1.5) +
+  #ggrepel::geom_text_repel(data=plotData2040[plotData2040$percentage >= 0.01,],aes(label = paste0(round(percentage,2)*100,"%"), y=cumPercentage-percentage/2, x = 2043.5), vjust=0.5, hjust=0.5, na.rm=TRUE, color = "black", size = 12) +
+  #geom_text(data=plotData2040[plotData2040$percentage >= 0.01,],aes(label = paste0(inv_vars[variable], " (",round(percentage,2)*100,"%)"), y=cumPercentage-percentage/2, x = xPos), vjust=0.5, hjust=0, na.rm=TRUE, color = "black", size = 12) +
+  geom_text(data=plotData2040[plotData2040$percentage >= 0.02,],aes(label = paste0(round(percentage,2)*100,"%", ifelse(inv_vars[variable] %in% c("Solar PV","Wind Onshore","Wind Offshore"),paste0(" - ", inv_vars[variable]), "")), y=cumPercentage-percentage/2, x = xPos), vjust=0.5, hjust=0, na.rm=TRUE, color = "black", size=geom.text.double.size) +
+  theme_doubleColumn()  +
+  scale_y_continuous(minor_breaks = seq(0.2, 0.8, 0.2), breaks=c(0,1),labels = scales::percent) +
+  scale_x_continuous(breaks=c(2020,2040,2060)) +
+  scale_fill_manual(values = setNames(color[names(vars)],vars), labels = setNames(names(vars), vars)) +
+  theme(axis.title.y=element_blank()) + 
+  theme(legend.position="right") +
+  theme(legend.key.height = unit(0.8, "cm"),
+    legend.key.width = unit(0.8,"cm")) +
+  theme(legend.margin=margin(b = -2, unit='cm')
+        )
+
+#ggsave(paste0(outFolder_conference,"/Electricity Generation - wide.svg"), g[["Electricity Generation - wide"]] , device="svg", width = 12, height = 5, dpi=100, units = "in")
+#ggsave(paste0(outFolder_conference,"/Electricity Generation - wide.png"), g[["Electricity Generation - wide"]] , device="png", width = 12, height = 5, dpi=300, units = "in")
 
 ```
 
@@ -1311,13 +1901,14 @@ g[["Electricity Share"]]
 ```{r, echo=FALSE}
 
 # Primary Energy
-vars <- c("Biomass" = "PE|Biomass",
-          "Coal"="PE|Coal",
+vars <- c("Oil"="PE|Oil",
           "Gas"="PE|Gas",
-          "Oil"="PE|Oil")
+          "Coal"="PE|Coal",
+          "Biomass" = "PE|Biomass")
 
 plotData <- df %>% 
   filter(region == "EU27", period %in% c(2020:2060), tgt2030 %in% tgt2030Scen, variable %in% unlist(vars)) %>% 
+  mutate(variable = factor(variable, levels=vars))  %>% 
   group_by(model,region,variable,period) %>% 
   filter(tgt2050 != "Npi") %>% 
   mutate(ribbon.max=max(value),
@@ -1340,13 +1931,14 @@ g[["Primary Energy"]] <- ggplot(plotData,aes(x=period,y=value)) +
     scale_fill_manual(values = c(setNames(options$aesthetics$legend$color[names(vars)],vars)), labels = setNames(names(vars), vars)) +
     theme_doubleColumn() + 
     expand_limits(y=c(0,1)) +
-    guides(color=guide_legend(nrow=2)) +
+    guides(color=guide_legend(nrow=1)) +
     theme(axis.title.y = element_blank()) +
-    expand_limits(y = 30)
+    expand_limits(y = 30) +
+    theme(legend.margin=margin(l = -2, unit='cm'))
     #guides(fill = FALSE) 
 
-ggsave(paste0(outFolder,"/Primary Energy.svg"), g[["Primary Energy"]] , device="svg", width = 6, height = 6, dpi=100, units = "in")
-ggsave(paste0(outFolder,"/Primary Energy.png"), g[["Primary Energy"]] , device="png", width = 6, height = 6, dpi=300, units = "in")
+ggsave(paste0(outFolder,"/Primary Energy.svg"), g[["Primary Energy"]] , device="svg", width = 6, height = 5, dpi=100, units = "in")
+ggsave(paste0(outFolder,"/Primary Energy.png"), g[["Primary Energy"]] , device="png", width = 6, height = 5, dpi=300, units = "in")
 
 ```
 
@@ -1406,9 +1998,35 @@ g[["FE Gases"]] <-
   theme(legend.margin=margin(l = -2, unit='cm'))
 
 
-ggsave(paste0(outFolder,"/FE Gases.svg"), g[["FE Gases"]] , device="svg", width = 6, height = 4, dpi=100, units = "in")
-ggsave(paste0(outFolder,"/FE Gases.png"), g[["FE Gases"]] , device="png", width = 6, height = 4, dpi=300, units = "in")
+#ggsave(paste0(outFolder,"/FE Gases.svg"), g[["FE Gases"]] , device="svg", width = 6, height = 4, dpi=100, units = "in")
+#ggsave(paste0(outFolder,"/FE Gases.png"), g[["FE Gases"]] , device="png", width = 6, height = 4, dpi=300, units = "in")
 
+g[["FE Gases - alt axis"]] <- 
+  ggplot(plotData,aes(x=period,y=value)) +
+  geom_col(data=plotData %>% filter(scenario == mainScen), aes(fill = variable, alpha=factor(period))) +
+  #geom_errorbar(data=plotData %>% filter(period != 2020), aes(ymin=ribbon.min, ymax=ribbon.max, group=variable), width=8, colour="black", alpha=0.9, size=1,position = position_dodge(width=2)) +
+  geom_errorbar(data=plotData %>% filter(period != 2020, variable == vars[1], scenario == mainScen), aes(ymin=ribbon.min.total, ymax=ribbon.max.total), width=4, colour="black", alpha=0.9, linewidth=1,position = position_dodge(width=2)) +
+  # scale_y_continuous(labels = scales::percent, breaks = c(0,1,plotData[plotData$period == "2030",]$value,plotData[plotData$period == "2040",]$value,plotData[plotData$period == "2050",]$value)) +
+  coord_flip() +
+  theme_doubleColumn() +
+  theme(panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank()) +
+  #guides(y = "none") +
+  theme(axis.title.y=element_blank()) +
+  #theme(legend.position = "none") #+
+  scale_fill_manual(values = setNames(options$aesthetics$legend$color[names(vars)],vars), labels = setNames(names(vars), vars), guide = guide_legend(reverse = TRUE, nrow = 1)) +
+  scale_alpha_manual(values = c("2020"=0.7,"2030"=0.7,"2040"=1,"2050"=0.7), guide = 'none') +
+  theme(legend.text=element_text(size=theme.double.text.size)) +
+  theme(legend.key.height = unit(0.7, "cm"),
+    legend.key.width = unit(0.7,"cm")) +
+  scale_y_continuous(breaks = seq(0,10,2)) +
+  expand_limits(y=c(0,10)) + 
+  #scale_y_continuous(breaks = c(0,round(sum(plotData %>% filter(scenario == mainScen, period == 2020) %>% pull(value)),1),round(sum(plotData %>% filter(scenario == mainScen, period == 2030) %>% pull(value)),1),round(sum(plotData %>% filter(scenario == mainScen, period == 2040) %>% pull(value)),1))) +
+  #scale_x_reverse()
+  theme(legend.margin=margin(l = -2, unit='cm'))
+
+ggsave(paste0(outFolder,"/FE Gases - alt axis.svg"), g[["FE Gases - alt axis"]] , device="svg", width = 6, height = 4, dpi=100, units = "in")
+ggsave(paste0(outFolder,"/FE Gases - alt axis.png"), g[["FE Gases - alt axis"]] , device="png", width = 6, height = 4, dpi=300, units = "in")
 
 # vars <- c(
 #   "Hydrogen"="FE|Hydrogen",
@@ -1459,7 +2077,7 @@ ggsave(paste0(outFolder,"/FE Gases.png"), g[["FE Gases"]] , device="png", width 
 
 ```{r, echo=FALSE, fig.width=6, fig.height=4}
 
-g[["FE Gases"]]
+g[["FE Gases - alt axis"]]
 
 ```
 
@@ -1471,11 +2089,10 @@ g[["FE Gases"]]
 
 ```{r, echo=FALSE}
 
-
 vars <- list(
- "Coal" = c("Trade|Imports|Coal","Trade|Exports|Coal"),
  "Oil" = c("Trade|Imports|Oil","Trade|Exports|Oil"),
- "Gas" = c("Trade|Imports|Gas","Trade|Exports|Gas"),
+ "Gas" = c("Trade|Imports|Gas|Adj","Trade|Exports|Gas|Adj"),
+ "Coal" = c("Trade|Imports|Coal","Trade|Exports|Coal"),
  "Biomass" = c("Trade|Imports|Biomass","Trade|Exports|Biomass")
 )
 
@@ -1488,7 +2105,7 @@ vars <- list(
 #          cumPercentage = cumValue / n) 
 
 plotData <- df %>% 
-  filter(region == "EU27", period  %in% c(2020,2030,2040,2050), scenario == mainScen, variable %in% unlist(vars))  
+  filter(region == "EU27", period  %in% c(2020,2030,2040,2050), scenario == mainScen, variable %in% unlist(vars)) 
 
 carrier <- c()
 for(c in names(vars)){
@@ -1505,7 +2122,7 @@ plotData <- plotData %>%
 
 plotData[plotData$type == "Exports",]$value <- -plotData[plotData$type == "Exports",]$value
 
-plotData$carrier <- factor(plotData$carrier, levels=c("Coal","Oil","Gas","Biomass"))
+plotData$carrier <- factor(plotData$carrier, levels=c("Oil","Gas","Coal","Biomass"))
 
 plotDataTotal <- plotData %>%
   group_by(model,scenario,region,unit,period,carrier) %>%
@@ -1561,15 +2178,27 @@ g[["security of supply - fossil"]] <- ggplot(plotData %>% filter(period <= 2050,
   #theme(strip.text.x = element_text(size=0.8*theme.single.text.size)) +
   #theme(strip.clip = "off")
 
-ggsave(paste0(outFolder,"/security of supply - fossil.svg"), g[["security of supply - fossil"]] , device="svg", width = 6, height = 6, dpi=100, units = "in")
-ggsave(paste0(outFolder,"/security of supply - fossil.png"), g[["security of supply - fossil"]] , device="png", width = 6, height = 6, dpi=300, units = "in")
+#ggsave(paste0(outFolder,"/security of supply - fossil.svg"), g[["security of supply - fossil"]] , device="svg", width = 6, height = 6, dpi=100, units = "in")
+#ggsave(paste0(outFolder,"/security of supply - fossil.png"), g[["security of supply - fossil"]] , device="png", width = 6, height = 6, dpi=300, units = "in")
+
+g[["security of supply - net fossil"]] <- ggplot(plotDataTotal %>% filter(period <= 2050, carrier != "Biomass"),aes(x=period,y=value)) +
+  geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+  geom_bar(aes(fill=as.factor(period)),stat='identity', alpha = 0.7) +
+  facet_wrap(~carrier,nrow=1) +
+  theme_doubleColumn()  +
+  theme(axis.title.y=element_blank()) +
+  scale_fill_manual(values = c("2020" = "black", "2030"= "black", "2040" = "#5a788b", "2050" = "black")) +
+  theme(legend.position = "none")
+
+ggsave(paste0(outFolder,"/security of supply - net fossil.svg"), g[["security of supply - net fossil"]] , device="svg", width = 6, height = 4.5, dpi=100, units = "in")
+ggsave(paste0(outFolder,"/security of supply - net fossil.png"), g[["security of supply - net fossil"]] , device="png", width = 6, height = 4.5, dpi=300, units = "in")
  
 
 ```
 
 ```{r, echo=FALSE, fig.width=6, fig.height=5}
 
-  g[["security of supply - fossil"]]
+  g[["security of supply - net fossil"]]
 
 ```
 
@@ -1644,15 +2273,51 @@ g[["Hydrogen"]] <-
   theme(legend.margin=margin(l = -2, unit='cm'))
   
 
-ggsave(paste0(outFolder,"/Hydrogen.svg"), g[["Hydrogen"]] , device="svg", width = 6, height = 4, dpi=100, units = "in")
-ggsave(paste0(outFolder,"/Hydrogen.png"), g[["Hydrogen"]] , device="png", width = 6, height = 4, dpi=300, units = "in")
+#ggsave(paste0(outFolder,"/Hydrogen.svg"), g[["Hydrogen"]] , device="svg", width = 6, height = 4, dpi=100, units = "in")
+#ggsave(paste0(outFolder,"/Hydrogen.png"), g[["Hydrogen"]] , device="png", width = 6, height = 4, dpi=300, units = "in")
+
+
+g[["Hydrogen - alt axis"]] <- 
+  ggplot(plotData,aes(x=period,y=value)) +
+  geom_hline(yintercept= target[1,]$value, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = 2015, y = target[1,]$value, label = "REPowerEU\ndomestic", angle=90, vjust = 0.4, hjust = 0, color = "black", alpha = 0.5, size = 0.3*theme.single.text.size) +
+  geom_hline(yintercept= target[2,]$value, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = 2015, y = target[2,]$value, label = "REPowerEU\ntotal", angle=90, vjust = 0.4, hjust = 0, color = "black", alpha = 0.5, size = 0.3*theme.single.text.size) +
+  geom_col(data=plotData %>% filter(scenario == mainScen), aes(fill = variable, alpha=factor(period))) +
+  geom_errorbar(data=plotData %>% filter(period != 2020, variable == vars[1], scenario == mainScen), aes(ymin=ribbon.min.total, ymax=ribbon.max.total), width=4, colour="black", alpha=0.9, linewidth=1,position = position_dodge(width=2)) +
+  # scale_y_continuous(labels = scales::percent, breaks = c(0,1,plotData[plotData$period == "2030",]$value,plotData[plotData$period == "2040",]$value,plotData[plotData$period == "2050",]$value)) +
+  coord_flip() +
+  theme_doubleColumn() +
+  theme(panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank()) +
+  #guides(y = "none") +
+  theme(axis.title.y=element_blank()) +
+  #theme(legend.position = "none") #+
+  scale_fill_manual(values = color,
+                    labels = setNames(names(vars), vars)[c("SE|Hydrogen|Electricity", "SE|Hydrogen|Gas|w/o CC", "SE|Hydrogen|Biomass|w/ CC")],
+                    breaks = c("SE|Hydrogen|Electricity", "SE|Hydrogen|Gas|w/o CC", "SE|Hydrogen|Biomass|w/ CC"), guide = guide_legend(nrow = 1)) +
+  scale_alpha_manual(values = c("2020"=0.7,"2030"=0.7,"2040"=1,"2050"=0.7), guide = 'none') +
+  theme(legend.text=element_text(size=theme.double.text.size)) +
+  theme(legend.key.height = unit(0.7, "cm"),
+    legend.key.width = unit(0.7,"cm")) +
+  scale_y_continuous(breaks = seq(0,6,1)) +
+  expand_limits(y=c(0,6)) + 
+  #scale_y_continuous(breaks = c(0,plotData %>% filter(scenario == mainScen, period == 2030, variable == vars[1]) %>% pull(sum),plotData %>% filter(scenario == mainScen, period == 2040, variable == vars[1]) %>% pull(sum),plotData %>% filter(scenario == mainScen, period == 2050, variable == vars[1]) %>% pull(sum)),
+   #                  labels = c(format(0,nsmall = 1),format(round(plotData %>% filter(scenario == mainScen, period == 2030, variable == vars[1]) %>% pull(sum),1),nsmall = 1),format(round(plotData %>% filter(scenario == mainScen, period == 2040, variable == vars[1]) %>% pull(sum),1),nsmall = 1),format(round(plotData %>% filter(scenario == mainScen, period == 2050, variable == vars[1]) %>% pull(sum),1),nsmall = 1))) +
+  #scale_y_continuous(breaks = c(0,round(sum(plotData %>% filter(scenario == mainScen, period == 2030) %>% pull(value))),round(sum(plotData %>% filter(scenario == mainScen, period == 2040) %>% pull(value))),round(sum(plotData %>% filter(scenario == mainScen, period == 2050) %>% pull(value))))) +
+  #scale_x_reverse() +
+  theme(legend.margin=margin(l = -2, unit='cm'))
+  
+
+ggsave(paste0(outFolder,"/Hydrogen - alt axis.svg"), g[["Hydrogen - alt axis"]] , device="svg", width = 6, height = 4, dpi=100, units = "in")
+ggsave(paste0(outFolder,"/Hydrogen - alt axis.png"), g[["Hydrogen - alt axis"]] , device="png", width = 6, height = 4, dpi=300, units = "in")
 
 
 ```
 
 ```{r, echo=FALSE, fig.width=6, fig.height=4}
 
-g[["Hydrogen"]]
+g[["Hydrogen - alt axis"]]
 
 ```
 
@@ -1806,7 +2471,8 @@ g[["transport fe"]] <- ggplot(FEplotData,aes(x=period,y=value)) +
     strip.text.x = element_blank()) +
   theme(legend.text=element_text(size=theme.single.text.size)) +
   theme(legend.key.height = unit(0.7, "cm"),
-    legend.key.width = unit(0.7,"cm"))
+    legend.key.width = unit(0.7,"cm")) +
+  theme(legend.margin=margin(t = -0.4, unit='cm'))
 #+ scale_y_continuous(name = "Final Energy") 
 
 
@@ -1965,10 +2631,11 @@ ggsave(paste0(outFolder,"/LDV Sales.png"), g[["LDV Sales"]] , device="png", widt
 ```{r, echo=FALSE}
 
 # Industry Emissions
-vars <- c("Cement" = "Emi|CO2|Energy|Demand|Industry|Cement",
+vars <- c("Chemicals"="Emi|CO2|Energy|Demand|Industry|Chemicals",
+          "Other Industry"="Emi|CO2|Energy|Demand|Industry|Other Industry",
           "Steel"="Emi|CO2|Energy|Demand|Industry|Steel",
-          "Chemicals"="Emi|CO2|Energy|Demand|Industry|Chemicals",
-          "Other Industry"="Emi|CO2|Energy|Demand|Industry|Other Industry")
+          "Cement" = "Emi|CO2|Energy|Demand|Industry|Cement"
+          )
 
 plotColor <- c(
   "Cement" = "#355070",
@@ -2015,15 +2682,17 @@ g[["Industry Emissions"]] <- ggplot(plotData,aes(x=period,y=value)) +
     theme_doubleColumn() + 
     expand_limits(y=c(0,1)) +
     guides(color=guide_legend(nrow=2)) +
-  theme(axis.title.y = element_blank())
+    theme(axis.title.y = element_blank()) +
+    theme(legend.text=element_text(size=theme.double.text.size)) #+
+    #theme(legend.key.height = unit(0.7, "cm"), legend.key.width = unit(0.7,"cm")) 
 
-ggsave(paste0(outFolder,"/Industry Emissions.svg"), g[["Industry Emissions"]] , device="svg", width = 6, height = 6, dpi=100, units = "in")
-ggsave(paste0(outFolder,"/Industry Emissions.png"), g[["Industry Emissions"]] , device="png", width = 6, height = 6, dpi=300, units = "in")
+ggsave(paste0(outFolder,"/Industry Emissions.svg"), g[["Industry Emissions"]] , device="svg", width = 6, height = 5.5, dpi=100, units = "in")
+ggsave(paste0(outFolder,"/Industry Emissions.png"), g[["Industry Emissions"]] , device="png", width = 6, height = 5.5, dpi=300, units = "in")
 
 
 ```
 
-```{r, echo=FALSE, fig.width=6, fig.height=6}
+```{r, echo=FALSE, fig.width=6, fig.height=5.5}
 
 g[["Industry Emissions"]]
 
@@ -2034,8 +2703,7 @@ g[["Industry Emissions"]]
 
 ::: {}
 
-(c) Buildings useful energy
-    Electricity based heating (EJ/yr)
+(c) Buildings useful energy Electricity based heating (EJ/yr)
 
 ```{r, echo=FALSE}
 
@@ -2091,14 +2759,38 @@ g[["Buildings Heating - Useful energy - Electricity Based"]] <-
   scale_y_continuous(breaks = c(0,round(sum(plotData %>% filter(scenario == mainScen, period == "2020") %>% pull(value)),1),round(sum(plotData %>% filter(scenario == mainScen, period == "2030") %>% pull(value)),1),round(sum(plotData %>% filter(scenario == mainScen, period == "2040") %>% pull(value)),1),round(sum(plotData %>% filter(scenario == mainScen, period == "2050") %>% pull(value)),1))) #+
   #scale_x_reverse() 
 
-ggsave(paste0(outFolder,"/Buildings Heating - Useful energy - Electricity Based.svg"), g[["Buildings Heating - Useful energy - Electricity Based"]] , device="svg", width = 6, height = 4, dpi=100, units = "in")
-ggsave(paste0(outFolder,"/Buildings Heating - Useful energy - Electricity Based.png"), g[["Buildings Heating - Useful energy - Electricity Based"]] , device="png", width = 6, height = 4, dpi=300, units = "in")
+#ggsave(paste0(outFolder,"/Buildings Heating - Useful energy - Electricity Based.svg"), g[["Buildings Heating - Useful energy - Electricity Based"]] , device="svg", width = 6, height = 4, dpi=100, units = "in")
+#ggsave(paste0(outFolder,"/Buildings Heating - Useful energy - Electricity Based.png"), g[["Buildings Heating - Useful energy - Electricity Based"]] , device="png", width = 6, height = 4, dpi=300, units = "in")
+
+
+g[["Buildings Heating - Useful energy - Electricity Based - alt axis"]] <- 
+  ggplot(plotData,aes(x=period,y=value)) +
+  geom_col(data=plotData %>% filter(scenario == mainScen), aes(fill = variable, alpha=factor(period))) +
+  geom_errorbar(data=plotData %>% filter(period != 2020, variable == vars[1], scenario == mainScen), aes(ymin=ribbon.min.total, ymax=ribbon.max.total), width=4, colour="black", alpha=0.9, size=1,position = position_dodge(width=2)) +
+  # scale_y_continuous(labels = scales::percent, breaks = c(0,1,plotData[plotData$period == "2030",]$value,plotData[plotData$period == "2040",]$value,plotData[plotData$period == "2050",]$value)) +
+  coord_flip() +
+  theme_doubleColumn() +
+  theme(panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank()) +
+  #guides(y = "none") +
+  theme(axis.title.y=element_blank()) +
+  #theme(legend.position = "none") #+
+  scale_fill_manual(values = setNames(colors[names(vars)],vars), labels = setNames(names(vars), vars), guide = guide_legend(reverse = TRUE, nrow = 1)) +
+  scale_alpha_manual(values = c("2020"=0.7,"2030"=0.7,"2040"=1,"2050"=0.7), guide = 'none') +
+  theme(legend.text=element_text(size=theme.double.text.size)) +
+  theme(legend.key.height = unit(0.7, "cm"),
+    legend.key.width = unit(0.7,"cm")) #+
+  #scale_y_continuous(breaks = c(0,round(sum(plotData %>% filter(scenario == mainScen, period == "2020") %>% pull(value)),1),round(sum(plotData %>% filter(scenario == mainScen, period == "2030") %>% pull(value)),1),round(sum(plotData %>% filter(scenario == mainScen, period == "2040") %>% pull(value)),1),round(sum(plotData %>% filter(scenario == mainScen, period == "2050") %>% pull(value)),1))) #+
+  #scale_x_reverse() 
+
+ggsave(paste0(outFolder,"/Buildings Heating - Useful energy - Electricity Based - alt axis.svg"), g[["Buildings Heating - Useful energy - Electricity Based - alt axis"]] , device="svg", width = 6, height = 4, dpi=100, units = "in")
+ggsave(paste0(outFolder,"/Buildings Heating - Useful energy - Electricity Based - alt axis.png"), g[["Buildings Heating - Useful energy - Electricity Based - alt axis"]] , device="png", width = 6, height = 4, dpi=300, units = "in")
 
 ```
 
 ```{r, echo=FALSE, fig.width=6, fig.height=4}
 
-g[["Buildings Heating - Useful energy - Electricity Based"]]
+g[["Buildings Heating - Useful energy - Electricity Based - alt axis"]]
 
 ```
 
@@ -2172,14 +2864,14 @@ plotData <- df %>%
         )
 
  
- ggsave(paste0(outFolder,"/Carbon Management.svg"), g[["Carbon Management"]] , device="svg", width = 6, height = 6, dpi=100, units = "in")
- ggsave(paste0(outFolder,"/Carbon Management.png"), g[["Carbon Management"]] , device="png", width = 6, height = 6, dpi=300, units = "in")
+ ggsave(paste0(outFolder,"/Carbon Management.svg"), g[["Carbon Management"]] , device="svg", width = 6, height = 5.5, dpi=100, units = "in")
+ ggsave(paste0(outFolder,"/Carbon Management.png"), g[["Carbon Management"]] , device="png", width = 6, height = 5.5, dpi=300, units = "in")
  
 
 ```
 
 
-```{r, echo=FALSE, fig.width=6, fig.height=6}
+```{r, echo=FALSE, fig.width=6, fig.height=5.5}
 
 g[["Carbon Management"]]
 
@@ -2239,6 +2931,12 @@ plotData <- rbind(
   mutate(min = min(value),
         max = max(value))
 
+fullPlotData <- plotData 
+
+h <- refEmi %>% filter(variable == "Emissions with LULUCF and with international transport", region == "EU27", pollutant == "All greenhouse gases - (CO2 equivalent)") %>% ungroup() %>% select(region,variable,period,value)
+emi1990 <- tgt %>% filter(target == "Emissions with LULUCF and with international transport") %>% pull(reference)
+reduction_h <- 1- (h %>% filter(period==2021) %>% pull(value) / emi1990)
+
 g[["Emissions reductions"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +
   geom_boxplot(outlier.shape = NA, width=0.6) +
@@ -2248,6 +2946,8 @@ g[["Emissions reductions"]] <- ggplot(plotData, aes(x = target, y = value, group
          #      hjust=-1, angle = 90) +
   geom_hline(yintercept=0.55, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
   annotate("text", x = "Emissions\nreductions", y = 0.55, label = "FitFor55", angle=90, vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=reduction_h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = "Emissions\nreductions", y = reduction_h, label = "2021", angle=90, vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
   facet_grid(target~period, scales="free") +
   theme_doubleColumn() +
   coord_flip(clip = 'off') +
@@ -2260,6 +2960,51 @@ g[["Emissions reductions"]] <- ggplot(plotData, aes(x = target, y = value, group
   theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
   geom_text(data=data.frame(period=c(2030,2040),label=c("(%)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.4, na.rm = TRUE)
 
+g[["milestone - vert"]][["Emissions reductions"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=0.55, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 0.55, label = "FitFor55", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=reduction_h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = reduction_h, label = "2021", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Emissions reductions"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=0.55, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 0.55, label = "FitFor55", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=reduction_h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = reduction_h, label = "2021", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size) 
+
 # Final Energy Demand - Energy savings
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "FE|w/o Non-energy Use w/o Bunkers") %>% select(-variable) %>%
   mutate(value = round(value * 23.8845896627496)) %>%
@@ -2268,6 +3013,12 @@ plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %i
   group_by(period) %>% 
   mutate(min = min(value),
         max = max(value))
+
+fullPlotData <- rbind(fullPlotData,plotData) 
+
+h <- addHist$FE_consumption %>% #TJ
+  mutate(value = value/1000000) %>% #EJ
+  mutate(value = round(value * 23.8845896627496)) # 1EJ = 23.8845896627496 Mtoe
 
 g[["Energy savings"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +   
@@ -2280,6 +3031,8 @@ g[["Energy savings"]] <- ggplot(plotData, aes(x = target, y = value, group=perio
   annotate("text", x = "Final Energy\nDemand", y = 787, label = "FitFor55", angle=90, vjust = 1.5, hjust = 1, color = "black", alpha = 0.5) +
   geom_hline(yintercept=787, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
   annotate("text", x = "Final Energy\nDemand", y = 750, label = "REPowerEU", angle=90, vjust = -0.5, hjust = 0.7, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=h %>% filter(period==2021) %>% pull(value), color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = "Final Energy\nDemand", y = h %>% filter(period==2021) %>% pull(value), label = "2021", angle=90, vjust = -0.5, hjust = 0.7, color = "black", alpha = 0.5) +
   facet_grid(target~period, scales="free") +
   theme_doubleColumn() +
   coord_flip(clip = 'off') +
@@ -2293,6 +3046,55 @@ g[["Energy savings"]] <- ggplot(plotData, aes(x = target, y = value, group=perio
   geom_text(data=data.frame(period=c(2030,2040),label=c("(Mtoe)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.2, na.rm = TRUE)
 
 
+g[["milestone - vert"]][["Energy savings"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=750, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  geom_hline(yintercept=787, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 750, label = "REPowerEU", vjust = 1.5, hjust = 1, color = "black", alpha = 0.5) +
+  annotate("text", x = Inf, y = 787, label = "FitFor55", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=h %>% filter(period==2021) %>% pull(value), color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h %>% filter(period==2021) %>% pull(value), label = "2021", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,400,1000)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  annotate("text", x = -Inf, y = Inf, label = "(Mtoe)", hjust = 1, color = "black", alpha = 0.5) +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Energy savings"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=750, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  geom_hline(yintercept=787, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 750, label = "REPowerEU", angle=90, vjust = -1, hjust = 0, color = "black", alpha = 0.5) +
+  annotate("text", x = Inf, y = 787, label = "FitFor55", angle=90, vjust = 1, hjust = 0, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=h %>% filter(period==2021) %>% pull(value), color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h %>% filter(period==2021) %>% pull(value), label = "2021", angle=90, vjust = -1, hjust = 0, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  #scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,400,1000)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(Mtoe)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
+
 # Electricity Demand
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "FE|Electricity") %>% select(-variable) %>%
   mutate(value = round(value * 1/0.0036)) %>%
@@ -2302,11 +3104,17 @@ plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %i
   mutate(min = min(value),
         max = max(value))
 
+fullPlotData <- rbind(fullPlotData,plotData) 
+
+#2022 = 2469471.42 GWh = 2469471.42 *1000 / 8.76E+09 * 31.536 EJ - FE electricity - https://ec.europa.eu/eurostat/databrowser/bookmark/d19a01c7-6099-4b88-8ccd-c6bcc01c3ddc?lang=en
+h <- 2469471.42 /1000
+# old value? 2641
+
 g[["Electricity Demand"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +   
   geom_boxplot(outlier.shape = NA, width=0.6) +
-  geom_hline(yintercept=2641, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
-  annotate("text", x = "Electricity\nDemand", y = 2641, label = "2022", angle=90, vjust = -0.5, hjust = 1.2, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = "Electricity\nDemand", y = h, label = "2022", angle=90, vjust = -0.5, hjust = 1.2, color = "black", alpha = 0.5) +
   facet_grid(target~period, scales="free") +
   theme_doubleColumn() +
   coord_flip(clip = 'off') +
@@ -2319,6 +3127,46 @@ g[["Electricity Demand"]] <- ggplot(plotData, aes(x = target, y = value, group=p
   theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
   geom_text(data=data.frame(period=c(2030,2040),label=c("(TWh)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.2, na.rm = TRUE)
 
+g[["milestone - vert"]][["Electricity Demand"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h, label = "2022", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,5000)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  annotate("text", x = -Inf, y = Inf, label = "(TWh)", hjust = 1, color = "black", alpha = 0.5) +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Electricity Demand"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h, label = "2022", angle=90, vjust = -1, hjust = 0, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  #scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,5000)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(TWh)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
 
 # Renewables share
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "SE|Renewables Share") %>% select(-variable) %>%
@@ -2335,6 +3183,8 @@ plotData <- plotData %>%
   mutate(min = min(value),
         max = max(value))
 
+fullPlotData <- rbind(fullPlotData,plotData) 
+
 g[["Renewables Share"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +   
   geom_boxplot(outlier.shape = NA, width=0.6) +
@@ -2346,6 +3196,8 @@ g[["Renewables Share"]] <- ggplot(plotData, aes(x = target, y = value, group=per
   annotate("text", x = "Renewables\nShare in\nFinal Energy", y = 0.4, label = "RED II revised", angle=90, vjust = -0.5, hjust = 0.5, color = "black", alpha = 0.5) +
   geom_hline(yintercept=0.45, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
   annotate("text", x = "Renewables\nShare in\nFinal Energy", y = 0.45, label = "REPowerEU", angle=90, vjust = 1.5, hjust = 0.6, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=addHist$res %>% filter(type == "RES", period == 2021) %>% pull(value), color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = "Renewables\nShare in\nFinal Energy", y = addHist$res %>% filter(type == "RES", period == 2021) %>% pull(value), label = "2021", angle=90, vjust = -0.5, hjust = 0.6, color = "black", alpha = 0.5) +
   facet_grid(target~period, scales="free") +
   theme_doubleColumn() +
   coord_flip(clip = 'off') +
@@ -2359,6 +3211,55 @@ g[["Renewables Share"]] <- ggplot(plotData, aes(x = target, y = value, group=per
   theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
   geom_text(data=data.frame(period=c(2030,2040),label=c("(%)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.4, na.rm = TRUE)
 
+g[["milestone - vert"]][["Renewables Share"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=0.4, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 0.4, label = "RED II revised", vjust = 1.5, hjust = 1, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=0.45, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 0.45, label = "REPowerEU", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=addHist$res %>% filter(type == "RES", period == 2021) %>% pull(value), color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = addHist$res %>% filter(type == "RES", period == 2021) %>% pull(value), label = "2021", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Renewables Share"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=0.4, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 0.4, label = "RED II revised", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=0.45, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 0.45, label = "REPowerEU", angle=90, vjust = 1.5, hjust = 0, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=addHist$res %>% filter(type == "RES", period == 2021) %>% pull(value), color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = addHist$res %>% filter(type == "RES", period == 2021) %>% pull(value), label = "2021", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
+
 # Wind
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Cap|Electricity|Wind") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2366,6 +3267,8 @@ plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %i
   group_by(period) %>% 
   mutate(min = min(value),
         max = max(value)) 
+
+fullPlotData <- rbind(fullPlotData,plotData) 
 
 #target <- data.frame(target=c("REPowerEU","REPowerEU"),period=c(2025,2030),value=c(320,600)) 
 g[["Wind capacity"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
@@ -2385,6 +3288,47 @@ g[["Wind capacity"]] <- ggplot(plotData, aes(x = target, y = value, group=period
   theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
   geom_text(data=data.frame(period=c(2030,2040),label=c("(GW)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.3, na.rm = TRUE)
 
+g[["milestone - vert"]][["Wind capacity"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=255, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 255, label = "2022", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,1000)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  annotate("text", x = -Inf, y = Inf, label = "(GW)", hjust = 1, color = "black", alpha = 0.5) +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Wind capacity"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=255, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 255, label = "2022", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  #scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1000)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(GW)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
+
 # Solar photovoltaics
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Cap|Electricity|Solar|PV") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2392,6 +3336,8 @@ plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %i
   group_by(period) %>% 
   mutate(min = min(value),
         max = max(value)) 
+
+fullPlotData <- rbind(fullPlotData,plotData) 
 
 #target <- data.frame(target=c("REPowerEU","REPowerEU"),period=c(2025,2030),value=c(320,600)) 
 g[["Solar photovoltaics"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
@@ -2417,6 +3363,50 @@ g[["Solar photovoltaics"]] <- ggplot(plotData, aes(x = target, y = value, group=
   theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
   geom_text(data=data.frame(period=c(2030,2040),label=c("(GW)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.3, na.rm = TRUE)
 
+g[["milestone - vert"]][["Solar photovoltaics"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=600, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 600, label = "REPowerEU", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=208.9, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 208.9, label = "2022", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,2500)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  annotate("text", x = -Inf, y = Inf, label = "(GW)", hjust = 1, color = "black", alpha = 0.5) +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Solar photovoltaics"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=600, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 600, label = "REPowerEU", angle=90, vjust = 1.5, hjust = 0, color = "black", alpha = 0.5) +
+  geom_hline(yintercept=208.9, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 208.9, label = "2022", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,2500)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(GW)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
+
 # Carbon Capture and Storage 
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Carbon Management|Storage") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2424,6 +3414,8 @@ plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %i
   group_by(period) %>% 
   mutate(min = min(value),
         max = max(value)) 
+
+fullPlotData <- rbind(fullPlotData,plotData) 
 
 g[["Carbon Capture and Storage"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +   
@@ -2447,13 +3439,55 @@ g[["Carbon Capture and Storage"]] <- ggplot(plotData, aes(x = target, y = value,
   theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
   geom_text(data=data.frame(period=c(2030,2040),label=c("(Mt CO2/yr)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.1, na.rm = TRUE)
 
+g[["milestone - vert"]][["Carbon Capture and Storage"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=50, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 50, label = "Net-Zero\nIndustry Act", vjust = 0.5, hjust = 1, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,400)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  annotate("text", x = -Inf, y = Inf, label = "(Mt CO2/yr)", hjust = 1, color = "black", alpha = 0.5) +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Carbon Capture and Storage"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=50, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 50, label = "Net-Zero\nIndustry Act", angle=90, vjust = 0.5, hjust = 0, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,400)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(Mt CO2/yr)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
+
 # Novel CDR = atmospheric/biogenic CO2 (CDR) 
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Carbon Management|atmospheric/biogenic CO2 - CDR") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
-  mutate(target = "Novel CDR") %>%
+  mutate(target = "BECCS\nand\nDACCS") %>%
   group_by(period) %>% 
   mutate(min = min(value),
         max = max(value)) 
+
+fullPlotData <- rbind(fullPlotData,plotData) 
 
 g[["Novel CDR"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +   
@@ -2475,6 +3509,42 @@ g[["Novel CDR"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
   theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
   geom_text(data=data.frame(period=c(2030,2040),label=c("(Mt CO2/yr)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.1, na.rm = TRUE)
 
+g[["milestone - vert"]][["Novel CDR"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,250)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  annotate("text", x = -Inf, y = Inf, label = "(Mt CO2/yr)", hjust = 1, color = "black", alpha = 0.5) +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Novel CDR"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,250)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(Mt CO2/yr)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
+
 # Direct Electrification
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Final Energy|Electricity Share") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2483,6 +3553,17 @@ plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %i
   mutate(min = min(value),
         max = max(value)) 
 
+fullPlotData <- rbind(fullPlotData,plotData) 
+
+#estimation of historical share in 2021 for FE electricity / FE with non-energy use and with bunkers
+h <- (
+      2550461.10 *1000 / 8.76E+09 * 31.536  # https://ec.europa.eu/eurostat/databrowser/bookmark/12d54df4-7c35-47eb-a103-dd8994d26b80?lang=en
+     ) / (
+      addHist$FE_consumption %>% mutate(value = value/1000000) %>% filter(period==2021) %>% pull(value) + # FE|w/o Non-energy Use w/o Bunkers - EJ
+      df %>% filter(region == "EU27", period == 2020, scenario == "Npi", variable == "FE|Transport|Bunkers") %>% pull(value) +
+      df %>% filter(region == "EU27", period == 2020, scenario == "Npi", variable == "FE|Non-energy Use|Industry") %>% pull(value)
+     )
+
 g[["Direct Electrification"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
     geom_errorbar(aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +   
   geom_boxplot(outlier.shape = NA, width=0.6) +
@@ -2490,6 +3571,8 @@ g[["Direct Electrification"]] <- ggplot(plotData, aes(x = target, y = value, gro
         #              aes(label = paste0(round(..y..*100),"%")),
         #       #position=position_nudge(x=c(0.1,0.35,0.35,0.35,0.1)), 
          #      hjust=-1, angle = 90) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = "Electricity\nShare in\nFinal Energy", y = h, label = "2021", angle=90, vjust = -0.5, hjust = 1.2, color = "black", alpha = 0.5) +
   facet_grid(target~period, scales="free") +
   theme_doubleColumn() +
   coord_flip(clip = 'off') +
@@ -2502,6 +3585,46 @@ g[["Direct Electrification"]] <- ggplot(plotData, aes(x = target, y = value, gro
   theme(axis.text.x = element_text(size = 0.8*theme.double.text.size)) +
   theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
   geom_text(data=data.frame(period=c(2030,2040),label=c("(%)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.4, na.rm = TRUE)
+
+g[["milestone - vert"]][["Direct Electrification"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h, label = "2021", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Direct Electrification"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h, label = "2021", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
 
 # Carbon-free electricity share
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "SE|Electricity|carbon-free") %>% select(-variable) %>%
@@ -2511,6 +3634,17 @@ plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %i
   mutate(min = min(value),
         max = max(value))  
 
+fullPlotData <- rbind(fullPlotData,plotData) 
+
+#historical - 2022 - https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Electricity_and_heat_statistics&oldid=347519
+#solid fossil	453180
+#oil	54277
+#gas	571687
+#nuclear	609169
+#renewables	1076710
+#other	32822
+h <- (609169 + 1076710)	/ (453180 + 54277 + 571687 + 609169 + 1076710 + 32822)
+
 g[["Carbon-free electricity share"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
     geom_errorbar(aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +   
   geom_boxplot(outlier.shape = NA, width=0.6) +
@@ -2518,6 +3652,8 @@ g[["Carbon-free electricity share"]] <- ggplot(plotData, aes(x = target, y = val
         #              aes(label = paste0(round(..y..*100),"%")),
         #       #position=position_nudge(x=c(0.1,0.35,0.35,0.35,0.1)), 
          #      hjust=-1, angle = 90) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = "Carbon-free\nelectricity\nshare", y = h, label = "2022", angle=90, vjust = -0.5, hjust = 1.2, color = "black", alpha = 0.5) +
   facet_grid(target~period, scales="free") +
   theme_doubleColumn() +
   coord_flip(clip = 'off') +
@@ -2531,6 +3667,47 @@ g[["Carbon-free electricity share"]] <- ggplot(plotData, aes(x = target, y = val
   theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
   geom_text(data=data.frame(period=c(2030,2040),label=c("(%)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.4, na.rm = TRUE)
 
+g[["milestone - vert"]][["Carbon-free electricity share"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h, label = "2022", vjust = -0.5, hjust = 1, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Carbon-free electricity share"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h, label = "2022", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
+
 # Residual Fossil Emissions
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2538,6 +3715,9 @@ plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %i
   group_by(period) %>% 
   mutate(min = min(value),
         max = max(value))  
+
+
+fullPlotData <- rbind(fullPlotData,plotData) 
 
 g[["Residual Fossil Emissions"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +   
@@ -2558,6 +3738,113 @@ g[["Residual Fossil Emissions"]] <- ggplot(plotData, aes(x = target, y = value, 
   theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
   geom_text(data=data.frame(period=c(2030,2040),label=c("(Mt CO2/yr)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.05, na.rm = TRUE)
 
+g[["milestone - vert"]][["Residual Fossil Emissions"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,2500)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  annotate("text", x = -Inf, y = Inf, label = "(Mt CO2/yr)", hjust = 1, color = "black", alpha = 0.5) +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Residual Fossil Emissions"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,2500)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(Mt CO2/yr)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
+
+
+# Domestic Hydrogen Production
+plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "SE|Hydrogen") %>% select(-variable) %>%
+  mutate(value = value*8)  %>% #1EJ <- 8 million tons adrian
+  filter(tgt2050 != "Npi") %>%
+  mutate(target = "Domestic\nHydrogen\nProduction") %>%
+  group_by(period) %>% 
+  mutate(min = min(value),
+        max = max(value)) 
+
+fullPlotData <- rbind(fullPlotData,plotData) 
+
+target <- data.frame(target=c("REPowerEU","REPowerEU"),period=c(2030,2030),value=c(10,20))
+
+g[["Domestic Hydrogen Production"]] <- ggplot(plotData, aes(x = target, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +   
+  geom_boxplot(outlier.shape = NA, width=0.6) +
+  geom_hline(yintercept=10, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = "Domestic\nHydrogen\nProduction", y = 10, label = "REPowerEU\ndomestic", angle=90, vjust = 0.5, hjust = 0.5, color = "black", alpha = 0.5) +
+  facet_grid(target~period, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  expand_limits(y=c(0,20)) + 
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  theme(strip.text.x = element_blank()) +
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(size = 0.8*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1.2*theme.double.text.size)) +
+  geom_text(data=data.frame(period=c(2030,2040),label=c("(Mtoe)",NA)), aes(label = label,x = 0, y = 0), color = "#666666", size=0.8*geom.text.double.size, hjust=1.4, na.rm = TRUE)
+
+g[["milestone - vert"]][["Domestic Hydrogen Production"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=10, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = -Inf, y = 10, label = "REPowerEU\ndomestic", vjust = 0.5, hjust = 0, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_continuous(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL, position = "top") +
+  expand_limits(y=c(0,20)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(strip.text = element_text(angle = 90)) +
+  coord_cartesian(clip = 'off') +
+  annotate("text", x = -Inf, y = Inf, label = "(Mtoe)", hjust = 1, color = "black", alpha = 0.5) +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size))
+
+g[["milestone - hor"]][["Domestic Hydrogen Production"]] <- ggplot(plotData %>% mutate(target = gsub("\n", " ", target)), aes(x = period, y = value, group=period)) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=10, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = -Inf, y = 10, label = "REPowerEU\ndomestic", angle=90, vjust = 0.5, hjust = 1, color = "black", alpha = 0.5) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,20)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  annotate("text", x = -Inf, y = -Inf, label = "(Mtoe)", hjust = 1, color = "#666666", size=0.8*geom.text.double.size)
+
 
 g[["Targets"]] <- gridExtra::arrangeGrob(
   g[["Emissions reductions"]] + theme(strip.text.x = element_blank()) + theme(plot.margin=margin(b=20, l = 30)), #+ theme(plot.margin=margin(10,10,30,10)),margin(t = 0, r = 0, b = 0, l = 0, unit = "pt")
@@ -2567,17 +3854,60 @@ g[["Targets"]] <- gridExtra::arrangeGrob(
   g[["Wind capacity"]] + theme(plot.margin=margin(b=20, l = 50)),
   g[["Solar photovoltaics"]] + theme(plot.margin=margin(b=20, l = 10)),
   g[["Carbon Capture and Storage"]] + theme(plot.margin=margin(b=20, l = 15)),
-  g[["Novel CDR"]] + theme(plot.margin=margin(b=20, l = 27)),
+  g[["Novel CDR"]] + theme(plot.margin=margin(b=20, l = 50)),
   g[["Direct Electrification"]] + theme(plot.margin=margin(b=20, l = 17)),
   g[["Carbon-free electricity share"]] + theme(plot.margin=margin(b=20, l = 24)),
+  g[["Domestic Hydrogen Production"]] + theme(plot.margin=margin(b=20,l = 35)),
   g[["Residual Fossil Emissions"]] + theme(plot.margin=margin(b=20, l = 39)),
   ncol = 1
 )
 
-ggsave(paste0(outFolder,"/targets.svg"), g[["Targets"]] , device="svg", width = 12, height = 17, dpi=100, units = "in")
-ggsave(paste0(outFolder,"/targets.png"), g[["Targets"]] , device="png", width = 12, height = 17, dpi=300, units = "in")
+#ggsave(paste0(outFolder,"/targets.svg"), g[["Targets"]] , device="svg", width = 12, height = 17, dpi=100, units = "in")
+#ggsave(paste0(outFolder,"/targets.png"), g[["Targets"]] , device="png", width = 12, height = 17, dpi=300, units = "in")
+
+g[["milestone - vert targets"]] <- gridExtra::arrangeGrob(
+  g[["milestone - vert"]][["Emissions reductions"]] + theme(plot.margin=margin(r=30,t = 30)), #+ theme(plot.margin=margin(10,10,30,10)),margin(t = 0, r = 0, b = 0, l = 0, unit = "pt")
+  g[["milestone - vert"]][["Energy savings"]] + theme(plot.margin=margin(r=30,t = 10)),
+  g[["milestone - vert"]][["Renewables Share"]] + theme(plot.margin=margin(r=30,t = 15)),
+  g[["milestone - vert"]][["Residual Fossil Emissions"]] + theme(plot.margin=margin(r=30,t = 39)),
+  g[["milestone - vert"]][["Carbon Capture and Storage"]] + theme(plot.margin=margin(r=30,t = 15)),
+  g[["milestone - vert"]][["Novel CDR"]] + theme(plot.margin=margin(t = 50)),
+  
+  g[["milestone - vert"]][["Electricity Demand"]] + theme(plot.margin=margin(r=30,t = 35)),
+  g[["milestone - vert"]][["Wind capacity"]] + theme(plot.margin=margin(r=30,t = 50)),
+  g[["milestone - vert"]][["Solar photovoltaics"]] + theme(plot.margin=margin(r=30,t = 10)),
+  g[["milestone - vert"]][["Direct Electrification"]] + theme(plot.margin=margin(r=30,t = 17)),
+  g[["milestone - vert"]][["Carbon-free electricity share"]] + theme(plot.margin=margin(t = 24)),
+  g[["milestone - vert"]][["Domestic Hydrogen Production"]] + theme(plot.margin=margin(r=30,t = 35)),
+  nrow = 2
+)
+
+#ggsave(paste0(outFolder,"/milestone - vert targets.svg"), g[["milestone - vert targets"]] , device="svg", width = 12, height = 17, dpi=100, units = "in")
+#ggsave(paste0(outFolder,"/milestone - vert targets.png"), g[["milestone - vert targets"]] , device="png", width = 12, height = 17, dpi=300, units = "in")
 
 
+g[["milestone - hor targets"]] <- gridExtra::arrangeGrob(
+  g[["milestone - hor"]][["Emissions reductions"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - hor"]][["Energy savings"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - hor"]][["Renewables Share"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - hor"]][["Direct Electrification"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - hor"]][["Carbon-free electricity share"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - hor"]][["Domestic Hydrogen Production"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  
+  g[["milestone - hor"]][["Electricity Demand"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - hor"]][["Wind capacity"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - hor"]][["Solar photovoltaics"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  
+  g[["milestone - hor"]][["Residual Fossil Emissions"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - hor"]][["Carbon Capture and Storage"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - hor"]][["Novel CDR"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  
+  
+  ncol = 2
+)
+
+ggsave(paste0(outFolder,"/milestone - hor targets.svg"), g[["milestone - hor targets"]] , device="svg", width = 12, height = 14, dpi=100, units = "in")
+ggsave(paste0(outFolder,"/milestone - hor targets.png"), g[["milestone - hor targets"]] , device="png", width = 12, height = 14, dpi=300, units = "in")
 
 ```
 
@@ -2586,8 +3916,6 @@ ggsave(paste0(outFolder,"/targets.png"), g[["Targets"]] , device="png", width = 
 ```{r, echo=FALSE, fig.width=12, fig.height=17}
 
 grid.newpage()
-grid.draw(g[["Targets"]])
+grid.draw(g[["milestone - hor targets"]])
 
 ```
-
-
