@@ -7,11 +7,11 @@ Rodrigues, R., Pietzcker, R., Sitarz, J., Merfort, A., Hasse, R., Hoppe, J., Peh
 # Model version and results
 
 - Results were created using REMIND version 3.2 with 21 regions (REMIND-EU).
-- The run files can be provided by request, and are internally located at the PIK cluster infraestrcurture under: `/p/projects/ecemf/REMIND/2040_scenarios/v04_2023_06_02` 
+- The run files can be provided by request and are internally located at the PIK cluster infrastructure under: `/p/projects/ecemf/REMIND/2040_scenarios/v04_2023_06_02` 
 
 # License
 
-- Model runs and scenario data for this study are provided under a CC-BY-4.0 license.  
+- Model runs and scenario data for this study are provided under a CC-BY-4.0 licence.  
 
 # Results used in the paper
 
@@ -35,5 +35,5 @@ install.packages(pkgs)
 ```
 
 - Raster image files, pngs, and vectorial image files, svgs, will be saved to the output folder.
-- Additionaly, an html report file will be created containing all charts used in the paper.
+- Additionally, an html report file will be created containing all charts used in the paper.
 
