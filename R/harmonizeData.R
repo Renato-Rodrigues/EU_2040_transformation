@@ -49,6 +49,55 @@ harmonizeData <- function(data,scaleFactor){ #,nzero=NULL
               data %>% filter(region == "EU27")  %>% calc_addVariable("`Trade|Imports|Gas|Adj`" = "`PE|Gas` - `Prod|PE|Gas` + `Trade|Exports|Gas|Adj`", units = "EJ/yr", only.new=T)
   )
   
+  # Harmonizing fossil useful energy with JRC-IDEES values (to exclude additional mappings from REMIND)
+  IDEES2020 <- data.frame(variable=c("UE|Buildings|Heating|Gases", "UE|Buildings|Heating|Liquids"),idees=c(3.48,0.994)) # average 2018-2022 UE
+  
+  # Share of liquids and gases UE that is reduced to harmonize values to JRC-IDEES numbers
+  harmonizingShare <-  left_join(
+    data %>% 
+      filter(region == "EU27", period == 2020, scenario == data$scenario[1], variable %in% c("UE|Buildings|Heating|Gases", "UE|Buildings|Heating|Liquids","UE|Buildings|Heating|Electricity|Heat pump")),
+    IDEES2020,
+    by = join_by(variable == variable)
+  ) %>%
+    mutate(share = ifelse(is.na(idees),1,idees/value),
+           diff = ifelse(is.na(idees),0,idees - value)) %>%
+    select(variable,share,diff)
+  
+  # assume that electricity heat pumps would be the natural substitute for the liquids and gases UE reduction that is not doen directly by them. 
+  harmonizingCompensation <- left_join(
+    data %>% 
+      filter(region == "EU27", variable %in% c("UE|Buildings|Heating|Gases", "UE|Buildings|Heating|Liquids")),
+    harmonizingShare,
+    by = join_by(variable == variable)
+  ) %>% 
+    mutate(remaining = diff + value * (1-share)) %>%
+    group_by(scenario,period) %>%
+    summarize(remaining = sum(remaining)) %>%
+    mutate(variable = "UE|Buildings|Heating|Electricity|Heat pump")
+  
+  # harmonized useful energy data
+  harmonizedData <- left_join(
+    left_join(
+      data %>% 
+        filter(region == "EU27", period >= 2020, variable %in% c("UE|Buildings|Heating|Gases", "UE|Buildings|Heating|Liquids", "UE|Buildings|Heating|Electricity|Heat pump")),
+      harmonizingShare,
+      by = join_by(variable == variable)) %>% 
+      mutate(value = value * share) %>%
+      select(-share,-diff),
+    harmonizingCompensation,
+    by = join_by(scenario == scenario, period == period, variable == variable)
+  ) %>%
+    mutate(remaining = ifelse(is.na(remaining), 0, remaining)) %>%
+    mutate(value = value + remaining) %>%
+    select(-remaining)
+  
+  # updating buildings useful energy data to include harmonized values
+  data <- rbind(
+    data %>%
+      filter(!(region == "EU27" & period >= 2020 & variable %in% c("UE|Buildings|Heating|Gases", "UE|Buildings|Heating|Liquids", "UE|Buildings|Heating|Electricity|Heat pump"))),
+    harmonizedData
+  )
+  
   return(data)
 }
 

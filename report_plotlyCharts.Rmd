@@ -1,0 +1,720 @@
+---
+title: "plotly charts for sensitivity iteractive explorer html"
+output:
+  html_document:
+    theme: paper
+    toc: true
+    toc_float:
+      collapsed: false
+---
+
+<style>
+  .main-container {
+    max-width: 95% !important;
+  }
+  .toc-content {
+    padding-left: 0px !important;
+  }
+  .svg-container {
+    margin: auto !important;
+  }
+</style>
+
+Description:
+Plotly charts to be used in iteractive html
+
+Rodrigues, R., Pietzcker, R., Sitarz, J., Merfort, A., Hasse, R., Hoppe, J., Pehl, M., Ershad, A. M., Baumstark, L., Luderer, G. 2040 greenhouse gas reduction targets and energy transitions in line with the EU Green Deal. under revision (2023). 
+
+<!-- Setting default chunk options -->
+```{r chunkOptions, echo=FALSE, include = FALSE}
+#knitr::opts_chunk$set(echo = TRUE)
+# setting global R chunk options (https://yihui.name/knitr/options/#chunk_options)
+  knitr::opts_chunk$set(dev='svglite', # svg, png,...
+                        fig.ext = ".svg",
+                        #fig.asp = .8 # default aspect ratio
+                        fig.width = 12,
+                        fig.height = 6,
+                        dpi=100
+                        )
+```  
+
+
+```{r loading_packages, echo=FALSE, include = FALSE}
+
+  #Loading required packages
+  # install.packages("remotes")
+  #remotes::install_github("coolbutuseless/ggpattern")
+  #install.packages('rsvg')
+  #remotes::install_github('coolbutuseless/ggsvg')
+  packagesList <- c("quitte","ggplot2","geomtextpath","ggpattern","tidyr","grid","stringr","gridExtra","ggrepel","kableExtra","dplyr","remind2","rsvg","ggsvg","plotly")
+  packages <- suppressWarnings(suppressMessages(lapply(packagesList, function(x){ if(!require(x, character.only = T, quietly = T)){ install.packages(x); return(paste0("installed missing package: ", x)) } else paste0("required package is installed: ", x) } )))
+
+```
+
+<!-- Preprocess: prepare and load the data for use in the charts and markdown -->
+
+```{r preprocess, echo=FALSE, include = FALSE}
+
+#Options
+forceUpdateData = FALSE
+loadHist = TRUE
+
+# data and output folders
+folders <- file.info(list.files(path="./data", full.names = T))
+dataFolder <- folders %>% tibble::rownames_to_column(var = "path") %>% arrange(desc(path)) %>% slice(1) %>% pull(path)
+
+source("./R/preprocess.R") 
+
+#create output folders
+outFolder <- paste0("./output/",gsub("./data/","",dataFolder))
+jsOutputFolder <- paste0(outFolder, "/report_sensitivityExplorer/charts")
+dir.create(jsOutputFolder, recursive = TRUE, showWarnings = FALSE)
+
+```
+
+
+<!-- Function to convert plotly charts to js file  -->
+
+```{r loadAuxFunction, echo=FALSE, include = FALSE}
+
+source("./R/plotly2js.R") 
+
+```
+
+
+<!-- Initializing charts object -->
+```{r chart_initialization, echo=FALSE, include = FALSE}
+
+g <- NULL
+
+```
+
+---
+
+# Carbon price
+
+```{r chart_carbonPrice, echo=FALSE, include = FALSE}
+
+  vars <- c(
+    "Carbon price" = "Price|Carbon"
+  )
+  
+  plotData <- df_beforeFilter %>%
+    filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
+    mutate(period = as.Date(paste0("01/01/", period),format="%m/%d/%Y"),
+           value = 1.17*value) %>%
+    mutate(value = round(value,2))
+  
+  ETS_price <- addHist$ETS_price %>%
+    mutate(scenario = "ETS price")
+  
+  cc <- c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786")
+  tmp <- plotData %>% mutate(color = cc[efficiency])   
+  scenarioColor <- setNames(tmp$color,tmp$scenario)
+  
+  ff <- c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e")
+  tmp <- plotData %>% mutate(color = cc[bioLim])   
+  scenarioFill <- setNames(tmp$color,tmp$scenario)
+  
+  g[["Carbon Price"]][["ggplot"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    geom_line(linewidth = 0.5, aes(linetype=tgt2030, color = scenario)) +
+    geom_point(size = 3, aes(shape = lim, fill = scenario)) +
+    geom_line(data=ETS_price,aes(x=Date, y=Price),size=0.5, color = "#000000") +
+    scale_x_date(date_labels = "%Y") +
+    scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
+    scale_color_manual(values = scenarioColor, guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
+    scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    theme_doubleColumn() +
+    theme(strip.text.y = element_blank()) +
+    #guides(fill = guide_legend(nrow = 2, byrow = T)) +
+    theme(legend.text=element_text(size=theme.single.text.size)) +
+    theme(legend.key.height = unit(0.7, "cm"),
+          legend.key.width = unit(2,"cm")) +
+    theme(legend.position="right", legend.direction = "vertical", legend.box = "vertical") + 
+    #theme(legend.key.width = unit(2,"cm")) +
+    #ylab("€/t CO2") +
+    theme(legend.spacing.y = unit(0.5, "lines")) + 
+    theme(legend.position = "none")
+  
+  g[["Carbon Price"]][["plotly"]] <- ggplotly(g[["Carbon Price"]][["ggplot"]]) %>% layout(autosize = TRUE)
+  
+  #save plotly js
+  plotly2js(
+    g[["Carbon Price"]][["plotly"]],
+    div.id = "carbonPrice", output.html = TRUE, output.file = "carbonPrice.js", 
+    output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/carbonPrice.html"))
+
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=6}
+
+  g[["Carbon Price"]][["plotly"]]
+
+```
+
+---
+
+# Emissions
+
+```{r chart_emissions, echo=FALSE, include = FALSE}
+
+  h <- refEmi %>% filter(variable == "Emissions with LULUCF and with international transport", region == "EU27", pollutant == "All greenhouse gases - (CO2 equivalent)") %>% ungroup() %>% select(region,variable,period,value) %>%
+    mutate(scenario = "historical") %>%
+    mutate(value = round(value,2))
+  
+  plotData <- df_beforeFilter %>% 
+    filter(region == "EU27", period %in% c(2020:2060), tgt2030 %in% tgt2030Scen) %>%
+    calc_addVariable( "`emiIntTrnsp`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers`" , units = "Mt CO2/yr") %>%
+    calc_addVariable( "`emiIntraEU`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr") %>%
+    filter(variable %in% c("emiIntTrnsp","emiIntraEU")) %>%
+    pivot_wider(names_from = variable, values_from = value) %>%
+    mutate(ref_emiIntTrnsp = tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference),
+           ref_emiIntraEU = tgt %>% filter(target == "Emissions with LULUCF and with international transport") %>% pull(reference)) %>%
+    mutate(red_emiIntTrnsp = emiIntTrnsp/ref_emiIntTrnsp,
+           red_emiIntraEU = emiIntraEU/ref_emiIntraEU) %>%
+    mutate(value = emiIntTrnsp,
+           reduction = ifelse(period >= 2045, red_emiIntTrnsp, red_emiIntraEU)) %>%
+    mutate(text = paste0("Emissions: ", round(value), " Mt CO2/yr", "\nReduction: ", round(1-reduction,3)*100, "%", "\nPeriod: ", period, "\nScenario: ", scenario, "\nTarget 2030: ", tgt2030, "%", "\nEfficiency: ", efficiency, "\nBiomass Limit: ", bioLim, "\nSensititivy limit: ", lim)) %>%
+    mutate(value = round(value,2))
+  
+  g[["Emissions"]][["ggplot"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    geom_line(size = 0.5, aes(linetype=tgt2030, color = scenario, text = text)) +
+    geom_point(size = 3, aes(shape = lim, fill = scenario, text = text)) +
+    geom_line(data=h,size=0.5, color = "#000000") +
+    scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) +   scale_color_manual(values = scenarioColor, guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
+    scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    theme_doubleColumn() +
+    theme(strip.text.y = element_blank()) +
+    #guides(fill = guide_legend(nrow = 2, byrow = T)) +
+    theme(legend.text=element_text(size=theme.single.text.size)) +
+    theme(legend.key.height = unit(0.7, "cm"),
+          legend.key.width = unit(2,"cm")) +
+    theme(legend.position="right", legend.direction = "vertical", legend.box = "vertical") + 
+    #theme(legend.key.width = unit(2,"cm")) +
+    theme(legend.spacing.y = unit(0.5, "lines")) + 
+    theme(legend.position = "none") +
+    scale_x_continuous(breaks = seq(1990,2060,10))
+  
+  g[["Emissions"]][["plotly"]] <- ggplotly(g[["Emissions"]][["ggplot"]],tooltip = c("text")) %>% layout(autosize = TRUE)
+  
+  plotly2js(
+    g[["Emissions"]][["plotly"]],
+    div.id = "emissions", output.html = TRUE, output.file = "emissions.js", 
+    output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/emissions.html"))
+  
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=6}
+
+  g[["Emissions"]][["plotly"]]
+
+```
+
+---  
+
+# Final Energy
+
+```{r chart_finalEnergy, echo=FALSE, include = FALSE}
+  
+  plotData <- df_beforeFilter %>% 
+    filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable == "FE") %>%
+    mutate(value = round(value,2))
+  
+  h <- hist %>% filter(model == "IEA", region == "EU27", variable == "FE", period >= 2005) %>% drop_na(value) %>% filter(value != 0) %>%
+    mutate(value = round(value,2))
+  
+  g[["finalEnergy"]][["ggplot"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    geom_line(size = 0.5, aes(linetype=tgt2030, color = scenario)) +
+    geom_point(size = 3, aes(shape = lim, fill = scenario)) +
+    geom_line(data=h,size=0.5, color = "#000000") +
+    scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
+    scale_color_manual(values = scenarioColor, guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
+    scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    theme_doubleColumn() +
+    theme(strip.text.y = element_blank()) +
+    #guides(fill = guide_legend(nrow = 2, byrow = T)) +
+    theme(legend.text=element_text(size=theme.single.text.size)) +
+    theme(legend.key.height = unit(0.7, "cm"),
+          legend.key.width = unit(2,"cm")) +
+    theme(legend.position="right", legend.direction = "vertical", legend.box = "vertical") + 
+    #theme(legend.key.width = unit(2,"cm")) +
+    theme(legend.spacing.y = unit(0.5, "lines")) + 
+    theme(legend.position = "none") +
+    scale_x_continuous(breaks = seq(1990,2060,10))
+  
+  g[["finalEnergy"]][["plotly"]] <- ggplotly(g[["finalEnergy"]][["ggplot"]]) %>% layout(autosize = TRUE)
+  
+  plotly2js(
+    g[["finalEnergy"]][["plotly"]],
+    div.id = "finalEnergy", output.html = TRUE, output.file = "finalEnergy.js", 
+    output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/finalEnergy.html"))
+  
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=6}
+
+  g[["Emissions"]][["plotly"]]
+
+```
+
+---  
+
+# Electricity share
+
+```{r chart_electricityShare, echo=FALSE, include = FALSE}
+  
+  vars <- c("Total" = "Final Energy|Electricity Share",
+            "Transport"="Final Energy|Transport|Electricity Share",
+            "Industry"="Final Energy|Industry|Electricity Share",
+            "Buildings"="Final Energy|Buildings|Electricity Share")
+  
+  invertVars <- setNames(names(vars),vars)
+  
+  plotData <- df_beforeFilter %>% 
+    filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% unlist(vars)) %>%
+    mutate(sector = factor(invertVars[as.character(variable)], c("Total", "Transport", "Industry", "Buildings"))) %>%
+    mutate(value = round(value,4))
+  
+  h_Orig <- hist[hist$model == "IEA" & hist$region == "EU27" & hist$variable %in% c("FE","FE|Electricity","FE|Transport","FE|Transport|Electricity","FE|Industry", "FE|Industry|Electricity","FE|Buildings","FE|Buildings|Electricity"),] %>%
+    drop_na(value) %>%
+    mutate(value = round(value,4))
+  
+  h <- rbind(
+    h_Orig %>% calc_addVariable("`Final Energy|Electricity Share`" = "`FE|Electricity` / `FE`", units = "%", only.new=T),
+    h_Orig %>% calc_addVariable("`Final Energy|Transport|Electricity Share`" = "`FE|Transport|Electricity` / `FE|Transport`", units = "%", only.new=T),
+    h_Orig %>% calc_addVariable("`Final Energy|Industry|Electricity Share`"  = "`FE|Industry|Electricity`  / `FE|Industry`", units = "%", only.new=T),
+    h_Orig %>% calc_addVariable("`Final Energy|Buildings|Electricity Share`" = "`FE|Buildings|Electricity` / `FE|Buildings`", units = "%", only.new=T)) %>%
+    mutate(sector = factor(invertVars[as.character(variable)], c("Total", "Transport", "Industry", "Buildings"))) %>%
+    filter(period >= 2010)
+  
+  g[["Electricity Share"]][["ggplot"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    geom_line(size = 0.5, aes(linetype=tgt2030, color = scenario)) +
+    geom_point(size = 1.5, aes(shape = lim, fill = scenario)) +
+    geom_line(data=h,size=0.5, color = "#000000") +
+    #geom_point(size = 3, aes(shape = lim, fill = scenario)) +
+    facet_wrap(~ sector) +
+    #geom_line(data=h %>% filter(period >= 2005),linetype="dashed", linewidth = 1, aes(color=variable)) +
+    # scale_colour_manual(values = c("Final Energy|Electricity Share"="black","Final Energy|Transport|Electricity Share"="#a1dd70","Final Energy|Industry|Electricity Share"="#5f6769","Final Energy|Buildings|Electricity Share"="#5edfff"), labels = setNames(names(vars), vars)) +
+    # scale_fill_manual(values = c("Final Energy|Electricity Share"="black","Final Energy|Transport|Electricity Share"="#a1dd70","Final Energy|Industry|Electricity Share"="#5f6769","Final Energy|Buildings|Electricity Share"="#5edfff"), labels = setNames(names(vars), vars)) +
+    scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
+    scale_color_manual(values = scenarioColor) + 
+    scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    theme_doubleColumn() +
+    scale_y_continuous(breaks = seq(0, 1, 0.2),labels = scales::percent) +
+    expand_limits(y=c(0,1)) +
+    theme(legend.position = "none") +
+    theme(axis.title.y=element_blank()) 
+  
+  g[["Electricity Share"]][["plotly"]] <- ggplotly(g[["Electricity Share"]][["ggplot"]]) %>% layout(autosize = TRUE)
+  
+  plotly2js(
+    g[["Electricity Share"]][["ggplot"]],
+    div.id = "electricityShare", output.html = TRUE, output.file = "electricityShare.js", 
+    output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/electricityShare.html"))
+
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=6}
+
+  g[["Electricity Share"]][["plotly"]]
+
+```
+
+---  
+
+#Hydrogen
+
+```{r chart_hydrogen, echo=FALSE, include = FALSE}
+  
+  vars <- c(
+    "Black H2 (coal)" = "SE|Hydrogen|Coal|w/o CC",
+    "Gray H2 (gas)" = "SE|Hydrogen|Gas|w/o CC",
+    "Blue H2 (fossil w/ CCS)" = c("SE|Hydrogen|Coal|w/ CC", "SE|Hydrogen|Gas|w/ CC"),
+    "H2 imports" = "SE|Hydrogen|Net Imports",
+    #  "Bio-based H2 (gasification)" = c("SE|Hydrogen|Biomass|w/ CC","SE|Hydrogen|Biomass|w/o CC"),
+    #  "Green H2 (electrolysis)" = "SE|Hydrogen|Electricity",
+    "Green and bio-based H2" = c("SE|Hydrogen|Electricity", "SE|Hydrogen|Biomass|w/ CC","SE|Hydrogen|Biomass|w/o CC")
+    #"VRE Storage Electrolysis" = "SE|Hydrogen|Electricity|VRE Storage Electrolysis",
+    #"Standard Electrolysis" = "SE|Hydrogen|Electricity|Standard Electrolysis",
+  )
+  
+  invertVars <- setNames(names(vars),vars)
+  
+  plotData <- df_beforeFilter %>% 
+    filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% unlist(vars)) %>%
+    mutate(type = gsub("\\d$", "", as.character(invertVars[as.character(variable)]))) %>%
+    group_by(model,scenario,region,unit,period,type,tgt2030,lim) %>%
+    summarize(value=sum(value),.groups = "keep") %>%
+    mutate(type=factor(type, levels=unique(gsub("\\d$", "", names(vars))))) %>%
+    mutate(value = round(value,2))
+  
+  g[["hydrogen"]][["ggplot"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    geom_line(size = 0.5, aes(linetype=tgt2030, color = scenario)) +
+    geom_point(size = 1.5, aes(shape = lim, fill = scenario)) +
+    facet_wrap(~ type, nrow=2) +
+    scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
+    scale_color_manual(values = scenarioColor) + 
+    scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    theme_doubleColumn() +
+    theme(legend.position = "none") +
+    theme(axis.title.y=element_blank()) 
+  
+  g[["hydrogen"]][["plotly"]] <- ggplotly(g[["hydrogen"]][["ggplot"]]) %>% layout(autosize = TRUE)
+  
+  plotly2js(
+    g[["hydrogen"]][["plotly"]],
+    div.id = "hydrogen", output.html = TRUE, output.file = "hydrogen.js", 
+    output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/hydrogen.html"))
+
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=6}
+
+  g[["hydrogen"]][["plotly"]]
+
+```
+
+---  
+
+#BECCS
+
+```{r chart_beccs, echo=FALSE, include = FALSE}
+  
+  vars <- c(
+    "BECCS" = "Emi|CO2|CDR|BECCS"
+  )
+  
+  plotData <- df_beforeFilter %>%
+    filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
+    mutate(value = round(value,2))
+  
+  g[["BECCS"]][["ggplot"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    geom_line(size = 0.5, aes(linetype=tgt2030, color = scenario)) +
+    geom_point(size = 3, aes(shape = lim, fill = scenario)) +
+    #scale_x_date(date_labels = "%Y") +
+    scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
+    scale_color_manual(values = scenarioColor) + 
+    #scale_color_manual(values = c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786"), guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
+    #scale_fill_manual(values = c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e"), guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    theme_doubleColumn() +
+    theme(strip.text.y = element_blank()) +
+    #guides(fill = guide_legend(nrow = 2, byrow = T)) +
+    theme(legend.text=element_text(size=theme.single.text.size)) +
+    theme(legend.key.height = unit(0.7, "cm"),
+          legend.key.width = unit(2,"cm")) +
+    theme(legend.position="right", legend.direction = "vertical", legend.box = "vertical") + 
+    #theme(legend.key.width = unit(2,"cm")) +
+    theme(legend.spacing.y = unit(0.5, "lines")) +
+    theme(legend.position = "none")
+  
+  g[["BECCS"]][["plotly"]] <- ggplotly(g[["BECCS"]][["ggplot"]]) %>% layout(autosize = TRUE)
+  
+  plotly2js(
+    g[["BECCS"]][["plotly"]],
+    div.id = "beccs", output.html = TRUE, output.file = "beccs.js", 
+    output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/beccs.html"))
+
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=6}
+
+  g[["BECCS"]][["plotly"]]
+
+```
+
+---  
+
+#DAC
+
+```{r chart_dac, echo=FALSE, include = FALSE}
+  
+  vars <- c(
+    "DAC" = "Emi|CO2|CDR|DACCS"
+  )
+  
+  plotData <- df_beforeFilter %>%
+    filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
+    mutate(value = round(value,2))
+  
+  g[["DAC"]][["ggplot"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    geom_line(size = 0.5, aes(linetype=tgt2030, color = scenario)) +
+    geom_point(size = 3, aes(shape = lim, fill = scenario)) +
+    #scale_x_date(date_labels = "%Y") +
+    scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
+    scale_color_manual(values = scenarioColor) + 
+    #scale_color_manual(values = c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786"), guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
+    #scale_fill_manual(values = c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e"), guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    theme_doubleColumn() +
+    theme(strip.text.y = element_blank()) +
+    #guides(fill = guide_legend(nrow = 2, byrow = T)) +
+    theme(legend.text=element_text(size=theme.single.text.size)) +
+    theme(legend.key.height = unit(0.7, "cm"),
+          legend.key.width = unit(2,"cm")) +
+    theme(legend.position="right", legend.direction = "vertical", legend.box = "vertical") + 
+    #theme(legend.key.width = unit(2,"cm")) +
+    theme(legend.spacing.y = unit(0.5, "lines")) +
+    theme(legend.position = "none")
+  
+  g[["DAC"]][["plotly"]] <- ggplotly(g[["DAC"]][["ggplot"]]) %>% layout(autosize = TRUE)
+  
+  plotly2js(
+    g[["DAC"]][["plotly"]],
+    div.id = "dac", output.html = TRUE, output.file = "dac.js", 
+    output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/dac.html"))
+  
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=6}
+
+  g[["DAC"]][["plotly"]]
+
+```
+
+---  
+
+#Emissions per sector
+
+```{r chart_sectorEmi, echo=FALSE, include = FALSE}
+  
+  vars <- c(
+    "Industrial Processes" = "Emi|GHG|Industrial Processes",
+    "Industry" = "Emi|GHG|Gross|Energy|Demand|Industry",
+    "Buildings" ="Emi|GHG|Energy|Demand|Buildings",
+    "Transportation" ="Emi|GHG|Energy|Demand|Transport",
+    "Bunkers" = "Emi|CO2|Energy|Demand|Transport|International Bunkers",
+    "Heat"="Emi|CO2|Gross|Energy|Supply|Heat",
+    "Other Energy Conversion" = "Emi|CO2|Gross|Other Energy Conversion",
+    "Electricity"="Emi|GHG|Gross|Energy|Supply|Electricity"
+  )
+  
+  invertVars <- setNames(names(vars),vars)
+  
+  plotData <- df_beforeFilter %>% 
+    filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
+    mutate(sector = factor(invertVars[as.character(variable)], names(vars))) %>%
+    mutate(value = round(value,2))
+  
+  g[["sectorEmi"]][["ggplot"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    geom_line(size = 0.5, aes(linetype=tgt2030, color = scenario)) +
+    geom_point(size = 1.5, aes(shape = lim, fill = scenario)) +
+    #geom_point(size = 3, aes(shape = lim, fill = scenario)) +
+    facet_wrap(~ sector, nrow=2) +
+    #geom_line(data=h %>% filter(period >= 2005),linetype="dashed", linewidth = 1, aes(color=variable)) +
+    # scale_colour_manual(values = c("Final Energy|Electricity Share"="black","Final Energy|Transport|Electricity Share"="#a1dd70","Final Energy|Industry|Electricity Share"="#5f6769","Final Energy|Buildings|Electricity Share"="#5edfff"), labels = setNames(names(vars), vars)) +
+    # scale_fill_manual(values = c("Final Energy|Electricity Share"="black","Final Energy|Transport|Electricity Share"="#a1dd70","Final Energy|Industry|Electricity Share"="#5f6769","Final Energy|Buildings|Electricity Share"="#5edfff"), labels = setNames(names(vars), vars)) +
+    scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
+    scale_color_manual(values = scenarioColor) + 
+    scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    theme_doubleColumn() +
+    theme(legend.position = "none") +
+    theme(axis.title.y=element_blank()) 
+  
+  g[["sectorEmi"]][["plotly"]] <- ggplotly(g[["sectorEmi"]][["ggplot"]]) %>% layout(autosize = TRUE)
+  
+  plotly2js(
+    g[["sectorEmi"]][["plotly"]],
+    div.id = "sectorEmi", output.html = TRUE, output.file = "sectorEmi.js", 
+    output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/sectorEmi.html"))
+  
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=6}
+
+  g[["sectorEmi"]][["plotly"]]
+
+```
+
+---  
+
+# Primary Energy
+
+```{r chart_primaryEnergy, echo=FALSE, include = FALSE}
+
+  vars <- c("Oil"="PE|Oil",
+            "Gas"="PE|Gas",
+            "Coal"="PE|Coal",
+            "Biomass" = "PE|Biomass")
+  
+  invertVars <- setNames(names(vars),vars)
+  
+  plotData <- df_beforeFilter %>% 
+    filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
+    mutate(pe = factor(invertVars[as.character(variable)], names(vars))) %>%
+    mutate(value = round(value,2))
+  
+  h <- hist %>% filter(model == "IEA", region == "EU27", variable %in% vars, period >= 2005, period <= 2020) %>% drop_na(value) %>% filter(value != 0) %>%
+    mutate(pe = factor(invertVars[as.character(variable)], names(vars))) %>%
+    mutate(value = round(value,2))
+  
+  g[["primaryEnergy"]][["ggplot"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    geom_line(size = 0.5, aes(linetype=tgt2030, color = scenario)) +
+    geom_point(size = 1.5, aes(shape = lim, fill = scenario)) +
+    geom_line(data=h,size=0.5, color = "#000000") +
+    #geom_point(size = 3, aes(shape = lim, fill = scenario)) +
+    facet_wrap(~ pe, nrow=2) +
+    #geom_line(data=h %>% filter(period >= 2005),linetype="dashed", linewidth = 1, aes(color=variable)) +
+    # scale_colour_manual(values = c("Final Energy|Electricity Share"="black","Final Energy|Transport|Electricity Share"="#a1dd70","Final Energy|Industry|Electricity Share"="#5f6769","Final Energy|Buildings|Electricity Share"="#5edfff"), labels = setNames(names(vars), vars)) +
+    # scale_fill_manual(values = c("Final Energy|Electricity Share"="black","Final Energy|Transport|Electricity Share"="#a1dd70","Final Energy|Industry|Electricity Share"="#5f6769","Final Energy|Buildings|Electricity Share"="#5edfff"), labels = setNames(names(vars), vars)) +
+    scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
+    scale_color_manual(values = scenarioColor) + 
+    scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    theme_doubleColumn() +
+    theme(legend.position = "none") +
+    theme(axis.title.y=element_blank()) 
+  
+  g[["primaryEnergy"]][["plotly"]] <- ggplotly(g[["primaryEnergy"]][["ggplot"]]) %>% layout(autosize = TRUE)
+  
+  plotly2js(
+    g[["primaryEnergy"]][["plotly"]],
+    div.id = "primaryEnergy", output.html = TRUE, output.file = "primaryEnergy.js", 
+    output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/primaryEnergy.html"))
+  
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=6}
+
+  g[["primaryEnergy"]][["plotly"]]
+
+```
+
+---  
+
+# Electricity Generation
+
+```{r chart_generation, echo=FALSE, include = FALSE}
+
+  vars <- c(
+    #"Net Imports" = "SE|Electricity|Net Imports",
+    "Coal" = "SE|Electricity|Coal",
+    #"Coal w/ CC" = "SE|Electricity|Coal|w/ CC",
+    #"Coal w/o CC" = "SE|Electricity|Coal|w/o CC",
+    #"Oil" = "SE|Electricity|Oil",
+    "Gas w/ CC" = "SE|Electricity|Gas|w/ CC",
+    "Gas w/o CC" = "SE|Electricity|Gas|w/o CC",
+    "Hydrogen" = "SE|Electricity|Hydrogen",
+    "Nuclear" = "SE|Electricity|Nuclear",
+    #"Geothermal" = "SE|Electricity|Geothermal",
+    #"Hydro" = "SE|Electricity|Hydro",
+    "Biomass" = "SE|Electricity|Biomass",
+    #"Biomass w/ CC" = "SE|Electricity|Biomass|w/ CC",
+    #"Biomass w/o CC" = "SE|Electricity|Biomass|w/o CC",
+    "Solar" = "SE|Electricity|Solar",
+    #"Solar CSP" = "SE|Electricity|Solar|CSP",
+    #"Solar PV" = "SE|Electricity|Solar|PV",
+    "Wind" = "SE|Electricity|Wind"
+    #"Wind Onshore" = "SE|Electricity|Wind|Onshore",
+    #"Wind Offshore" = "SE|Electricity|Wind|Offshore"
+  )
+  
+  invertVars <- setNames(names(vars),vars)
+  
+  plotData <- df_beforeFilter %>% 
+    filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
+    mutate(seel = factor(invertVars[as.character(variable)], names(vars))) %>%
+    mutate(value = round(value * 1/0.0036))
+  
+  g[["generation"]][["ggplot"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    geom_line(size = 0.5, aes(linetype=tgt2030, color = scenario)) +
+    geom_point(size = 1.5, aes(shape = lim, fill = scenario)) +
+    #geom_point(size = 3, aes(shape = lim, fill = scenario)) +
+    facet_wrap(~ seel, nrow=2) +
+    #geom_line(data=h %>% filter(period >= 2005),linetype="dashed", linewidth = 1, aes(color=variable)) +
+    # scale_colour_manual(values = c("Final Energy|Electricity Share"="black","Final Energy|Transport|Electricity Share"="#a1dd70","Final Energy|Industry|Electricity Share"="#5f6769","Final Energy|Buildings|Electricity Share"="#5edfff"), labels = setNames(names(vars), vars)) +
+    # scale_fill_manual(values = c("Final Energy|Electricity Share"="black","Final Energy|Transport|Electricity Share"="#a1dd70","Final Energy|Industry|Electricity Share"="#5f6769","Final Energy|Buildings|Electricity Share"="#5edfff"), labels = setNames(names(vars), vars)) +
+    scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
+    scale_color_manual(values = scenarioColor) + 
+    scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
+    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    theme_doubleColumn() +
+    theme(legend.position = "none") +
+    theme(axis.title.y=element_blank()) 
+  
+  g[["generation"]][["plotly"]] <- ggplotly(g[["generation"]][["ggplot"]]) %>% layout(autosize = TRUE)
+  
+  plotly2js(
+    ggplotly(ggplotly(g[["generation"]][["plotly"]])) %>% layout(autosize = TRUE),
+    div.id = "generation", output.html = TRUE, output.file = "generation.js", 
+    output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/generation.html"))
+  
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=6}
+
+  g[["generation"]][["plotly"]]
+
+```
+
+
+<!-- # # Final Energy -->
+<!-- # vars <- c( -->
+<!-- #   "Electricity" = "FE|Electricity", -->
+<!-- #   "Heat" = "FE|Heat", -->
+<!-- #   "Hydrogen" = "FE|Hydrogen", -->
+<!-- #   "Gases" = "FE|Gases", -->
+<!-- #   #"Gases" = "FE|Gases|Biomass", -->
+<!-- #   #"Gases" = "FE|Gases|Hydrogen", -->
+<!-- #   #"Gases" = "FE|Gases|Fossil", -->
+<!-- #   "Liquids" = "FE|Liquids", -->
+<!-- #   #"Liquids" = "FE|Liquids|Biomass", -->
+<!-- #   #"Liquids" = "FE|Liquids|Hydrogen", -->
+<!-- #   #"Liquids" = "FE|Liquids|Fossil", -->
+<!-- #   "Solids" = "FE|Solids"	 -->
+<!-- #   #"Solids" = "FE|Solids|Biomass",	 -->
+<!-- #   #"Solids" = "FE|Solids|Fossil"	 -->
+<!-- # ) -->
+<!-- #  -->
+<!-- # invertVars <- setNames(names(vars),vars) -->
+<!-- #  -->
+<!-- # plotData <- df_beforeFilter %>%  -->
+<!-- #   filter(region == "EU27", period %in% c(2020:2060), tgt2030 %in% tgt2030Scen, variable %in% vars) %>% -->
+<!-- #   mutate(fe = factor(invertVars[as.character(variable)], names(vars))) -->
+<!-- #  -->
+<!-- # g[["finalEnergy"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) + -->
+<!-- #     geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) + -->
+<!-- #     geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") + -->
+<!-- #     geom_line(size = 0.5, aes(linetype=tgt2030, color = scenario)) + -->
+<!-- #     facet_wrap(~ fe, nrow=2) + -->
+<!-- #     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) +  -->
+<!-- #     scale_color_manual(values = scenarioColor) +  -->
+<!-- #     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) + -->
+<!-- #     scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) + -->
+<!-- #     theme_doubleColumn() + -->
+<!-- #     theme(legend.position = "none") + -->
+<!-- #     theme(axis.title.y=element_blank())  -->
+<!-- #  -->
+<!-- # plotly2js( -->
+<!-- #   ggplotly(ggplotly(g[["finalEnergy"]])) %>% layout(autosize = TRUE), -->
+<!-- #              div.id = "finalEnergy", output.html = TRUE, output.file = "finalEnergy.js",  -->
+<!-- #              output.dir = jsOutputFolder, output.url = paste0(jsOutputFolder, "/finalEnergy.html")) -->
+

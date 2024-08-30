@@ -6,8 +6,8 @@ Rodrigues, R., Pietzcker, R., Sitarz, J., Merfort, A., Hasse, R., Hoppe, J., Peh
 
 # Model version and results
 
-- Results were created using REMIND version 3.2 with 21 regions (REMIND-EU).
-- The run files can be provided by request and are internally located at the PIK cluster infrastructure under: `/p/projects/ecemf/REMIND/2040_scenarios/v04_2023_06_02` 
+- Results were created using REMIND version 3.3.1 with 21 regions (REMIND-EU).
+- The run files can be provided by request and are internally located at the PIK cluster infrastructure under: `/p/projects/ecemf/REMIND/2040_scenarios/v08_2024_06_14_REMIND_3.3.1` 
 
 # License
 
@@ -20,20 +20,23 @@ Rodrigues, R., Pietzcker, R., Sitarz, J., Merfort, A., Hasse, R., Hoppe, J., Peh
 
 ## Results post-processing:
 
-- Paper results include an ex-post correction applied to emissions and Carbon management variables to reflect more closely EU-27 historical numbers. 
-- Renewables share results are post-processed to fit historical values found at Eurostat.   
+- Paper results include an ex-post correction applied to emissions and carbon management variables to reflect EU-27 historical numbers. 
+- Renewables share results are post-processed to fit historical data found at Eurostat.   
 
 # Charts used in the paper
 
-- Charts created for the paper can be recreated by running the R markdown `paperCharts.Rmd`.
-- Use knit `rmarkdown::render("paperCharts.Rmd")`.
-- The script will try to install all required libraries. In case you need to install them manually, all packages can be installed via `install.packages`
+- Charts created for the paper can be recreated by running the R markdown `report_paperCharts.Rmd` or the R script `createReports.R`.
+- Use knit `rmarkdown::render("report_paperCharts.Rmd")`.
+- The script will try to install all required libraries. In case you need to install them manually, all packages can be installed via `install.packages`.
 
 ```R
-pkgs <- c("quitte","dplyr","ggplot2","geomtextpath","tidyr","grid","stringr","gridExtra","ggrepel","kableExtra")
+pkgs <- c("quitte","ggplot2","geomtextpath","ggpattern","tidyr","grid","stringr","gridExtra","ggrepel","kableExtra","dplyr","remind2","rsvg","ggsvg")
 install.packages(pkgs)
 ```
-
 - Raster image files, pngs, and vectorial image files, svgs, will be saved to the output folder.
 - Additionally, an html report file will be created containing all charts used in the paper.
+- You can access the paper results report at: https://renato-rodrigues.github.io/paper_results
 
+# Iteractive sensitivity results explorer 
+
+- You can access a iteractive explorer of the sensitivity analysis results of the paper at: https://renato-rodrigues.github.io/sensitivity_explorer
