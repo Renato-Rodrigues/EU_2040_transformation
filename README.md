@@ -35,8 +35,8 @@ install.packages(pkgs)
 ```
 - Raster image files, pngs, and vectorial image files, svgs, will be saved to the output folder.
 - Additionally, an html report file will be created containing all charts used in the paper.
-- You can access the paper results report at: https://renato-rodrigues.github.io/paper_results
+- You can access the paper results report at: https://renato-rodrigues.github.io/EU_2040_transformation/publish/paper_results/
 
 # Iteractive sensitivity results explorer 
 
-- You can access a iteractive explorer of the sensitivity analysis results of the paper at: https://renato-rodrigues.github.io/sensitivity_explorer
+- You can access a iteractive explorer of the sensitivity analysis results of the paper at: https://renato-rodrigues.github.io/EU_2040_transformation/publish/sensitivity_explorer
