@@ -23,7 +23,7 @@ file.copy(list("./publish/report_sensitivityExplorer/index.html","./publish/repo
 rmarkdown::render("./report_additionalCharts.Rmd", output_file = paste0(outFolder, "/report_additionalCharts.html"))
 
 # Publish the latest paper results
-dir.create("./publish/report_paperCharts", recursive = TRUE, showWarnings = FALSE)
+dir.create("./publish/paper_results", recursive = TRUE, showWarnings = FALSE)
 file.copy(paste0(outFolder, "/report_paperCharts-Mtoe_and_MtH2.html"), "./publish/paper_results/index.html", overwrite = TRUE)
 
 # Publish the latest sensitivity iterative explorer results
