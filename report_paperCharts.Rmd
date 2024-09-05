@@ -1063,7 +1063,7 @@ g[["security of supply - net fossil with range"]] <-
   scale_fill_manual(values = c("2020" = "black", "2030"= "black", "2040" = "#5a788b", "2050" = "black")) +
   scale_alpha_manual(values = c("2020"=0.7,"2030"=0.7,"2040"=1,"2050"=0.7), guide = 'none') +
   theme(legend.position = "none") +
-  labs(title = paste0("(b) Fossil energy carriers net imports (", unique(plotData$unit), ")")) #+ 
+  labs(title = paste0("(b) Fossil energy carriers’ net imports (", unique(plotData$unit), ")")) #+ 
   #theme(plot.title = element_text(hjust = -0.4))
 
 # ggsave(paste0(outChartsFolder,"/svg/Figure 3. Energy supply panel - (b) fossil security of supply.svg"), g[["security of supply - net fossil with range"]] , device="svg", width = 6, height = 4.5, dpi=100, units = "in")
@@ -1941,6 +1941,9 @@ grid.draw(g[["Figure 4"]])
 # “net trade” -> net-supply independency of gas by 2040
 #                       -> one third of oil imports by 2040
 
+violin_scale <- 3 
+violin_color = "#bbbbbb"
+violin_boxPlotWidth <- 1.5   
 
 #Emissions Reduction
 plotData <- rbind(
@@ -2016,6 +2019,30 @@ g[["milestone - vert"]][["Emissions reductions"]] <- ggplot(plotData, aes(x = pe
 g[["milestone - hor"]][["Emissions reductions"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (%)")), aes(x = period, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
   geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=0.55, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 0.55, label = "FitFor55", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  geom_hline(yintercept=reduction_h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = reduction_h, label = "2022", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size=0.8*geomText.size) 
+
+g[["milestone - violin"]][["Emissions reductions"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (%)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill="#bbbbbb", scale = violin_scale) + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=1, colour="black", alpha=0.9, linewidth=0.5) +
+  geom_boxplot(outlier.shape = NA, width=1.5) +
   geom_hline(yintercept=0.55, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
   annotate("text", x = Inf, y = 0.55, label = "FitFor55", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
   geom_hline(yintercept=reduction_h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
@@ -2126,6 +2153,32 @@ g[["milestone - hor"]][["Energy savings"]] <- ggplot(plotData %>% mutate(target 
   theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
   #annotate("text", x = -Inf, y = -Inf, label = "(Mtoe/yr)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
 
+g[["milestone - violin"]][["Energy savings"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (Mtoe/yr)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  geom_hline(yintercept=750, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  geom_hline(yintercept=787, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 750, label = "REPowerEU", angle=90, vjust = -1, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  annotate("text", x = Inf, y = 787, label = "FitFor55", angle=90, vjust = 1, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  geom_hline(yintercept=h %>% filter(period==2022) %>% pull(value), color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h %>% filter(period==2022) %>% pull(value), label = "2022", angle=90, vjust = -1, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  #scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,400,1000)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(Mtoe/yr)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
+
 # Electricity Demand
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "FE|Electricity") %>% select(-variable) %>%
   mutate(value = round(value * EJ2TWh)) %>%
@@ -2181,6 +2234,28 @@ g[["milestone - vert"]][["Electricity Demand"]] <- ggplot(plotData, aes(x = peri
 g[["milestone - hor"]][["Electricity Demand"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (TWh)")), aes(x = period, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
   geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h, label = "2022", angle=90, vjust = -1, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  #scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,5000)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(TWh)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
+
+g[["milestone - violin"]][["Electricity Demand"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (TWh)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
   geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
   annotate("text", x = Inf, y = h, label = "2022", angle=90, vjust = -1, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
   facet_grid(.~target, scales="free") +
@@ -2291,6 +2366,32 @@ g[["milestone - hor"]][["Renewables Share"]] <- ggplot(plotData %>% mutate(targe
   theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
   #annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
 
+g[["milestone - violin"]][["Renewables Share"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (%)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  geom_hline(yintercept=0.4, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 0.4, label = "RED II revised", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  geom_hline(yintercept=0.45, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 0.45, label = "REPowerEU", angle=90, vjust = 1.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  geom_hline(yintercept=addHist$res %>% filter(type == "RES", period == 2022) %>% pull(value), color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = addHist$res %>% filter(type == "RES", period == 2022) %>% pull(value), label = "2022", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
+
 # Wind
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Cap|Electricity|Wind") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2360,6 +2461,27 @@ g[["milestone - hor"]][["Wind capacity"]] <- ggplot(plotData %>% mutate(target =
   theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
   #annotate("text", x = -Inf, y = -Inf, label = "(GW)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
 
+g[["milestone - violin"]][["Wind capacity"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (GW)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  geom_hline(yintercept=255, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 255, label = "2022", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  #scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1000)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(GW)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
 # Solar photovoltaics
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Cap|Electricity|Solar|PV") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2438,6 +2560,28 @@ g[["milestone - hor"]][["Solar photovoltaics"]] <- ggplot(plotData %>% mutate(ta
   theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
   #annotate("text", x = -Inf, y = -Inf, label = "(GW)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
 
+g[["milestone - violin"]][["Solar photovoltaics"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (GW)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  geom_hline(yintercept=600, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 600, label = "REPowerEU", angle=90, vjust = 1.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  geom_hline(yintercept=208.9, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 208.9, label = "2022", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,2500)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(GW)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
 # Carbon Capture and Storage 
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Carbon Management|Storage") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2493,6 +2637,28 @@ g[["milestone - vert"]][["Carbon Capture and Storage"]] <- ggplot(plotData, aes(
 g[["milestone - hor"]][["Carbon Capture and Storage"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (Mt CO2/yr)")), aes(x = period, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
   geom_boxplot(outlier.shape = NA, width=6) +
+  geom_hline(yintercept=50, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = 50, label = "Net-Zero\nIndustry Act", angle=90, vjust = 0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,400)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) +
+  theme(strip.clip = "off")#+
+  #annotate("text", x = -Inf, y = -Inf, label = "(Mt CO2/yr)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
+
+g[["milestone - violin"]][["Carbon Capture and Storage"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (Mt CO2/yr)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
   geom_hline(yintercept=50, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
   annotate("text", x = Inf, y = 50, label = "Net-Zero\nIndustry Act", angle=90, vjust = 0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
   facet_grid(.~target, scales="free") +
@@ -2577,6 +2743,24 @@ g[["milestone - hor"]][["Novel CDR"]] <- ggplot(plotData %>% mutate(target = pas
   theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
   #annotate("text", x = -Inf, y = -Inf, label = "(Mt CO2/yr)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
 
+g[["milestone - violin"]][["Novel CDR"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (Mt CO2/yr)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,400)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(Mt CO2/yr)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
 # Direct Electrification
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Final Energy|Electricity Share") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2658,6 +2842,26 @@ g[["milestone - hor"]][["Direct Electrification"]] <- ggplot(plotData %>% mutate
   theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
   #annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size=geomText.size, size = 0.8*geomText.size)
 
+g[["milestone - violin"]][["Direct Electrification"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (%)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h, label = "2022", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size=geomText.size, size = 0.8*geomText.size)
 # Carbon-free electricity share
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "SE|Electricity|carbon-free") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2740,6 +2944,27 @@ g[["milestone - hor"]][["Carbon-free electricity share"]] <- ggplot(plotData %>%
   theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
   #annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size=geomText.size, size = 0.8*geomText.size)
 
+g[["milestone - violin"]][["Carbon-free electricity share"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (%)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  geom_hline(yintercept=h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = h, label = "2022", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(%)", hjust = 1, color = "#666666", size=geomText.size, size = 0.8*geomText.size)
 # Residual Fossil Emissions
 plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% select(-variable) %>%
   filter(tgt2050 != "Npi") %>%
@@ -2791,6 +3016,25 @@ g[["milestone - vert"]][["Residual Fossil Emissions"]] <- ggplot(plotData, aes(x
 g[["milestone - hor"]][["Residual Fossil Emissions"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (Mt CO2/yr)")), aes(x = period, y = value, group=period)) +
   geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
   geom_boxplot(outlier.shape = NA, width=6) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,2500)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(Mt CO2/yr)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
+
+g[["milestone - violin"]][["Residual Fossil Emissions"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (Mt CO2/yr)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
   facet_grid(.~target, scales="free") +
   theme_doubleColumn() +
   coord_flip(clip = 'off') +
@@ -2878,6 +3122,28 @@ g[["milestone - hor"]][["Domestic Hydrogen Production"]] <- ggplot(plotData %>% 
   #annotate("text", x = -Inf, y = -Inf, label = "(Mtoe/yr)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
 
 
+g[["milestone - violin"]][["Domestic Hydrogen Production"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (Mtoe/yr)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  #geom_errorbar(aes(ymin=min, ymax=max), width=6, colour="black", alpha=0.9, linewidth=1) +
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  geom_hline(yintercept=10, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = -Inf, y = 10, label = "REPowerEU\ndomestic", angle=90, vjust = 0.5, hjust = 1, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  theme_doubleColumn() +
+  coord_flip(clip = 'off') +
+  theme(axis.title.y=element_blank()) +
+  theme(strip.text.y = element_blank()) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,20)) + 
+  theme(panel.spacing = unit(4, "lines")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(strip.placement = "outside") +
+  #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
+  #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
+  theme(strip.text.x = element_text(hjust = 0, margin=margin(l=0, b=20))) #+
+  #annotate("text", x = -Inf, y = -Inf, label = "(Mtoe/yr)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
+
+
 g[["Targets"]] <- gridExtra::arrangeGrob(
   g[["Emissions reductions"]] + theme(strip.text.x = element_blank()) + theme(plot.margin=margin(b=20, l = 30)), #+ theme(plot.margin=margin(10,10,30,10)),margin(t = 0, r = 0, b = 0, l = 0, unit = "pt")
   g[["Energy savings"]] + theme(plot.margin=margin(b=20, l = 10)),
@@ -2938,8 +3204,30 @@ g[["milestone - hor targets"]] <- gridExtra::arrangeGrob(
   ncol = 2
 )
 
-ggsave(paste0(outChartsFolder,"/svg/Figure 5. Milestones Panel.svg"), g[["milestone - hor targets"]] , device="svg", width = 12, height = 14, dpi=100, units = "in")
-ggsave(paste0(outChartsFolder,"/png/Figure 5. Milestones Panel.png"), g[["milestone - hor targets"]] , device="png", width = 12, height = 14, dpi=300, units = "in")
+
+
+g[["milestone - violin targets"]] <- gridExtra::arrangeGrob(
+  g[["milestone - violin"]][["Emissions reductions"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - violin"]][["Energy savings"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - violin"]][["Renewables Share"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - violin"]][["Direct Electrification"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - violin"]][["Carbon-free electricity share"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - violin"]][["Domestic Hydrogen Production"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  
+  g[["milestone - violin"]][["Electricity Demand"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - violin"]][["Wind capacity"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - violin"]][["Solar photovoltaics"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  
+  g[["milestone - violin"]][["Residual Fossil Emissions"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - violin"]][["Carbon Capture and Storage"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone - violin"]][["Novel CDR"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  
+  ncol = 2
+)
+
+
+ggsave(paste0(outChartsFolder,"/svg/Figure 5. Milestones Panel.svg"), g[["milestone - violin targets"]] , device="svg", width = 12, height = 14, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Figure 5. Milestones Panel.png"), g[["milestone - violin targets"]] , device="png", width = 12, height = 14, dpi=300, units = "in")
 
 ```
 

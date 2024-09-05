@@ -30,3 +30,5 @@ source("./R/loadReferenceEmissions.R")
 #to be used in the scenario config to adjust the targets according the historical harmonization based on 2020 NPi run values
 correctedTgt 
 
+#scaleFactor
+
