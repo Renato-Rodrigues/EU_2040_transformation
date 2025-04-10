@@ -16,6 +16,10 @@ rmarkdown::render("./report_paperCharts.Rmd", output_file = paste0(outFolder, "/
 
 # Create plotly charts for the Sensitivity Iterative Explorer
 rmarkdown::render("./report_plotlyCharts.Rmd", output_file = paste0(outFolder, "/report_plotlyCharts.html"))
+
+## Create plotly charts for the Sensitivity Iterative Explorer
+#rmarkdown::render("./report_plotlyCharts_darkTheme.Rmd", output_file = paste0(outFolder, "/report_plotlyCharts_darkTheme.html"))
+
 # Copy html, js and css files to the Sensitivity Iterative Explorer output folder 
 file.copy(list("./publish/report_sensitivityExplorer/index.html","./publish/report_sensitivityExplorer/script.js","./publish/report_sensitivityExplorer/style.css"), paste0(outFolder, "/report_sensitivityExplorer"), overwrite = TRUE)
 

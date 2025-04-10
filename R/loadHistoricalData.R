@@ -42,6 +42,10 @@ loadAdditionalHistoricalData <- function(path){
     addHist$eeaEmissions <- rbind(addHist$eeaEmissions,
                                   addHist$eeaEmissions %>% filter(Sector_name == "1.D.1 - International Bunkers") %>% mutate(emissions = emissions*0.35, Sector_name = "Intra-EU International Aviation", Sector_code = "-", Parent_sector_code = "-"))
 
+    addHist$FE_eurostat <- read.csv2("./hist/nrg_bal_c_page_spreadsheet.csv", stringsAsFactors = FALSE,check.names=FALSE) %>%
+      mutate(period = as.numeric(period),
+             value = as.numeric(value))
+      
     saveRDS(addHist,paste0(path,"/addHist.rds"))
   } else {
     addHist <- readRDS(paste0(path,"/addHist.rds"))

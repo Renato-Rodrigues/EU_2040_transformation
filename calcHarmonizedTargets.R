@@ -1,10 +1,14 @@
 
 library(remind2)
+library(tidyr)
 library(dplyr)
+library(quitte)
 
 #Check latest results folder and create output folder for reports
 folders <- file.info(list.files(path="./data", full.names = T))
 dataFolder <- folders %>% tibble::rownames_to_column(var = "path") %>% arrange(desc(path)) %>% slice(1) %>% pull(path)
+
+#dataFolder
 
 # load npi mif
 npiMifFile <- list.files(path=dataFolder, pattern="*Npi.mif", full.names=TRUE, recursive=FALSE)
@@ -24,6 +28,8 @@ tmpdf$scenario <- gsub("^0c_","",tmpdf$scenario)
 tmpdf$scenario <- gsub("_EU27","",tmpdf$scenario)
 
 dfFull <- tmpdf
+
+source("./R/loadHistoricalData.R")
 
 source("./R/loadReferenceEmissions.R")
 

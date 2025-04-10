@@ -10,6 +10,10 @@ harmonizeData <- function(data,scaleFactor){ #,nzero=NULL
   data[data$variable %in% grep("Emi\\|", unique(data$variable), value = TRUE),]$value <- data[data$variable %in% grep("Emi\\|", unique(data$variable), value = TRUE),]$value / scaleFactor
   data[data$variable %in% grep("Carbon Management\\|", unique(data$variable), value = TRUE),]$value <- data[data$variable %in% grep("Carbon Management\\|", unique(data$variable), value = TRUE),]$value / scaleFactor
   
+  #EUregions <- c("DEU","ECE","ECS","ENC","ESC","ESW","EWN","FRA","EU27")
+  #data[data$variable %in% grep("Emi\\|", unique(data$variable), value = TRUE) & data$region %in% EUregions & data$scenario != "Npi",]$value <- data[data$variable %in% grep("Emi\\|", unique(data$variable), value = TRUE) & data$region %in% EUregions & data$scenario != "Npi",]$value  / scaleFactor
+  #data[data$variable %in% grep("Carbon Management\\|", unique(data$variable), value = TRUE) & data$region %in% EUregions & data$scenario != "Npi",]$value <- data[data$variable %in% grep("Carbon Management\\|", unique(data$variable), value = TRUE) & data$region %in% EUregions & data$scenario != "Npi",]$value  / scaleFactor
+  
   # #copying prices from NZero_bioLim7p5 to other scenarios
   # if (is.null(nzero)){
   #   nzero <- data 

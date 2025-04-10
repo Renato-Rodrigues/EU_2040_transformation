@@ -56,6 +56,148 @@ dir.create(paste0(outChartsFolder, "/svg"), recursive = TRUE, showWarnings = FAL
 
 ```
 
+<!-- Initializing charts object -->
+```{r chart_initialization, echo=FALSE, include = FALSE}
+
+#loading theme and colors
+source("./R/aesthetics.R") 
+
+g <- NULL
+
+```
+
+
+# Emission reduction {.tabset}
+
+## Gross
+
+<!-- (c) Breakdown of residual CO2 emissions from energy and industrial processes (% in relation to 2020) -->
+
+```{r, echo=FALSE}
+
+vars <- list(
+  "Industrial\nProcesses" = "Emi|GHG|Industrial Processes",
+  "Industry" = "Emi|GHG|Gross|Energy|Demand|Industry",
+  "Buildings" ="Emi|GHG|Energy|Demand|Buildings",
+  "Transportation" ="Emi|GHG|Energy|Demand|Transport",
+  "Bunkers" = "Emi|CO2|Energy|Demand|Transport|International Bunkers",
+#  "CDR" = "Emi|GHG|Gross|Energy|Demand|CDR",
+#  "AFOFI" = "Emissions|CO2|Energy|Demand|AFOFI",
+#  "Other Sector" ="Emissions|CO2|Energy|Demand|Other Sector",
+  "Heat"="Emi|CO2|Gross|Energy|Supply|Heat",
+  "Other Energy\nConversion" = "Emi|CO2|Gross|Other Energy Conversion",
+    #"Hydrogen" ="Emi|CO2|Gross|Energy|Supply|Hydrogen",
+    #"Liquids"="Emi|CO2|Gross|Energy|Supply|Liquids",
+    #"Gases"="Emi|CO2|Gross|Energy|Supply|Gases",
+    #"Solids"="Emi|CO2|Gross|Energy|Supply|Solids",
+#  "Other"="Emissions|CO2|Energy|Supply|Other",
+  "Electricity"="Emi|GHG|Gross|Energy|Supply|Electricity"
+)
+# "Emi|GHG|Agriculture",
+#   "Emi|GHG|Land-Use Change",
+#   "Emi|GHG|Waste",
+#   "Emi|CO2|CDR|BECCS",
+#   "Emi|CO2|CDR|Industry CCS|Synthetic Fuels",
+#   "Emi|CO2|CDR|DACCS",
+#   "Emi|CO2|CDR|EW"
+
+plotColor <- c(
+  "Electricity"= "#ffb200",
+  "Heat"= "#cc0000",
+  "Other Energy\nConversion" = "#0000cc",
+  #"Gases"= "#999959",
+  #"Liquids"= "#0000cc",
+  #"Solids"= "#0c0c0c",
+  #"Other" = "#79a6d2",
+  #"Hydrogen" = "#5ed5b0",
+  "Transportation" = "#a1dd70",
+  "Bunkers" = "#ffc0cb",
+  "Buildings" = "#5edfff",
+  "Other Sector" = "#999959",
+  "AFOFI" = "#005900",
+  "Industry" = "#5f6769",
+  "Industrial\nProcesses" = "#5c5c5c",
+  "Other" = "#5b0d8f",
+  "Waste" = "#A52A2A",
+  "AFOLU" = "#4DAF4A",
+  "Agriculture" = "#357933",
+  "LULUCF" = "#6ec16b"
+)
+
+
+labels <- setNames(names(vars),vars[names(vars)])
+
+fulldata <- df %>%
+  filter(region == "EU27",
+         period %in% c(2020,2030,2040),
+         tgt2030 %in% tgt2030Scen,
+         variable %in% unlist(vars)) %>%
+  mutate(labels = factor(labels[as.character(variable)],levels = names(vars)),
+         variable = factor(variable, levels = vars)) %>%
+  group_by(period,variable) %>%
+  mutate(min = min(value),
+         max = max(value))
+
+plotData <- fulldata %>%
+  filter(scenario == mainScen) %>%
+  mutate(complement = FALSE) %>%
+  group_by(variable) %>%
+  mutate(pct = paste0(round(value / value[period==2020],2)*100, "%")) %>%
+  bind_rows(
+    fulldata %>%
+      filter(scenario == mainScen) %>%
+      mutate(complement = TRUE) %>%
+      group_by(variable) %>%
+      mutate(value = value[period==2020] - value) %>%
+      mutate(labels=NA)
+  ) %>%
+  mutate(ext_Var = ifelse(complement, paste0(as.character(variable),"_"), as.character(variable))) %>%
+  arrange(period,ext_Var) %>%
+  group_by(period) %>%
+  arrange(variable) %>%
+  mutate(ymid = as.numeric(sub("\\D+", "", period)),
+         ymax = ymid + 4, ymin = ymid - 4,
+         xmin = c(0, head(cumsum(value), -1)),
+         xmax = cumsum(value),
+         xmid = (xmax + xmin) / 2,
+         ) %>%
+  ungroup() %>%
+  filter(complement == FALSE)
+
+g[["2040 Emissions - Energy and Industrial Processes - Gross"]] <- plotData %>% 
+  ggplot(aes(xmid, ymid, fill = ext_Var)) +
+  geom_rect(aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax,
+                alpha = factor(period), color = variable)) +
+  geom_errorbar(data=plotData %>% filter(period == 2040), aes(xmin=xmax-value+min, xmax=xmax-value+max), width=4, colour="black", alpha=0.9, linewidth=0.8) +
+  geom_text(data=plotData %>% filter(period == 2020), aes(y = 2015, label = labels, group = labels, hjust=1, angle = 90), vjust=0.5, hjust=1.1, na.rm=TRUE, size = geomText.size, angle = 90, lineheight = 0.8) +
+  geom_text(data=plotData %>% filter(period == 2040), aes(x=xmid , y = 2045, label = pct), vjust=0.5, hjust=-0.1, na.rm=TRUE, size = geomText.size, angle = 90) +
+  scale_fill_manual(values = c(setNames(plotColor[names(vars)],vars)), labels = setNames(names(vars), vars)) + 
+  scale_alpha_manual(values = c(0.2, 0.3, 1)) +
+  scale_color_manual(values = c(setNames(plotColor[names(vars)],vars)), labels = setNames(names(vars), vars)) +
+  theme_doubleColumn() +
+  theme(legend.position = "none") +
+  scale_y_continuous(breaks=c(2020,2030,2040), labels=c("current",2030,2040), minor_breaks = NULL, limits=c(2008,2047)) +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank()) +
+  scale_x_continuous(breaks = NULL) +
+  coord_cartesian(clip="off") +
+  theme(plot.margin = margin(t = 30, r = 0, b = 100, l = 0, unit = "pt")) +
+  labs(title = "(c) Sectoral breakdown of residual gross CO2 emissions from energy and industrial processes (% of average 2018-2022)") + 
+  theme(plot.title = element_text(margin=margin(t=0,r=0,b=35,l=-200), hjust=1))
+  
+# ggsave(paste0(outChartsFolder,"/svg/Figure 1. Emission results panel - (c) Energy and Industrial Processes.svg"), g[["2040 Emissions - Energy and Industrial Processes - horizontal bar"]] , device="svg", width = 12, height = 3.2, dpi=100, units = "in")
+# ggsave(paste0(outChartsFolder,"/png/Figure 1. Emission results panel - (c) Energy and Industrial Processes.png"), g[["2040 Emissions - Energy and Industrial Processes - horizontal bar"]] , device="png", width = 12, height = 3.2, dpi=300, units = "in")
+
+
+```
+
+
+
+
+
+
 
 
 # Targets debug {.tabset}
@@ -315,16 +457,6 @@ nonAchieved2050 %>%
 ```
 
 
-
-<!-- Initializing charts object -->
-```{r chart_initialization, echo=FALSE, include = FALSE}
-
-#loading theme and colors
-source("./R/aesthetics.R") 
-
-g <- NULL
-
-```
 
 
 # Fuel Shares {.tabset}
@@ -1361,5 +1493,115 @@ g[["Fuel shares"]][["lim"]]
 <!-- ggsave(paste0(outChartsFolder,"/png/ECEMP abstract.png"), g[["ECEMP abstract"]] , device="png", width = 12, height = 8, dpi=300, units = "in") -->
 
 <!-- ``` -->
+
+
+
+# Power sector Emissions
+
+
+```{r, echo=FALSE, include=FALSE}
+
+baseSize <- 24
+
+theme_white <- function(){
+  theme_minimal(base_size = baseSize) +
+    theme(
+      legend.position="bottom",
+      legend.title = element_blank(),
+      axis.title.x=element_blank(),
+      axis.ticks.x=element_blank(),
+      axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
+      #axis.text = element_text(size = theme.double.text.size),
+      #legend.text=element_text(size= theme.double.text.size),
+      #axis.text.x = element_text(size = 0.8*theme.double.text.size, angle = 90, hjust = 1, vjust = 0.5),
+      #axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 10)),
+      legend.key.height = unit(1, "cm"),
+      legend.key.width = unit(1,"cm"),
+      panel.background = element_rect(fill="#FFFFFF", color = NA),
+      plot.background = element_rect(fill="#FFFFFF", color = NA),
+      #panel.spacing = unit(1, "lines"),
+      #plot.title = element_text(size = theme.double.text.size, face = "plain"),
+      #strip.text.x = element_text(size = theme.double.text.size)
+    )
+}
+
+histEmber <- data.frame(period=seq(2000,2023,1),value=c(1079, 1084, 1122, 1166, 1157, 1156, 1170, 1188, 1128, 1039, 1048, 1054, 1033, 980, 917, 948, 934, 942, 879, 769, 660, 722, 750, 596))
+
+mainScen <- "Nzero_57_bio7p5" 
+
+plotData <- df_beforeFilter %>%
+  filter(region == "EU27", period %in% c(2010:2050), variable == "Emi|CO2|Energy|Supply|Electricity w/ couple prod", scenario != "Npi") %>%
+  group_by(period) %>%
+  summarise_at(vars(value), list(
+    Min = min,
+    Mean = mean,
+    Median = median,
+    Max = max,
+    Sd = sd,
+    Q1=~quantile(., probs = 0.25),
+    Q3=~quantile(., probs = 0.75)))
+
+plotData2 <- df_beforeFilter %>%
+  filter(region == "EU27", period %in% c(2010:2050), variable == "Emi|CO2|Energy|Supply|Electricity w/ couple prod", scenario != "Npi") %>%
+  filter(scenario == mainScen)
+
+g[["power_sector_emissions"]] <- ggplot(plotData,aes(x=period,y=Median)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    #geom_line(linewidth=1,color="black") +
+    geom_line(data = histEmber,aes(x=period,y=value), linewidth=1,color="black",linetype="dashed") +
+    geom_line(data = plotData2,aes(x=period,y=value), linewidth=1,color="black") +
+    geom_ribbon(aes(ymax = Q3, ymin = Q1), alpha = 0.5, fill = "#545454") +
+    geom_ribbon(aes(ymax = Max, ymin = Min), alpha = 0.5, fill = "#545454") +
+    #geom_line(aes(y=Min),linewidth=1,color="#545454",linetype = "dashed", alpha = 0.7) +
+    #geom_line(aes(y=Max),linewidth=1,color="#545454",linetype = "dashed", alpha = 0.7) +
+    #geom_line(data=h,linewidth=1,aes(linetype=Source)) +
+    #geom_point() +
+    theme_white() +
+    ylab(expression(paste("Mt ", CO[2],"/yr")))
+
+
+ggsave(paste0(outChartsFolder,"/svg/power_sector_emissions.svg"), g[["power_sector_emissions"]], device="svg", width = 12, height = 8, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/power_sector_emissions.png"), g[["power_sector_emissions"]], device="png", width = 12, height = 8, dpi=300, units = "in")
+
+
+plotData <- df %>%
+  filter(region == "EU27", period %in% c(2010:2050), variable == "Emi|CO2|Energy|Supply|Electricity w/ couple prod", scenario != "Npi") %>%
+  group_by(period) %>%
+  summarise_at(vars(value), list(
+    Min = min,
+    Mean = mean,
+    Median = median,
+    Max = max,
+    Sd = sd,
+    Q1=~quantile(., probs = 0.25),
+    Q3=~quantile(., probs = 0.75)))
+
+plotData2 <- df %>%
+  filter(region == "EU27", period %in% c(2010:2050), variable == "Emi|CO2|Energy|Supply|Electricity w/ couple prod", scenario != "Npi") %>%
+  filter(scenario == mainScen)
+
+g[["power_sector_emissions_noLimVRE"]] <- ggplot(plotData,aes(x=period,y=Median)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    #geom_line(linewidth=1,color="black") +
+    geom_line(data = histEmber,aes(x=period,y=value), linewidth=1,color="black",linetype="dashed") +
+    geom_line(data = plotData2,aes(x=period,y=value), linewidth=1,color="black") +
+    geom_ribbon(aes(ymax = Q3, ymin = Q1), alpha = 0.5, fill = "#545454") +
+    geom_ribbon(aes(ymax = Max, ymin = Min), alpha = 0.5, fill = "#545454") +
+    #geom_line(aes(y=Min),linewidth=1,color="#545454",linetype = "dashed", alpha = 0.7) +
+    #geom_line(aes(y=Max),linewidth=1,color="#545454",linetype = "dashed", alpha = 0.7) +
+    #geom_line(data=h,linewidth=1,aes(linetype=Source)) +
+    #geom_point() +
+    theme_white() +
+    ylab(expression(paste("Mt ", CO[2],"/yr")))
+
+
+ggsave(paste0(outChartsFolder,"/svg/power_sector_emissions_noLimVRE.svg"), g[["power_sector_emissions_noLimVRE"]], device="svg", width = 12, height = 8, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/power_sector_emissions_noLimVRE.png"), g[["power_sector_emissions_noLimVRE"]], device="png", width = 12, height = 8, dpi=300, units = "in")
+
+
+
+```
 
 

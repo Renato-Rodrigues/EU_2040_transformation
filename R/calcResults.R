@@ -160,20 +160,19 @@ electricity_demand_upscale <- data.frame(
   )
 )
 
-
 electricity_share_in_FE <- data.frame(
   electricity_share_in_FE = c("2030","2040"),
   reference_value=c(
-    round(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share"), scenario == mainScen) %>% pull(value)*100),
-    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share"), scenario == mainScen) %>% pull(value)*100)
+    round(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), scenario == mainScen) %>% pull(value)*100),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), scenario == mainScen) %>% pull(value)*100)
   ),
   min=c(
-    round(min(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100)),
-    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100))
+    round(min(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100)),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100))
   ),
   max=c(
-    round(max(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100)),
-    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100))
+    round(max(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100)),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), tgt2030 %in% tgt2030Scen, tgt2050 != "Npi") %>% pull(value)*100))
   )
 )
 
@@ -923,16 +922,16 @@ renewablesShare <- data.frame(
 electShare <- data.frame(
   "share_of_electricity_in_final_energy"=c("2030","2040"),
   reference_value=c(
-    round(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share"), scenario == mainScen) %>% pull(value)*100,1),
-    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share"), scenario == mainScen) %>% pull(value)*100,1)
+    round(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), scenario == mainScen) %>% pull(value)*100,1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), scenario == mainScen) %>% pull(value)*100,1)
   ),
   min = c(
-    round(min(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen) %>% pull(value))*100,1),
-    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen) %>% pull(value))*100,1)
+    round(min(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), tgt2030 %in% tgt2030Scen) %>% pull(value))*100,1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), tgt2030 %in% tgt2030Scen) %>% pull(value))*100,1)
   ),
   max = c(
-    round(max(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen) %>% pull(value))*100,1),
-    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share"), tgt2030 %in% tgt2030Scen) %>% pull(value))*100,1)
+    round(max(df %>% filter(region == "EU27", period == 2030, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), tgt2030 %in% tgt2030Scen) %>% pull(value))*100,1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share"), tgt2030 %in% tgt2030Scen) %>% pull(value))*100,1)
   )
 )
 
@@ -940,12 +939,12 @@ electShare <- data.frame(
 # Electricity Share in Final Energy
 rate2030_2040ElectricityShare <- left_join(
   df %>%
-    filter(region == "EU27", period == 2040, variable %in% c("Final Energy|Electricity Share","Final Energy|Transport|Electricity Share","Final Energy|Industry|Electricity Share","Final Energy|Buildings|Electricity Share"), tgt2030 %in% tgt2030Scen) %>%
+    filter(region == "EU27", period == 2040, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share","Final Energy|w/o Bunkers|w/o Non-energy Use|Transport|Electricity Share","Final Energy|w/o Bunkers|w/o Non-energy Use|Industry|Electricity Share","Final Energy|w/o Bunkers|w/o Non-energy Use|Buildings|Electricity Share"), tgt2030 %in% tgt2030Scen) %>%
     mutate(numerator=value) %>%
     select(variable,scenario,numerator)
   ,
   df %>%
-    filter(region == "EU27", period == 2030, variable %in% c("Final Energy|Electricity Share","Final Energy|Transport|Electricity Share","Final Energy|Industry|Electricity Share","Final Energy|Buildings|Electricity Share"), tgt2030 %in% tgt2030Scen) %>%
+    filter(region == "EU27", period == 2030, variable %in% c("Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share","Final Energy|w/o Bunkers|w/o Non-energy Use|Transport|Electricity Share","Final Energy|w/o Bunkers|w/o Non-energy Use|Industry|Electricity Share","Final Energy|w/o Bunkers|w/o Non-energy Use|Buildings|Electricity Share"), tgt2030 %in% tgt2030Scen) %>%
     mutate(denominator=value) %>%
     select(variable,scenario,denominator)
   , by = join_by(scenario == scenario, variable == variable)
@@ -964,7 +963,7 @@ h <- (
 
 rate2022_2030ElectricityShare <- 
   df %>%
-  filter(region == "EU27", period == 2030, variable == "Final Energy|Electricity Share", tgt2030 %in% tgt2030Scen) %>%
+  filter(region == "EU27", period == 2030, variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share", tgt2030 %in% tgt2030Scen) %>%
   mutate(numerator=value) %>%
   select(scenario,numerator) %>%
   mutate(denominator=h) %>%
@@ -975,24 +974,24 @@ ElectricityShare <- data.frame(
   result=c("Electricity_Share_upscaling_rates_2022_to_2030_%","Electricity_Share_upscaling_rates_2030_to_2040_%","Transport_Electricity_Share_upscaling_rates_2030_to_2040_%","Buildings_Electricity_Share_upscaling_rates_2030_to_2040_%","Industry_Electricity_Share_upscaling_rates_2030_to_2040_%"),
   reference_value=c(
     round((rate2022_2030ElectricityShare %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
-    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|Electricity Share") %>% pull(rate)-1)*100,1),
-    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|Transport|Electricity Share") %>% pull(rate)-1)*100,1),
-    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|Buildings|Electricity Share") %>% pull(rate)-1)*100,1),
-    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|Industry|Electricity Share") %>% pull(rate)-1)*100,1)
+    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share") %>% pull(rate)-1)*100,1),
+    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Transport|Electricity Share") %>% pull(rate)-1)*100,1),
+    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Buildings|Electricity Share") %>% pull(rate)-1)*100,1),
+    round((rate2030_2040ElectricityShare %>% filter(scenario == mainScen, variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Industry|Electricity Share") %>% pull(rate)-1)*100,1)
   ),
   min = c(
     round((min(rate2022_2030ElectricityShare %>% pull(rate))-1)*100,1),
-    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Electricity Share") %>% pull(rate))-1)*100,1),
-    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Transport|Electricity Share") %>% pull(rate))-1)*100,1),
-    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Buildings|Electricity Share") %>% pull(rate))-1)*100,1),
-    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Industry|Electricity Share") %>% pull(rate))-1)*100,1)
+    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Transport|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Buildings|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((min(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Industry|Electricity Share") %>% pull(rate))-1)*100,1)
   ),
   max = c(
     round((max(rate2022_2030ElectricityShare %>% pull(rate))-1)*100,1),
-    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Electricity Share") %>% pull(rate))-1)*100,1),
-    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Transport|Electricity Share") %>% pull(rate))-1)*100,1),
-    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Buildings|Electricity Share") %>% pull(rate))-1)*100,1),
-    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|Industry|Electricity Share") %>% pull(rate))-1)*100,1)
+    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Transport|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Buildings|Electricity Share") %>% pull(rate))-1)*100,1),
+    round((max(rate2030_2040ElectricityShare %>% filter(variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Industry|Electricity Share") %>% pull(rate))-1)*100,1)
   )
 )
 
@@ -1089,9 +1088,20 @@ rate2020_2030ElectricityDemand <- left_join(
          percentage = numerator/denominator,
          rate = percentage ^ (1/10))
 
+rate2022_2040ElectricityDemand <- 
+  df %>%
+  filter(region == "EU27", period == 2040, variable == "FE|Electricity", tgt2030 %in% tgt2030Scen) %>%
+  mutate(numerator = value * 1/0.0036) %>%
+  select(scenario,numerator) %>%
+  mutate(denominator=h) %>%
+  mutate(diff = (numerator - denominator)/8,
+         percentage = numerator/denominator,
+         rate = percentage ^ (1/8))
+
 ElectricityDemand <- data.frame(
-  result=c("Electricity_Demand_yearly_install_2022_to_2030_(Twh)","Electricity_Demand_yearly_install_2030_to_2040_(Twh)","Electricity_Demand_upscaling_rates_2022_to_2030_%","Electricity_Demand_upscaling_rates_2020_to_2030_%","Electricity_Demand_upscaling_rates_2030_to_2040_%"),
+  result=c("Electricity_Demand_increase_2020_to_2040_(%)","Electricity_Demand_yearly_install_2022_to_2030_(Twh)","Electricity_Demand_yearly_install_2030_to_2040_(Twh)","Electricity_Demand_upscaling_rates_2022_to_2030_%","Electricity_Demand_upscaling_rates_2020_to_2030_%","Electricity_Demand_upscaling_rates_2030_to_2040_%"),
   reference_value=c(
+    round((rate2022_2040ElectricityDemand %>% filter(scenario == mainScen) %>% pull(percentage)-1)*100,1),
     round(rate2022_2030ElectricityDemand %>% filter(scenario == mainScen) %>% pull(diff)),
     round(rate2030_2040ElectricityDemand %>% filter(scenario == mainScen) %>% pull(diff)),
     round((rate2022_2030ElectricityDemand %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1),
@@ -1099,6 +1109,7 @@ ElectricityDemand <- data.frame(
     round((rate2030_2040ElectricityDemand %>% filter(scenario == mainScen) %>% pull(rate)-1)*100,1)
   ),
   min = c(
+    round(((min(rate2022_2040ElectricityDemand %>% pull(percentage)))-1)*100,1),
     round((min(rate2022_2030ElectricityDemand %>% pull(diff)))),
     round((min(rate2030_2040ElectricityDemand %>% pull(diff)))),
     round((min(rate2022_2030ElectricityDemand %>% pull(rate))-1)*100,1),
@@ -1106,6 +1117,7 @@ ElectricityDemand <- data.frame(
     round((min(rate2030_2040ElectricityDemand %>% pull(rate))-1)*100,1)
   ),
   max = c(
+    round(((max(rate2022_2040ElectricityDemand %>% pull(percentage)))-1)*100,1),
     round((max(rate2022_2030ElectricityDemand %>% pull(diff)))),
     round((max(rate2030_2040ElectricityDemand %>% pull(diff)))),
     round((max(rate2022_2030ElectricityDemand %>% pull(rate))-1)*100,1),

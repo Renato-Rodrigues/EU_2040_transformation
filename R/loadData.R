@@ -69,6 +69,11 @@ addVariables <- function(data){
 
   data <- rbind(data,data %>% calc_addVariable("`Emi|CO2|CDR|Other CDR`" = "`Emi|CO2|CDR|DACCS` + `Emi|CO2|CDR|EW` + `Emi|CO2|CDR|Industry CCS|Synthetic Fuels`", units = "Mt CO2/yr", only.new=T))
 
+  data <- rbind(data,data %>% calc_addVariable("`Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share`" = "(`FE|Electricity` - `FE|Transport|Bunkers|Electricity`) / (`FE` - `FE|Transport|Bunkers` - `FE|Non-energy Use`)", units = "%", only.new=T))
+  data <- rbind(data,data %>% calc_addVariable("`Final Energy|w/o Bunkers|w/o Non-energy Use|Transport|Electricity Share`" = "(`FE|Transport|Electricity` - `FE|Transport|Bunkers|Electricity`) / (`FE|Transport` - `FE|Transport|Bunkers`)", units = "%", only.new=T))
+  data <- rbind(data,data %>% calc_addVariable("`Final Energy|w/o Bunkers|w/o Non-energy Use|Industry|Electricity Share`"  = "`FE|Industry|Electricity`  / (`FE|Industry` - `FE|Non-energy Use`)", units = "%", only.new=T))
+  data <- rbind(data,data %>% calc_addVariable("`Final Energy|w/o Bunkers|w/o Non-energy Use|Buildings|Electricity Share`" = "`FE|Buildings|Electricity` / `FE|Buildings`", units = "%", only.new=T))
+
   data <- rbind(data,data %>% calc_addVariable("`Final Energy|Electricity Share`" = "`FE|Electricity` / `FE`", units = "%", only.new=T))
   data <- rbind(data,data %>% calc_addVariable("`Final Energy|Transport|Electricity Share`" = "`FE|Transport|Electricity` / `FE|Transport`", units = "%", only.new=T))
   data <- rbind(data,data %>% calc_addVariable("`Final Energy|Industry|Electricity Share`"  = "`FE|Industry|Electricity`  / `FE|Industry`", units = "%", only.new=T))
