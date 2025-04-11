@@ -62,6 +62,12 @@ dir.create(paste0(outChartsFolder, "/svg"), recursive = TRUE, showWarnings = FAL
 
 # conversion factors
   USS2017_2_EURO2020 <- 0.9502 # 1 USD 2017 = 0.9502 EURO 2020
+  
+  USS2017_2_EURO2025 <- 1.212 # 1 USD 2017 = 1.212 EURO 2020 (1 US$2017 = 1.30 * 0.932642 €2025 = 1.212 €2025)
+  # exchange rate = average of February 28, March 31, April 11, 2025 (0.960138 +  0.925734 + 0.912056)/3 = 0.932642 https://www.ofx.com/en-au/forex-news/historical-exchange-rates/yearly-average-rates/
+  # CPI -> 1 $2017 = 1.30$2025 -> https://www.in2013dollars.com/us/inflation/2017?amount=1
+  
+  currencyConversion <- USS2017_2_EURO2025
 
 ```
 
@@ -310,7 +316,7 @@ plotData <- left_join(
            max = max(value)),
   df_beforeFilter %>%
     filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen, variable == "Price|Carbon") %>%
-    mutate(price_2030 = USS2017_2_EURO2020*value) %>%
+    mutate(price_2030 = currencyConversion*value) %>%
     select(scenario, price_2030),
   by = "scenario") %>%
   mutate(text = paste0("Target Achieved: ", tgtAchieved, " % reduction", "\n2030 price: ", round(price_2030,2), " €/t CO2", "\nScenario: ", scenario, "\nTarget 2030: ", tgt2030, "%", "\nEfficiency: ", efficiency, "\nBiomass Limit: ", bioLim, "\nSensititivy limit: ", lim))
@@ -362,7 +368,7 @@ nonAchieved2030 <- left_join(
            max = max(value)),
   df_beforeFilter %>%
     filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen, variable == "Price|Carbon") %>%
-    mutate(price_2030 = USS2017_2_EURO2020*value) %>%
+    mutate(price_2030 = currencyConversion*value) %>%
     select(scenario, price_2030),
   by = "scenario") %>%
   filter(diff >= 0.5 | diff <= -0.5) %>%

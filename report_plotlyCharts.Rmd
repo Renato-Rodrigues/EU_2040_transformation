@@ -93,6 +93,12 @@ source("./R/plotly2js.R")
 
 # conversion factors
   USS2017_2_EURO2020 <- 0.9502 # 1 USD 2017 = 0.9502 EURO 2020
+  
+  USS2017_2_EURO2025 <- 1.212 # 1 USD 2017 = 1.212 EURO 2020 (1 US$2017 = 1.30 * 0.932642 €2025 = 1.212 €2025)
+  # exchange rate = average of February 28, March 31, April 11, 2025 (0.960138 +  0.925734 + 0.912056)/3 = 0.932642 https://www.ofx.com/en-au/forex-news/historical-exchange-rates/yearly-average-rates/
+  # CPI -> 1 $2017 = 1.30$2025 -> https://www.in2013dollars.com/us/inflation/2017?amount=1
+  
+  currencyConversion <- USS2017_2_EURO2025
 
 ```
 
@@ -116,7 +122,7 @@ g <- NULL
   plotData <- df_beforeFilter %>%
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
     mutate(period = as.Date(paste0("01/01/", period),format="%m/%d/%Y"),
-           value = USS2017_2_EURO2020*value) %>%
+           value = currencyConversion*value) %>%
     mutate(value = round(value,2))
   
   ETS_price <- addHist$ETS_price %>%
