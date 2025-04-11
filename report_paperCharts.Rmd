@@ -101,6 +101,8 @@ dir.create(paste0(outChartsFolder,"/svg"), recursive = TRUE, showWarnings = FALS
   
   EJ2TWh <- 1/0.0036
 
+  USS2017_2_EURO2020 <- 0.9502 # 1 USD 2017 = 0.9502 EURO 2020
+
 ```
 
 
@@ -3884,7 +3886,7 @@ vars <- c(
 plotData <- df_beforeFilter %>%
   filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
   mutate(period = as.Date(paste0("01/01/", period),format="%m/%d/%Y"),
-         value = 1.17*value)
+         value = USS2017_2_EURO2020*value)
 
 ETS_price <- addHist$ETS_price %>%
   mutate(scenario = "ETS price")
@@ -3985,7 +3987,7 @@ color <- c(
 plotData <- df %>% 
   filter(region == "EU27", period >= 2020, period <= 2050, scenario  == mainScen, variable %in% unlist(vars)) %>% 
   mutate(variable = factor(variable, levels=vars),
-   value = 1.17*value) #%>% 
+   value = USS2017_2_EURO2020*value) #%>% 
  # arrange(factor(variable, levels = rev(vars))) 
   
 g[["Energy Supply Investments"]] <- ggplot(plotData, aes(x=period,y=value, fill=variable)) +

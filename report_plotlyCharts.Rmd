@@ -87,6 +87,14 @@ source("./R/plotly2js.R")
 
 ```
 
+<!-- units conversion -->
+
+```{r unitsConversion, echo=FALSE, include = FALSE}
+
+# conversion factors
+  USS2017_2_EURO2020 <- 0.9502 # 1 USD 2017 = 0.9502 EURO 2020
+
+```
 
 <!-- Initializing charts object -->
 ```{r chart_initialization, echo=FALSE, include = FALSE}
@@ -108,7 +116,7 @@ g <- NULL
   plotData <- df_beforeFilter %>%
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
     mutate(period = as.Date(paste0("01/01/", period),format="%m/%d/%Y"),
-           value = 1.17*value) %>%
+           value = USS2017_2_EURO2020*value) %>%
     mutate(value = round(value,2))
   
   ETS_price <- addHist$ETS_price %>%

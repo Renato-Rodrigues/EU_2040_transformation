@@ -56,6 +56,15 @@ dir.create(paste0(outChartsFolder, "/svg"), recursive = TRUE, showWarnings = FAL
 
 ```
 
+<!-- units conversion -->
+
+```{r unitsConversion, echo=FALSE, include = FALSE}
+
+# conversion factors
+  USS2017_2_EURO2020 <- 0.9502 # 1 USD 2017 = 0.9502 EURO 2020
+
+```
+
 <!-- Initializing charts object -->
 ```{r chart_initialization, echo=FALSE, include = FALSE}
 
@@ -301,7 +310,7 @@ plotData <- left_join(
            max = max(value)),
   df_beforeFilter %>%
     filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen, variable == "Price|Carbon") %>%
-    mutate(price_2030 = 1.17*value) %>%
+    mutate(price_2030 = USS2017_2_EURO2020*value) %>%
     select(scenario, price_2030),
   by = "scenario") %>%
   mutate(text = paste0("Target Achieved: ", tgtAchieved, " % reduction", "\n2030 price: ", round(price_2030,2), " €/t CO2", "\nScenario: ", scenario, "\nTarget 2030: ", tgt2030, "%", "\nEfficiency: ", efficiency, "\nBiomass Limit: ", bioLim, "\nSensititivy limit: ", lim))
@@ -353,7 +362,7 @@ nonAchieved2030 <- left_join(
            max = max(value)),
   df_beforeFilter %>%
     filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen, variable == "Price|Carbon") %>%
-    mutate(price_2030 = 1.17*value) %>%
+    mutate(price_2030 = USS2017_2_EURO2020*value) %>%
     select(scenario, price_2030),
   by = "scenario") %>%
   filter(diff >= 0.5 | diff <= -0.5) %>%
