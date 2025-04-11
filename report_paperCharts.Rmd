@@ -3097,7 +3097,7 @@ g[["milestone - violin"]][["Carbon Capture and Storage"]] <- ggplot(plotData, ae
   theme(strip.placement = "outside") +
   #theme(axis.text.x = element_text(size = 1*theme.double.text.size)) +
   #theme(axis.text.y = element_text(size = 1*theme.double.text.size)) +
-  theme(strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=0, b=20))) +
+  theme(strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=-10, b=20))) +
   theme(strip.clip = "off")#+
   #annotate("text", x = -Inf, y = -Inf, label = "(Mt CO2/yr)", hjust = 1, color = "#666666", size = 0.8*geomText.size)
 
