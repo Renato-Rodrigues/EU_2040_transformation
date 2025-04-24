@@ -9032,32 +9032,32 @@
   },
   "source": "A",
   "attrs": {
-    "4b5464a01487": {
+    "60744e9c76de": {
       "yintercept": {},
       "type": "scatter"
     },
-    "4b541181183": {
+    "60743d656f7": {
       "xintercept": {}
     },
-    "4b549b84303": {
+    "60745a9cd59": {
       "x": {},
       "y": {},
       "linetype": {},
       "colour": {}
     },
-    "4b5442f164d8": {
+    "607411bb26da": {
       "x": {},
       "y": {},
       "shape": {},
       "fill": {}
     }
   },
-  "cur_data": "4b5464a01487",
+  "cur_data": "60744e9c76de",
   "visdat": {
-    "4b5464a01487": ["function (y) ", "x"],
-    "4b541181183": ["function (y) ", "x"],
-    "4b549b84303": ["function (y) ", "x"],
-    "4b5442f164d8": ["function (y) ", "x"]
+    "60744e9c76de": ["function (y) ", "x"],
+    "60743d656f7": ["function (y) ", "x"],
+    "60745a9cd59": ["function (y) ", "x"],
+    "607411bb26da": ["function (y) ", "x"]
   },
   "highlight": {
     "on": "plotly_click",

@@ -9050,37 +9050,37 @@
   },
   "source": "A",
   "attrs": {
-    "4b54797a4027": {
+    "607496e71fd": {
       "yintercept": {},
       "type": "scatter"
     },
-    "4b547a001807": {
+    "60744777c2b": {
       "xintercept": {}
     },
-    "4b545ead3a7": {
+    "6074366366fc": {
       "x": {},
       "y": {},
       "linetype": {},
       "colour": {}
     },
-    "4b5468f8119d": {
+    "607427bb67bb": {
       "x": {},
       "y": {},
       "shape": {},
       "fill": {}
     },
-    "4b546c2d1dd4": {
+    "607414c21391": {
       "x": {},
       "y": {}
     }
   },
-  "cur_data": "4b54797a4027",
+  "cur_data": "607496e71fd",
   "visdat": {
-    "4b54797a4027": ["function (y) ", "x"],
-    "4b547a001807": ["function (y) ", "x"],
-    "4b545ead3a7": ["function (y) ", "x"],
-    "4b5468f8119d": ["function (y) ", "x"],
-    "4b546c2d1dd4": ["function (y) ", "x"]
+    "607496e71fd": ["function (y) ", "x"],
+    "60744777c2b": ["function (y) ", "x"],
+    "6074366366fc": ["function (y) ", "x"],
+    "607427bb67bb": ["function (y) ", "x"],
+    "607414c21391": ["function (y) ", "x"]
   },
   "highlight": {
     "on": "plotly_click",

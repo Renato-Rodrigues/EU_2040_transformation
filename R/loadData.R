@@ -171,12 +171,19 @@ loadMifFiles <- function(path,filterVars,forceUpdate){
       tmpdf <- suppressWarnings(read.quitte(file))
       tmpdf <- tmpdf %>%
         filter(!(variable %in% unique(reportDuplicates(remind2::deletePlus(tmpdf)) %>% pull(variable)))) %>% #remove duplicates
-        deletePlus() %>% # remove plus
+        deletePlus()
+      tmpdf_filter <- tmpdf %>%
         filter(variable %in% filterVars,
-               region %in% c("EU27","DEU","FRA"),
+               region %in% c("EU27"),
+               period <= 2060)
+      tmpdf_add <- tmpdf %>%
+        filter(variable %in% c("Emi|GHG|LULUCF national accounting", "Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region", "Emi|CO2|Energy|Demand|Transport|International Bunkers", "Emi|GHG|Land-Use Change|LULUCF national accounting", "Carbon Management|Storage|Biomass|Pe2Se", "Carbon Management|Storage|Industry Energy|Biomass", "Carbon Management|Storage|Industry Energy|Synfuel",
+                               "SE|Electricity|Net Imports", "SE|Electricity|Coal|w/ CC", "SE|Electricity|Coal|w/o CC", "SE|Electricity|Oil", "SE|Electricity|Gas|w/ CC", "SE|Electricity|Gas|w/o CC", "SE|Electricity|Hydrogen", "SE|Electricity|Nuclear", "SE|Electricity|Geothermal", "SE|Electricity|Hydro", "SE|Electricity|Biomass|w/ CC", "SE|Electricity|Biomass|w/o CC", "SE|Electricity|Solar|CSP", "SE|Electricity|Solar|PV", "SE|Electricity|Wind|Onshore", "SE|Electricity|Wind|Offshore",
+                               "Cap|Electricity|Net Imports", "Cap|Electricity|Coal|w/ CC", "Cap|Electricity|Coal|w/o CC", "Cap|Electricity|Oil", "Cap|Electricity|Gas|w/ CC", "Cap|Electricity|Gas|w/o CC", "Cap|Electricity|Hydrogen", "Cap|Electricity|Nuclear", "Cap|Electricity|Geothermal", "Cap|Electricity|Hydro", "Cap|Electricity|Biomass|w/ CC", "Cap|Electricity|Biomass|w/o CC", "Cap|Electricity|Solar|CSP", "Cap|Electricity|Solar|PV", "Cap|Electricity|Wind|Onshore", "Cap|Electricity|Wind|Offshore", "Cap|Electricity|Storage|Battery"),
+               region %in% c("DEU", "FRA","ECE","ECS","ENC", "ESC", "ESW", "EWN"),
                period <= 2060)
       #write.mif(tmpdf,paste0("./data_filtered/", basename(outFolder), "/", basename(file)))
-      out <- rbind(out,tmpdf)
+      out <- rbind(out,tmpdf_filter,tmpdf_add)
     }
     # Saving all filtered data to a single file
     #mifFilteredFiles <- list.files(path=path, pattern="*.mif", full.names=TRUE, recursive=FALSE)

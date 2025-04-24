@@ -2,65 +2,124 @@
 
 # Emission Reductions
 
-reductions2040 <- rbind(
+
+emiReduction <- rbind(
   df %>% 
-    filter(variable == "Emi|GHG|with LULUCF and with international transport", region == "EU27", period == 2040, tgt2050 != "Npi") %>% 
-    mutate(value = 1-(value / tgt %>% filter(target == "Emissions with LULUCF and with international transport") %>% pull(reference)))
+    filter(region == "EU27", period == 2040, tgt2030 %in% tgt2030Scen) %>%
+    calc_addVariable( "`Emissions with LULUCF and with intra-EU aviation`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr", only.new=T) %>% 
+    mutate(reduction = 1-round(value / tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference) ,2),
+           variable = "Emissions with LULUCF and with intra-EU aviation") %>% 
+    filter(tgt2050 != "Npi") %>% 
+    select(variable, scenario, reduction)
   ,
   df %>% 
-    filter(variable == "Emi|GHG|without LULUCF and with international transport", region == "EU27", period == 2040, tgt2050 != "Npi") %>% 
-    mutate(value = 1-(value / tgt %>% filter(target == "Emissions without LULUCF and with international transport") %>% pull(reference)))
-  ,
-  df %>% 
-    filter(variable == "Emi|GHG|with LULUCF and with intra-EU aviation", region == "EU27", period == 2040, tgt2050 != "Npi") %>% 
-    mutate(value = 1-(value / tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)))
-  ,
-  df %>% 
-    filter(variable == "Emi|GHG|without LULUCF and with intra-EU aviation", region == "EU27", period == 2040, tgt2050 != "Npi") %>% 
-    mutate(value = 1-(value / tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)))
-  ,
-  df %>% 
-    filter(variable == "Emi|GHG|Gross|without LULUCF and with international transport", region == "EU27", period == 2040, tgt2050 != "Npi") %>% 
-    mutate(value = 1-(value / tgt %>% filter(target == "Gross Emissions without LULUCF and with international transport") %>% pull(reference)))
+    filter(region == "EU27", period == 2040, tgt2030 %in% tgt2030Scen) %>%
+    calc_addVariable( "`Emissions with LULUCF and with international transport`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers`" , units = "Mt CO2/yr", only.new=T) %>% 
+    mutate(reduction = 1-round(value / tgt %>% filter(target == "Emissions with LULUCF and with international transport") %>% pull(reference) ,2),
+           variable = "Emissions with LULUCF and with international transport") %>%
+    filter(tgt2050 != "Npi") %>% 
+    select(variable, scenario, reduction)
 )
 
-reductions2040 %>% 
-  filter(tgt2030 %in% tgt2030Scen) %>% 
-  group_by(variable) %>%
-  summarize(minTarget = min(value), maxTarget=max(value),.groups = "keep") %>%
-  mutate(minTarget = paste0(round(minTarget*100), "%"),
-         maxTarget = paste0(round(maxTarget*100), "%"),
-         period = 2040) %>% 
-  rename(TargetReference = variable) %>%
-  relocate(period, .after=TargetReference) %>%
-  kbl() %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
-
-bdgt <- df %>% 
-  filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen) %>%
-  mutate(weight = ifelse(period %in% c(2020,2050),2.5,5),
-         budget = value*weight) %>%
-  group_by(model,scenario,region,variable,tgt2050,tgt2030,efficiency,bioLim,lim) %>%
-  summarize(budget=round(sum(budget)/1000,2),.groups = "keep")
-
-budget <- data.frame(
-  Budget=c("Emissions with LULUCF and with international transport","Emissions without LULUCF and with international transport","Emissions with LULUCF and with intra-EU aviation","Emissions without LULUCF and with intra-EU aviation","Gross Emissions without LULUCF and with international transport"),
-  reference_value=c(round(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with international transport", scenario == mainScen) %>% pull(budget)),
-                    round(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with international transport", scenario == mainScen) %>% pull(budget)),
-                    round(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with intra-EU aviation", scenario == mainScen) %>% pull(budget)),
-                    round(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with intra-EU aviation", scenario == mainScen) %>% pull(budget)),
-                    round(bdgt %>% filter(variable == "Emi|GHG|Gross|without LULUCF and with international transport", scenario == mainScen) %>% pull(budget))),
-  min = c(round(min(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with international transport") %>% pull(budget))),
-          round(min(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with international transport") %>% pull(budget))),
-          round(min(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with intra-EU aviation") %>% pull(budget))),
-          round(min(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with intra-EU aviation") %>% pull(budget))),
-          round(min(bdgt %>% filter(variable == "Emi|GHG|Gross|without LULUCF and with international transport") %>% pull(budget)))),
-  max = c(round(max(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with international transport") %>% pull(budget))),
-          round(max(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with international transport") %>% pull(budget))),
-          round(max(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with intra-EU aviation") %>% pull(budget))),
-          round(max(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with intra-EU aviation") %>% pull(budget))),
-          round(max(bdgt %>% filter(variable == "Emi|GHG|Gross|without LULUCF and with international transport") %>% pull(budget))))
+reductions2040 <- left_join(
+  emiReduction %>%
+    filter(scenario == mainScen) %>%
+    mutate(mainScenario = paste0(round(reduction*100), "%")) %>%
+    select(variable,mainScenario)
+  ,
+  emiReduction %>% 
+    group_by(variable) %>%
+    summarize(minTarget = min(reduction), maxTarget=max(reduction),.groups = "keep") %>%
+    mutate(minTarget = paste0(round(minTarget*100), "%"),
+           maxTarget = paste0(round(maxTarget*100), "%"))
+  , by = join_by(variable == variable)
 )
+
+# reductions2040 <- rbind(
+#   df %>% 
+#     filter(variable == "Emi|GHG|with LULUCF and with international transport", region == "EU27", period == 2040, tgt2050 != "Npi") %>% 
+#     mutate(value = 1-(value / tgt %>% filter(target == "Emissions with LULUCF and with international transport") %>% pull(reference)))
+#   ,
+#   df %>% 
+#     filter(variable == "Emi|GHG|without LULUCF and with international transport", region == "EU27", period == 2040, tgt2050 != "Npi") %>% 
+#     mutate(value = 1-(value / tgt %>% filter(target == "Emissions without LULUCF and with international transport") %>% pull(reference)))
+#   ,
+#   df %>% 
+#     filter(variable == "Emi|GHG|with LULUCF and with intra-EU aviation", region == "EU27", period == 2040, tgt2050 != "Npi") %>% 
+#     mutate(value = 1-(value / tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)))
+#   ,
+#   df %>% 
+#     filter(variable == "Emi|GHG|without LULUCF and with intra-EU aviation", region == "EU27", period == 2040, tgt2050 != "Npi") %>% 
+#     mutate(value = 1-(value / tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)))
+#   ,
+#   df %>% 
+#     filter(variable == "Emi|GHG|Gross|without LULUCF and with international transport", region == "EU27", period == 2040, tgt2050 != "Npi") %>% 
+#     mutate(value = 1-(value / tgt %>% filter(target == "Gross Emissions without LULUCF and with international transport") %>% pull(reference)))
+# )
+
+# reductions2040 %>% 
+#   filter(tgt2030 %in% tgt2030Scen) %>% 
+#   group_by(variable) %>%
+#   summarize(minTarget = min(value), maxTarget=max(value),.groups = "keep") %>%
+#   mutate(minTarget = paste0(round(minTarget*100), "%"),
+#          maxTarget = paste0(round(maxTarget*100), "%"),
+#          period = 2040) %>% 
+#   rename(TargetReference = variable) %>%
+#   relocate(period, .after=TargetReference) %>%
+#   kbl() %>%
+#   kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+# 
+# bdgt <- df %>% 
+#   filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen) %>%
+#   mutate(weight = ifelse(period %in% c(2020,2050),2.5,5),
+#          budget = value*weight) %>%
+#   group_by(model,scenario,region,variable,tgt2050,tgt2030,efficiency,bioLim,lim) %>%
+#   summarize(budget=round(sum(budget)/1000,2),.groups = "keep")
+# 
+# budget <- data.frame(
+#   Budget=c("Emissions with LULUCF and with international transport","Emissions without LULUCF and with international transport","Emissions with LULUCF and with intra-EU aviation","Emissions without LULUCF and with intra-EU aviation","Gross Emissions without LULUCF and with international transport"),
+#   reference_value=c(round(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with international transport", scenario == mainScen) %>% pull(budget)),
+#                     round(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with international transport", scenario == mainScen) %>% pull(budget)),
+#                     round(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with intra-EU aviation", scenario == mainScen) %>% pull(budget)),
+#                     round(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with intra-EU aviation", scenario == mainScen) %>% pull(budget)),
+#                     round(bdgt %>% filter(variable == "Emi|GHG|Gross|without LULUCF and with international transport", scenario == mainScen) %>% pull(budget))),
+#   min = c(round(min(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with international transport") %>% pull(budget))),
+#           round(min(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with international transport") %>% pull(budget))),
+#           round(min(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with intra-EU aviation") %>% pull(budget))),
+#           round(min(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with intra-EU aviation") %>% pull(budget))),
+#           round(min(bdgt %>% filter(variable == "Emi|GHG|Gross|without LULUCF and with international transport") %>% pull(budget)))),
+#   max = c(round(max(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with international transport") %>% pull(budget))),
+#           round(max(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with international transport") %>% pull(budget))),
+#           round(max(bdgt %>% filter(variable == "Emi|GHG|with LULUCF and with intra-EU aviation") %>% pull(budget))),
+#           round(max(bdgt %>% filter(variable == "Emi|GHG|without LULUCF and with intra-EU aviation") %>% pull(budget))),
+#           round(max(bdgt %>% filter(variable == "Emi|GHG|Gross|without LULUCF and with international transport") %>% pull(budget))))
+# )
+
+direct_electrification <- data.frame(
+  direct_electrification = c("total","buildings","transport","industry"),
+  reference_value_EJ=c(
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Electricity"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Electricity"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Transport|Electricity"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Electricity"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1)
+  ),
+  min_EJ=c(
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Electricity"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Electricity"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Transport|Electricity"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Electricity"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1)
+  ),
+  max_EJ=c(
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Electricity"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Electricity"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Transport|Electricity"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Electricity"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1)
+  )
+) %>%
+  mutate(
+    reference_value_Mtoe = round(reference_value_EJ * EJ2Mtoe,1),
+    min_Mtoe = round(min_EJ * EJ2Mtoe,1),
+    max_Mtoe = round(max_EJ * EJ2Mtoe,1))
 
 
 indirect_electrification <- data.frame(
@@ -82,6 +141,44 @@ indirect_electrification <- data.frame(
     round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Hydrogen","FE|Buildings|Gases|Hydrogen","FE|Buildings|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
     round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Transport|Hydrogen","FE|Transport|Gases|Hydrogen","FE|Transport|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
     round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Hydrogen","FE|Industry|Gases|Hydrogen","FE|Industry|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1)
+  )
+) %>%
+  mutate(
+    reference_value_Mtoe = round(reference_value_EJ * EJ2Mtoe,1),
+    min_Mtoe = round(min_EJ * EJ2Mtoe,1),
+    max_Mtoe = round(max_EJ * EJ2Mtoe,1))
+
+indirect_electrification_detail <- data.frame(
+  indirect_electrification_detail = c("total_H2","total_efuels","buildings_H2","buildings_efuels","transport_H2","transport_efuels","industry_H2","industry_efuels"),
+  reference_value_EJ=c(
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Gases|Hydrogen","FE|Liquids|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Gases|Hydrogen","FE|Buildings|Liquids|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Transport|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Transport|Gases|Hydrogen","FE|Transport|Liquids|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Gases|Hydrogen","FE|Industry|Liquids|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1)
+  ),
+  min_EJ=c(
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Gases|Hydrogen","FE|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Gases|Hydrogen","FE|Buildings|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Transport|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Transport|Gases|Hydrogen","FE|Transport|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Gases|Hydrogen","FE|Industry|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1)
+  ),
+  max_EJ=c(
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Gases|Hydrogen","FE|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Gases|Hydrogen","FE|Buildings|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Transport|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Transport|Gases|Hydrogen","FE|Transport|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Gases|Hydrogen","FE|Industry|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1)
   )
 ) %>%
   mutate(
@@ -301,22 +398,26 @@ Generation <- data.frame(
     round(nuclear_in_generation %>% filter(scenario == mainScen) %>% pull(percentage)*100,2),
     round(wind_and_Solar_gen %>% filter(scenario == mainScen) %>% pull(percentage)*100,2),
     round(wind_and_Solar_cap %>% filter(scenario == mainScen) %>% pull(value)/ 1000,2)#,
-    #round(df %>% filter(region == "EU27", period == 2030, variable == "SE|Electricity|Solar", scenario == mainScen) %>% mutate(value = round(value * 1/0.0036)) %>% pull(value)/1000,2),
-    #round(df %>% filter(region == "EU27", period == 2045, variable == "SE|Electricity|Solar", scenario == mainScen) %>% mutate(value = round(value * 1/0.0036)) %>% pull(value)/1000,2)
+#    round(df %>% filter(region == "EU27", period == 2030, variable == "Cap|Electricity|Solar|PV", scenario == mainScen) %>% mutate(value = round(value * 1/0.0036)) %>% pull(value)/1000,2),
+#    round(df %>% filter(region == "EU27", period == 2045, variable == "Cap|Electricity|Solar|PV", scenario == mainScen) %>% mutate(value = round(value * 1/0.0036)) %>% pull(value)/1000,2)
   ),
   min = c(
     round(min(coal_in_generation %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),2),
     round(min(gas_in_generation %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),2),
     round(min(nuclear_in_generation %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),2),
     round(min(wind_and_Solar_gen %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),2),
-    round(min(wind_and_Solar_cap %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(value)/ 1000),2)
+    round(min(wind_and_Solar_cap %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(value)/ 1000),2)#,
+#    round(min(df %>% filter(region == "EU27", period == 2030, variable == "Cap|Electricity|Solar|PV") %>% mutate(value = round(value * 1/0.0036)) %>% pull(value)/1000,2)),
+#    round(min(df %>% filter(region == "EU27", period == 2045, variable == "Cap|Electricity|Solar|PV") %>% mutate(value = round(value * 1/0.0036)) %>% pull(value)/1000,2))
   ),
   max = c(
     round(max(coal_in_generation %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),2),
     round(max(gas_in_generation %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),2),
     round(max(nuclear_in_generation %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),2),
     round(max(wind_and_Solar_gen %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),2),
-    round(max(wind_and_Solar_cap %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(value)/ 1000),2)
+    round(max(wind_and_Solar_cap %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(value)/ 1000),2)#,
+#    round(max(df %>% filter(region == "EU27", period == 2030, variable == "Cap|Electricity|Solar|PV") %>% mutate(value = round(value * 1/0.0036)) %>% pull(value)/1000,2)),
+#    round(max(df %>% filter(region == "EU27", period == 2045, variable == "Cap|Electricity|Solar|PV") %>% mutate(value = round(value * 1/0.0036)) %>% pull(value)/1000,2))
   )
 )
 
@@ -335,14 +436,81 @@ share_of_fossil_in_electricity <- data.frame(
 pe <- df %>% 
   filter(region == "EU27", period %in% c(2020:2060), tgt2030 %in% tgt2030Scen, variable %in% c("PE|Biomass","PE|Coal","PE|Gas","PE|Oil"))
 
+pe_relative_to_2020 <-  left_join(
+  df %>%
+    filter(region == "EU27", period == 2040, variable %in% c("PE|Biomass","PE|Coal","PE|Gas","PE|Oil")) %>%  
+    select(scenario,variable,value)
+  ,
+  df %>% 
+    filter(region == "EU27", period == 2020, variable %in% c("PE|Biomass","PE|Coal","PE|Gas","PE|Oil")) %>%  
+    mutate(base = value) %>%  
+    select(scenario,variable,base)
+  , by = join_by(scenario == scenario, variable == variable)
+) %>%
+  mutate(percentage = value/base)
+
 primaryEnergy <- data.frame(
   Primary_Energy=c("Biomass","Coal","Gas","Oil"),
   relative_to_2020=c(
     round((pe %>% filter(period == 2040, scenario == mainScen, variable == "PE|Biomass") %>% mutate(value = value / (pe %>% filter(period == 2020, scenario == mainScen, variable == "PE|Biomass") %>% pull(value)))%>% pull(value))*100, 1),
     round((pe %>% filter(period == 2040, scenario == mainScen, variable == "PE|Coal") %>% mutate(value = value / (pe %>% filter(period == 2020, scenario == mainScen, variable == "PE|Coal") %>% pull(value)))%>% pull(value))*100, 1),
     round((pe %>% filter(period == 2040, scenario == mainScen, variable == "PE|Gas") %>% mutate(value = value / (pe %>% filter(period == 2020, scenario == mainScen, variable == "PE|Gas") %>% pull(value)))%>% pull(value))*100, 1),
-    round((pe %>% filter(period == 2040, scenario == mainScen, variable == "PE|Oil") %>% mutate(value = value / (pe %>% filter(period == 2020, scenario == mainScen, variable == "PE|Oil") %>% pull(value)))%>% pull(value))*100, 1))
+    round((pe %>% filter(period == 2040, scenario == mainScen, variable == "PE|Oil") %>% mutate(value = value / (pe %>% filter(period == 2020, scenario == mainScen, variable == "PE|Oil") %>% pull(value)))%>% pull(value))*100, 1)),
+  min = c(round(min(pe_relative_to_2020 %>% filter(variable == "PE|Biomass") %>% pull(percentage))*100, 1),
+          round(min(pe_relative_to_2020 %>% filter(variable == "PE|Coal") %>% pull(percentage))*100, 1),
+          round(min(pe_relative_to_2020 %>% filter(variable == "PE|Gas") %>% pull(percentage))*100, 1),
+          round(min(pe_relative_to_2020 %>% filter(variable == "PE|Oil") %>% pull(percentage))*100, 1)),
+  max = c(round(max(pe_relative_to_2020 %>% filter(variable == "PE|Biomass") %>% pull(percentage))*100, 1),
+          round(max(pe_relative_to_2020 %>% filter(variable == "PE|Coal") %>% pull(percentage))*100, 1),
+          round(max(pe_relative_to_2020 %>% filter(variable == "PE|Gas") %>% pull(percentage))*100, 1),
+          round(max(pe_relative_to_2020 %>% filter(variable == "PE|Oil") %>% pull(percentage))*100, 1))
 )
+# net imports hydrogen and e-fuels
+vars <- c(
+  "Hydrogen" = "SE|Hydrogen|Net Imports",
+  "efuel - liquids" = "SE|Liquids|Hydrogen|Net Imports",
+  "efuel - gases" = "SE|Gases|Hydrogen|Net Imports"
+)
+
+hydrogenAndEfuelsImports <- data.frame(
+  Imports=c("Hydrogen","efuel - liquids","efuel - gases","Total"),
+  "2040_mainScenario"=c(
+    round(df %>% filter(period == 2040, region == "EU27", scenario == mainScen, variable == "SE|Hydrogen|Net Imports") %>% pull(value) * EJ2Mtoe,2),
+    round(df %>% filter(period == 2040, region == "EU27", scenario == mainScen, variable == "SE|Liquids|Hydrogen|Net Imports") %>% pull(value) * EJ2Mtoe,2),
+    round(df %>% filter(period == 2040, region == "EU27", scenario == mainScen, variable == "SE|Gases|Hydrogen|Net Imports") %>% pull(value) * EJ2Mtoe,2),
+    round(df %>% filter(period == 2040, region == "EU27", scenario == mainScen, variable %in% c("SE|Hydrogen|Net Imports","SE|Liquids|Hydrogen|Net Imports","SE|Gases|Hydrogen|Net Imports")) %>% group_by(model,scenario,region,unit,period) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value) * EJ2Mtoe,2)
+  ),
+  "2040_min"=c(
+    round(min(df %>% filter(period == 2040, region == "EU27", variable == "SE|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(min(df %>% filter(period == 2040, region == "EU27", variable == "SE|Liquids|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(min(df %>% filter(period == 2040, region == "EU27", variable == "SE|Gases|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(min(df %>% filter(period == 2040, region == "EU27", variable %in% c("SE|Hydrogen|Net Imports","SE|Liquids|Hydrogen|Net Imports","SE|Gases|Hydrogen|Net Imports")) %>% group_by(model,scenario,region,unit,period) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)) * EJ2Mtoe,2)
+  ), 
+  "2040_max"=c(
+    round(max(df %>% filter(period == 2040, region == "EU27", variable == "SE|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(max(df %>% filter(period == 2040, region == "EU27", variable == "SE|Liquids|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(max(df %>% filter(period == 2040, region == "EU27", variable == "SE|Gases|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(max(df %>% filter(period == 2040, region == "EU27", variable %in% c("SE|Hydrogen|Net Imports","SE|Liquids|Hydrogen|Net Imports","SE|Gases|Hydrogen|Net Imports")) %>% group_by(model,scenario,region,unit,period) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)) * EJ2Mtoe,2)
+  ),
+  "2050_mainScenario"=c(
+    round(df %>% filter(period == 2050, region == "EU27", scenario == mainScen, variable == "SE|Hydrogen|Net Imports") %>% pull(value) * EJ2Mtoe,2),
+    round(df %>% filter(period == 2050, region == "EU27", scenario == mainScen, variable == "SE|Liquids|Hydrogen|Net Imports") %>% pull(value) * EJ2Mtoe,2),
+    round(df %>% filter(period == 2050, region == "EU27", scenario == mainScen, variable == "SE|Gases|Hydrogen|Net Imports") %>% pull(value) * EJ2Mtoe,2),
+    round(df %>% filter(period == 2050, region == "EU27", scenario == mainScen, variable %in% c("SE|Hydrogen|Net Imports","SE|Liquids|Hydrogen|Net Imports","SE|Gases|Hydrogen|Net Imports")) %>% group_by(model,scenario,region,unit,period) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value) * EJ2Mtoe,2)
+  ),
+  "2050_min"=c(
+    round(min(df %>% filter(period == 2050, region == "EU27", variable == "SE|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(min(df %>% filter(period == 2050, region == "EU27", variable == "SE|Liquids|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(min(df %>% filter(period == 2050, region == "EU27", variable == "SE|Gases|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(min(df %>% filter(period == 2050, region == "EU27", variable %in% c("SE|Hydrogen|Net Imports","SE|Liquids|Hydrogen|Net Imports","SE|Gases|Hydrogen|Net Imports")) %>% group_by(model,scenario,region,unit,period) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)) * EJ2Mtoe,2)
+  ), 
+  "2050_max"=c(
+    round(max(df %>% filter(period == 2050, region == "EU27", variable == "SE|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(max(df %>% filter(period == 2050, region == "EU27", variable == "SE|Liquids|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(max(df %>% filter(period == 2050, region == "EU27", variable == "SE|Gases|Hydrogen|Net Imports") %>% pull(value)) * EJ2Mtoe,2),
+    round(max(df %>% filter(period == 2050, region == "EU27", variable %in% c("SE|Hydrogen|Net Imports","SE|Liquids|Hydrogen|Net Imports","SE|Gases|Hydrogen|Net Imports")) %>% group_by(model,scenario,region,unit,period) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)) * EJ2Mtoe,2)
+  )
+  )
 
 # net imports
 vars <- list(
@@ -406,10 +574,13 @@ fe_electricity <- left_join(
   mutate(percentage = value/base)
 
 FE_electricity <- data.frame(
-  FE=c("fe_electricity_relative_to_2020_(%)"),
-  reference_value=c(round(fe_electricity %>% filter(scenario == mainScen) %>% pull(percentage)*100,1)),
-  min = c(round(min(fe_electricity %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),1)),
-  max = c(round(max(fe_electricity %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),1))
+  FE=c("fe_electricity_relative_to_2020_(%)", "fe_electricity_2040(Mtoe)"),
+  reference_value=c(round(fe_electricity %>% filter(scenario == mainScen) %>% pull(percentage)*100,1),
+                    round(fe_electricity %>% filter(scenario == mainScen) %>% pull(value)*EJ2Mtoe,0)),
+  min = c(round(min(fe_electricity %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),1),
+          round(min(fe_electricity %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(value)*EJ2Mtoe),0)),
+  max = c(round(max(fe_electricity %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(percentage)*100),1),
+          round(max(fe_electricity %>% filter(tgt2030 %in% tgt2030Scen) %>% pull(value)*EJ2Mtoe),0))
 )
 
 
@@ -1317,10 +1488,6 @@ residualFossils <- data.frame(
     round((max(df %>% filter(region == "EU27", period == 2050, tgt2030 %in% tgt2030Scen, variable == "Emi|CO2|Residual Fossil") %>% pull(value))))
   )
 )
-
-
-
-
 
 
 

@@ -9,7 +9,7 @@ outFolder <- paste0("./output/",gsub("./data/","",dataFolder))
 dir.create(outFolder, recursive = TRUE, showWarnings = FALSE)
 
 # Create paper charts in EJ
-rmarkdown::render("./report_paperCharts.Rmd", output_file = paste0(outFolder, "/report_paperCharts-EJ.html"), params = list(forceUpdateData = FALSE, loadHist = TRUE, energyInMtoe = FALSE, chartsFolder = "report_paperCharts_EJ"))
+#rmarkdown::render("./report_paperCharts.Rmd", output_file = paste0(outFolder, "/report_paperCharts-EJ.html"), params = list(forceUpdateData = FALSE, loadHist = TRUE, energyInMtoe = FALSE, chartsFolder = "report_paperCharts_EJ"))
 
 # Create paper charts in Mtoe and MtH2
 rmarkdown::render("./report_paperCharts.Rmd", output_file = paste0(outFolder, "/report_paperCharts-Mtoe_and_MtH2.html"), params = list(forceUpdateData = FALSE, loadHist = TRUE, energyInMtoe = TRUE, chartsFolder = "report_paperCharts_Mtoe"))
