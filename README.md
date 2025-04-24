@@ -7,7 +7,7 @@ Rodrigues, R., Pietzcker, R., Sitarz, J., Merfort, A., Hasse, R., Hoppe, J., Peh
 # Model version and results
 
 - Results were created using REMIND version 3.3.1 with 21 regions (REMIND-EU).
-- The run files can be provided by request and are internally located at the PIK cluster infrastructure under: `/p/projects/ecemf/REMIND/2040_scenarios/v08_2024_06_14_REMIND_3.3.1` 
+- The run files can be provided by request and are internally located at the PIK cluster infrastructure under: `/p/projects/ecemf/REMIND/2040_scenarios/v13_2024_12_11` 
 
 # License
 
