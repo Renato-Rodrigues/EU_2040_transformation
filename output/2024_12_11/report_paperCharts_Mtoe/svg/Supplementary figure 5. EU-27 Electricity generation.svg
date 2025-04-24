@@ -824,35 +824,35 @@
 <text x='786.52' y='411.63' style='font-size: 13.00px; font-family: "Arial";' textLength='26.02px' lengthAdjust='spacingAndGlyphs'>24%</text>
 <text x='786.52' y='373.37' style='font-size: 13.00px; font-family: "Arial";' textLength='25.06px' lengthAdjust='spacingAndGlyphs'>11%</text>
 <text x='808.53' y='336.11' text-anchor='middle' style='font-size: 16.00px;fill: #1A1A1A; font-family: "Arial";' textLength='35.60px' lengthAdjust='spacingAndGlyphs'>2040</text>
-<rect x='104.04' y='645.94' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #337FFF;' />
-<rect x='104.04' y='665.79' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #193F7F;' />
-<rect x='104.04' y='685.63' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #FFE600;' />
-<rect x='243.15' y='645.94' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #FFCC00;' />
-<rect x='243.15' y='665.79' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #005900;' />
-<rect x='243.15' y='685.63' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #33FF00;' />
-<rect x='398.24' y='645.94' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #191999;' />
-<rect x='398.24' y='665.79' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #E51900;' />
-<rect x='398.24' y='685.63' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #FF33FF;' />
-<rect x='518.69' y='645.94' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5ED5B0;' />
-<rect x='518.69' y='665.79' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #999959;' />
-<rect x='518.69' y='685.63' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B79E38;' />
-<rect x='641.77' y='645.94' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B30000;' />
-<rect x='641.77' y='665.79' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #0C0C0C;' />
-<rect x='641.77' y='685.63' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B2B2B2;' />
-<text x='131.67' y='660.89' style='font-size: 16.00px; font-family: "Arial";' textLength='101.96px' lengthAdjust='spacingAndGlyphs'>Wind Offshore</text>
-<text x='131.67' y='680.73' style='font-size: 16.00px; font-family: "Arial";' textLength='102.26px' lengthAdjust='spacingAndGlyphs'>Wind Onshore</text>
-<text x='131.67' y='700.57' style='font-size: 16.00px; font-family: "Arial";' textLength='63.14px' lengthAdjust='spacingAndGlyphs'>Solar PV</text>
-<text x='270.79' y='660.89' style='font-size: 16.00px; font-family: "Arial";' textLength='74.69px' lengthAdjust='spacingAndGlyphs'>Solar CSP</text>
-<text x='270.79' y='680.73' style='font-size: 16.00px; font-family: "Arial";' textLength='118.25px' lengthAdjust='spacingAndGlyphs'>Biomass w/o CC</text>
-<text x='270.79' y='700.57' style='font-size: 16.00px; font-family: "Arial";' textLength='109.35px' lengthAdjust='spacingAndGlyphs'>Biomass w/ CC</text>
-<text x='425.88' y='660.89' style='font-size: 16.00px; font-family: "Arial";' textLength='42.68px' lengthAdjust='spacingAndGlyphs'>Hydro</text>
-<text x='425.88' y='680.73' style='font-size: 16.00px; font-family: "Arial";' textLength='83.59px' lengthAdjust='spacingAndGlyphs'>Geothermal</text>
-<text x='425.88' y='700.57' style='font-size: 16.00px; font-family: "Arial";' textLength='55.14px' lengthAdjust='spacingAndGlyphs'>Nuclear</text>
-<text x='546.32' y='660.89' style='font-size: 16.00px; font-family: "Arial";' textLength='69.38px' lengthAdjust='spacingAndGlyphs'>Hydrogen</text>
-<text x='546.32' y='680.73' style='font-size: 16.00px; font-family: "Arial";' textLength='86.23px' lengthAdjust='spacingAndGlyphs'>Gas w/o CC</text>
-<text x='546.32' y='700.57' style='font-size: 16.00px; font-family: "Arial";' textLength='77.34px' lengthAdjust='spacingAndGlyphs'>Gas w/ CC</text>
-<text x='669.41' y='660.89' style='font-size: 16.00px; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>Oil</text>
-<text x='669.41' y='680.73' style='font-size: 16.00px; font-family: "Arial";' textLength='89.81px' lengthAdjust='spacingAndGlyphs'>Coal w/o CC</text>
-<text x='669.41' y='700.57' style='font-size: 16.00px; font-family: "Arial";' textLength='80.91px' lengthAdjust='spacingAndGlyphs'>Coal w/ CC</text>
+<rect x='104.04' y='655.91' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #337FFF;' />
+<rect x='104.04' y='675.75' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #193F7F;' />
+<rect x='104.04' y='695.59' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #FFE600;' />
+<rect x='243.15' y='655.91' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #FFCC00;' />
+<rect x='243.15' y='675.75' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #005900;' />
+<rect x='243.15' y='695.59' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #33FF00;' />
+<rect x='398.24' y='655.91' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #191999;' />
+<rect x='398.24' y='675.75' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #E51900;' />
+<rect x='398.24' y='695.59' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #FF33FF;' />
+<rect x='518.69' y='655.91' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5ED5B0;' />
+<rect x='518.69' y='675.75' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #999959;' />
+<rect x='518.69' y='695.59' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B79E38;' />
+<rect x='641.77' y='655.91' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B30000;' />
+<rect x='641.77' y='675.75' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #0C0C0C;' />
+<rect x='641.77' y='695.59' width='18.43' height='18.43' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #B2B2B2;' />
+<text x='131.67' y='670.85' style='font-size: 16.00px; font-family: "Arial";' textLength='101.96px' lengthAdjust='spacingAndGlyphs'>Wind Offshore</text>
+<text x='131.67' y='690.69' style='font-size: 16.00px; font-family: "Arial";' textLength='102.26px' lengthAdjust='spacingAndGlyphs'>Wind Onshore</text>
+<text x='131.67' y='710.53' style='font-size: 16.00px; font-family: "Arial";' textLength='63.14px' lengthAdjust='spacingAndGlyphs'>Solar PV</text>
+<text x='270.79' y='670.85' style='font-size: 16.00px; font-family: "Arial";' textLength='74.69px' lengthAdjust='spacingAndGlyphs'>Solar CSP</text>
+<text x='270.79' y='690.69' style='font-size: 16.00px; font-family: "Arial";' textLength='118.25px' lengthAdjust='spacingAndGlyphs'>Biomass w/o CC</text>
+<text x='270.79' y='710.53' style='font-size: 16.00px; font-family: "Arial";' textLength='109.35px' lengthAdjust='spacingAndGlyphs'>Biomass w/ CC</text>
+<text x='425.88' y='670.85' style='font-size: 16.00px; font-family: "Arial";' textLength='42.68px' lengthAdjust='spacingAndGlyphs'>Hydro</text>
+<text x='425.88' y='690.69' style='font-size: 16.00px; font-family: "Arial";' textLength='83.59px' lengthAdjust='spacingAndGlyphs'>Geothermal</text>
+<text x='425.88' y='710.53' style='font-size: 16.00px; font-family: "Arial";' textLength='55.14px' lengthAdjust='spacingAndGlyphs'>Nuclear</text>
+<text x='546.32' y='670.85' style='font-size: 16.00px; font-family: "Arial";' textLength='69.38px' lengthAdjust='spacingAndGlyphs'>Hydrogen</text>
+<text x='546.32' y='690.69' style='font-size: 16.00px; font-family: "Arial";' textLength='86.23px' lengthAdjust='spacingAndGlyphs'>Gas w/o CC</text>
+<text x='546.32' y='710.53' style='font-size: 16.00px; font-family: "Arial";' textLength='77.34px' lengthAdjust='spacingAndGlyphs'>Gas w/ CC</text>
+<text x='669.41' y='670.85' style='font-size: 16.00px; font-family: "Arial";' textLength='19.56px' lengthAdjust='spacingAndGlyphs'>Oil</text>
+<text x='669.41' y='690.69' style='font-size: 16.00px; font-family: "Arial";' textLength='89.81px' lengthAdjust='spacingAndGlyphs'>Coal w/o CC</text>
+<text x='669.41' y='710.53' style='font-size: 16.00px; font-family: "Arial";' textLength='80.91px' lengthAdjust='spacingAndGlyphs'>Coal w/ CC</text>
 </g>
 </svg>

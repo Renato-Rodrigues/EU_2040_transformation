@@ -79,12 +79,6 @@ dir.create(jsOutputFolder, recursive = TRUE, showWarnings = FALSE)
 
 source("./R/plotly2js.R") 
 
-
-# df_beforeFilter <- df_beforeFilter %>%
-#   filter(tgt2030 != 59)
-# df <- df %>%
-#   filter(tgt2030 != 59)
-
 ```
 
 <!-- units conversion -->
@@ -119,7 +113,7 @@ g <- NULL
     "Carbon price" = "Price|Carbon"
   )
   
-  plotData <- df_beforeFilter %>%
+  plotData <- df %>%
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
     mutate(period = as.Date(paste0("01/01/", period),format="%m/%d/%Y"),
            value = currencyConversion*value) %>%
@@ -185,7 +179,7 @@ g <- NULL
     mutate(scenario = "historical") %>%
     mutate(value = round(value,2))
   
-  plotData <- df_beforeFilter %>% 
+  plotData <- df %>% 
     filter(region == "EU27", period %in% c(2020:2060), tgt2030 %in% tgt2030Scen) %>%
     calc_addVariable( "`emiIntTrnsp`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers`" , units = "Mt CO2/yr") %>%
     calc_addVariable( "`emiIntraEU`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr") %>%
@@ -242,7 +236,7 @@ g <- NULL
 
 ```{r chart_finalEnergy, echo=FALSE, include = FALSE}
   
-  plotData <- df_beforeFilter %>% 
+  plotData <- df %>% 
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable == "FE|w/o Non-energy Use w/o Bunkers") %>%
     mutate(value = round(value,2))
   
@@ -309,7 +303,7 @@ g <- NULL
   
   invertVars <- setNames(names(vars),vars)
   
-  plotData <- df_beforeFilter %>% 
+  plotData <- df %>% 
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% unlist(vars)) %>%
     mutate(sector = factor(invertVars[as.character(variable)], c("Total", "Transport", "Industry", "Buildings"))) %>%
     mutate(value = round(value,4))
@@ -382,7 +376,7 @@ g <- NULL
   
   invertVars <- setNames(names(vars),vars)
   
-  plotData <- df_beforeFilter %>% 
+  plotData <- df %>% 
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% unlist(vars)) %>%
     mutate(type = gsub("\\d$", "", as.character(invertVars[as.character(variable)]))) %>%
     group_by(model,scenario,region,unit,period,type,tgt2030,lim) %>%
@@ -429,7 +423,7 @@ g <- NULL
     "BECCS" = "Emi|CO2|CDR|BECCS"
   )
   
-  plotData <- df_beforeFilter %>%
+  plotData <- df %>%
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
     mutate(value = round(value,2))
   
@@ -481,7 +475,7 @@ g <- NULL
     "DAC" = "Emi|CO2|CDR|DACCS"
   )
   
-  plotData <- df_beforeFilter %>%
+  plotData <- df %>%
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
     mutate(value = round(value,2))
   
@@ -542,7 +536,7 @@ g <- NULL
   
   invertVars <- setNames(names(vars),vars)
   
-  plotData <- df_beforeFilter %>% 
+  plotData <- df %>% 
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
     mutate(sector = factor(invertVars[as.character(variable)], names(vars))) %>%
     mutate(value = round(value,2))
@@ -593,7 +587,7 @@ g <- NULL
   
   invertVars <- setNames(names(vars),vars)
   
-  plotData <- df_beforeFilter %>% 
+  plotData <- df %>% 
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
     mutate(pe = factor(invertVars[as.character(variable)], names(vars))) %>%
     mutate(value = round(value,2))
@@ -667,7 +661,7 @@ g <- NULL
   
   invertVars <- setNames(names(vars),vars)
   
-  plotData <- df_beforeFilter %>% 
+  plotData <- df %>% 
     filter(region == "EU27", period %in% c(2020:2050), tgt2030 %in% tgt2030Scen, variable %in% vars) %>%
     mutate(seel = factor(invertVars[as.character(variable)], names(vars))) %>%
     mutate(value = round(value * 1/0.0036))
@@ -716,7 +710,7 @@ g <- NULL
 <!--     mutate(scenario = "historical") %>% -->
 <!--     mutate(value = round(value,2)) -->
 
-<!--   plotData <- df_beforeFilter %>%  -->
+<!--   plotData <- df %>%  -->
 <!--     filter(region == "EU27", period == 2040, tgt2030 %in% tgt2030Scen) %>% -->
 <!--     calc_addVariable( "`emiIntTrnsp`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers`" , units = "Mt CO2/yr") %>% -->
 <!--     calc_addVariable( "`emiIntraEU`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr") %>% -->
@@ -789,7 +783,7 @@ g <- NULL
 <!-- #  -->
 <!-- # invertVars <- setNames(names(vars),vars) -->
 <!-- #  -->
-<!-- # plotData <- df_beforeFilter %>%  -->
+<!-- # plotData <- df %>%  -->
 <!-- #   filter(region == "EU27", period %in% c(2020:2060), tgt2030 %in% tgt2030Scen, variable %in% vars) %>% -->
 <!-- #   mutate(fe = factor(invertVars[as.character(variable)], names(vars))) -->
 <!-- #  -->

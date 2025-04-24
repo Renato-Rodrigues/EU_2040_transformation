@@ -17,9 +17,6 @@ source("./R/loadReferenceEmissions.R")
 
 #harmonizing data (scale emissions to match historical values)
 source("./R/harmonizeData.R")
-df_beforeFilter <- df
-df <- df %>%
-  filter(!grepl("limVRE", scenario)) # filter VRE scenario out of main charts
 
 #loading efficiency targets
 source("./R/efficiencyTarget.R")
