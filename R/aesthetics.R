@@ -219,6 +219,23 @@ theme_doubleColumn <- function(){
     )
 }
 
+theme_doubleColumn_alt <- function(){
+  theme_minimal(base_size = textSize.double) +
+    theme(
+      plot.title = element_text(size=textSize.double),
+      legend.position="bottom",
+      axis.title.x=element_blank(),
+      axis.ticks.x=element_blank(),
+      axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
+      axis.title.y=element_blank(),
+      legend.key.height = unit(0.7, "cm"),
+      legend.key.width = unit(0.7,"cm"),
+      legend.spacing.y = unit(0.1, 'cm'),
+      panel.background = element_rect(fill="#FFFFFF", color = NA),
+      plot.background = element_rect(fill="#FFFFFF", color = NA)#,
+    )
+}
+  
 
 # theme_set(
 #   theme_minimal(base_size = 20) +

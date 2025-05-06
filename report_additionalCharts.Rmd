@@ -237,10 +237,19 @@ nonAchieved2030 <- left_join(
     filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen, variable == "Price|Carbon") %>%
     mutate(price_2030 = currencyConversion*value) %>%
     select(scenario, price_2030),
-  by = "scenario") %>%
-  filter(diff >= 0.5 | diff <= -0.5) %>%
+  by = "scenario")
+
+underAchieved2030 <- nonAchieved2030 %>%
+  filter(diff >= 0.5) %>%
   select(scenario, price_2030, tgt2030, tgtAchieved, diff) %>%
   arrange(desc(abs(diff)))
+
+overAchieved2030 <- nonAchieved2030 %>%
+  filter(diff <= 0.5) %>%
+  select(scenario, price_2030, tgt2030, tgtAchieved, diff) %>%
+  arrange(desc(abs(diff)))
+
+rerun <- overAchieved2030 %>% filter(tgtAchieved >= 59.5)
   
 #View(nonAchieved2030)
 

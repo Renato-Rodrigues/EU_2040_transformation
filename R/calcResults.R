@@ -149,8 +149,10 @@ indirect_electrification <- data.frame(
     max_Mtoe = round(max_EJ * EJ2Mtoe,1))
 
 indirect_electrification_detail <- data.frame(
-  indirect_electrification_detail = c("total_H2","total_efuels","buildings_H2","buildings_efuels","transport_H2","transport_efuels","industry_H2","industry_efuels"),
+  indirect_electrification_detail = c("total_H2_2050","total_efuels_2050","total_H2_2040","total_efuels_2040","buildings_H2_2040","buildings_efuels_2040","transport_H2_2040","transport_efuels_2040","industry_H2_2040","industry_efuels_2040"),
   reference_value_EJ=c(
+    round(df %>% filter(region == "EU27", period == 2050, variable %in% c("FE|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
+    round(df %>% filter(region == "EU27", period == 2050, variable %in% c("FE|Gases|Hydrogen","FE|Liquids|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
     round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
     round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Gases|Hydrogen","FE|Liquids|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
     round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1),
@@ -161,6 +163,8 @@ indirect_electrification_detail <- data.frame(
     round(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Gases|Hydrogen","FE|Industry|Liquids|Hydrogen"), scenario == mainScen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value),1)
   ),
   min_EJ=c(
+    round(min(df %>% filter(region == "EU27", period == 2050, variable %in% c("FE|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(min(df %>% filter(region == "EU27", period == 2050, variable %in% c("FE|Gases|Hydrogen","FE|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
     round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
     round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Gases|Hydrogen","FE|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
     round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
@@ -171,6 +175,8 @@ indirect_electrification_detail <- data.frame(
     round(min(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Industry|Gases|Hydrogen","FE|Industry|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1)
   ),
   max_EJ=c(
+    round(max(df %>% filter(region == "EU27", period == 2050, variable %in% c("FE|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
+    round(max(df %>% filter(region == "EU27", period == 2050, variable %in% c("FE|Gases|Hydrogen","FE|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
     round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
     round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Gases|Hydrogen","FE|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
     round(max(df %>% filter(region == "EU27", period == 2040, variable %in% c("FE|Buildings|Hydrogen"), tgt2030 %in% tgt2030Scen) %>% group_by(scenario,tgt2030) %>% summarize(value = sum(value),.groups = "keep") %>% pull(value)),1),
@@ -895,7 +901,7 @@ chemicals <- left_join(
   mutate(percentage = value/base)
 
 chemicals_df <- data.frame(
-  FE_chemicals = c("biomass_hydrogen_efuels_2020 (%)", "biomass_hydrogen_efuels_2030 (%)", "biomass_hydrogen_efuels_2040 (%)"),
+  FE_chemicals_energy_and_proccesses = c("biomass_hydrogen_efuels_2020 (%)", "biomass_hydrogen_efuels_2030 (%)", "biomass_hydrogen_efuels_2040 (%)"),
   reference_value = c(round(chemicals %>% filter(scenario == mainScen, period == 2020) %>% pull(percentage)*100 ),
                       round(chemicals %>% filter(scenario == mainScen, period == 2030) %>% pull(percentage)*100 ),
                       round(chemicals %>% filter(scenario == mainScen, period == 2040) %>% pull(percentage)*100 )),
@@ -905,6 +911,35 @@ chemicals_df <- data.frame(
   max = c(round(max(chemicals %>% filter(period == 2020) %>% pull(percentage) *100)),
           round(max(chemicals %>% filter(period == 2030) %>% pull(percentage) *100)),
           round(max(chemicals %>% filter(period == 2040) %>% pull(percentage) *100)))
+)
+
+steel <- left_join(
+   df %>% 
+    filter(region == "EU27", period %in% c(2020,2030,2040), variable %in% c("FE|Industry|Steel|Secondary|Electricity", "FE|Industry|Steel|Hydrogen", "FE|Industry|Steel|Gases|Hydrogen", "FE|Industry|Steel|Liquids|Hydrogen"), tgt2030 %in% tgt2030Scen) %>%
+    select(scenario,period,variable,value)
+  ,
+  df %>%
+    filter(region == "EU27", period %in% c(2020,2030,2040), variable == "FE|Industry|Steel", tgt2030 %in% tgt2030Scen) %>%
+    mutate(base=value) %>%
+    select(scenario,period,base)
+  , by = join_by(scenario == scenario, period == period)
+) %>%
+  mutate(percentage = value/base)
+
+steel_df <- data.frame(
+  FE_steel = c("secondary_steel_2040 (%)", "hydrogen_based_steel_2040 (%)", "efuel_gases_steel_2040 (%)", "efuel_liquids_steel_2040 (%)"),
+  reference_value = c(round(steel %>% filter(scenario == mainScen, variable =="FE|Industry|Steel|Secondary|Electricity", period == 2040) %>% pull(percentage)*100 ),
+                      round(steel %>% filter(scenario == mainScen, variable =="FE|Industry|Steel|Hydrogen", period == 2040) %>% pull(percentage)*100 ),
+                      round(steel %>% filter(scenario == mainScen, variable =="FE|Industry|Steel|Gases|Hydrogen", period == 2040) %>% pull(percentage)*100 ),
+                      round(steel %>% filter(scenario == mainScen, variable =="FE|Industry|Steel|Liquids|Hydrogen", period == 2040) %>% pull(percentage)*100 )),
+  min = c(round(min(steel %>% filter(period == 2040, variable =="FE|Industry|Steel|Secondary|Electricity") %>% pull(percentage) *100)),
+          round(min(steel %>% filter(period == 2040, variable =="FE|Industry|Steel|Hydrogen") %>% pull(percentage) *100)),
+          round(min(steel %>% filter(period == 2040, variable =="FE|Industry|Steel|Gases|Hydrogen") %>% pull(percentage) *100)),
+          round(min(steel %>% filter(period == 2040, variable =="FE|Industry|Steel|Liquids|Hydrogen") %>% pull(percentage) *100))),
+  max = c(round(max(steel %>% filter(period == 2040, variable =="FE|Industry|Steel|Secondary|Electricity") %>% pull(percentage) *100)),
+          round(max(steel %>% filter(period == 2040, variable =="FE|Industry|Steel|Hydrogen") %>% pull(percentage) *100)),
+          round(max(steel %>% filter(period == 2040, variable =="FE|Industry|Steel|Gases|Hydrogen") %>% pull(percentage) *100)),
+          round(max(steel %>% filter(period == 2040, variable =="FE|Industry|Steel|Liquids|Hydrogen") %>% pull(percentage) *100)))
 )
 
 other_industry <- left_join(
