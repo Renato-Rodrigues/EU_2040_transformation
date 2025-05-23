@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>REMIND - sensitivity analysis</title>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script-->
+
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script> 
+</head>
+<body>
+
+  <div class="d-flex min-100">
+    
+    <div class="left-side-bar min-100">
+  
+  <button type="button" class="btn btn-light btn-sm reset"> <i class="fa fa-home"></i></button>
+  <button type="button" class="btn btn-light btn-sm all"> <i class="fas fa-circle-notch"></i></button>
+  <!--button type="button" class="btn btn-light btn-sm collapseTree" data-dir="down"><i class="fas fa-caret-square-down"></i></button-->
+  
+  <ul class="tree">
+    <li data-info="scenario">
+      <input type="checkbox" checked="checked" id="c1" />
+      <label class="tree_label" for="c1">2040 Scenarios</label>
+      <ul class='scenariosList'>
+        <li data-info="sensitivity_2030">
+          <input type="checkbox" checked="checked" id="c2" />
+          <label for="c2" class="tree_label">2030</label>
+          <ul>
+            <li class="scen" data-info="sensitivity_2030_55" data-scen="_55"><span class="tree_label">55%</span></li>
+            <li class="scen default" data-info="sensitivity_2030_57" data-scen="_57"><span class="tree_label">57%</span></li>
+            <li class="scen" data-info="sensitivity_2030_59" data-scen="_59"><span class="tree_label">59%</span></li>
+          </ul>
+        </li>
+        <li data-info="sensitivity_efficiency">
+          <input type="checkbox" id="c3" />
+          <label for="c3" class="tree_label">Efficiency</label>
+          <ul>
+            <li class="scen default" data-info="sensitivity_efficiency_REMIND" data-scen=""><span class="tree_label">REMIND</span></li>
+            <li class="scen" data-info="sensitivity_efficiency_EED" data-scen="_eedEff"><span class="tree_label">EED 2018</span></li>
+            <li class="scen" data-info="sensitivity_efficiency_FitFor55" data-scen="_ff55Eff"><span class="tree_label">FitFor55</span></li>
+            <li class="scen" data-info="sensitivity_efficiency_RePowerEU" data-scen="_RpEUEff"><span class="tree_label">RePowerEU</span></li>
+          </ul>
+        </li>
+
+        <li data-info="sensitivity_biomass">
+          <input type="checkbox" id="c4" />
+          <label for="c4" class="tree_label">Biomass</label>
+          <ul>
+            <li class="scen" data-info="sensitivity_biomass_4" data-scen="_bio4"><span class="tree_label">4 EJ/yr</span></li>
+            <li class="scen default" data-info="sensitivity_biomass_7p5" data-scen="_bio7p5"><span class="tree_label">7.5 EJ/yr</span></li>
+            <li class="scen" data-info="sensitivity_biomass_12" data-scen="_bio12"><span class="tree_label">12 EJ/yr</span></li>
+            <li class="scen" data-info="sensitivity_biomass_20" data-scen="_bio20"><span class="tree_label">20 EJ/yr</span></li>
+          </ul>
+        </li>
+
+        <li data-info="sensitivity_CCS">
+          <input type="checkbox" id="c5" />
+          <label for="c5" class="tree_label">CCS</label>
+          <ul>
+            <li class="scen default lim_alt" data-info="sensitivity_CCS_REMIND" data-scen=""><span class="tree_label">REMIND</span></li>
+            <li class="scen lim" data-info="sensitivity_CCS_limited" data-scen="_limCC"><span class="tree_label">Limited</span></li>
+          </ul>
+        </li>
+
+        <li data-info="sensitivity_H2">
+          <input type="checkbox" id="c6" />
+          <label for="c6" class="tree_label">H2 and e-fuel</label>
+          <ul>
+            <li class="scen default lim_alt" data-info="sensitivity_H2_trade" data-scen=""><span class="tree_label">Trade</span></li>
+            <li class="scen lim" data-info="sensitivity_H2_limited" data-scen="_limH2"><span class="tree_label">Limited</span></li>
+          </ul>
+        </li>
+
+        <li data-info="sensitivity_VRE">
+          <input type="checkbox" id="c7" />
+          <label for="c7" class="tree_label">VRE (wind+solar)</label>
+          <ul>
+            <li class="scen default lim_alt" data-info="sensitivity_VRE_REMIND" data-scen=""><span class="tree_label">REMIND</span></li>
+            <li class="scen lim" data-info="sensitivity_VRE_limited" data-scen="_limVRE"><span class="tree_label">Limited</span></li>
+          </ul>
+        </li>
+
+      </ul>
+    </li>
+    
+  </ul>
+
+  </div>
+
+  <div class="flex-fill min-100">
+
+    <div class="content">
+    
+      <div class="chartArea">
+    
+        <ul class="nav nav-tabs" id="charts" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="emissions-tab" data-bs-toggle="tab" data-bs-target="#emissions" type="button" role="tab">Emissions</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="carbonPrice-tab" data-bs-toggle="tab" data-bs-target="#carbonPrice" type="button" role="tab">Carbon Price</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sectorEmi-tab" data-bs-toggle="tab" data-bs-target="#sectorEmi" type="button" role="tab">Sector Emissions</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="primaryEnergy-tab" data-bs-toggle="tab" data-bs-target="#primaryEnergy" type="button" role="tab">Primary Energy</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="electricityShare-tab" data-bs-toggle="tab" data-bs-target="#electricityShare" type="button" role="tab">Electricity Share</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="generation-tab" data-bs-toggle="tab" data-bs-target="#generation" type="button" role="tab">Electricity Generation</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="finalEnergy-tab" data-bs-toggle="tab" data-bs-target="#finalEnergy" type="button" role="tab">Final Energy</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="hydrogen-tab" data-bs-toggle="tab" data-bs-target="#hydrogen" type="button" role="tab">Hydrogen</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="beccs-tab" data-bs-toggle="tab" data-bs-target="#beccs" type="button" role="tab">BECCS</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="dac-tab" data-bs-toggle="tab" data-bs-target="#dac" type="button" role="tab">DAC</button>
+          </li>
+        </ul>
+        <div class="tab-content" style="width: 100%; height: 100%;" >
+          <div class="tab-pane fade active show" id="emissions" role="tabpanel" aria-labelledby="emissions-tab" style="width: 100%; height: 95%;" class="plotly-graph-div"></div>
+          <div class="tab-pane fade" id="carbonPrice" role="tabpanel" aria-labelledby="carbonPrice-tab" style="width: 100%; height: 95%;" class="plotly-graph-div"></div>
+          <div class="tab-pane fade" id="sectorEmi" role="tabpanel" aria-labelledby="sectorEmi-tab" style="width: 100%; height: 95%;" class="plotly-graph-div"></div>
+          <div class="tab-pane fade" id="primaryEnergy" role="tabpanel" aria-labelledby="primaryEnergy-tab" style="width: 100%; height: 95%;" class="plotly-graph-div"></div>
+          <div class="tab-pane fade" id="electricityShare" role="tabpanel" aria-labelledby="electricityShare-tab" style="width: 100%; height: 95%;" class="plotly-graph-div"></div>
+          <div class="tab-pane fade" id="generation" role="tabpanel" aria-labelledby="generation-tab" style="width: 100%; height: 95%;" class="plotly-graph-div"></div>
+          <div class="tab-pane fade" id="finalEnergy" role="tabpanel" aria-labelledby="finalEnergy-tab" style="width: 100%; height: 95%;" class="plotly-graph-div"></div>
+          <div class="tab-pane fade" id="hydrogen" role="tabpanel" aria-labelledby="hydrogen-tab" style="width: 100%; height: 95%;" class="plotly-graph-div"></div>
+          <div class="tab-pane fade" id="beccs" role="tabpanel" aria-labelledby="beccs-tab" style="width: 100%; height: 95%;" class="plotly-graph-div"></div>
+          <div class="tab-pane fade" id="dac" role="tabpanel" aria-labelledby="dac-tab" style="width: 100%; height: 95%;" class="plotly-graph-div"></div>
+        </div>
+
+    	</div>
+
+      <div class="infoContainer">
+        <div class="info alert alert-dark" role="alert">
+          <p class="text-sm-start infoText">Results for the 192 sensitivity scenarios of cost-efficient pathways to achieve climate neutrality in the EU.</p>
+        </div>
+      </div>
+
+    </div>
+    
+    
+  </div>
+
+  </div>
+  <!--div>right item, put me some width</div-->
+</div-->
+
+
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <script type="text/javascript" src="./charts/emissions.js"></script> 
+  <script type="text/javascript" src="./charts/carbonPrice.js"></script> 
+  <script type="text/javascript" src="./charts/sectorEmi.js"></script> 
+  <script type="text/javascript" src="./charts/primaryEnergy.js"></script> 
+  <script type="text/javascript" src="./charts/electricityShare.js"></script> 
+  <script type="text/javascript" src="./charts/generation.js"></script> 
+  <script type="text/javascript" src="./charts/finalEnergy.js"></script> 
+  <script type="text/javascript" src="./charts/hydrogen.js"></script> 
+  <script type="text/javascript" src="./charts/beccs.js"></script> 
+  <script type="text/javascript" src="./charts/dac.js"></script> 
+  
+  <script  src="./script.js"></script>
+
+</body>
+</html>

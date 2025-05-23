@@ -395,7 +395,7 @@ g[["GHG emi"]] <- ggplot(plotData, aes(x=period,y=value)) +
     labs(title = expression(paste("(a) Total GHG emissions (Mt ", CO[2],"eq/yr)"))) + 
     theme_doubleColumn() +
     theme(axis.title.y=element_blank(),
-          plot.title = element_text(margin=margin(b=35)))
+          plot.title = element_text(margin=margin(b=30)))
 
 plotData <- rbind(
   df %>% 
@@ -451,7 +451,7 @@ g[["target"]] <- ggplot(data=plotData,aes(x=period,y=reduction,fill=bar)) +
   labs(title = "(b) Emission reductions (%)") + 
   theme_doubleColumn() +
   theme(legend.position = "none",
-        plot.title = element_text(margin=margin(b=35)))
+        plot.title = element_text(margin=margin(b=30)))
 
 ```
 
@@ -537,7 +537,8 @@ g[["GHG Emissions per sector"]] <- ggplot(plotData,aes(x=period,y=value)) +
         legend.direction = "vertical", 
         legend.box = "vertical",
         legend.margin=margin(t=30),
-        plot.margin = margin(t = 15, unit = "pt"))
+        plot.margin = margin(t = 15, r=10, unit = "pt"),
+        plot.title = element_text(margin=margin(b=20)))
 
 ```
 
@@ -701,12 +702,9 @@ g[["2040 Net Emissions - Energy and Industrial Processes - horizontal bar - net 
   ggplot(aes(xmid, ymid, fill = ext_Var)) +
   geom_rect(aes(xmin = xmin, xmax = xmax+CCData, ymin = ymin, ymax = ymax,
                 alpha = factor(period), color = variable)) +
-  
   geom_errorbar(data=plotData %>% filter(period == 2040), aes(xmin=xmax-value+min+CCData, xmax=xmax-value+max+CCData), width=4, colour="black", alpha=0.9, linewidth=0.8) +
-  
   geom_text(data=plotData %>% filter(period == 1990), aes(y = 2005, label = labels, group = labels, hjust=1, angle = 90), vjust=0.5, hjust=1.1, na.rm=TRUE, size = geomText.size * 0.8, angle = 90, lineheight = 0.8) +
-  
-  geom_text(data=plotData %>% filter(period == 2040), aes(x=xmid , y = 2045, label = pct1990), vjust=0.5, hjust=-0.1, na.rm=TRUE, size = geomText.size, angle = 90) +
+  geom_text(data=plotData %>% filter(period == 2040), aes(x=xmid , y = 2045, label = pct1990), vjust=0.5, hjust=-0.1, na.rm=TRUE, size = geomText.size * 0.8, angle = 90) +
   scale_fill_manual(values = c(setNames(plotColor[names(vars)],vars)), labels = setNames(names(vars), vars)) + 
   scale_alpha_manual(values = c(0.2, 0.2, 0.3, 1)) +
   scale_color_manual(values = c(setNames(plotColor[names(vars)],vars)), labels = setNames(names(vars), vars)) +
@@ -721,8 +719,8 @@ g[["2040 Net Emissions - Energy and Industrial Processes - horizontal bar - net 
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank(),
         axis.title.y=element_blank(),
-        plot.margin = margin(t = 15, r = 0, b = 100, l = 0, unit = "pt"),
-        plot.title = element_text(margin=margin(t=0,r=0,b=55,l=0), hjust=1))
+        plot.margin = margin(t = 25, r = 0, b = 60, l = 0, unit = "pt"),
+        plot.title = element_text(margin=margin(t=0,r=0,b=35,l=0), hjust=1))
 
 ```
 
@@ -750,12 +748,12 @@ g[["Figure 1"]] <- gridExtra::arrangeGrob(
                         c(4, 4, 4, 4, 4, 4))
    )
 
-ggsave(paste0(outChartsFolder,"/png/Figure 1. Greenhouse gas emissions for scenarios reaching climate neutrality by 2050.png"), g[["Figure 1"]], device="png", width = 12, height = 14, dpi=300, units = "in")
-ggsave(paste0(outChartsFolder,"/svg/Figure 1. Greenhouse gas emissions for scenarios reaching climate neutrality by 2050.svg"), g[["Figure 1"]], device="svg", width = 12, height = 14, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Figure 1. Greenhouse gas emissions for scenarios reaching climate neutrality by 2050.png"), g[["Figure 1"]], device="png", width = 12, height = 13, dpi=300, units = "in")
+ggsave(paste0(outChartsFolder,"/svg/Figure 1. Greenhouse gas emissions for scenarios reaching climate neutrality by 2050.svg"), g[["Figure 1"]], device="svg", width = 12, height = 13, dpi=100, units = "in")
 
 ```
 
-```{r, echo=FALSE, fig.width=12, fig.height=14}
+```{r, echo=FALSE, fig.width=12, fig.height=13}
 
 grid.newpage()
 grid.draw(g[["Figure 1"]])
@@ -2069,7 +2067,8 @@ g[["milestone"]][["Renewables Share"]] <- ggplot(plotData, aes(x = period, y = v
         panel.spacing = unit(4, "lines"),
         axis.text.x = element_text(angle = 0, hjust = 0.5),
         strip.placement = "outside",
-        strip.text.x = element_text(size = textSize.double, hjust = 1, margin=margin(l=0, b=20)),
+        strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=0, b=20)),
+        #strip.text.x = element_text(size = textSize.double, hjust = 1, margin=margin(l=0, b=20)),
         strip.clip = "off") 
 
 
@@ -2179,7 +2178,8 @@ g[["milestone"]][["Carbon Capture and Storage"]] <- ggplot(plotData, aes(x = per
         panel.spacing = unit(4, "lines"),
         axis.text.x = element_text(angle = 0, hjust = 0.5),
         strip.placement = "outside",
-        strip.text.x = element_text(size = textSize.double, hjust = 1, margin=margin(l=-10, b=20)),
+        strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=0, b=20)),
+        #strip.text.x = element_text(size = textSize.double, hjust = 1, margin=margin(l=-10, b=20)),
         strip.clip = "off")
 
 
@@ -2368,7 +2368,8 @@ g[["milestone"]][["Domestic Hydrogen Production"]] <- ggplot(plotData, aes(x = p
         panel.spacing = unit(4, "lines"),
         axis.text.x = element_text(angle = 0, hjust = 0.5),
         strip.placement = "outside",
-        strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=-15, b=20)),
+        strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=0, b=20)),
+        #strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=-15, b=20)),
         strip.clip = "off")
 ```
 
@@ -2376,18 +2377,18 @@ g[["milestone"]][["Domestic Hydrogen Production"]] <- ggplot(plotData, aes(x = p
 ```{r, echo=FALSE, include=FALSE}
 
 g[["Figure 5"]] <- gridExtra::arrangeGrob(
-  g[["milestone"]][["Emissions reductions"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Final Energy Demand"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Renewables Share"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Direct Electrification"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Carbon-free electricity share"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Domestic Hydrogen Production"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Electricity Demand"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Wind capacity"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Solar photovoltaics"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Residual Fossil Emissions"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Carbon Capture and Storage"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
-  g[["milestone"]][["Novel CDR"]] + theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Emissions reductions"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Final Energy Demand"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Renewables Share"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Direct Electrification"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Carbon-free electricity share"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Domestic Hydrogen Production"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Electricity Demand"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Wind capacity"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Solar photovoltaics"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Residual Fossil Emissions"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Carbon Capture and Storage"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Novel CDR"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
   ncol = 2
 )
 
@@ -2406,137 +2407,39 @@ grid.draw(g[["Figure 5"]])
 
 Figure 5. Comparison of key energy transformation indicators including fit-for-55 policy targets for 2030 and 2040. Red cross symbols represent the results of the reference scenario. Box-plots show the range from first to third quartile of the sensitivity scenarios, while the shaded areas show the distribution of the scenario results. More information about the chart symbols and indicators can be found at the supplementary notes. 
 
+
+<!-- ```{r, echo=FALSE, include=FALSE} -->
+
+<!-- g[["tmp"]] <- gridExtra::arrangeGrob( -->
+<!--   g[["milestone"]][["Final Energy Demand"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   g[["milestone"]][["Electricity Demand"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   #g[["milestone"]][["Emissions reductions"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   g[["milestone"]][["Direct Electrification"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   g[["milestone"]][["Renewables Share"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   g[["milestone"]][["Wind capacity"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   g[["milestone"]][["Solar photovoltaics"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   #g[["milestone"]][["Carbon-free electricity share"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   g[["milestone"]][["Domestic Hydrogen Production"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   #g[["milestone"]][["Residual Fossil Emissions"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   #g[["milestone"]][["Carbon Capture and Storage"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   g[["milestone"]][["Novel CDR"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)), -->
+<!--   ncol = 2 -->
+<!-- ) -->
+
+<!-- ggsave(paste0(outChartsFolder,"/svg/tmp.svg"), g[["tmp"]] , device="svg", width = 12, height = 10, dpi=100, units = "in") -->
+<!-- ggsave(paste0(outChartsFolder,"/png/tmp.png"), g[["tmp"]] , device="png", width = 12, height = 10, dpi=300, units = "in") -->
+
+<!-- ``` -->
+
+
 ---
 
 # Supplementary Information:
 
-### Supplementary figure 1. VRE sensitivity.
-
-<!-- (a) Wind and Solar generation (TWh) -->
-
-```{r supplChart_figure1a, echo=FALSE}
-
-vars <- c(
-#  "Solar CSP" = "SE|Electricity|Solar|CSP",
-  "Solar PV" = "SE|Electricity|Solar|PV",
-  "Wind Onshore" = "SE|Electricity|Wind|Onshore",
-  "Wind Offshore" = "SE|Electricity|Wind|Offshore")
-
-color <- c(
-  "Solar CSP"     = "#ffcc00",
-  "Solar PV"      = "#ffe600",
-  "Wind Onshore"  = "#193F7F",
-  "Wind Offshore" = "#337fff")
-
-pattern <- c(
-  "default"="none",
-  "limited VRE"="stripe"
-)
-
-plotData <- df %>%
-  filter(region == "EU27", period %in% c(2020,2030,2040,2050), scenario %in% c(mainScen,"Nzero_57_bio7p5_limVRE"), variable %in% vars) %>%
-  mutate(scenName = ifelse(scenario == mainScen, "default", "limited VRE"),
-         value = round(value * EJ2TWh),
-         unit = "TWh")
-
-#plotData %>% filter( period == 2040) %>% group_by(scenario) %>% summarise(value = sum(value))
-#value2040 <- plotData %>% filter( period == 2040) %>% group_by(scenario) %>% summarise(value = sum(value)) %>% pull(value)
-#round((1-(value2040[2]/value2040[1]))*100,2)
-
-barwidth <- 3
-
-g[["Wind and Solar generation"]] <- ggplot() +
-  geom_bar_pattern(data = plotData %>% filter(scenario == mainScen), mapping = aes(x=period - (barwidth + 1)/2,y=value, fill=variable, pattern=scenName), stat='identity', position="stack", width = barwidth) +
-  geom_bar_pattern(data = plotData %>% filter(scenario == "Nzero_57_bio7p5_limVRE"), mapping = aes(x=period + (barwidth + 1)/2,y=value, fill=variable, pattern=scenName), stat='identity', position="stack", width = barwidth, pattern_key_scale_factor = 0.3, pattern_density=0.3, pattern_spacing = 0.03, pattern_colour = "white", pattern_fill = "white", pattern_alpha=0.4) +
-  geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
-  scale_fill_manual(values = setNames(color[names(vars)],vars), labels = setNames(names(vars), vars), guide = guide_legend(nrow = 1, order = 1, override.aes = list(pattern = "none"))) +
-  scale_pattern_manual(values = pattern, breaks=c("default","limited VRE"), guide = guide_legend(nrow = 2, order = 1)) +
-  scale_x_continuous(breaks=c(2020,2030,2040,2050), minor_breaks = NULL) +
-  labs(title = "(a) Wind and Solar Generation (TWh)") + 
-  theme_doubleColumn() +
-  theme(axis.title.y = element_blank(),
-        legend.margin=margin(t = -0.4, unit='cm'),
-        legend.box = "horizontal", 
-        legend.box.just = "center")
-
-```
+### Supplementary figure 1. EU-27 carbon price
 
 
-(b) Limited VRE target reduction (%)
-
-```{r supplChart_figure1b, echo=FALSE}
-
-# error bars for scenarios with and without limVRE
-
-plotData <- rbind(
-  df %>%
-    filter(!grepl("limVRE", scenario), region == "EU27", period == 2040, tgt2030 %in% tgt2030Scen) %>%
-    calc_addVariable( "`Emissions with LULUCF and with intra-EU aviation`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr", only.new=T) %>%
-    mutate(reduction = round(1-(value / tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)) ,2),
-           scenName = "without\nlim-VRE") %>%
-    select(-variable) %>%
-  filter(tgt2050 != "Npi") %>%
-  group_by(period) %>%
-  mutate(min = min(reduction),
-        max = max(reduction))
-  ,
-  df %>%
-    filter(region == "EU27", period == 2040, tgt2030 %in% tgt2030Scen) %>%
-    calc_addVariable( "`Emissions with LULUCF and with intra-EU aviation`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr", only.new=T) %>%
-    mutate(reduction = round(1-(value / tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)) ,2),
-           scenName = "with\nlim-VRE") %>%
-    select(-variable) %>%
-  filter(tgt2050 != "Npi") %>%
-  group_by(period) %>%
-  mutate(min = min(reduction),
-        max = max(reduction))
-)
-
-#plotData %>% filter(scenario %in% c(mainScen,"Nzero_57_bio7p5_limVRE"))
-
-g[["limVRE target reduction"]] <- ggplot(plotData, aes(x = scenName, y = reduction, group=scenName)) +
-  geom_errorbar(mapping = aes(ymin=min, ymax=max), width=0.3, colour="black", alpha=0.9, linewidth=1) +
-  geom_boxplot(outlier.shape = NA, width=0.3) +
-  geom_hline(yintercept=1, color = "black", linewidth=2, alpha = 0.5) +
-  scale_y_reverse(breaks=c(1,0.95,0.9,0.85,0.8, 0.75), minor_breaks = NULL, labels = scales::percent) +
-  expand_limits(y=c(1,0.75)) +
-  labs(title = "(b) 2040 target (%)") +
-  theme_doubleColumn() +
-  theme(plot.title = element_text(hjust=1))
-
-
-```
-
-
-```{r, echo=FALSE, include=FALSE}
-
-g[["Supplementary figure 1"]] <- gridExtra::arrangeGrob(
-  g[["Wind and Solar generation"]] + theme(plot.margin=margin(t=10)), 
-  g[["limVRE target reduction"]] + theme(plot.margin=margin(l=20, b=10, t=10)), 
-  layout_matrix = rbind(c(1,1,1,2))
-)
-
-ggsave(paste0(outChartsFolder,"/png/Supplementary figure 1. VRE sensitivity..png"), g[["Supplementary figure 1"]], device="png", width = 12, height = 6, dpi=300, units = "in")
-ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 1. VRE sensitivity..svg"), g[["Supplementary figure 1"]], device="svg", width = 12, height = 6, dpi=100, units = "in")
-
-```
-
-
-```{r, echo=FALSE, fig.width=12, fig.height=6}
-
-grid.newpage()
-grid.draw(g[["Supplementary figure 1"]])
-
-```
-
-Supplementary figure 1. VRE sensitivity. (a) EU-27 Variable renewable energy capacity: reference scenario vs. limited VRE sensitivity. (b) 2040 emission reduction targets: default paper scenarios vs. limited VRE cases. 
-
----
-
-### Supplementary figure 2. EU-27 carbon price
-
-
-```{r supplChart_figure2a_lineplot, echo=FALSE, include=FALSE}
+```{r supplChart_figure1a_lineplot, echo=FALSE, include=FALSE}
 
 vars <- c(
   "Carbon price" = "Price|Carbon"
@@ -2627,8 +2530,7 @@ g[["Carbon Price - line"]] <- ggplot(plotData,aes(x=period,y=value,group = scena
 ```
 
 
-
-```{r supplChart_figure2b_boxPlot, echo=FALSE, include=FALSE}
+```{r supplChart_figure1b_boxPlot, echo=FALSE, include=FALSE}
 
 
 vars <- c(
@@ -2704,7 +2606,7 @@ g[["Carbon Price - boxplot - all_years"]] <- ggplot(plotData, aes(x=xLabel, y=va
 
 ```{r, echo=FALSE, include=FALSE}
 
-g[["Supplementary figure 2"]] <- gridExtra::arrangeGrob(
+g[["Supplementary figure 1"]] <- gridExtra::arrangeGrob(
   g[["Carbon Price - line"]], 
   g[["Carbon Price - boxplot"]], 
   layout_matrix = rbind(
@@ -2712,8 +2614,8 @@ g[["Supplementary figure 2"]] <- gridExtra::arrangeGrob(
     c(2)
   ))
 
-ggsave(paste0(outChartsFolder,"/png/Supplementary figure 2. EU-27 carbon price.png"), g[["Supplementary figure 2"]], device="png", width = 12, height = 10, dpi=300, units = "in")
-ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 2. EU-27 carbon price.svg"), g[["Supplementary figure 2"]], device="svg", width = 12, height = 10, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Supplementary figure 1. EU-27 carbon price.png"), g[["Supplementary figure 1"]], device="png", width = 12, height = 10, dpi=300, units = "in")
+ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 1. EU-27 carbon price.svg"), g[["Supplementary figure 1"]], device="svg", width = 12, height = 10, dpi=100, units = "in")
 
 ```
 
@@ -2721,20 +2623,19 @@ ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 2. EU-27 carbon price.s
 ```{r, echo=FALSE, fig.width=12, fig.height=10}
 
 grid.newpage()
-grid.draw(g[["Supplementary figure 2"]])
+grid.draw(g[["Supplementary figure 1"]])
 
 ```
-
-Supplementary figure 2. EU-27 carbon price. Carbon price across all scenarios (a), and variation per sensitivity dimension (b). Red cross symbols in (b) represent the results of the reference scenario. Box-plots in (b) show the range from first to third quartile of the sensitivity scenarios.
+Supplementary figure 1. EU-27 carbon price. Carbon price across all scenarios (a), and variation per sensitivity dimension (b). The black line in (a) and red cross symbols in (b) represent the results of the reference scenario. Box-plots in (b) show the range from first to third quartile of the sensitivity scenarios.
 
 ---
 
-### Supplementary figure 3. EU-27 mitigation costs.
+### Supplementary figure 2. EU-27 mitigation costs.
 
 
 <!-- Energy Supply Investments (billion €/yr) -->
 
-```{r supplChart_figure3, echo=FALSE, include=FALSE}
+```{r supplChart_figure2, echo=FALSE, include=FALSE}
 
 vars <- c(
 #  "Grid" = "Energy Investments|Electricity|Grid",
@@ -2782,7 +2683,7 @@ plotData <- df %>%
    value = currencyConversion*value) #%>% 
  # arrange(factor(variable, levels = rev(vars))) 
   
-g[["Supplementary figure 3"]] <- ggplot(plotData, aes(x=period,y=value, fill=variable)) +
+g[["Supplementary figure 2"]] <- ggplot(plotData, aes(x=period,y=value, fill=variable)) +
   geom_bar(stat='identity', position="stack") +
   geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
   scale_fill_manual(values = setNames(color[names(vars)],vars), labels = setNames(names(vars), vars), guide = guide_legend(ncol = 1, order = 1)) +
@@ -2796,25 +2697,26 @@ g[["Supplementary figure 3"]] <- ggplot(plotData, aes(x=period,y=value, fill=var
         legend.box = "vertical",
         legend.margin=margin(t = 40)) 
 
-ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 3. EU-27 mitigation costs.svg"), g[["Supplementary figure 3"]] , device="svg", width = 12, height = 6, dpi=100, units = "in")
-ggsave(paste0(outChartsFolder,"/png/Supplementary figure 3. EU-27 mitigation costs.png"), g[["Supplementary figure 3"]] , device="png", width = 12, height = 6, dpi=300, units = "in")  
+ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 2. EU-27 mitigation costs.svg"), g[["Supplementary figure 2"]] , device="svg", width = 12, height = 6, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Supplementary figure 2. EU-27 mitigation costs.png"), g[["Supplementary figure 2"]] , device="png", width = 12, height = 6, dpi=300, units = "in")  
 
 ```
 
 
 ```{r, echo=FALSE, fig.width=12, fig.height=5}
 
-g[["Supplementary figure 3"]]
+g[["Supplementary figure 2"]]
 
 ```
-Supplementary figure 3. EU-27 mitigation costs. Energy supply investments in the reference scenario.
+Supplementary figure 2. EU-27 mitigation costs. Energy supply investments in the reference scenario.
+
 
 ---
 
-### Supplementary figure 4. EU-27 Electricity capacity
+### Supplementary figure 3. EU-27 Electricity capacity
 
 
-```{r supplChart_figure4, echo=FALSE, include=FALSE}
+```{r supplChart_figure3, echo=FALSE, include=FALSE}
 
 vars <- c(
   "Net Imports" = "Cap|Electricity|Net Imports",
@@ -2951,7 +2853,7 @@ legend <- g_legend(
 
 tg <- textGrob('     Electricity Capacity (GW)', x = 0, y = 0, gp = gpar(fontsize = theme_doubleColumn()$plot.title$size, fontface = "plain"), just = "left", hjust=0, vjust=-1)
 
-g[["Supplementary figure 4"]] <- gridExtra::arrangeGrob(
+g[["Supplementary figure 3"]] <- gridExtra::arrangeGrob(
   tg,
   g[["Capacity"]][["EU27"]],
   g[["Capacity_2040"]][["EU27"]],
@@ -2971,23 +2873,23 @@ g[["Supplementary figure 4"]] <- gridExtra::arrangeGrob(
                         rep(8,18))
   )
 
- ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 4. EU-27 Electricity capacity.svg"), g[["Supplementary figure 4"]] , device="svg", width = 12, height = 6, dpi=100, units = "in")
- ggsave(paste0(outChartsFolder,"/png/Supplementary figure 4. EU-27 Electricity capacity.png"), g[["Supplementary figure 4"]] , device="png", width = 12, height = 6, dpi=300, units = "in")
+ ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 3. EU-27 Electricity capacity.svg"), g[["Supplementary figure 3"]] , device="svg", width = 12, height = 6, dpi=100, units = "in")
+ ggsave(paste0(outChartsFolder,"/png/Supplementary figure 3. EU-27 Electricity capacity.png"), g[["Supplementary figure 3"]] , device="png", width = 12, height = 6, dpi=300, units = "in")
 
 ```
 
 ```{r, echo=FALSE, fig.width=12, fig.height=6}
 
 grid.newpage()
-grid.draw(g[["Supplementary figure 4"]])
+grid.draw(g[["Supplementary figure 3"]])
 
 ```      
 
-Supplementary figure 4. EU-27 Electricity capacity. EU-27, Germany, and France electricity capacity (GW)  in the reference scenario. 
+Supplementary figure 3. EU-27 Electricity capacity. EU-27, Germany, and France electricity capacity (GW)  in the reference scenario.
 
-### Supplementary figure 5. EU-27 Electricity generation
+### Supplementary figure 4. EU-27 Electricity generation
 
-```{r supplChart_figure5, echo=FALSE, include=FALSE}
+```{r supplChart_figure4, echo=FALSE, include=FALSE}
 
 vars <- c(
   #"Net Imports" = "SE|Electricity|Net Imports",
@@ -3138,7 +3040,7 @@ legend <- g_legend(
 
 tg <- textGrob('     Electricity Generation (TWh)', x = 0, y = 0, gp = gpar(fontsize = theme_doubleColumn()$plot.title$size, fontface = "plain"), just = "left", hjust=0, vjust=-1)
 
-g[["Supplementary figure 5"]] <- gridExtra::arrangeGrob(
+g[["Supplementary figure 4"]] <- gridExtra::arrangeGrob(
   tg,
   g[["Generation"]][["EU27"]],
   g[["Generation_2040"]][["EU27"]],
@@ -3168,30 +3070,32 @@ g[["Supplementary figure 5"]] <- gridExtra::arrangeGrob(
                         c(8,8,8,8, 9,9, 10,10,10,10,  11,11, 12,12,12,12, 13,13),
                         c(8,8,8,8, 9,9, 10,10,10,10,  11,11, 12,12,12,12, 13,13),
                         rep(14,18),
+                        rep(14,18),
                         rep(14,18))
   )
 
- ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 5. EU-27 Electricity generation.svg"), g[["Supplementary figure 5"]] , device="svg", width = 12, height = 9, dpi=100, units = "in")
- ggsave(paste0(outChartsFolder,"/png/Supplementary figure 5. EU-27 Electricity generation.png"), g[["Supplementary figure 5"]] , device="png", width = 12, height = 9, dpi=300, units = "in")
+ ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 4. EU-27 Electricity generation.svg"), g[["Supplementary figure 4"]] , device="svg", width = 12, height = 9, dpi=100, units = "in")
+ ggsave(paste0(outChartsFolder,"/png/Supplementary figure 4. EU-27 Electricity generation.png"), g[["Supplementary figure 4"]] , device="png", width = 12, height = 9, dpi=300, units = "in")
 
 ```
 
 ```{r, echo=FALSE, fig.width=12, fig.height=9}
 
 grid.newpage()
-grid.draw(g[["Supplementary figure 5"]])
+grid.draw(g[["Supplementary figure 4"]])
 
 ```      
 
-Supplementary figure 5. EU-27 Electricity generation. EU-27, Germany, France, north EU countries (EUN), central and east EU countries (EU Central), south and west EU countries (EU South), electricity generation (TWh) in the reference scenario. 
+Supplementary figure 4. EU-27 Electricity generation. EU-27, Germany, France, north EU countries (EUN), central and east EU countries (EU Central), south and west EU countries (EU South), electricity generation (TWh) in the reference scenario. 
+
 
 ---
 
-### Supplementary figure 6. EU-27 Emissions
+### Supplementary figure 5. EU-27 Emissions
 
 <!-- (a) per sector and carrier -->
 
-```{r supplChart_figure6a, echo=FALSE, include=FALSE}
+```{r supplChart_figure5a, echo=FALSE, include=FALSE}
 
 vars <- list(
   "Non-Energy Use"=c(
@@ -3300,7 +3204,7 @@ if(energyInMtoe){
       unit  = "Mtoe/yr")
 }
 
-g[["Supplementary Figure 6a. Final energy demand per sector and carrier"]] <- ggplot(plotData,aes(x=period,y=value)) +
+g[["Supplementary Figure 5a. Final energy demand per sector and carrier"]] <- ggplot(plotData,aes(x=period,y=value)) +
   geom_area_pattern(data=plotData,aes(fill=label,pattern=sector, pattern_angle = sector), pattern_key_scale_factor = 1, pattern_density=0.1, pattern_spacing = 0.015, pattern_colour = "white", pattern_fill = "white", pattern_alpha=0.4) +   geom_line(data=totalData, linewidth = 1, color="black") +
   geom_vline(xintercept=2020, color = "black", linetype="dashed", linewidth=1, alpha = 0.5) +
   geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
@@ -3324,7 +3228,7 @@ g[["Supplementary Figure 6a. Final energy demand per sector and carrier"]] <- gg
 
 <!-- (b) per fossil content -->
 
-```{r supplChart_figure6b, echo=FALSE, include=FALSE}
+```{r supplChart_figure5b, echo=FALSE, include=FALSE}
 
 vars <- list(
   "Non-Fossil - Electric" = c(
@@ -3408,7 +3312,7 @@ if(energyInMtoe){
       unit  = "Mtoe/yr")
 }
 
-g[["Supplementary figure 6b. Final energy demand per fossil content"]] <- ggplot(plotData,aes(x=period,y=value)) +
+g[["Supplementary figure 5b. Final energy demand per fossil content"]] <- ggplot(plotData,aes(x=period,y=value)) +
   geom_area(aes(fill=label), alpha = 0.8) +
   geom_line(data=totalData, linewidth = 1, color="black") +
   geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
@@ -3431,15 +3335,15 @@ g[["Supplementary figure 6b. Final energy demand per fossil content"]] <- ggplot
 
 ```{r, echo=FALSE, include=FALSE}
 
-g[["Supplementary figure 6"]] <- gridExtra::arrangeGrob(
-  g[["Supplementary Figure 6a. Final energy demand per sector and carrier"]], 
-  g[["Supplementary figure 6b. Final energy demand per fossil content"]], 
+g[["Supplementary figure 5"]] <- gridExtra::arrangeGrob(
+  g[["Supplementary Figure 5a. Final energy demand per sector and carrier"]], 
+  g[["Supplementary figure 5b. Final energy demand per fossil content"]], 
   layout_matrix = rbind(
     c(1,2)
   ))
 
-ggsave(paste0(outChartsFolder,"/png/Supplementary figure 6. EU-27 Emissions.png"), g[["Supplementary figure 6"]], device="png", width = 12, height = 9, dpi=300, units = "in")
-ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 6. EU-27 Emissions.svg"), g[["Supplementary figure 6"]], device="svg", width = 12, height = 9, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Supplementary figure 5. EU-27 Emissions.png"), g[["Supplementary figure 5"]], device="png", width = 12, height = 9, dpi=300, units = "in")
+ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 5. EU-27 Emissions.svg"), g[["Supplementary figure 5"]], device="svg", width = 12, height = 9, dpi=100, units = "in")
 
 ```
 
@@ -3447,17 +3351,17 @@ ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 6. EU-27 Emissions.svg"
 ```{r, echo=FALSE, fig.width=12, fig.height=9}
 
 grid.newpage()
-grid.draw(g[["Supplementary figure 6"]])
+grid.draw(g[["Supplementary figure 5"]])
 
 ```
-Supplementary figure 6. EU-27 Emissions. Energy and non-energy use in the reference scenario (a) per sector and carrier and (b) per fossil content.
+Supplementary figure 5. EU-27 Emissions. Energy and non-energy use in the reference scenario (a) per sector and carrier and (b) per fossil content.
 
 ---
 
-### Supplementary figure 7. EU-27 GHG gases
+### Supplementary figure 6. EU-27 GHG gases
 
 
-```{r supplChart_figure7, echo=FALSE, include=FALSE}
+```{r supplChart_figure6, echo=FALSE, include=FALSE}
 
 vars <- c(
   "CO2 - Energy"                = "Emi|CO2|Energy",
@@ -3491,7 +3395,7 @@ totalData <- df %>%
   calc_addVariable( "`Emissions with LULUCF and with international transport`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers`" , units = "Mt CO2/yr", only.new=T) %>%
   filter(region == "EU27", period %in% c(2010:2050), variable == "Emissions with LULUCF and with international transport", scenario == mainScen)
 
-g[["Supplementary figure 7"]] <- ggplot(plotData,aes(x=period,y=value)) +
+g[["Supplementary figure 6"]] <- ggplot(plotData,aes(x=period,y=value)) +
   geom_area(aes(fill=variable), alpha = 0.8) +
   geom_line(data=totalData, linewidth = 1, color="black") +
   geom_vline(xintercept=2020, color = "black", linetype="dashed", linewidth=1, alpha = 0.5) +
@@ -3508,27 +3412,28 @@ g[["Supplementary figure 7"]] <- ggplot(plotData,aes(x=period,y=value)) +
         legend.direction = "vertical",
         legend.box = "vertical")
 
-ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 7. EU-27 GHG gases.svg"), g[["Supplementary figure 7"]] , device="svg", width = 12, height = 6, dpi=100, units = "in")
-ggsave(paste0(outChartsFolder,"/png/Supplementary figure 7. EU-27 GHG gases.png"), g[["Supplementary figure 7"]] , device="png", width = 12, height = 6, dpi=300, units = "in")
+ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 6. EU-27 GHG gases.svg"), g[["Supplementary figure 6"]] , device="svg", width = 12, height = 6, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Supplementary figure 6. EU-27 GHG gases.png"), g[["Supplementary figure 6"]] , device="png", width = 12, height = 6, dpi=300, units = "in")
 
 ```
 
 
 ```{r, echo=FALSE, fig.width=12, fig.height=6}
 
-g[["Supplementary figure 7"]]
+g[["Supplementary figure 6"]]
 
 ```
 
-Supplementary figure 7. EU-27 GHG gases. Emissions by gas in the reference scenario (CO2eq).
+Supplementary figure 6. EU-27 GHG gases. Emissions by gas in the reference scenario (CO2eq).
+
 
 ---
 
-### Supplementary figure 8. EU-27 CDR
+### Supplementary figure 7. EU-27 CDR
 
 <!-- (a) Bioenergy with Carbon Capture and Storage - BECCS (Mt CO2/yr) -->
 
-```{r supplChart_figure8a, echo=FALSE, include=FALSE}
+```{r supplChart_figure7a, echo=FALSE, include=FALSE}
 
 vars <- c(
   "BECCS" = "Emi|CO2|CDR|BECCS"
@@ -3579,7 +3484,7 @@ g[["BECCS"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
 
 <!-- (b) Direct Air Capture (Mt CO2/yr) -->
 
-```{r supplChart_figure8b, echo=FALSE, include=FALSE}
+```{r supplChart_figure7b, echo=FALSE, include=FALSE}
 
 vars <- c(
   "DAC" = "Emi|CO2|CDR|DACCS"
@@ -3617,15 +3522,15 @@ g[["DAC"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
 
 ```{r, echo=FALSE, include=FALSE}
 
-g[["Supplementary figure 8"]] <- gridExtra::arrangeGrob(
+g[["Supplementary figure 7"]] <- gridExtra::arrangeGrob(
   g[["BECCS"]], 
   g[["DAC"]], 
   layout_matrix = rbind(
     c(1,1,1,2,2,2,2,2,2,2))
   )
 
-ggsave(paste0(outChartsFolder,"/png/Supplementary figure 8. EU-27 CDR.png"), g[["Supplementary figure 8"]], device="png", width = 12, height = 6, dpi=300, units = "in")
-ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 8. EU-27 CDR.svg"), g[["Supplementary figure 8"]], device="svg", width = 12, height = 6, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Supplementary figure 7. EU-27 CDR.png"), g[["Supplementary figure 7"]], device="png", width = 12, height = 6, dpi=300, units = "in")
+ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 7. EU-27 CDR.svg"), g[["Supplementary figure 7"]], device="svg", width = 12, height = 6, dpi=100, units = "in")
 
 ```
 
@@ -3633,9 +3538,9 @@ ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 8. EU-27 CDR.svg"), g[[
 ```{r, echo=FALSE, fig.width=12, fig.height=6}
 
 grid.newpage()
-grid.draw(g[["Supplementary figure 8"]])
+grid.draw(g[["Supplementary figure 7"]])
 
 ```
 
-Supplementary figure 8. EU-27 CDR. CDR deployment: (a) BECCS and (b) DACCS.
+Supplementary figure 7. EU-27 CDR. CDR deployment: (a) BECCS and (b) DACCS.
 

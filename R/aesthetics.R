@@ -206,6 +206,7 @@ theme_doubleColumn <- function(){
     theme(
       plot.title = element_text(size=textSize.double),
       legend.position="bottom",
+      legend.direction = "vertical",
       legend.title = element_blank(),
       axis.title.x=element_blank(),
       axis.ticks.x=element_blank(),
@@ -224,6 +225,7 @@ theme_doubleColumn_alt <- function(){
     theme(
       plot.title = element_text(size=textSize.double),
       legend.position="bottom",
+      legend.direction = "vertical",
       axis.title.x=element_blank(),
       axis.ticks.x=element_blank(),
       axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
