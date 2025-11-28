@@ -1,0 +1,596 @@
+---
+title: "additional charts"
+output:
+  html_document:
+    theme: paper
+    toc: true
+    toc_float:
+      collapsed: false
+---
+
+<!-- Setting default chunk options -->
+```{r chunkOptions, echo=FALSE, include = FALSE}
+#knitr::opts_chunk$set(echo = TRUE)
+# setting global R chunk options (https://yihui.name/knitr/options/#chunk_options)
+  knitr::opts_chunk$set(dev='svglite', # svg, png,...
+                        fig.ext = ".svg",
+                        #fig.asp = .8 # default aspect ratio
+                        fig.width = 12,
+                        fig.height = 6,
+                        dpi=100
+                        )
+```  
+
+
+```{r loading_packages, echo=FALSE, include = FALSE}
+
+  #Loading required packages
+  # install.packages("remotes")
+  #remotes::install_github("coolbutuseless/ggpattern")
+  #install.packages('rsvg')
+  #remotes::install_github('coolbutuseless/ggsvg')
+  packagesList <- c("quitte","ggplot2","geomtextpath","ggpattern","tidyr","grid","stringr","gridExtra","ggrepel","kableExtra","dplyr","remind2","rsvg","ggsvg","plotly")
+  packages <- suppressWarnings(suppressMessages(lapply(packagesList, function(x){ if(!require(x, character.only = T, quietly = T)){ install.packages(x); return(paste0("installed missing package: ", x)) } else paste0("required package is installed: ", x) } )))
+
+```
+
+
+<!-- Preprocess: prepare and load the data for use in the charts and markdown -->
+
+```{r preprocess, echo=FALSE, include = FALSE}
+
+#Options
+forceUpdateData = FALSE
+loadHist = TRUE
+
+# data and output folders
+folders <- file.info(list.files(path="./data", full.names = T))
+dataFolder <- folders %>% tibble::rownames_to_column(var = "path") %>% arrange(desc(path)) %>% slice(1) %>% pull(path)
+
+source("./R/preprocess.R") 
+
+outFolder <- paste0("./output/",gsub("./data/","",dataFolder))
+outChartsFolder <- paste0(outFolder,"/report_additionalCharts")
+dir.create(paste0(outChartsFolder, "/png"), recursive = TRUE, showWarnings = FALSE)
+dir.create(paste0(outChartsFolder, "/svg"), recursive = TRUE, showWarnings = FALSE)
+
+```
+
+<!-- units conversion -->
+
+```{r unitsConversion, echo=FALSE, include = FALSE}
+
+# conversion factors
+  USS2017_2_EURO2020 <- 0.9502 # 1 USD 2017 = 0.9502 EURO 2020
+  
+  USS2017_2_EURO2025 <- 1.212 # 1 USD 2017 = 1.212 EURO 2020 (1 US$2017 = 1.30 * 0.932642 €2025 = 1.212 €2025)
+  # exchange rate = average of February 28, March 31, April 11, 2025 (0.960138 +  0.925734 + 0.912056)/3 = 0.932642 https://www.ofx.com/en-au/forex-news/historical-exchange-rates/yearly-average-rates/
+  # CPI -> 1 $2017 = 1.30$2025 -> https://www.in2013dollars.com/us/inflation/2017?amount=1
+  
+  currencyConversion <- USS2017_2_EURO2025
+
+```
+
+<!-- Initializing charts object -->
+```{r chart_initialization, echo=FALSE, include = FALSE}
+
+#loading theme and colors
+source("./R/aesthetics.R") 
+
+g <- NULL
+
+```
+
+
+# Targets debug {.tabset}
+
+## Reduction Matrix
+
+
+```{r data_emissionReductionMatrix, echo=FALSE, include = FALSE}
+
+## Reduction Matrix
+reductionMatrix <- df %>% 
+  filter(region == "EU27", 
+         period == 2040, 
+         tgt2030 == "57",
+         !grepl("eedEff|ff55Eff|RpEUEff",scenario)) %>% 
+  calc_addVariable( "`Emissions with LULUCF and with intra-EU aviation`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr", only.new=T) %>%
+  mutate(reduction = round((1 - (value / tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)))*100 ,2)) %>%
+  select(bioLim,lim,reduction) %>%
+  pivot_wider(names_from=lim,values_from=reduction) %>%
+  mutate(bioLim = factor(c("BioLim4","BioLim7.5","BioLim12","BioLim20")))
+
+if("limVRE" %in% colnames(reductionMatrix)){
+  colors <- spec_color(c(reductionMatrix$default,reductionMatrix$limCCS,reductionMatrix$limH2,reductionMatrix$limVRE), end = 0.9, option = "A", direction = -1)
+
+redMatrix <- reductionMatrix %>%
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+  column_spec(1, bold = T) %>%
+  column_spec(2,color = colors[1:3]) %>%
+  column_spec(3,color = colors[4:6]) %>%
+  column_spec(4,color = colors[7:9]) %>%
+  column_spec(5,color = colors[10:12])
+} else {
+  colors <- spec_color(c(reductionMatrix$default,reductionMatrix$limCCS,reductionMatrix$limH2), end = 0.9, option = "A", direction = -1)
+
+redMatrix <- reductionMatrix %>%
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>%
+  column_spec(1, bold = T) %>%
+  column_spec(2,color = colors[1:3]) %>%
+  column_spec(3,color = colors[4:6]) %>%
+  column_spec(4,color = colors[7:9])
+}
+
+redMatrix2 <- df %>%
+    filter(region == "EU27", period == 2040, tgt2030 %in% tgt2030Scen) %>%
+    calc_addVariable( "`Emissions with LULUCF and with intra-EU aviation`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr", only.new=T) %>%
+    mutate(reduction = value / (tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)),
+           tgtAchieved = (1-reduction)*100,
+           diff = as.numeric(as.character(tgt2030)) - ((1-reduction)*100)) %>%
+  mutate(text = paste0(round(tgtAchieved,2), "%"))
+
+g[["reduction matrix"]][["ggplot"]] <- ggplot(redMatrix2, aes(x=bioLim, y=lim, fill= tgtAchieved, text = text)) + 
+  geom_tile() +
+  facet_grid(tgt2030 ~ efficiency, scales = "free") +
+  scale_fill_distiller(palette = "Blues", direction = 1, breaks = seq(floor(min(redMatrix2$tgtAchieved)), ceiling(max(redMatrix2$tgtAchieved)),2)) +
+  theme_doubleColumn() +
+  theme(strip.clip = "off") +
+  guides(fill = guide_colorbar(barwidth = 20, barheight = 1)) +
+  theme(legend.position="bottom") +
+  theme(legend.title=element_blank())
+  
+g[["reduction matrix"]][["plotly"]] <- ggplotly(g[["reduction matrix"]][["ggplot"]],tooltip = c("text")) %>% layout(autosize = TRUE)  
+
+ggsave(paste0(outChartsFolder,"/svg/Emission Reduction 2040.svg"), g[["reduction matrix"]][["ggplot"]] , device="svg", width = 10, height = 6, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Emission Reduction 2040.png"), g[["reduction matrix"]][["ggplot"]] , device="png", width = 10, height = 6, dpi=300, units = "in")
+
+```
+
+```{r, echo=FALSE, fig.width=10, fig.height=6}
+
+g[["reduction matrix"]][["plotly"]]
+
+
+```
+
+- Reduction Matrix for the 2030 57% target
+
+```{r, echo=FALSE}
+
+redMatrix
+
+```
+
+
+## non-achieved 2030
+
+<!-- Debug non-achieved targets -->
+```{r, echo=FALSE, include = FALSE}
+
+
+plotData <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen) %>%
+    calc_addVariable( "`Emissions with LULUCF and with intra-EU aviation`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr", only.new=T) %>%
+    mutate(reduction = value / (tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)),
+           tgtAchieved = (1-reduction)*100,
+           diff = as.numeric(as.character(tgt2030)) - ((1-reduction)*100)) %>%
+    group_by(tgt2030) %>% 
+    mutate(min = min(value),
+           max = max(value)),
+  df %>%
+    filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen, variable == "Price|Carbon") %>%
+    mutate(price_2030 = currencyConversion*value) %>%
+    select(scenario, price_2030),
+  by = "scenario") %>%
+  mutate(text = paste0("Target Achieved: ", tgtAchieved, " % reduction", "\n2030 price: ", round(price_2030,2), " €/t CO2", "\nScenario: ", scenario, "\nTarget 2030: ", tgt2030, "%", "\nEfficiency: ", efficiency, "\nBiomass Limit: ", bioLim, "\nSensititivy limit: ", lim))
+
+g[["2030 targets"]][["ggplot"]] <-  ggplot(plotData,aes(x=period,y=tgtAchieved)) +
+  geom_point(aes(shape = lim, fill = bioLim, color = efficiency, text = text), size = 3) +
+  geom_segment(aes(x=2029, xend=2031, y=as.numeric(as.character(tgt2030)), yend=as.numeric(as.character(tgt2030))), linetype="dashed", color="black") +
+  #geom_errorbar(aes(ymin=min, ymax=max), colour="black", alpha=0.9, linewidth=1) +
+  #geom_boxplot(outlier.shape = NA) +
+  facet_grid(~ tgt2030) +
+  theme_doubleColumn() +
+  scale_fill_manual(values = c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e"), guide = guide_legend(nrow =2, byrow = F, override.aes = list(shape = 21, size = 6, colour = "transparent"), order = 3)) +
+  scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 6))) +
+  scale_color_manual(values = c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786"), guide = guide_legend(nrow =2, byrow = F, order = 2, override.aes = list(shape = 1, linewidth = 1.5))) + 
+  scale_x_continuous(breaks=2030) +
+  scale_y_continuous(breaks=seq(53,61,1)) +
+  theme(legend.position="none")
+  
+g[["2030 targets"]][["plotly"]] <- ggplotly(g[["2030 targets"]][["ggplot"]],tooltip = c("text")) %>% layout(autosize = TRUE)
+
+ggsave(paste0(outChartsFolder,"/svg/Emission Reduction 2030.svg"), g[["2030 targets"]][["ggplot"]], device="svg", width = 8, height = 4, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Emission Reduction 2030.png"), g[["2030 targets"]][["ggplot"]], device="png", width = 8, height = 4, dpi=300, units = "in")
+
+## Function to extract legend
+g_legend <- function(a.gplot){ 
+    tmp <- ggplot_gtable(ggplot_build(a.gplot)) 
+    leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box") 
+    legend <- tmp$grobs[[leg]] 
+    legend
+} 
+
+legend <- g_legend(
+  g[["2030 targets"]][["ggplot"]] +
+  theme(legend.position="bottom") +  
+  theme(legend.title=element_blank(),
+        legend.margin=margin(c(0,0,0,0))) +
+  theme(plot.margin=margin(0,0,0,0))
+) 
+
+nonAchieved2030 <- left_join(
+  df %>%
+    filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen) %>%
+    calc_addVariable( "`Emissions with LULUCF and with intra-EU aviation`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr", only.new=T) %>%
+    mutate(reduction = value / (tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)),
+           tgtAchieved = (1-reduction)*100,
+           diff = as.numeric(as.character(tgt2030)) - ((1-reduction)*100)) %>%
+    group_by(tgt2030) %>% 
+    mutate(min = min(value),
+           max = max(value)),
+  df %>%
+    filter(region == "EU27", period == 2030, tgt2030 %in% tgt2030Scen, variable == "Price|Carbon") %>%
+    mutate(price_2030 = currencyConversion*value) %>%
+    select(scenario, price_2030),
+  by = "scenario")
+
+underAchieved2030 <- nonAchieved2030 %>%
+  filter(diff >= 0.5) %>%
+  select(scenario, price_2030, tgt2030, tgtAchieved, diff) %>%
+  arrange(desc(abs(diff)))
+
+overAchieved2030 <- nonAchieved2030 %>%
+  filter(diff <= 0.5) %>%
+  select(scenario, price_2030, tgt2030, tgtAchieved, diff) %>%
+  arrange(desc(abs(diff)))
+
+rerun <- overAchieved2030 %>% filter(tgtAchieved >= 59.5)
+  
+#View(nonAchieved2030)
+
+```
+
+
+```{r, echo=FALSE, fig.width=8, fig.height=4}
+
+g[["2030 targets"]][["plotly"]]
+
+```
+
+```{r, echo=FALSE, fig.width=8, fig.height=2}
+
+grid.newpage()
+grid.draw(legend)
+
+```
+
+
+```{r, echo=FALSE}
+
+nonAchieved2030 %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
+```
+
+
+## non-achieved 2050
+
+<!-- Debug non-achieved targets -->
+```{r, echo=FALSE, include = FALSE}
+
+
+plotData <- df %>%
+  filter(region == "EU27", period == 2050, tgt2030 %in% tgt2030Scen) %>%
+  calc_addVariable( "`Emissions with LULUCF and with international transport`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers`" , units = "Mt CO2/yr", only.new=T) %>%
+  mutate(reduction = value / (tgt %>% filter(target == "Emissions with LULUCF and with international transport") %>% pull(reference)),
+         tgtAchieved = (1-reduction)*100) %>% 
+  mutate(min = min(value),
+         max = max(value))
+
+g[["2050 targets"]][["ggplot"]] <-  ggplot(plotData,aes(x=period,y=tgtAchieved)) +
+  geom_point(aes(shape = lim, fill = bioLim, color = efficiency), size = 3) +
+  geom_segment(aes(x=2049, xend=2051, y=100, yend=100), linetype="dashed", color="black") +
+  theme_doubleColumn() +
+  scale_fill_manual(values = c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e"), guide = guide_legend(nrow =2, byrow = F, override.aes = list(shape = 21, size = 6, colour = "transparent"), order = 3)) +
+  scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 6))) +
+  scale_color_manual(values = c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786"), guide = guide_legend(nrow =2, byrow = F, order = 2, override.aes = list(shape = 1, linewidth = 1.5))) + 
+  scale_x_continuous(breaks=2050) +
+  scale_y_continuous(breaks=c(99.5,100,100.5)) +
+  expand_limits(y=c(99.5,100.5)) +
+  theme(legend.position="none")
+
+  g[["2050 targets"]][["plotly"]] <- ggplotly(g[["2050 targets"]][["ggplot"]]) %>% layout(autosize = TRUE)
+
+  
+ggsave(paste0(outChartsFolder,"/svg/Emission Reduction 2050.svg"), g[["2050 targets"]][["ggplot"]], device="svg", width = 4, height = 4, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Emission Reduction 2050.png"), g[["2050 targets"]][["ggplot"]], device="png", width = 4, height = 4, dpi=300, units = "in")
+
+nonAchieved2050 <- df %>%
+  filter(region == "EU27", period == 2050, tgt2030 %in% tgt2030Scen) %>%
+  calc_addVariable( "`Emissions with LULUCF and with international transport`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers`" , units = "Mt CO2/yr", only.new=T) %>%
+  mutate(reduction = value / (tgt %>% filter(target == "Emissions with LULUCF and with international transport") %>% pull(reference)),
+         tgtAchieved = (1-reduction)*100) %>%
+  filter(tgtAchieved >= 100.3 | tgtAchieved <= 99.7) %>%
+  select(scenario, reduction, tgtAchieved) %>%
+  arrange(desc(abs(reduction)))
+
+#View(nonAchieved2050)
+
+```
+
+
+```{r, echo=FALSE, fig.width=4, fig.height=4}
+
+g[["2050 targets"]][["plotly"]]
+
+```
+
+
+```{r, echo=FALSE, fig.width=8, fig.height=2}
+
+grid.newpage()
+grid.draw(legend)
+
+```
+
+```{r, echo=FALSE}
+
+nonAchieved2050 %>% 
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) 
+
+```
+
+
+
+
+# Fuel Shares {.tabset}
+
+```{r, echo=FALSE, include=FALSE}
+
+vars <- list(
+  "Liquids" = list(
+    "Transport" = c(
+      "FE|Transport|Liquids|Biomass",
+      "FE|Transport|Liquids|Hydrogen",
+      "FE|Transport|Liquids|Fossil"
+    ),
+    "Buildings" = c(
+      "FE|Buildings|Liquids|Biomass",
+      "FE|Buildings|Liquids|Hydrogen",
+      "FE|Buildings|Liquids|Fossil"
+    ),
+    "Industry" = c(
+      "FE|Industry|Liquids|Biomass",
+      "FE|Industry|Liquids|Hydrogen",
+      "FE|Industry|Liquids|Fossil"
+    )
+  ),
+  "Gases" = list(
+    "Transport" = c(
+      "FE|Transport|Gases|Biomass",
+      "FE|Transport|Gases|Hydrogen",
+      "FE|Transport|Gases|Fossil"
+    ),
+    "Buildings" = c(
+      "FE|Buildings|Gases|Biomass",
+      "FE|Buildings|Gases|Hydrogen",
+      "FE|Buildings|Gases|Fossil"
+    ),
+    "Industry" = c(
+      "FE|Industry|Gases|Biomass",
+      "FE|Industry|Gases|Hydrogen",
+      "FE|Industry|Gases|Fossil"
+    )
+  ),
+  "Solids" = list(
+    "Buildings" = c(
+      "FE|Buildings|Solids|Biomass",
+      "FE|Buildings|Solids|Fossil"
+    ),
+    "Industry" = c(
+      "FE|Industry|Solids|Biomass",
+      "FE|Industry|Solids|Fossil"
+    )
+  )
+  )
+
+plotColor <- c(
+    "Biomass"  = "#597445",
+    "Hydrogen" = "#F96666",
+    "Fossil"   = "#bbbbbb"
+  )
+
+
+#tgt2050 tgt2030 efficiency bioLim lim  
+
+fullPlotData <- df %>%
+  filter(region == "EU27", period %in% c(2010:2050), variable %in% unlist(vars)) %>%
+  mutate(sector = factor(unlist(regmatches(variable, gregexpr('Transport|Industry|Buildings', variable))),levels=c("Industry", "Buildings", "Transport")),
+         carrier= factor(unlist(regmatches(variable, gregexpr('Liquids|Gases|Solids', variable))),levels=c("Liquids", "Gases", "Solids")),
+         type   = factor(unlist(regmatches(variable, gregexpr('Biomass|Hydrogen|Fossil', variable))),levels=c("Biomass", "Fossil", "Hydrogen")))
+
+plotData <- fullPlotData %>%
+  filter(tgt2030 == 57, 
+         efficiency == "reference", 
+         #bioLim == "BioLim7.5", 
+         lim == "default")
+
+g[["Fuel shares"]][["BioLim"]] <-  ggplot(plotData,aes(x=period,y=value)) +
+    geom_bar(aes(fill=type),stat='identity', position="fill") +
+    facet_grid(carrier~bioLim+sector) +
+    theme_doubleColumn() +
+    scale_y_continuous(labels = scales::percent) +
+    scale_fill_manual(values = plotColor) + 
+    theme(plot.background = element_rect(fill = 'white', colour = 'white'))
+
+ggsave(paste0(outChartsFolder,"/svg/Fuel shares - tgt57,effRef,limDef - BioLim.svg"), g[["Fuel shares"]][["BioLim"]], device="svg", width = 12, height = 8, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Fuel shares - tgt57,effRef,limDef - BioLim.png"), g[["Fuel shares"]][["BioLim"]], device="png", width = 12, height = 8, dpi=300, units = "in")
+
+plotData <- fullPlotData %>%
+  filter(tgt2030 == 57, 
+         #efficiency == "reference", 
+         bioLim == "BioLim7.5", 
+         lim == "default")
+
+g[["Fuel shares"]][["efficiency"]] <-  ggplot(plotData,aes(x=period,y=value)) +
+    geom_bar(aes(fill=type),stat='identity', position="fill") +
+    facet_grid(carrier~efficiency+sector) +
+    theme_doubleColumn() +
+    scale_y_continuous(labels = scales::percent) +
+    scale_fill_manual(values = plotColor) + 
+    theme(plot.background = element_rect(fill = 'white', colour = 'white'))
+
+ggsave(paste0(outChartsFolder,"/svg/Fuel shares - tgt57,bio7p5,limDef - efficiency.svg"), g[["Fuel shares"]][["efficiency"]], device="svg", width = 12, height = 8, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Fuel shares - tgt57,bio7p5,limDef - efficiency.png"), g[["Fuel shares"]][["efficiency"]], device="png", width = 12, height = 8, dpi=300, units = "in")
+
+plotData <- fullPlotData %>%
+  filter(#tgt2030 == 57, 
+         efficiency == "reference", 
+         bioLim == "BioLim7.5", 
+         lim == "default")
+
+g[["Fuel shares"]][["tgt2030"]] <-  ggplot(plotData,aes(x=period,y=value)) +
+    geom_bar(aes(fill=type),stat='identity', position="fill") +
+    facet_grid(carrier~tgt2030+sector) +
+    theme_doubleColumn() +
+    scale_y_continuous(labels = scales::percent) +
+    scale_fill_manual(values = plotColor) + 
+    theme(plot.background = element_rect(fill = 'white', colour = 'white'))
+
+ggsave(paste0(outChartsFolder,"/svg/Fuel shares - effRef,bio7p5,limDef - tgt2030.svg"), g[["Fuel shares"]][["tgt2030"]], device="svg", width = 12, height = 8, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Fuel shares - effRef,bio7p5,limDef - tgt2030.png"), g[["Fuel shares"]][["tgt2030"]], device="png", width = 12, height = 8, dpi=300, units = "in")
+
+plotData <- fullPlotData %>%
+  filter(tgt2030 == 57, 
+         efficiency == "reference", 
+         bioLim == "BioLim7.5"#, 
+         #lim == "default"
+         )
+
+g[["Fuel shares"]][["lim"]] <-  ggplot(plotData,aes(x=period,y=value)) +
+    geom_bar(aes(fill=type),stat='identity', position="fill") +
+    facet_grid(carrier~lim+sector) +
+    theme_doubleColumn() +
+    scale_y_continuous(labels = scales::percent) +
+    scale_fill_manual(values = plotColor) + 
+    theme(plot.background = element_rect(fill = 'white', colour = 'white'))
+
+ggsave(paste0(outChartsFolder,"/svg/Fuel shares - tgt57,effRef,bio7p5 - lim.svg"), g[["Fuel shares"]][["lim"]], device="svg", width = 12, height = 8, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Fuel shares - tgt57,effRef,bio7p5 - lim.png"), g[["Fuel shares"]][["lim"]], device="png", width = 12, height = 8, dpi=300, units = "in")
+
+```
+
+
+## tgt2030
+
+```{r, echo=FALSE, fig.width=12, fig.height=8}
+
+g[["Fuel shares"]][["tgt2030"]]
+
+```
+
+## Efficiency
+
+```{r, echo=FALSE, fig.width=12, fig.height=8}
+
+g[["Fuel shares"]][["efficiency"]]
+
+```
+
+## BioLim
+
+```{r, echo=FALSE, fig.width=12, fig.height=8}
+
+g[["Fuel shares"]][["BioLim"]]
+
+```
+
+## Lim
+
+```{r, echo=FALSE, fig.width=12, fig.height=8}
+
+g[["Fuel shares"]][["lim"]]
+
+```
+
+
+
+
+
+# Power sector Emissions
+
+
+```{r, echo=FALSE, include=FALSE}
+
+baseSize <- 24
+
+theme_white <- function(){
+  theme_minimal(base_size = baseSize) +
+    theme(
+      legend.position="bottom",
+      legend.title = element_blank(),
+      axis.title.x=element_blank(),
+      axis.ticks.x=element_blank(),
+      axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
+      legend.key.height = unit(1, "cm"),
+      legend.key.width = unit(1,"cm"),
+      panel.background = element_rect(fill="#FFFFFF", color = NA),
+      plot.background = element_rect(fill="#FFFFFF", color = NA),
+    )
+}
+
+histEmber <- data.frame(period=seq(2000,2023,1),value=c(1079, 1084, 1122, 1166, 1157, 1156, 1170, 1188, 1128, 1039, 1048, 1054, 1033, 980, 917, 948, 934, 942, 879, 769, 660, 722, 750, 596))
+
+mainScen <- "Nzero_57_bio7p5" 
+
+plotData <- df %>%
+  filter(region == "EU27", period %in% c(2010:2050), variable == "Emi|CO2|Energy|Supply|Electricity w/ couple prod", scenario != "Npi") %>%
+  group_by(period) %>%
+  summarise_at(vars(value), list(
+    Min = min,
+    Mean = mean,
+    Median = median,
+    Max = max,
+    Sd = sd,
+    Q1=~quantile(., probs = 0.25),
+    Q3=~quantile(., probs = 0.75)))
+
+plotData2 <- df %>%
+  filter(region == "EU27", period %in% c(2010:2050), variable == "Emi|CO2|Energy|Supply|Electricity w/ couple prod", scenario != "Npi") %>%
+  filter(scenario == mainScen)
+
+g[["power_sector_emissions"]] <- ggplot(plotData,aes(x=period,y=Median)) +
+    geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
+    geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
+    #geom_line(linewidth=1,color="black") +
+    geom_line(data = histEmber,aes(x=period,y=value), linewidth=1,color="black",linetype="dashed") +
+    geom_line(data = plotData2,aes(x=period,y=value), linewidth=1,color="black") +
+    geom_ribbon(aes(ymax = Q3, ymin = Q1), alpha = 0.5, fill = "#545454") +
+    geom_ribbon(aes(ymax = Max, ymin = Min), alpha = 0.5, fill = "#545454") +
+    #geom_line(aes(y=Min),linewidth=1,color="#545454",linetype = "dashed", alpha = 0.7) +
+    #geom_line(aes(y=Max),linewidth=1,color="#545454",linetype = "dashed", alpha = 0.7) +
+    #geom_line(data=h,linewidth=1,aes(linetype=Source)) +
+    #geom_point() +
+    theme_white() +
+    ylab(expression(paste("Mt ", CO[2],"/yr")))
+
+
+ggsave(paste0(outChartsFolder,"/svg/power_sector_emissions.svg"), g[["power_sector_emissions"]], device="svg", width = 12, height = 8, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/power_sector_emissions.png"), g[["power_sector_emissions"]], device="png", width = 12, height = 8, dpi=300, units = "in")
+
+
+```
+
+```{r, echo=FALSE, fig.width=12, fig.height=8}
+
+g[["power_sector_emissions"]]
+
+```
+

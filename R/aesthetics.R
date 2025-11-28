@@ -1,7 +1,7 @@
 
 # Aestethics
 
-baseTextSize <- 2
+baseTextSize <- 3
 
 options <- list()
 options$aesthetics <- list(
@@ -193,55 +193,51 @@ options$aesthetics <- list(
 
 # Theme
 
-theme.single.text.size = 15
+text_size <- 20 #15
+
+theme.single.text.size = text_size
 geom.text.single.size = theme.single.text.size/.pt
-
-defaultText_singleColumn <- theme_minimal(base_size = 30)[["text"]] 
-
-#themes
-theme_singleColumn <- function(){
-  theme_minimal(base_size = 30) +
-    theme(
-      legend.position="bottom",
-      legend.title = element_blank(),
-      axis.title.x=element_blank(),
-      axis.ticks.x=element_blank(),
-      axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
-      #axis.text = element_text(size = 1.25*theme.single.text.size),
-      #axis.text.x = element_text(size = theme.single.text.size, angle = 90, hjust = 1, vjust = 0.5),
-      #axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 10)),
-      legend.key.height = unit(1, "cm"),
-      legend.key.width = unit(1,"cm"),
-      #panel.spacing = unit(3, "lines"),
-      #plot.title = element_text(size = 0.75*theme.single.text.size, face = "plain"),
-      #strip.text.x = element_text(size = 1.25*theme.single.text.size)
-    )
-}
-
-theme.double.text.size = 15
-geom.text.double.size = theme.double.text.size/.pt
-
-defaultText_doubleColumn <- theme_minimal(base_size = 25)[["text"]] 
+defaultText_singleColumn <- theme_minimal(base_size = text_size*2)[["text"]] 
+textSize.double = text_size
+geomText.size = textSize.double/.pt
 
 theme_doubleColumn <- function(){
-  theme_minimal(base_size = 25) +
+  theme_minimal(base_size = textSize.double) +
     theme(
+      plot.title = element_text(size=textSize.double),
       legend.position="bottom",
+      legend.direction = "vertical",
       legend.title = element_blank(),
       axis.title.x=element_blank(),
       axis.ticks.x=element_blank(),
       axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
-      #axis.text = element_text(size = theme.double.text.size),
-      #legend.text=element_text(size= theme.double.text.size),
-      #axis.text.x = element_text(size = 0.8*theme.double.text.size, angle = 90, hjust = 1, vjust = 0.5),
-      #axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 10)),
-      legend.key.height = unit(1, "cm"),
-      legend.key.width = unit(1,"cm"),
-      #panel.spacing = unit(1, "lines"),
-      #plot.title = element_text(size = theme.double.text.size, face = "plain"),
-      #strip.text.x = element_text(size = theme.double.text.size)
+      axis.title.y=element_blank(),
+      legend.key.height = unit(0.7, "cm"),
+      legend.key.width = unit(0.7,"cm"),
+      legend.spacing.y = unit(0.1, 'cm'),
+      panel.background = element_rect(fill="#FFFFFF", color = NA),
+      plot.background = element_rect(fill="#FFFFFF", color = NA)#,
     )
 }
+
+theme_doubleColumn_alt <- function(){
+  theme_minimal(base_size = textSize.double) +
+    theme(
+      plot.title = element_text(size=textSize.double),
+      legend.position="bottom",
+      legend.direction = "vertical",
+      axis.title.x=element_blank(),
+      axis.ticks.x=element_blank(),
+      axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5),
+      axis.title.y=element_blank(),
+      legend.key.height = unit(0.7, "cm"),
+      legend.key.width = unit(0.7,"cm"),
+      legend.spacing.y = unit(0.1, 'cm'),
+      panel.background = element_rect(fill="#FFFFFF", color = NA),
+      plot.background = element_rect(fill="#FFFFFF", color = NA)#,
+    )
+}
+  
 
 # theme_set(
 #   theme_minimal(base_size = 20) +

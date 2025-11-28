@@ -3,13 +3,6 @@
 .Rproj.user
 .RData
 *.mif
-data.rds
-*.svg
-*.png
-*.csv
-*.pptx
 hist
-other
-referenceEmissions.xlsx
-EU_2040_transformation.Rproj
-extraCharts.Rmd
+*.Rproj
+extra
