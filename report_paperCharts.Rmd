@@ -2458,9 +2458,12 @@ labels <- c(
   "BioLim12"="12 EJ", 
   "BioLim20"="20 EJ",
   "default"="default",
+  "unlimCCS"="unlimited CCS",
   "limCCS"="limited CCS",
   "limH2"="limited H2",
-  "limVRE"="limited VRE"
+  "limVRE"="limited VRE",
+  "limVRE_limInt"="lim VRE&Integ._alt",
+	"limVRE_strgLimInt"="lim VRE&Integ."
 )
 
 plotData <- df %>%
@@ -2475,7 +2478,7 @@ plotData <- df %>%
   mutate(tgt2030 = factor(tgt2030, levels=labels[c("55","57","59")]),
          efficiency = factor(efficiency, levels=labels[c("reference", "EED 2018 Eff", "FitFor55 eff", "RePowerEU eff")]),
          bioLim = factor(bioLim, levels=labels[c("BioLim4", "BioLim7.5", "BioLim12", "BioLim20")]),
-         lim = factor(lim, levels=labels[c("default", "limCCS", "limH2", "limVRE")])
+         lim = factor(lim, levels=labels[c("default", "unlimCCS", "limCCS", "limH2", "limVRE", "limVRE_limInt", "limVRE_strgLimInt")])
          )
 
 ETS_price <- addHist$ETS_price %>%
@@ -2497,7 +2500,6 @@ g[["Carbon Price - line"]] <- ggplot(plotData,aes(x=period,y=value,group = scena
                      hjust = 0,
                      direction="y",
                      size = geomText.size*0.8) +
-  scale_x_date(date_labels = "%Y") +
   geom_label_repel(data = data.frame(period=as.Date("02/07/2037",format="%m/%d/%Y"), value= plotData %>% filter(scenario == mainScen) %>% filter(period == "2035-01-01" | period == "2040-01-01") %>% pull(value) %>% sum() / 2, scenario=mainScen), aes(x=period,y=value),
                      label = "Reference scenario",
                      nudge_x = 0,
@@ -2508,24 +2510,29 @@ g[["Carbon Price - line"]] <- ggplot(plotData,aes(x=period,y=value,group = scena
                      direction="y",
                      size = geomText.size*0.8) +
   scale_x_date(date_labels = "%Y") +
-  scale_linetype_manual(values = c("55%"="twodash", "57%"="solid", "59%"="dashed"), guide = guide_legend(title="Short-term policy", nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1))) +   
-  scale_color_manual(values = c("reference"="#ae0000", "EED 2018"="#db4646", "FitFor55"="#0090ab", "RePowerEU"="#095786"), guide = guide_legend(title="Efficiency target", nrow =2, byrow = F, order = 2, override.aes = list(linewidth = 1.5))) + 
-  scale_fill_manual(values = c("4 EJ"="#fedc97", "7.5 EJ"="#b5b682", "12 EJ"="#7c9885", "20 EJ"="#28666e"), guide = guide_legend(title="Biomass availability limited to", nrow =2, byrow = F, override.aes = list(shape = 21, size = 6, colour = "transparent"), order = 3)) +
-  scale_shape_manual(values = c("default"=21,"limited CCS"=22,"limited H2"=23,"limited VRE"=24), guide = guide_legend(title="Technology evolution", nrow =2, byrow = T, order = 4, override.aes = list(size = 6))) +
+  scale_linetype_manual(values = c("55%"="twodash", "57%"="solid", "59%"="dashed"), guide = guide_legend(title="Short-term policy", ncol =3, byrow = T, order = 1, override.aes = list(linewidth = 1))) +   
+  scale_color_manual(values = c("reference"="#ae0000", "EED 2018"="#db4646", "FitFor55"="#0090ab", "RePowerEU"="#095786"), guide = guide_legend(title="Efficiency target", ncol =2, byrow = F, order = 2, override.aes = list(linewidth = 1.5))) + 
+  scale_fill_manual(values = c("4 EJ"="#fedc97", "7.5 EJ"="#b5b682", "12 EJ"="#7c9885", "20 EJ"="#28666e"), guide = guide_legend(title="Biomass availability limited to", ncol =2, byrow = F, override.aes = list(shape = 21, size = 6, colour = "transparent"), order = 3)) +
+  scale_shape_manual(values = c("default"=21, "unlimited CCS"=24, "limited CCS"=25,"limited H2"=23,"limited VRE"=22, "lim VRE&Integ."=12, "lim VRE&Int_alt"=14), 
+                     breaks = c("default", "limited H2", "unlimited CCS", "limited CCS", "limited VRE", "lim VRE&Integ."),
+                     guide = guide_legend(title="Technology evolution", ncol =2, byrow = T, order = 4, override.aes = list(size = 6))) +
   labs(title = expression(paste("(a) Carbon price (€/t ", CO[2],")"))) +
   theme_doubleColumn_alt() +
   theme(axis.title.y=element_blank(),
         strip.text.y = element_blank(),
         legend.key.width = unit(1.5,"cm"),
         legend.position="right", 
-        legend.direction = "vertical", 
-        legend.box = "vertical",
-        legend.spacing.y = unit(0.2, "lines"),
+        #legend.spacing.y = unit(0.3, "lines"),
+        legend.key.height = unit(0.7, "cm"),
+        #legend.direction = "vertical", 
+        #legend.box = "vertical",
+        #legend.spacing.y = unit(0.2, "lines"),
         legend.title=element_text(size=text_size*0.8)#,
         #legend.text=element_text(size=2*geomText.size)
         ) +
   scale_y_continuous(breaks = seq(0, 1200, by = 300)) +
   expand_limits(y=1200)
+
 
 ```
 
@@ -2545,14 +2552,17 @@ labels <- c(
   "EED 2018 Eff"="EED 2018", 
   "FitFor55 eff"="FitFor55", 
   "RePowerEU eff"="RePowerEU",
-  "BioLim4"="limited\nto 4 EJ",
-  "BioLim7.5"="limited\nto 7.5 EJ", 
-  "BioLim12"="limited\nto 12 EJ", 
-  "BioLim20"="limited\nto 20 EJ",
+  "BioLim4"="limited to 4 EJ",
+  "BioLim7.5"="limited to 7.5 EJ", 
+  "BioLim12"="limited to 12 EJ", 
+  "BioLim20"="limited to 20 EJ",
   "default"="default",
-  "limCCS"="limited\nCCS",
-  "limH2"="limited\nH2",
-  "limVRE"="limited\nVRE"
+  "unlimCCS"="unlimited CCS",
+  "limCCS"="limited CCS",
+  "limH2"="limited H2",
+  "limVRE"="limited VRE",
+  "limVRE_limInt"="limited VRE&Integration_alt",
+  "limVRE_strgLimInt"="lim VRE&Integ."
 )
 
 plotDataOrig <- df %>%
@@ -2567,7 +2577,7 @@ plotDataOrig <- df %>%
   mutate(tgt2030 = factor(tgt2030, levels=labels[c("55","57","59")]),
          efficiency = factor(efficiency, levels=labels[c("reference", "EED 2018 Eff", "FitFor55 eff", "RePowerEU eff")]),
          bioLim = factor(bioLim, levels=labels[c("BioLim4", "BioLim7.5", "BioLim12", "BioLim20")]),
-         lim = factor(lim, levels=labels[c("default", "limCCS", "limH2", "limVRE")])
+         lim = factor(lim, levels=labels[c("default", "unlimCCS", "limCCS", "limH2", "limVRE", "limVRE_limInt", "limVRE_strgLimInt")])
          )
 
 group_label <- c(
@@ -2614,13 +2624,13 @@ g[["Supplementary figure 1"]] <- gridExtra::arrangeGrob(
     c(2)
   ))
 
-ggsave(paste0(outChartsFolder,"/png/Supplementary figure 1. EU-27 carbon price.png"), g[["Supplementary figure 1"]], device="png", width = 12, height = 10, dpi=300, units = "in")
-ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 1. EU-27 carbon price.svg"), g[["Supplementary figure 1"]], device="svg", width = 12, height = 10, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Supplementary figure 1. EU-27 carbon price.png"), g[["Supplementary figure 1"]], device="png", width = 12, height = 11, dpi=300, units = "in")
+ggsave(paste0(outChartsFolder,"/svg/Supplementary figure 1. EU-27 carbon price.svg"), g[["Supplementary figure 1"]], device="svg", width = 12, height = 11, dpi=100, units = "in")
 
 ```
 
 
-```{r, echo=FALSE, fig.width=12, fig.height=10}
+```{r, echo=FALSE, fig.width=12, fig.height=11}
 
 grid.newpage()
 grid.draw(g[["Supplementary figure 1"]])
@@ -3364,7 +3374,7 @@ Supplementary figure 5. EU-27 Emissions. Energy and non-energy use in the refere
 ```{r supplChart_figure6, echo=FALSE, include=FALSE}
 
 vars <- c(
-  "CO2 - Energy"                = "Emi|CO2|Energy",
+  "CO2 - Energy (including BECCS)" = "Emi|CO2|Energy",
   "CO2 - International Bunkers" = "Emi|CO2|Energy|Demand|Transport|International Bunkers",
   "CO2 - Industrial Processes"  = "Emi|CO2|Industrial Processes",
   "CO2 - Land-Use Change"       = "Emi|CO2|Land-Use Change|LULUCF national accounting", #"Emi|CO2|Land-Use Change",
@@ -3375,7 +3385,7 @@ vars <- c(
   )
 
 plotColor <- c(
-  "CO2 - Energy"                = "#3D4849",
+  "CO2 - Energy (including BECCS)" = "#3D4849",
   "CO2 - International Bunkers" = "#ffc0cb",
   "CO2 - Industrial Processes"  = "#a5a5a5",
   "CO2 - Land-Use Change"       = "#6ec16b",
@@ -3466,7 +3476,7 @@ g[["BECCS"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
   scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
   scale_color_manual(values = c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786"), guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
   scale_fill_manual(values = c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e"), guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-  scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+  scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
   expand_limits(y=limitsBECCS) +
   labs(title = expression(paste("(a) BECCS (Mt ", CO[2],"/yr)"))) +
   theme_doubleColumn() +
@@ -3506,7 +3516,9 @@ g[["DAC"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
   #scale_x_date(date_labels = "%Y") +
   scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1))) +   scale_color_manual(values = c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786"), guide = guide_legend(nrow =2, byrow = F, order = 2, override.aes = list(linewidth = 1.5))) + 
   scale_fill_manual(values = c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e"), guide = guide_legend(nrow =2, byrow = F, override.aes = list(shape = 21, size = 6, colour = "transparent"), order = 3)) +
-  scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 6))) +
+  scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), 
+                     breaks = c("default", "limH2", "unlimCCS", "limCCS", "limVRE", "limVRE_limInt", "limVRE_strgLimInt"),
+                     guide = guide_legend(ncol =2, byrow = T, order = 4, override.aes = list(size = 6))) +
   expand_limits(y=limY) +
   labs(title = expression(paste("(b) Direct Air Capture (Mt ", CO[2],"/yr)"))) +
   theme_doubleColumn() +
@@ -3515,6 +3527,7 @@ g[["DAC"]] <- ggplot(plotData,aes(x=period,y=value,group = scenario)) +
         legend.key.width = unit(2,"cm"),
         legend.position="right", legend.direction = "vertical", legend.box = "vertical",
         legend.spacing.y = unit(0.3, "lines"),
+        legend.key.height = unit(1, "cm"),
         plot.title = element_text(hjust=-0.1))
 
 ```

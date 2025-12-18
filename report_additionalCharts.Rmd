@@ -74,6 +74,9 @@ dir.create(paste0(outChartsFolder, "/svg"), recursive = TRUE, showWarnings = FAL
 <!-- Initializing charts object -->
 ```{r chart_initialization, echo=FALSE, include = FALSE}
 
+mainScen <- "Nzero_57_bio7p5"
+tgt2030Scen <- c(55,57,59)
+
 #loading theme and colors
 source("./R/aesthetics.R") 
 
@@ -102,7 +105,7 @@ reductionMatrix <- df %>%
   mutate(bioLim = factor(c("BioLim4","BioLim7.5","BioLim12","BioLim20")))
 
 if("limVRE" %in% colnames(reductionMatrix)){
-  colors <- spec_color(c(reductionMatrix$default,reductionMatrix$limCCS,reductionMatrix$limH2,reductionMatrix$limVRE), end = 0.9, option = "A", direction = -1)
+  colors <- spec_color(c(reductionMatrix$default, reductionMatrix$unlimCCS,reductionMatrix$limCCS,reductionMatrix$limH2,reductionMatrix$limVRE,reductionMatrix$limVRE_limInt, reductionMatrix$limVRE_limInt_int), end = 0.9, option = "A", direction = -1)
 
 redMatrix <- reductionMatrix %>%
   kbl() %>%
@@ -132,14 +135,48 @@ redMatrix2 <- df %>%
            diff = as.numeric(as.character(tgt2030)) - ((1-reduction)*100)) %>%
   mutate(text = paste0(round(tgtAchieved,2), "%"))
 
+ bioLim_levels <- c(
+   "BioLim4"="4 EJ",
+   "BioLim7.5"="7.5 EJ", 
+   "BioLim12"="12 EJ", 
+   "BioLim20"="20 EJ")
+
+lim_levels <- c(
+  "default"="default",
+  "unlimCCS"="unlimited CCS",
+  "limCCS"="limited CCS",
+  "limH2"="limited H2",
+  "limVRE"="limited VRE",
+  "limVRE_limInt"="lim VRE&Integ._alt",
+	"limVRE_strgLimInt"="lim VRE&Integ.")
+
+  tgt_levels <- c(
+    "55"="55%",
+    "57"="57%",
+    "59"="59%")
+  
+  eff_levels <- c(
+    "reference"="reference", 
+    "EED 2018 Eff"="EED 2018", 
+    "FitFor55 eff"="FitFor55", 
+    "RePowerEU eff"="RePowerEU")
+
+redMatrix2 <- redMatrix2 %>%
+  mutate(
+    tgt2030   = factor(tgt_levels[as.character(tgt2030)], levels = tgt_levels),
+    efficiency= factor(eff_levels[as.character(efficiency)], levels = eff_levels),
+    bioLim    = factor(bioLim_levels[as.character(bioLim)], levels = bioLim_levels),
+    lim       = factor(lim_levels[as.character(lim)], levels = rev(lim_levels))
+  )
+
 g[["reduction matrix"]][["ggplot"]] <- ggplot(redMatrix2, aes(x=bioLim, y=lim, fill= tgtAchieved, text = text)) + 
   geom_tile() +
   facet_grid(tgt2030 ~ efficiency, scales = "free") +
   scale_fill_distiller(palette = "Blues", direction = 1, breaks = seq(floor(min(redMatrix2$tgtAchieved)), ceiling(max(redMatrix2$tgtAchieved)),2)) +
   theme_doubleColumn() +
   theme(strip.clip = "off") +
-  guides(fill = guide_colorbar(barwidth = 20, barheight = 1)) +
-  theme(legend.position="bottom") +
+  #guides(fill = guide_colorbar(barwidth = 20, barheight = 1)) +
+  theme(legend.position="right") +
   theme(legend.title=element_blank())
   
 g[["reduction matrix"]][["plotly"]] <- ggplotly(g[["reduction matrix"]][["ggplot"]],tooltip = c("text")) %>% layout(autosize = TRUE)  
@@ -196,7 +233,7 @@ g[["2030 targets"]][["ggplot"]] <-  ggplot(plotData,aes(x=period,y=tgtAchieved))
   facet_grid(~ tgt2030) +
   theme_doubleColumn() +
   scale_fill_manual(values = c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e"), guide = guide_legend(nrow =2, byrow = F, override.aes = list(shape = 21, size = 6, colour = "transparent"), order = 3)) +
-  scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 6))) +
+  scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 6))) +
   scale_color_manual(values = c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786"), guide = guide_legend(nrow =2, byrow = F, order = 2, override.aes = list(shape = 1, linewidth = 1.5))) + 
   scale_x_continuous(breaks=2030) +
   scale_y_continuous(breaks=seq(53,61,1)) +
@@ -298,7 +335,7 @@ g[["2050 targets"]][["ggplot"]] <-  ggplot(plotData,aes(x=period,y=tgtAchieved))
   geom_segment(aes(x=2049, xend=2051, y=100, yend=100), linetype="dashed", color="black") +
   theme_doubleColumn() +
   scale_fill_manual(values = c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e"), guide = guide_legend(nrow =2, byrow = F, override.aes = list(shape = 21, size = 6, colour = "transparent"), order = 3)) +
-  scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 6))) +
+  scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 6))) +
   scale_color_manual(values = c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786"), guide = guide_legend(nrow =2, byrow = F, order = 2, override.aes = list(shape = 1, linewidth = 1.5))) + 
   scale_x_continuous(breaks=2050) +
   scale_y_continuous(breaks=c(99.5,100,100.5)) +
@@ -548,7 +585,7 @@ theme_white <- function(){
 
 histEmber <- data.frame(period=seq(2000,2023,1),value=c(1079, 1084, 1122, 1166, 1157, 1156, 1170, 1188, 1128, 1039, 1048, 1054, 1033, 980, 917, 948, 934, 942, 879, 769, 660, 722, 750, 596))
 
-mainScen <- "Nzero_57_bio7p5" 
+mainScen <- "Nzero_57_bio7p5"
 
 plotData <- df %>%
   filter(region == "EU27", period %in% c(2010:2050), variable == "Emi|CO2|Energy|Supply|Electricity w/ couple prod", scenario != "Npi") %>%
@@ -591,6 +628,371 @@ ggsave(paste0(outChartsFolder,"/png/power_sector_emissions.png"), g[["power_sect
 ```{r, echo=FALSE, fig.width=12, fig.height=8}
 
 g[["power_sector_emissions"]]
+
+```
+
+
+# VRE Analysis
+
+```{r, echo=FALSE, include=FALSE}
+
+# Define main scenario for comparison (fixing other dimensions)
+# e.g. target 57, efficiency reference, bioLim 7.5
+tgt_select <- "55"
+eff_select <- "reference"
+bio_select <- "BioLim4" # Using label from processed data if mapped, but filtering usually happens before full mapping or we use internal codes. 
+# Checking previous chunks: bioLim labels are like "BioLim7.5"
+# lim labels are "limited VRE", "lim VRE integration", etc. if mapped.
+# However, usually easier to filter on IDs if possible, but loadData maps them.
+# Let's check `df` structure from previous chunks.
+# It seems `modifyData` maps them.
+# modifyData uses:
+# "limVRE" = "limited VRE"
+# "limVREandIntegration" = "limVRE_limInt" -> Mapped to "lim VRE&Int" in paperCharts, but here in additionalCharts?
+# Let's check filter logic.
+
+# In this file, `df` is used.
+# Let's reuse `plotData` pattern.
+
+vars_vre <- c(
+  "SE|Electricity|Solar|PV",
+  "SE|Electricity|Wind|Onshore",
+  "SE|Electricity|Wind|Offshore"
+)
+
+# Filter for VRE scenarios
+vres_lims <- c("limVRE", "limVRE_limInt", "limVRE_strgLimInt")
+# We need to match the actual levels in the dataframe.
+# Based on the user's previous edits in paperCharts, the mapping was:
+# "limVRE"="limited VRE",
+# "limVRE_limInt"="lim VRE&Int",
+# "limVRE_strgLimInt"="lim VRE&Int2"
+#
+# BUT, `report_additionalCharts.Rmd` might not have the same factors applied as `report_paperCharts.Rmd`.
+# Let's inspect `redMatrix2` chunk in this file (lines 127+).
+# It uses `lim` column.
+#
+# If the user wants to compare "scenarios containing with lim = limVRE, ...", they likely mean the scenario ID substring or the `lim` column.
+# Let's assume the `lim` column has been populated by `loadData.R` with the keys from `limList` (values of `limList`).
+# original keys: limVRE, limVRE2, limVRE3
+# original values in limList: limVRE, limVRE_limInt, limVRE_strgLimInt
+# So `df$lim` should contain "limVRE", "limVRE_limInt", "limVRE_strgLimInt".
+
+plotDataVRE <- df %>%
+  filter(region == "EU27", 
+         period %in% c(2030, 2040, 2050),
+         variable %in% vars_vre,
+         lim %in% vres_lims) 
+
+# Comparison Chart: Equivalent scenarios
+# We fix efficiency and bioLim but show across different 2030 targets
+compData <- plotDataVRE %>%
+  filter(#tgt2030 == tgt_select, # Show all targets
+         efficiency == eff_select,
+         bioLim == bio_select)
+
+g[["vre_comparison"]] <- ggplot(compData, aes(x=as.factor(period), y=value, fill=lim)) +
+  geom_col(position = "dodge") +
+  facet_grid(variable ~ tgt2030, scales = "free_y") +
+  theme_doubleColumn() +
+  labs(title = "VRE Capacities Comparison",
+       subtitle = paste0("Eff: ", eff_select, ", Bio: ", bio_select),
+       y = "GW", x = "") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave(paste0(outChartsFolder,"/svg/VRE_Comparison.svg"), g[["vre_comparison"]], device="svg", width = 12, height = 8)
+ggsave(paste0(outChartsFolder,"/png/VRE_Comparison.png"), g[["vre_comparison"]], device="png", width = 12, height = 8)
+
+
+# Distribution Chart
+# Comparing distribution across ALL scenarios that have these lim tags
+g[["vre_distribution"]] <- ggplot(plotDataVRE, aes(x=lim, y=value, fill=lim)) +
+  geom_boxplot() +
+  #geom_violin(alpha=0.5) +
+  facet_grid(period~variable, scales = "free_y") +
+  theme_doubleColumn() +
+  labs(title = "Distribution of VRE Capacities by Limitation Type",
+       y = "GW") +
+  theme(axis.text.x = element_blank()) # Label is in legend/x-axis tick might be redundant if color used
+
+ggsave(paste0(outChartsFolder,"/svg/VRE_Distribution.svg"), g[["vre_distribution"]], device="svg", width = 12, height = 8)
+ggsave(paste0(outChartsFolder,"/png/VRE_Distribution.png"), g[["vre_distribution"]], device="png", width = 12, height = 8)
+
+
+```
+
+## Comparison
+
+```{r, echo=FALSE, fig.width=12, fig.height=8}
+g[["vre_comparison"]]
+```
+
+## Distribution
+
+```{r, echo=FALSE, fig.width=12, fig.height=8}
+g[["vre_distribution"]]
+```
+
+
+
+
+
+# Milestones - ETL poster for the SAB review
+
+
+
+concretely, he would like only 4 indicators: 
+
+Emission reductions
+BECCS and DACCS
+Electricity share in FE
+Wind & Solar share in Electricity (not yet part of the plot)
+
+
+```{r chart_figure5, echo=FALSE}
+
+g[["milestone"]] <- NULL
+
+violin_scale <- 3 
+violin_color = "#bbbbbb"
+violin_boxPlotWidth <- 1.5   
+
+#Emissions Reduction
+
+plotData <- df %>%
+  filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen) %>%
+  calc_addVariable( "`Emissions with LULUCF and with intra-EU aviation`" = "`Emi|GHG|LULUCF national accounting` + `Emi|CO2|Energy|Demand|Transport|International Bunkers|Intra-region`" , units = "Mt CO2/yr", only.new=T) %>%
+  mutate(value = round(1-(value / tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)) ,2)) %>%
+  filter(tgt2050 != "Npi") %>%
+  mutate(target = "Emissions\nreductions") %>%
+  group_by(period) %>%
+  mutate(min = min(value),
+        max = max(value))
+
+h <- refEmi %>% filter(variable == "Emissions with LULUCF and with intra-EU aviation", region == "EU27", pollutant == "All greenhouse gases - (CO2 equivalent)") %>% ungroup() %>% select(region,variable,period,value)
+emi1990 <- tgt %>% filter(target == "Emissions with LULUCF and with intra-EU aviation") %>% pull(reference)
+reduction_h <- 1- (h %>% filter(period==2022) %>% pull(value) / emi1990)
+
+target <- data.frame(period = 2030, x = 2025, xend= 2035, value = 0.55, label = "FitFor55")
+
+g[["milestone"]][["Emissions reductions"]] <- ggplot(plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (%)")), aes(x = period, y = value, group=period)) +
+  geom_violin(fill="#bbbbbb", scale = violin_scale) + #, trim=FALSE
+  geom_boxplot(outlier.shape = NA, width=1.5) +
+  geom_segment(data = target, aes(x=x, xend=xend, y=value, yend=value), color = "black", linewidth=1, alpha = 0.5, linetype = "dotted") +
+  annotate("text", x = -Inf, y = 0.55, label = "FitFor55", angle=90, vjust = -0.5, hjust = 1, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  geom_hline(yintercept=reduction_h, color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = reduction_h, label = "2022", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  facet_grid(.~target, scales="free") +
+  coord_flip(clip = 'off') +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank(),
+        strip.text.y = element_blank(),
+        panel.spacing = unit(4, "lines"),
+        axis.text.x = element_text(angle = 0, hjust = 0.5),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=0, b=20)))
+
+
+# Novel CDR = atmospheric/biogenic CO2 (CDR) 
+
+plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Carbon Management|atmospheric/biogenic CO2 - CDR") %>% select(-variable) %>%
+  filter(tgt2050 != "Npi") %>%
+  mutate(target = "BECCS\nand\nDACCS") %>%
+  group_by(period) %>% 
+  mutate(min = min(value),
+        max = max(value)) 
+
+plotData <- plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (Mt CO2/yr)"))
+
+mainScenarioValue <- plotData %>% filter(scenario == mainScen)
+
+g[["milestone"]][["Novel CDR"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  geom_point(data=mainScenarioValue, shape=4, size = 2, stroke = 1.5, alpha = 0.6, color = "red") +
+  facet_grid(.~target, scales="free") +
+  coord_flip(clip = 'off') +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,300)) + 
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank(),
+        strip.text.y = element_blank(),
+        panel.spacing = unit(4, "lines"),
+        axis.text.x = element_text(angle = 0, hjust = 0.5),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=0, b=20)))
+
+
+
+# Direct Electrification
+
+plotData <- df %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "Final Energy|w/o Bunkers|w/o Non-energy Use|Electricity Share") %>% select(-variable) %>%
+  filter(tgt2050 != "Npi") %>%
+  mutate(target = "Electricity\nShare in\nFinal Energy") %>%
+  group_by(period) %>% 
+  mutate(min = min(value),
+        max = max(value)) 
+
+#estimation of historical share in 2022 for FE electricity / FE with non-energy use and with bunkers
+# h <- (
+#       2550461.10 *1000 / 8.76E+09 * 31.536  # https://ec.europa.eu/eurostat/databrowser/bookmark/12d54df4-7c35-47eb-a103-dd8994d26b80?lang=en
+#      ) / (
+#       addHist$FE_consumption %>% mutate(value = value/1000000) %>% filter(period==2022) %>% pull(value) + # FE|w/o Non-energy Use w/o Bunkers - EJ
+#       df %>% filter(region == "EU27", period == 2020, scenario == "Npi", variable == "FE|Transport|Bunkers") %>% pull(value) +
+#       df %>% filter(region == "EU27", period == 2020, scenario == "Npi", variable == "FE|Non-energy Use|Industry") %>% pull(value)
+#      )
+
+plotData <- plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (%)"))
+
+mainScenarioValue <- plotData %>% filter(scenario == mainScen)
+
+g[["milestone"]][["Direct Electrification"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  geom_point(data=mainScenarioValue, shape=4, size = 2, stroke = 1.5, alpha = 0.6, color = "red") +
+  facet_grid(.~target, scales="free") +
+  coord_flip(clip = 'off') +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank(),
+        strip.text.y = element_blank(),
+        panel.spacing = unit(4, "lines"),
+        axis.text.x = element_text(angle = 0, hjust = 0.5),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=0, b=20))) 
+
+
+# Wind & Solar share in Electricity
+
+data <- df %>% calc_addVariable("`SE|wind and Solar share`" = "( (`SE|Electricity|Wind` + `SE|Electricity|Solar`) / `SE|Electricity`)", units = "%", only.new=T)
+
+plotData <- data %>% filter(region == "EU27", period %in% c(2030,2040), tgt2030 %in% tgt2030Scen, variable == "SE|wind and Solar share") %>% select(-variable) %>%
+  filter(tgt2050 != "Npi") %>%
+  mutate(target = "Wind & Solar\nShare in\nElectricity") 
+
+histValue_2023 <- hist %>% calc_addVariable("`SE|wind and Solar share`" = "( (`SE|Electricity|Wind` + `SE|Electricity|Solar`) / `SE|Electricity`)", units = "%", only.new=T) %>% filter(region == "EU27", model == "Ember", period == "2023")
+
+plotData <- plotData %>%
+  group_by(period) %>% 
+  mutate(min = min(value),
+        max = max(value))
+
+#fullPlotData <- rbind(fullPlotData,plotData) 
+
+plotData <- plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (%)"))
+                                
+mainScenarioValue <- plotData %>% filter(scenario == mainScen)
+
+g[["milestone"]][["Wind & Solar Share in Electricity"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  #geom_segment(data = target, aes(x=x, xend=xend, y=value, yend=value), color = "black", linewidth=1, alpha = 0.5, linetype = "dotted") +
+  #annotate("text", x = Inf, y = 0.4, label = "RED II revised", angle=90, vjust = -0.5, hjust = 0.075, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  #annotate("text", x = Inf, y = 0.45, label = "REPowerEU", angle=90, vjust = 1.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  geom_hline(yintercept=histValue_2023 %>% pull(value), color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = histValue_2023 %>% pull(value), label = "2023", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  geom_point(data=mainScenarioValue, shape=4, size = 2, stroke = 1.5, alpha = 0.6, color = "red") +
+  facet_grid(.~target, scales="free") +
+  coord_flip(clip = 'off') +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040), labels = c(2030,2040), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank(),
+        strip.text.y = element_blank(),
+        panel.spacing = unit(4, "lines"),
+        axis.text.x = element_text(angle = 0, hjust = 0.5),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=0, b=20)),
+        #strip.text.x = element_text(size = textSize.double, hjust = 1, margin=margin(l=0, b=20)),
+        strip.clip = "off") 
+
+```
+
+
+```{r, echo=FALSE, include=FALSE}
+
+g[["milestones ETL poster"]] <- gridExtra::arrangeGrob(
+  g[["milestone"]][["Emissions reductions"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Novel CDR"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Direct Electrification"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  g[["milestone"]][["Wind & Solar Share in Electricity"]], #+ theme(plot.margin=margin(l = 30, r = 10,t = 30)),
+  ncol = 1
+)
+
+ggsave(paste0(outChartsFolder,"/svg/milestones ETL poster.svg"), g[["milestones ETL poster"]], device="svg", width = 4*1.5, height = 5*1.5, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/milestones ETL poster.png"), g[["milestones ETL poster"]], device="png", width = 4*1.5, height = 5*1.5, dpi=300, units = "in")
+
+
+
+```
+
+
+```{r, echo=FALSE, fig.width=8, fig.height=10}
+
+grid.newpage()
+grid.draw(g[["milestones ETL poster"]])
+
+```
+
+
+```{r, echo=FALSE, include=FALSE}
+
+
+# Wind & Solar share in Electricity
+
+data <- df %>% calc_addVariable("`SE|wind and Solar share`" = "( (`SE|Electricity|Wind` + `SE|Electricity|Solar`) / `SE|Electricity`)", units = "%", only.new=T)
+
+plotData <- data %>% filter(region == "EU27", period %in% c(2030,2040, 2050), tgt2030 %in% tgt2030Scen, variable == "SE|wind and Solar share") %>% select(-variable) %>%
+  filter(tgt2050 != "Npi") %>%
+  mutate(target = "Wind & Solar\nShare in\nElectricity") 
+
+histValue_2023 <- hist %>% calc_addVariable("`SE|wind and Solar share`" = "( (`SE|Electricity|Wind` + `SE|Electricity|Solar`) / `SE|Electricity`)", units = "%", only.new=T) %>% filter(region == "EU27", model == "Ember", period == "2023")
+
+plotData <- plotData %>%
+  group_by(period) %>% 
+  mutate(min = min(value),
+        max = max(value))
+
+#fullPlotData <- rbind(fullPlotData,plotData) 
+
+plotData <- plotData %>% mutate(target = paste0(gsub("\n", " ", target)," (%)"))
+                                
+mainScenarioValue <- plotData %>% filter(scenario == mainScen)
+
+g[["milestone"]][["Wind & Solar Share in Electricity extended"]] <- ggplot(plotData, aes(x = period, y = value, group=period)) +
+  geom_violin(fill=violin_color, scale = violin_scale)  + #, trim=FALSE
+  geom_boxplot(outlier.shape = NA, width=violin_boxPlotWidth) +
+  #geom_segment(data = target, aes(x=x, xend=xend, y=value, yend=value), color = "black", linewidth=1, alpha = 0.5, linetype = "dotted") +
+  #annotate("text", x = Inf, y = 0.4, label = "RED II revised", angle=90, vjust = -0.5, hjust = 0.075, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  #annotate("text", x = Inf, y = 0.45, label = "REPowerEU", angle=90, vjust = 1.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  geom_hline(yintercept=histValue_2023 %>% pull(value), color = "black", linewidth=1, alpha = 0.5, linetype = "dashed") +
+  annotate("text", x = Inf, y = histValue_2023 %>% pull(value), label = "2023", angle=90, vjust = -0.5, hjust = 0, color = "black", alpha = 0.5, size = 0.8*geomText.size) +
+  geom_point(data=mainScenarioValue, shape=4, size = 2, stroke = 1.5, alpha = 0.6, color = "red") +
+  facet_grid(.~target, scales="free") +
+  coord_flip(clip = 'off') +
+  scale_y_continuous(breaks=seq(0, 1, 0.2), labels = scales::percent) +
+  scale_x_reverse(breaks=c(2030,2040,2050), labels = c(2030,2040,2050), minor_breaks = NULL) +
+  expand_limits(y=c(0,1)) + 
+  theme_doubleColumn() +
+  theme(axis.title.y=element_blank(),
+        strip.text.y = element_blank(),
+        panel.spacing = unit(4, "lines"),
+        axis.text.x = element_text(angle = 0, hjust = 0.5),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = textSize.double, hjust = 0, margin=margin(l=0, b=20)),
+        #strip.text.x = element_text(size = textSize.double, hjust = 1, margin=margin(l=0, b=20)),
+        strip.clip = "off") 
+
+ggsave(paste0(outChartsFolder,"/svg/wind and solar electricity share.svg"), g[["milestone"]][["Wind & Solar Share in Electricity extended"]], device="svg", width = 4*1.5/4, height = 5*2/4, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/wind and solar electricity share.png"), g[["milestone"]][["Wind & Solar Share in Electricity extended"]], device="png", width = 4*1.5, height = 5*2/4, dpi=300, units = "in")
+
+
 
 ```
 
