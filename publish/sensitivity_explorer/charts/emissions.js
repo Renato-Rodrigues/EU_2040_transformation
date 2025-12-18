@@ -48,7 +48,7 @@
     },
     {
       "x": [2020, 2020],
-      "y": [-450.791, 5056.9309999999996],
+      "y": [-614.50700000000006, 5064.7269999999999],
       "text": "",
       "type": "scatter",
       "mode": "lines",
@@ -78,6 +78,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_bio12,1,NA)",
       "legendgroup": "(55,Nzero_55_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3005.8400000000001, 2225.8899999999999, 1527.45, 883.5, 378.45999999999998, 9.3000000000000007, -92.760000000000005, -169.22999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 3006 Mt CO2/yr<br />Reduction: 40.2%<br />Period: 2025<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2226 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1527 Mt CO2/yr<br />Reduction: 70.8%<br />Period: 2035<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 883 Mt CO2/yr<br />Reduction: 83.9%<br />Period: 2040<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 378 Mt CO2/yr<br />Reduction: 92%<br />Period: 2045<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 9 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -93 Mt CO2/yr<br />Reduction: 102%<br />Period: 2055<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -169 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_bio12_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -146,6 +166,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3011.1100000000001, 2231.6300000000001, 1533.6199999999999, 867.24000000000001, 347.37, -14.77, -80.659999999999997, -136.94999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3011 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2232 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1534 Mt CO2/yr<br />Reduction: 70.6%<br />Period: 2035<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 867 Mt CO2/yr<br />Reduction: 84.2%<br />Period: 2040<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 347 Mt CO2/yr<br />Reduction: 92.6%<br />Period: 2045<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -15 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -81 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -137 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_bio12_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3015.1399999999999, 2233.73, 1582.05, 970.79999999999995, 478.94999999999999, 15.99, -48.340000000000003, -114.83],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio20<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 3015 Mt CO2/yr<br />Reduction: 40%<br />Period: 2025<br />Scenario: Nzero_55_bio20<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2234 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_bio20<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1582 Mt CO2/yr<br />Reduction: 69.6%<br />Period: 2035<br />Scenario: Nzero_55_bio20<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 971 Mt CO2/yr<br />Reduction: 81.9%<br />Period: 2040<br />Scenario: Nzero_55_bio20<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 479 Mt CO2/yr<br />Reduction: 89.8%<br />Period: 2045<br />Scenario: Nzero_55_bio20<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 16 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_55_bio20<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -48 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_55_bio20<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -115 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2060<br />Scenario: Nzero_55_bio20<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -158,6 +198,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_bio20,1,NA)",
       "legendgroup": "(55,Nzero_55_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3012.1500000000001, 2230.79, 1598.9000000000001, 1002.33, 499.51999999999998, 9.6300000000000008, -84.019999999999996, -164.56999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 3012 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2231 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1599 Mt CO2/yr<br />Reduction: 69.2%<br />Period: 2035<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1002 Mt CO2/yr<br />Reduction: 81.3%<br />Period: 2040<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 500 Mt CO2/yr<br />Reduction: 89.4%<br />Period: 2045<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -84 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -165 Mt CO2/yr<br />Reduction: 103.5%<br />Period: 2060<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_bio20_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -226,6 +286,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3019.3499999999999, 2230.96, 1626.51, 1036.71, 514.37, 0.54000000000000004, -80.140000000000001, -153.91],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3019 Mt CO2/yr<br />Reduction: 39.9%<br />Period: 2025<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2231 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1627 Mt CO2/yr<br />Reduction: 68.6%<br />Period: 2035<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1037 Mt CO2/yr<br />Reduction: 80.5%<br />Period: 2040<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 514 Mt CO2/yr<br />Reduction: 89.1%<br />Period: 2045<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -80 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -154 Mt CO2/yr<br />Reduction: 103.3%<br />Period: 2060<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_bio20_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3029.1900000000001, 2236.6999999999998, 1399.95, 689.75999999999999, 263.63, 1.73, -44.939999999999998, -116.56999999999999],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio4<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 3029 Mt CO2/yr<br />Reduction: 39.8%<br />Period: 2025<br />Scenario: Nzero_55_bio4<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2237 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_bio4<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1400 Mt CO2/yr<br />Reduction: 73.3%<br />Period: 2035<br />Scenario: Nzero_55_bio4<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 690 Mt CO2/yr<br />Reduction: 87.8%<br />Period: 2040<br />Scenario: Nzero_55_bio4<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 264 Mt CO2/yr<br />Reduction: 94.4%<br />Period: 2045<br />Scenario: Nzero_55_bio4<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_bio4<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -45 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_55_bio4<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -117 Mt CO2/yr<br />Reduction: 102.5%<br />Period: 2060<br />Scenario: Nzero_55_bio4<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -238,6 +318,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_bio4,1,NA)",
       "legendgroup": "(55,Nzero_55_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3020.8800000000001, 2231.8899999999999, 1443.8800000000001, 783.77999999999997, 323.29000000000002, 1.23, -129.84999999999999, -356.36000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 3021 Mt CO2/yr<br />Reduction: 39.9%<br />Period: 2025<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2232 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1444 Mt CO2/yr<br />Reduction: 72.5%<br />Period: 2035<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 784 Mt CO2/yr<br />Reduction: 85.9%<br />Period: 2040<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 323 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -130 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2055<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -356 Mt CO2/yr<br />Reduction: 107.6%<br />Period: 2060<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_bio4_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -306,6 +406,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3041.1300000000001, 2233.9200000000001, 1431.23, 705.52999999999997, 263.98000000000002, -4.4699999999999998, -72.409999999999997, -168.00999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3041 Mt CO2/yr<br />Reduction: 39.5%<br />Period: 2025<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2234 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1431 Mt CO2/yr<br />Reduction: 72.7%<br />Period: 2035<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 706 Mt CO2/yr<br />Reduction: 87.4%<br />Period: 2040<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 264 Mt CO2/yr<br />Reduction: 94.4%<br />Period: 2045<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -4 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -168 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_bio4_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3019.0999999999999, 2239.3600000000001, 1508.76, 848.37, 361.94999999999999, 18.989999999999998, -47.590000000000003, -93.769999999999996],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio7p5<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 3019 Mt CO2/yr<br />Reduction: 40%<br />Period: 2025<br />Scenario: Nzero_55_bio7p5<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2239 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_bio7p5<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1509 Mt CO2/yr<br />Reduction: 71.1%<br />Period: 2035<br />Scenario: Nzero_55_bio7p5<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 848 Mt CO2/yr<br />Reduction: 84.6%<br />Period: 2040<br />Scenario: Nzero_55_bio7p5<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 362 Mt CO2/yr<br />Reduction: 92.3%<br />Period: 2045<br />Scenario: Nzero_55_bio7p5<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 19 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_55_bio7p5<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -48 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_55_bio7p5<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -94 Mt CO2/yr<br />Reduction: 102%<br />Period: 2060<br />Scenario: Nzero_55_bio7p5<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -318,6 +438,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_bio7p5,1,NA)",
       "legendgroup": "(55,Nzero_55_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3011.2399999999998, 2228.1599999999999, 1504.6900000000001, 848.87, 363.66000000000003, 13.640000000000001, -78, -157.65000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 3011 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2228 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1505 Mt CO2/yr<br />Reduction: 71.2%<br />Period: 2035<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 849 Mt CO2/yr<br />Reduction: 84.6%<br />Period: 2040<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 364 Mt CO2/yr<br />Reduction: 92.3%<br />Period: 2045<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 14 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -78 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -158 Mt CO2/yr<br />Reduction: 103.4%<br />Period: 2060<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_bio7p5_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -386,6 +526,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3025.6399999999999, 2237.4899999999998, 1546.02, 877.96000000000004, 364.97000000000003, 6.6699999999999999, -56.579999999999998, -98.930000000000007],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3026 Mt CO2/yr<br />Reduction: 39.8%<br />Period: 2025<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2237 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1546 Mt CO2/yr<br />Reduction: 70.4%<br />Period: 2035<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 878 Mt CO2/yr<br />Reduction: 84%<br />Period: 2040<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 365 Mt CO2/yr<br />Reduction: 92.2%<br />Period: 2045<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 7 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -99 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2060<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3002.1500000000001, 2226.0799999999999, 1490.1900000000001, 789.42999999999995, 311.44999999999999, -16.920000000000002, -86.859999999999999, -136.99000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio12<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 3002 Mt CO2/yr<br />Reduction: 40.3%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio12<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2226 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio12<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1490 Mt CO2/yr<br />Reduction: 71.4%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio12<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 789 Mt CO2/yr<br />Reduction: 85.7%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio12<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 311 Mt CO2/yr<br />Reduction: 93.4%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio12<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio12<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -87 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio12<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -137 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio12<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -398,6 +558,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_eedEff_bio12,1,NA)",
       "legendgroup": "(55,Nzero_55_eedEff_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3008.4699999999998, 2241.54, 1536.8599999999999, 849.63999999999999, 345.38999999999999, -17.670000000000002, -120.04000000000001, -205.58000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 3008 Mt CO2/yr<br />Reduction: 40.2%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2242 Mt CO2/yr<br />Reduction: 55.9%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1537 Mt CO2/yr<br />Reduction: 70.5%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 850 Mt CO2/yr<br />Reduction: 84.5%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 345 Mt CO2/yr<br />Reduction: 92.7%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -120 Mt CO2/yr<br />Reduction: 102.6%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -206 Mt CO2/yr<br />Reduction: 104.4%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_eedEff_bio12_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_eedEff_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -466,6 +646,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3009.4400000000001, 2221.7600000000002, 1538.0999999999999, 868.64999999999998, 356.94, 1.6799999999999999, -73.909999999999997, -130.94999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3009 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2222 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1538 Mt CO2/yr<br />Reduction: 70.4%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 869 Mt CO2/yr<br />Reduction: 84.1%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 357 Mt CO2/yr<br />Reduction: 92.4%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -74 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -131 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_eedEff_bio12_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_eedEff_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3003.6500000000001, 2224.6999999999998, 1556.3199999999999, 915.57000000000005, 415.81999999999999, -16.75, -74.349999999999994, -141.63],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio20<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 3004 Mt CO2/yr<br />Reduction: 40.3%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio20<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2225 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio20<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1556 Mt CO2/yr<br />Reduction: 70%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio20<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 916 Mt CO2/yr<br />Reduction: 82.9%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio20<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 416 Mt CO2/yr<br />Reduction: 91.2%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio20<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio20<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -74 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio20<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -142 Mt CO2/yr<br />Reduction: 103%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio20<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -478,6 +678,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_eedEff_bio20,1,NA)",
       "legendgroup": "(55,Nzero_55_eedEff_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3003.1199999999999, 2228.6100000000001, 1616.27, 1001.5599999999999, 465.87, 3.52, -75.950000000000003, -183.19],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 3003 Mt CO2/yr<br />Reduction: 40.3%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2229 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1616 Mt CO2/yr<br />Reduction: 68.8%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1002 Mt CO2/yr<br />Reduction: 81.2%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 466 Mt CO2/yr<br />Reduction: 90.1%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 4 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -76 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -183 Mt CO2/yr<br />Reduction: 103.9%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_eedEff_bio20_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_eedEff_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -546,6 +766,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3007.1500000000001, 2221.9299999999998, 1617.8900000000001, 988.60000000000002, 475.68000000000001, -7.79, -83.180000000000007, -158.16999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3007 Mt CO2/yr<br />Reduction: 40.2%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2222 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1618 Mt CO2/yr<br />Reduction: 68.7%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 989 Mt CO2/yr<br />Reduction: 81.4%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 476 Mt CO2/yr<br />Reduction: 89.9%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -158 Mt CO2/yr<br />Reduction: 103.4%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_eedEff_bio20_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_eedEff_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3010.48, 2222.3000000000002, 1359.0699999999999, 638.44000000000005, 250.38999999999999, 8.5299999999999994, -38.670000000000002, -96.439999999999998],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio4<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 3010 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio4<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2222 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio4<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1359 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio4<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 638 Mt CO2/yr<br />Reduction: 88.7%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio4<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 250 Mt CO2/yr<br />Reduction: 94.7%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio4<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 9 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio4<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -39 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio4<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -96 Mt CO2/yr<br />Reduction: 102%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio4<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -558,6 +798,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_eedEff_bio4,1,NA)",
       "legendgroup": "(55,Nzero_55_eedEff_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3011.0799999999999, 2222.9099999999999, 1411.6800000000001, 717.82000000000005, 292.62, -0.62, -119.06999999999999, -317.17000000000002],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 3011 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2223 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1412 Mt CO2/yr<br />Reduction: 73%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 718 Mt CO2/yr<br />Reduction: 87.2%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 293 Mt CO2/yr<br />Reduction: 93.8%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -119 Mt CO2/yr<br />Reduction: 102.5%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -317 Mt CO2/yr<br />Reduction: 106.7%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_eedEff_bio4_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_eedEff_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -626,6 +886,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3041.1300000000001, 2246.96, 1430.8499999999999, 676.75999999999999, 250.21000000000001, -6.0999999999999996, -70.760000000000005, -160.46000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3041 Mt CO2/yr<br />Reduction: 39.5%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2247 Mt CO2/yr<br />Reduction: 55.8%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1431 Mt CO2/yr<br />Reduction: 72.6%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 677 Mt CO2/yr<br />Reduction: 88%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 250 Mt CO2/yr<br />Reduction: 94.7%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -6 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -71 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -160 Mt CO2/yr<br />Reduction: 103.4%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_eedEff_bio4_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_eedEff_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3015.1599999999999, 2246.5900000000001, 1504.1900000000001, 798.47000000000003, 320.83999999999997, -15.99, -86.060000000000002, -134.75],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio7p5<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 3015 Mt CO2/yr<br />Reduction: 40%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio7p5<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2247 Mt CO2/yr<br />Reduction: 55.8%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio7p5<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1504 Mt CO2/yr<br />Reduction: 71.2%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio7p5<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 798 Mt CO2/yr<br />Reduction: 85.5%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio7p5<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 321 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio7p5<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -16 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio7p5<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -86 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio7p5<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -135 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio7p5<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -638,6 +918,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_eedEff_bio7p5,1,NA)",
       "legendgroup": "(55,Nzero_55_eedEff_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3006.9299999999998, 2231.1399999999999, 1495.8900000000001, 801.26999999999998, 321.88, -16.530000000000001, -111.92, -195.68000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 3007 Mt CO2/yr<br />Reduction: 40.2%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2231 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1496 Mt CO2/yr<br />Reduction: 71.3%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 801 Mt CO2/yr<br />Reduction: 85.5%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 322 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -112 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -196 Mt CO2/yr<br />Reduction: 104.2%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_eedEff_bio7p5_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_eedEff_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -706,6 +1006,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3017.29, 2222.75, 1533.99, 848.32000000000005, 344.31, -9.2100000000000009, -83.310000000000002, -128.38],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3017 Mt CO2/yr<br />Reduction: 40%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2223 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1534 Mt CO2/yr<br />Reduction: 70.5%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 848 Mt CO2/yr<br />Reduction: 84.5%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 344 Mt CO2/yr<br />Reduction: 92.7%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -128 Mt CO2/yr<br />Reduction: 102.7%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_eedEff_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_eedEff_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2949.6199999999999, 2158.2199999999998, 1455.5799999999999, 753.15999999999997, 288.81999999999999, -10.210000000000001, -73.189999999999998, -137.96000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio12<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2950 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio12<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2158 Mt CO2/yr<br />Reduction: 57.4%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio12<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1456 Mt CO2/yr<br />Reduction: 71.9%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio12<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 753 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio12<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 289 Mt CO2/yr<br />Reduction: 93.9%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio12<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -10 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio12<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -73 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio12<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -138 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio12<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -718,6 +1038,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_ff55Eff_bio12,1,NA)",
       "legendgroup": "(55,Nzero_55_ff55Eff_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2949.5700000000002, 2160.3800000000001, 1490.1900000000001, 826.55999999999995, 340.94, 12.49, -70.840000000000003, -166.31999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2950 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2160 Mt CO2/yr<br />Reduction: 57.4%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1490 Mt CO2/yr<br />Reduction: 71.2%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 827 Mt CO2/yr<br />Reduction: 84.7%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 341 Mt CO2/yr<br />Reduction: 92.8%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 12 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -71 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -166 Mt CO2/yr<br />Reduction: 103.5%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_ff55Eff_bio12_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_ff55Eff_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -786,6 +1126,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2965.1999999999998, 2169.6700000000001, 1495.78, 810, 334.70999999999998, 7.25, -66.390000000000001, -141.25],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2965 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2170 Mt CO2/yr<br />Reduction: 57.2%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1496 Mt CO2/yr<br />Reduction: 71.1%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 810 Mt CO2/yr<br />Reduction: 85%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 335 Mt CO2/yr<br />Reduction: 92.9%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 7 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -66 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -141 Mt CO2/yr<br />Reduction: 103%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_ff55Eff_bio12_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_ff55Eff_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2946.6300000000001, 2158.8800000000001, 1512.05, 884.53999999999996, 364.39999999999998, 8.3200000000000003, -23.739999999999998, -79.439999999999998],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio20<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2947 Mt CO2/yr<br />Reduction: 41.4%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio20<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2159 Mt CO2/yr<br />Reduction: 57.4%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio20<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1512 Mt CO2/yr<br />Reduction: 70.6%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio20<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 885 Mt CO2/yr<br />Reduction: 83.2%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio20<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 364 Mt CO2/yr<br />Reduction: 92.3%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio20<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 8 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio20<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -24 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio20<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -79 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio20<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -798,6 +1158,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_ff55Eff_bio20,1,NA)",
       "legendgroup": "(55,Nzero_55_ff55Eff_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2949.5700000000002, 2162.6399999999999, 1528.0599999999999, 897.74000000000001, 402.62, -5.0999999999999996, -74.560000000000002, -172.02000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2950 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2163 Mt CO2/yr<br />Reduction: 57.3%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1528 Mt CO2/yr<br />Reduction: 70.3%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 898 Mt CO2/yr<br />Reduction: 83%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 403 Mt CO2/yr<br />Reduction: 91.4%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -5 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -172 Mt CO2/yr<br />Reduction: 103.7%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_ff55Eff_bio20_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_ff55Eff_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -866,6 +1246,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2964.3299999999999, 2174.8299999999999, 1555.3900000000001, 914.12, 368.69, 1.8700000000000001, -53.630000000000003, -135],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2964 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2175 Mt CO2/yr<br />Reduction: 57%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1555 Mt CO2/yr<br />Reduction: 69.8%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 914 Mt CO2/yr<br />Reduction: 82.6%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 369 Mt CO2/yr<br />Reduction: 92.2%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -54 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -135 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_ff55Eff_bio20_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_ff55Eff_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2960.3699999999999, 2162.1599999999999, 1360.5, 626.63, 238.38999999999999, 13.73, -23.149999999999999, -54.859999999999999],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio4<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2960 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio4<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2162 Mt CO2/yr<br />Reduction: 57.4%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio4<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1361 Mt CO2/yr<br />Reduction: 73.8%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio4<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 627 Mt CO2/yr<br />Reduction: 88.8%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio4<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 238 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio4<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 14 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio4<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -23 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio4<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -55 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio4<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -878,6 +1278,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_ff55Eff_bio4,1,NA)",
       "legendgroup": "(55,Nzero_55_ff55Eff_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2960.5300000000002, 2160.8200000000002, 1348.96, 609.62, 222.86000000000001, 2.9399999999999999, -32.390000000000001, -62.789999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2961 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2161 Mt CO2/yr<br />Reduction: 57.4%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1349 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 610 Mt CO2/yr<br />Reduction: 89.1%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 223 Mt CO2/yr<br />Reduction: 95.3%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 3 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -32 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -63 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_ff55Eff_bio4_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_ff55Eff_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -946,6 +1366,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2982.0599999999999, 2168.54, 1383.3, 652.88, 238.02000000000001, 9.5999999999999996, -23.460000000000001, -47.75],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2982 Mt CO2/yr<br />Reduction: 40.7%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2169 Mt CO2/yr<br />Reduction: 57.2%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1383 Mt CO2/yr<br />Reduction: 73.4%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 653 Mt CO2/yr<br />Reduction: 88.2%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 238 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -23 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -48 Mt CO2/yr<br />Reduction: 101%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_ff55Eff_bio4_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_ff55Eff_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2951.1599999999999, 2158.75, 1457.8, 763.61000000000001, 307.19999999999999, 1.3200000000000001, -64.769999999999996, -132],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio7p5<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2951 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio7p5<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2159 Mt CO2/yr<br />Reduction: 57.4%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio7p5<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1458 Mt CO2/yr<br />Reduction: 71.9%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio7p5<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 764 Mt CO2/yr<br />Reduction: 86%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio7p5<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 307 Mt CO2/yr<br />Reduction: 93.5%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio7p5<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio7p5<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -65 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio7p5<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -132 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio7p5<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -958,6 +1398,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_ff55Eff_bio7p5,1,NA)",
       "legendgroup": "(55,Nzero_55_ff55Eff_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2951.8299999999999, 2161.1799999999998, 1479.5699999999999, 815.53999999999996, 336.74000000000001, 15.58, -67.459999999999994, -165],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2952 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2161 Mt CO2/yr<br />Reduction: 57.4%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1480 Mt CO2/yr<br />Reduction: 71.4%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 816 Mt CO2/yr<br />Reduction: 85%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 337 Mt CO2/yr<br />Reduction: 92.8%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 16 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -67 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -165 Mt CO2/yr<br />Reduction: 103.5%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_ff55Eff_bio7p5_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_ff55Eff_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1026,6 +1486,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2970.2399999999998, 2177, 1505.54, 806.00999999999999, 327.97000000000003, -8.0899999999999999, -80.349999999999994, -145.43000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2970 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2177 Mt CO2/yr<br />Reduction: 57%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1506 Mt CO2/yr<br />Reduction: 70.9%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 806 Mt CO2/yr<br />Reduction: 85.1%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 328 Mt CO2/yr<br />Reduction: 93%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -80 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -145 Mt CO2/yr<br />Reduction: 103.1%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_ff55Eff_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_ff55Eff_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2881.1500000000001, 2033.3099999999999, 1337.1700000000001, 686.32000000000005, 266.43000000000001, -10.43, -58.420000000000002, -118.62],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio12<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2881 Mt CO2/yr<br />Reduction: 42.7%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio12<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2033 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio12<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1337 Mt CO2/yr<br />Reduction: 74.2%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio12<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 686 Mt CO2/yr<br />Reduction: 87.4%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio12<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 266 Mt CO2/yr<br />Reduction: 94.3%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio12<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -10 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio12<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -58 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio12<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -119 Mt CO2/yr<br />Reduction: 102.5%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio12<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1038,6 +1518,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_RpEUEff_bio12,1,NA)",
       "legendgroup": "(55,Nzero_55_RpEUEff_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2888.5599999999999, 2059.4699999999998, 1396.5599999999999, 784.82000000000005, 325.10000000000002, 3.2999999999999998, -72.269999999999996, -165.91],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2889 Mt CO2/yr<br />Reduction: 42.5%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2059 Mt CO2/yr<br />Reduction: 59.3%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1397 Mt CO2/yr<br />Reduction: 72.9%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 785 Mt CO2/yr<br />Reduction: 85.4%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 325 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 3 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -166 Mt CO2/yr<br />Reduction: 103.5%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_RpEUEff_bio12_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_RpEUEff_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1106,6 +1606,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2898.4200000000001, 2079.9499999999998, 1406.55, 736.13, 293.18000000000001, -17.309999999999999, -87.280000000000001, -157.80000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2898 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2080 Mt CO2/yr<br />Reduction: 58.9%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1407 Mt CO2/yr<br />Reduction: 72.7%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 736 Mt CO2/yr<br />Reduction: 86.4%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 293 Mt CO2/yr<br />Reduction: 93.8%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -87 Mt CO2/yr<br />Reduction: 101.9%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -158 Mt CO2/yr<br />Reduction: 103.4%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_RpEUEff_bio12_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_RpEUEff_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2880.5300000000002, 2033.77, 1370.47, 761.95000000000005, 264.88999999999999, -18.140000000000001, -45.609999999999999, -96.659999999999997],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio20<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2881 Mt CO2/yr<br />Reduction: 42.7%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio20<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2034 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio20<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1370 Mt CO2/yr<br />Reduction: 73.4%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio20<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 762 Mt CO2/yr<br />Reduction: 85.5%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio20<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 265 Mt CO2/yr<br />Reduction: 94.4%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio20<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio20<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -46 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio20<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -97 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio20<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1118,6 +1638,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_RpEUEff_bio20,1,NA)",
       "legendgroup": "(55,Nzero_55_RpEUEff_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2884.6799999999998, 2052.1999999999998, 1411.1600000000001, 790.13, 319.47000000000003, -5.0999999999999996, -48.469999999999999, -122.58],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2885 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2052 Mt CO2/yr<br />Reduction: 59.4%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1411 Mt CO2/yr<br />Reduction: 72.5%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 790 Mt CO2/yr<br />Reduction: 85%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 319 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -5 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -48 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -123 Mt CO2/yr<br />Reduction: 102.6%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_RpEUEff_bio20_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_RpEUEff_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1186,6 +1726,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2897.21, 2080.7199999999998, 1448.8499999999999, 840.70000000000005, 315.44999999999999, 3.46, -41.75, -114.51000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2897 Mt CO2/yr<br />Reduction: 42.4%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2081 Mt CO2/yr<br />Reduction: 58.8%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1449 Mt CO2/yr<br />Reduction: 71.8%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 841 Mt CO2/yr<br />Reduction: 83.9%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 315 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -42 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -115 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_RpEUEff_bio20_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_RpEUEff_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2891.1300000000001, 2045.9200000000001, 1279.52, 597.15999999999997, 222.09999999999999, -0.70999999999999996, -38.159999999999997, -75.040000000000006],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio4<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2891 Mt CO2/yr<br />Reduction: 42.5%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio4<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2046 Mt CO2/yr<br />Reduction: 59.6%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio4<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1280 Mt CO2/yr<br />Reduction: 75.4%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio4<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 597 Mt CO2/yr<br />Reduction: 89.2%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio4<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 222 Mt CO2/yr<br />Reduction: 95.3%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio4<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio4<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -38 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio4<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio4<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1198,6 +1758,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_RpEUEff_bio4,1,NA)",
       "legendgroup": "(55,Nzero_55_RpEUEff_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2894.3600000000001, 2060.6700000000001, 1298.25, 606, 227.77000000000001, 6.3300000000000001, -31.100000000000001, -68.75],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2894 Mt CO2/yr<br />Reduction: 42.4%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2061 Mt CO2/yr<br />Reduction: 59.3%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1298 Mt CO2/yr<br />Reduction: 75%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 606 Mt CO2/yr<br />Reduction: 89.1%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 228 Mt CO2/yr<br />Reduction: 95.2%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 6 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -31 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_RpEUEff_bio4_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_RpEUEff_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1266,6 +1846,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2909.27, 2080.1599999999999, 1330.8, 625.45000000000005, 218.11000000000001, -3.1299999999999999, -31.800000000000001, -57.009999999999998],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2909 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2080 Mt CO2/yr<br />Reduction: 58.9%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1331 Mt CO2/yr<br />Reduction: 74.3%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 625 Mt CO2/yr<br />Reduction: 88.7%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 218 Mt CO2/yr<br />Reduction: 95.4%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -32 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_RpEUEff_bio4_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_RpEUEff_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2882.5300000000002, 2031.3800000000001, 1339.53, 697.50999999999999, 280.42000000000002, 0.52000000000000002, -46.869999999999997, -107.23999999999999],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio7p5<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2883 Mt CO2/yr<br />Reduction: 42.7%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio7p5<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2031 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio7p5<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1340 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio7p5<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 698 Mt CO2/yr<br />Reduction: 87.2%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio7p5<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 280 Mt CO2/yr<br />Reduction: 94%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio7p5<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio7p5<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -47 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio7p5<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -107 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio7p5<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1278,6 +1878,26 @@
       "hoveron": "points",
       "name": "(55,Nzero_55_RpEUEff_bio7p5,1,NA)",
       "legendgroup": "(55,Nzero_55_RpEUEff_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2886.4299999999998, 2051.02, 1369.1600000000001, 738.57000000000005, 294.26999999999998, -12.550000000000001, -81.629999999999995, -173.11000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2886 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2051 Mt CO2/yr<br />Reduction: 59.5%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1369 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 739 Mt CO2/yr<br />Reduction: 86.3%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 294 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -13 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -82 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -173 Mt CO2/yr<br />Reduction: 103.7%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_RpEUEff_bio7p5_CC,1,NA)",
+      "legendgroup": "(55,Nzero_55_RpEUEff_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1346,6 +1966,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2900.6599999999999, 2082.5300000000002, 1419, 760.72000000000003, 321.35000000000002, 9.6999999999999993, -58.450000000000003, -129.46000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2901 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2083 Mt CO2/yr<br />Reduction: 58.8%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1419 Mt CO2/yr<br />Reduction: 72.5%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 761 Mt CO2/yr<br />Reduction: 85.9%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 321 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -58 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -129 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "longdashdot"
+      },
+      "hoveron": "points",
+      "name": "(55,Nzero_55_RpEUEff_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(55,Nzero_55_RpEUEff_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2966.7199999999998, 2142.3400000000001, 1415.27, 777.27999999999997, 314.5, -13.300000000000001, -75.989999999999995, -128.63999999999999],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio12<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2967 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio12<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2142 Mt CO2/yr<br />Reduction: 58%<br />Period: 2030<br />Scenario: Nzero_57_bio12<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1415 Mt CO2/yr<br />Reduction: 73%<br />Period: 2035<br />Scenario: Nzero_57_bio12<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 777 Mt CO2/yr<br />Reduction: 86%<br />Period: 2040<br />Scenario: Nzero_57_bio12<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 315 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_57_bio12<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -13 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_57_bio12<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -76 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_57_bio12<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -129 Mt CO2/yr<br />Reduction: 102.7%<br />Period: 2060<br />Scenario: Nzero_57_bio12<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1358,6 +1998,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_bio12,1,NA)",
       "legendgroup": "(57,Nzero_57_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2967.9400000000001, 2147.3899999999999, 1447.6300000000001, 822.44000000000005, 337.31999999999999, -9.0500000000000007, -109.19, -183.90000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2968 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2147 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1448 Mt CO2/yr<br />Reduction: 72.4%<br />Period: 2035<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 822 Mt CO2/yr<br />Reduction: 85.2%<br />Period: 2040<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 337 Mt CO2/yr<br />Reduction: 92.8%<br />Period: 2045<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -109 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2055<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -184 Mt CO2/yr<br />Reduction: 103.9%<br />Period: 2060<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_bio12_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1426,6 +2086,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2962.1199999999999, 2133.4099999999999, 1447.0999999999999, 815.13999999999999, 328.16000000000003, -11.460000000000001, -71.560000000000002, -125.20999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2962 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2133 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1447 Mt CO2/yr<br />Reduction: 72.3%<br />Period: 2035<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 815 Mt CO2/yr<br />Reduction: 85.2%<br />Period: 2040<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 328 Mt CO2/yr<br />Reduction: 93%<br />Period: 2045<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -11 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -125 Mt CO2/yr<br />Reduction: 102.7%<br />Period: 2060<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_bio12_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2965.9299999999998, 2129.9200000000001, 1483.4200000000001, 891.87, 429.14999999999998, -7.2199999999999998, -69.010000000000005, -131.22],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio20<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2966 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio20<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2130 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_bio20<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1483 Mt CO2/yr<br />Reduction: 71.6%<br />Period: 2035<br />Scenario: Nzero_57_bio20<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 892 Mt CO2/yr<br />Reduction: 83.5%<br />Period: 2040<br />Scenario: Nzero_57_bio20<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 429 Mt CO2/yr<br />Reduction: 90.9%<br />Period: 2045<br />Scenario: Nzero_57_bio20<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -7 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_bio20<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_bio20<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -131 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_57_bio20<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1438,6 +2118,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_bio20,1,NA)",
       "legendgroup": "(57,Nzero_57_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2962.4000000000001, 2127.8800000000001, 1504.6700000000001, 932.96000000000004, 467.50999999999999, 13.74, -70.390000000000001, -147.25],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2962 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2128 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1505 Mt CO2/yr<br />Reduction: 71.1%<br />Period: 2035<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 933 Mt CO2/yr<br />Reduction: 82.7%<br />Period: 2040<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 468 Mt CO2/yr<br />Reduction: 90.1%<br />Period: 2045<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 14 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -70 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -147 Mt CO2/yr<br />Reduction: 103.1%<br />Period: 2060<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_bio20_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1506,6 +2206,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2973.0300000000002, 2141.75, 1545.78, 973.02999999999997, 472.82999999999998, 1.3799999999999999, -71.599999999999994, -141.44],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2973 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2142 Mt CO2/yr<br />Reduction: 58%<br />Period: 2030<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1546 Mt CO2/yr<br />Reduction: 70.3%<br />Period: 2035<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 973 Mt CO2/yr<br />Reduction: 81.8%<br />Period: 2040<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 473 Mt CO2/yr<br />Reduction: 90%<br />Period: 2045<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -141 Mt CO2/yr<br />Reduction: 103%<br />Period: 2060<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_bio20_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2985.5999999999999, 2154.0100000000002, 1351.51, 660.05999999999995, 255.55000000000001, 5.5899999999999999, -34.090000000000003, -93.75],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio4<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2986 Mt CO2/yr<br />Reduction: 40.7%<br />Period: 2025<br />Scenario: Nzero_57_bio4<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2154 Mt CO2/yr<br />Reduction: 57.8%<br />Period: 2030<br />Scenario: Nzero_57_bio4<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1352 Mt CO2/yr<br />Reduction: 74.3%<br />Period: 2035<br />Scenario: Nzero_57_bio4<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 660 Mt CO2/yr<br />Reduction: 88.4%<br />Period: 2040<br />Scenario: Nzero_57_bio4<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 256 Mt CO2/yr<br />Reduction: 94.6%<br />Period: 2045<br />Scenario: Nzero_57_bio4<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 6 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_57_bio4<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -34 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_57_bio4<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -94 Mt CO2/yr<br />Reduction: 102%<br />Period: 2060<br />Scenario: Nzero_57_bio4<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1518,6 +2238,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_bio4,1,NA)",
       "legendgroup": "(57,Nzero_57_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2970.96, 2135.7199999999998, 1392.8499999999999, 760.05999999999995, 324.31, 15.119999999999999, -103.76000000000001, -291.81999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2971 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2136 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1393 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 760 Mt CO2/yr<br />Reduction: 86.4%<br />Period: 2040<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 324 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 15 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -104 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2055<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -292 Mt CO2/yr<br />Reduction: 106.2%<br />Period: 2060<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_bio4_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1586,6 +2326,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2983.3899999999999, 2144.79, 1376, 685.10000000000002, 263.31999999999999, 9.2200000000000006, -31.960000000000001, -97.879999999999995],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2983 Mt CO2/yr<br />Reduction: 40.7%<br />Period: 2025<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2145 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1376 Mt CO2/yr<br />Reduction: 73.8%<br />Period: 2035<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 685 Mt CO2/yr<br />Reduction: 87.8%<br />Period: 2040<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 263 Mt CO2/yr<br />Reduction: 94.4%<br />Period: 2045<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 9 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -32 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -98 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2060<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_bio4_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2970.4899999999998, 2141.3200000000002, 1411.8800000000001, 780.08000000000004, 315.39999999999998, -8.8100000000000005, -69.469999999999999, -109.01000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio7p5<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2970 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio7p5<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2141 Mt CO2/yr<br />Reduction: 58.1%<br />Period: 2030<br />Scenario: Nzero_57_bio7p5<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1412 Mt CO2/yr<br />Reduction: 73.1%<br />Period: 2035<br />Scenario: Nzero_57_bio7p5<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 780 Mt CO2/yr<br />Reduction: 86%<br />Period: 2040<br />Scenario: Nzero_57_bio7p5<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 315 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_57_bio7p5<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_bio7p5<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_bio7p5<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -109 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_57_bio7p5<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1598,6 +2358,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_bio7p5,1,NA)",
       "legendgroup": "(57,Nzero_57_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2974.3299999999999, 2150.21, 1425.6500000000001, 787.57000000000005, 324.25999999999999, -7.7000000000000002, -93.25, -169.25999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2974 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2150 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1426 Mt CO2/yr<br />Reduction: 72.8%<br />Period: 2035<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 788 Mt CO2/yr<br />Reduction: 85.9%<br />Period: 2040<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 324 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -93 Mt CO2/yr<br />Reduction: 102%<br />Period: 2055<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -169 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_bio7p5_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1666,6 +2446,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2967.27, 2132.6900000000001, 1445.21, 807.51999999999998, 327.17000000000002, -8.3000000000000007, -66.480000000000004, -105.61],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2967 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2133 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1445 Mt CO2/yr<br />Reduction: 72.4%<br />Period: 2035<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 808 Mt CO2/yr<br />Reduction: 85.4%<br />Period: 2040<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 327 Mt CO2/yr<br />Reduction: 93%<br />Period: 2045<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -66 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -106 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2970.5799999999999, 2128.8200000000002, 1421.6500000000001, 764.97000000000003, 300.95999999999998, -17.75, -75.269999999999996, -119.52],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio12<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2971 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio12<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2129 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio12<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1422 Mt CO2/yr<br />Reduction: 72.8%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio12<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 765 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio12<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 301 Mt CO2/yr<br />Reduction: 93.6%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio12<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio12<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio12<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -120 Mt CO2/yr<br />Reduction: 102.5%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio12<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1678,6 +2478,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_eedEff_bio12,1,NA)",
       "legendgroup": "(57,Nzero_57_eedEff_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2964.9099999999999, 2128.9400000000001, 1457.5699999999999, 825.29999999999995, 341.79000000000002, -0.12, -93.090000000000003, -168.22],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2965 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2129 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1458 Mt CO2/yr<br />Reduction: 72.1%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 825 Mt CO2/yr<br />Reduction: 85.1%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 342 Mt CO2/yr<br />Reduction: 92.7%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 0 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -93 Mt CO2/yr<br />Reduction: 102%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -168 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_eedEff_bio12_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_eedEff_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1746,6 +2566,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2970.5100000000002, 2130.1599999999999, 1452.24, 814.50999999999999, 326.22000000000003, -14.699999999999999, -72.519999999999996, -121.44],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2971 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2130 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1452 Mt CO2/yr<br />Reduction: 72.2%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 815 Mt CO2/yr<br />Reduction: 85.2%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 326 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -15 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -73 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -121 Mt CO2/yr<br />Reduction: 102.6%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_eedEff_bio12_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_eedEff_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2974.1199999999999, 2130.4099999999999, 1477.95, 872.46000000000004, 405.68000000000001, -12.529999999999999, -58.869999999999997, -102.89],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio20<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2974 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio20<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2130 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio20<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1478 Mt CO2/yr<br />Reduction: 71.6%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio20<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 872 Mt CO2/yr<br />Reduction: 83.8%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio20<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 406 Mt CO2/yr<br />Reduction: 91.4%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio20<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -13 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio20<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -59 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio20<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -103 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio20<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1758,6 +2598,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_eedEff_bio20,1,NA)",
       "legendgroup": "(57,Nzero_57_eedEff_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2971.96, 2124.96, 1490.77, 900.88, 423, -17.859999999999999, -86.170000000000002, -156.59999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2972 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2125 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1491 Mt CO2/yr<br />Reduction: 71.4%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 901 Mt CO2/yr<br />Reduction: 83.2%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 423 Mt CO2/yr<br />Reduction: 91%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -86 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -157 Mt CO2/yr<br />Reduction: 103.3%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_eedEff_bio20_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_eedEff_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1826,6 +2686,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2973.9499999999998, 2131.25, 1534.3800000000001, 957.15999999999997, 456.33999999999997, -12.35, -74.719999999999999, -133.69],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2974 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2131 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1534 Mt CO2/yr<br />Reduction: 70.5%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 957 Mt CO2/yr<br />Reduction: 82.1%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 456 Mt CO2/yr<br />Reduction: 90.3%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -12 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -134 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_eedEff_bio20_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_eedEff_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2976.1100000000001, 2129.5799999999999, 1309.3499999999999, 620.41999999999996, 232.03, -9.4000000000000004, -43.189999999999998, -95.829999999999998],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio4<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2976 Mt CO2/yr<br />Reduction: 40.8%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio4<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2130 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio4<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1309 Mt CO2/yr<br />Reduction: 75.1%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio4<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 620 Mt CO2/yr<br />Reduction: 89.1%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio4<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 232 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio4<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio4<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -43 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio4<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -96 Mt CO2/yr<br />Reduction: 102%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio4<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1838,6 +2718,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_eedEff_bio4,1,NA)",
       "legendgroup": "(57,Nzero_57_eedEff_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2973.9000000000001, 2128.1599999999999, 1357.5899999999999, 703.92999999999995, 280.88, -11.279999999999999, -112.84999999999999, -291.45999999999998],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2974 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2128 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1358 Mt CO2/yr<br />Reduction: 74.2%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 704 Mt CO2/yr<br />Reduction: 87.5%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 281 Mt CO2/yr<br />Reduction: 94%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -11 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -113 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -291 Mt CO2/yr<br />Reduction: 106.2%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_eedEff_bio4_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_eedEff_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1906,6 +2806,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2989.3099999999999, 2145.6399999999999, 1366.3299999999999, 664.39999999999998, 246.18000000000001, -2.6299999999999999, -40.689999999999998, -104.26000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2989 Mt CO2/yr<br />Reduction: 40.6%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2146 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1366 Mt CO2/yr<br />Reduction: 74%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 664 Mt CO2/yr<br />Reduction: 88.2%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 246 Mt CO2/yr<br />Reduction: 94.8%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -41 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -104 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_eedEff_bio4_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_eedEff_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2981.9699999999998, 2146.2800000000002, 1427.7, 768.53999999999996, 305.79000000000002, -18.260000000000002, -76.790000000000006, -118.26000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio7p5<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2982 Mt CO2/yr<br />Reduction: 40.7%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio7p5<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2146 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio7p5<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1428 Mt CO2/yr<br />Reduction: 72.7%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio7p5<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 769 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio7p5<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 306 Mt CO2/yr<br />Reduction: 93.5%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio7p5<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio7p5<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -77 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio7p5<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -118 Mt CO2/yr<br />Reduction: 102.5%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio7p5<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1918,6 +2838,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_eedEff_bio7p5,1,NA)",
       "legendgroup": "(57,Nzero_57_eedEff_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2971.8699999999999, 2130.6700000000001, 1434.49, 787.16999999999996, 319.81, -7.6699999999999999, -92.790000000000006, -168.87],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2972 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2131 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1434 Mt CO2/yr<br />Reduction: 72.6%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 787 Mt CO2/yr<br />Reduction: 85.8%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 320 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -93 Mt CO2/yr<br />Reduction: 102%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -169 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_eedEff_bio7p5_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_eedEff_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -1986,6 +2926,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2976.0300000000002, 2133.4200000000001, 1455.77, 815.00999999999999, 333.02999999999997, -6.5999999999999996, -65.180000000000007, -105.16],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2976 Mt CO2/yr<br />Reduction: 40.8%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2133 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1456 Mt CO2/yr<br />Reduction: 72.2%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 815 Mt CO2/yr<br />Reduction: 85.2%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 333 Mt CO2/yr<br />Reduction: 92.9%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -7 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -65 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -105 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_eedEff_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_eedEff_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2938.6199999999999, 2120.21, 1432.5599999999999, 757.20000000000005, 312.97000000000003, 17.91, -49.18, -117.17],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio12<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2939 Mt CO2/yr<br />Reduction: 41.5%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio12<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2120 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio12<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1433 Mt CO2/yr<br />Reduction: 72.4%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio12<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 757 Mt CO2/yr<br />Reduction: 86.1%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio12<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 313 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio12<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 18 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio12<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -49 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio12<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -117 Mt CO2/yr<br />Reduction: 102.5%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio12<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -1998,6 +2958,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_ff55Eff_bio12,1,NA)",
       "legendgroup": "(57,Nzero_57_ff55Eff_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2941.9099999999999, 2127.4299999999998, 1466.4000000000001, 811.91999999999996, 331.56, 2.4700000000000002, -83.379999999999995, -170.91],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2942 Mt CO2/yr<br />Reduction: 41.5%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2127 Mt CO2/yr<br />Reduction: 58.1%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1466 Mt CO2/yr<br />Reduction: 71.7%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 812 Mt CO2/yr<br />Reduction: 85%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 332 Mt CO2/yr<br />Reduction: 93%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -171 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_ff55Eff_bio12_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_ff55Eff_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2066,6 +3046,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2954.27, 2133.8000000000002, 1457.76, 795.57000000000005, 345.00999999999999, 17.289999999999999, -57.399999999999999, -129.47],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2954 Mt CO2/yr<br />Reduction: 41.2%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2134 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1458 Mt CO2/yr<br />Reduction: 71.9%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 796 Mt CO2/yr<br />Reduction: 85.3%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 345 Mt CO2/yr<br />Reduction: 92.7%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 17 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -129 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_ff55Eff_bio12_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_ff55Eff_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2936.1100000000001, 2117.4699999999998, 1461.96, 846.80999999999995, 340.62, -12.029999999999999, -43.399999999999999, -101],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio20<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2936 Mt CO2/yr<br />Reduction: 41.6%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio20<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2117 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio20<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1462 Mt CO2/yr<br />Reduction: 71.7%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio20<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 847 Mt CO2/yr<br />Reduction: 84%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio20<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 341 Mt CO2/yr<br />Reduction: 92.8%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio20<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -12 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio20<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -43 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio20<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -101 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio20<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2078,6 +3078,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_ff55Eff_bio20,1,NA)",
       "legendgroup": "(57,Nzero_57_ff55Eff_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2943, 2133.0900000000001, 1497.95, 886.78999999999996, 405.19999999999999, 7.8300000000000001, -54.630000000000003, -138.28],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2943 Mt CO2/yr<br />Reduction: 41.5%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2133 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1498 Mt CO2/yr<br />Reduction: 70.9%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 887 Mt CO2/yr<br />Reduction: 83.2%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 405 Mt CO2/yr<br />Reduction: 91.4%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 8 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -55 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -138 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_ff55Eff_bio20_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_ff55Eff_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2146,6 +3166,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2960.73, 2149.3000000000002, 1529.3900000000001, 897.01999999999998, 363.95999999999998, -4.1799999999999997, -59.640000000000001, -140.72999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2961 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2149 Mt CO2/yr<br />Reduction: 57.6%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1529 Mt CO2/yr<br />Reduction: 70.3%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 897 Mt CO2/yr<br />Reduction: 83%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 364 Mt CO2/yr<br />Reduction: 92.3%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -4 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -60 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -141 Mt CO2/yr<br />Reduction: 103%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_ff55Eff_bio20_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_ff55Eff_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2951.7600000000002, 2130.7199999999998, 1317.76, 599.50999999999999, 230.44999999999999, 5.3399999999999999, -31.760000000000002, -63.700000000000003],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio4<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2952 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio4<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2131 Mt CO2/yr<br />Reduction: 58%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio4<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1318 Mt CO2/yr<br />Reduction: 74.7%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio4<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 600 Mt CO2/yr<br />Reduction: 89.3%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio4<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 230 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio4<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 5 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio4<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -32 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio4<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -64 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio4<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2158,6 +3198,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_ff55Eff_bio4,1,NA)",
       "legendgroup": "(57,Nzero_57_ff55Eff_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2953.0799999999999, 2131.0100000000002, 1314.8299999999999, 596.71000000000004, 233.72999999999999, 15.470000000000001, -17.469999999999999, -45.299999999999997],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2953 Mt CO2/yr<br />Reduction: 41.2%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2131 Mt CO2/yr<br />Reduction: 58%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1315 Mt CO2/yr<br />Reduction: 74.8%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 597 Mt CO2/yr<br />Reduction: 89.4%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 234 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 15 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -45 Mt CO2/yr<br />Reduction: 101%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_ff55Eff_bio4_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_ff55Eff_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2226,6 +3286,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2973.9299999999998, 2137.7399999999998, 1345.6500000000001, 634.45000000000005, 242.81999999999999, 13.59, -20.48, -51.68],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2974 Mt CO2/yr<br />Reduction: 40.8%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2138 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1346 Mt CO2/yr<br />Reduction: 74.2%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 634 Mt CO2/yr<br />Reduction: 88.6%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 243 Mt CO2/yr<br />Reduction: 94.8%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 14 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -20 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -52 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_ff55Eff_bio4_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_ff55Eff_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2947.5, 2137.0500000000002, 1435.47, 754.21000000000004, 302.79000000000002, -3.0800000000000001, -67.609999999999999, -134.11000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio7p5<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2948 Mt CO2/yr<br />Reduction: 41.4%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio7p5<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2137 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio7p5<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1435 Mt CO2/yr<br />Reduction: 72.3%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio7p5<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 754 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio7p5<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 303 Mt CO2/yr<br />Reduction: 93.6%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio7p5<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio7p5<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -68 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio7p5<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -134 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio7p5<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2238,6 +3318,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_ff55Eff_bio7p5,1,NA)",
       "legendgroup": "(57,Nzero_57_ff55Eff_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2944.1399999999999, 2128.4899999999998, 1438.6400000000001, 750.37, 298.22000000000003, -17.670000000000002, -99.900000000000006, -190.22999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2944 Mt CO2/yr<br />Reduction: 41.4%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2128 Mt CO2/yr<br />Reduction: 58.1%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1439 Mt CO2/yr<br />Reduction: 72.3%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 750 Mt CO2/yr<br />Reduction: 86.3%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 298 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -100 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -190 Mt CO2/yr<br />Reduction: 104%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_ff55Eff_bio7p5_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_ff55Eff_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2306,6 +3406,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2960.9200000000001, 2140.8299999999999, 1460.5799999999999, 779.89999999999998, 317.43000000000001, -17.949999999999999, -89.909999999999997, -149.25999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2961 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2141 Mt CO2/yr<br />Reduction: 57.8%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1461 Mt CO2/yr<br />Reduction: 71.8%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 780 Mt CO2/yr<br />Reduction: 85.7%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 317 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -90 Mt CO2/yr<br />Reduction: 101.9%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -149 Mt CO2/yr<br />Reduction: 103.2%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_ff55Eff_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_ff55Eff_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2886.48, 2050.96, 1353.8900000000001, 689.04999999999995, 260.92000000000002, -18.420000000000002, -68.349999999999994, -130.15000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio12<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2886 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio12<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2051 Mt CO2/yr<br />Reduction: 59.5%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio12<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1354 Mt CO2/yr<br />Reduction: 73.8%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio12<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 689 Mt CO2/yr<br />Reduction: 87.3%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio12<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 261 Mt CO2/yr<br />Reduction: 94.5%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio12<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio12<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -68 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio12<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -130 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio12<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2318,6 +3438,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_RpEUEff_bio12,1,NA)",
       "legendgroup": "(57,Nzero_57_RpEUEff_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2887.2600000000002, 2055.46, 1385.8900000000001, 772.01999999999998, 320.43000000000001, -3.2000000000000002, -75.700000000000003, -168.53],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2887 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2055 Mt CO2/yr<br />Reduction: 59.4%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1386 Mt CO2/yr<br />Reduction: 73.2%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 772 Mt CO2/yr<br />Reduction: 85.7%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 320 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -76 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -169 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_RpEUEff_bio12_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_RpEUEff_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2386,6 +3526,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2899.46, 2081.6999999999998, 1411.5999999999999, 742.44000000000005, 301.11000000000001, -9.0500000000000007, -80.25, -152.34999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2899 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2082 Mt CO2/yr<br />Reduction: 58.9%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1412 Mt CO2/yr<br />Reduction: 72.6%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 742 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 301 Mt CO2/yr<br />Reduction: 93.6%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -80 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -152 Mt CO2/yr<br />Reduction: 103.2%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_RpEUEff_bio12_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_RpEUEff_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2884.2199999999998, 2050.5300000000002, 1392.3900000000001, 768.58000000000004, 272.38999999999999, -17.23, -44.530000000000001, -95.450000000000003],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio20<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2884 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio20<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2051 Mt CO2/yr<br />Reduction: 59.5%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio20<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1392 Mt CO2/yr<br />Reduction: 72.9%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio20<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 769 Mt CO2/yr<br />Reduction: 85.4%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio20<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 272 Mt CO2/yr<br />Reduction: 94.2%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio20<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio20<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -45 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio20<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -95 Mt CO2/yr<br />Reduction: 102%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio20<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2398,6 +3558,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_RpEUEff_bio20,1,NA)",
       "legendgroup": "(57,Nzero_57_RpEUEff_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2877.3400000000001, 2023.47, 1381.1500000000001, 781.04999999999995, 319.10000000000002, -4.8399999999999999, -47.450000000000003, -120.72],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2877 Mt CO2/yr<br />Reduction: 42.8%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2023 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1381 Mt CO2/yr<br />Reduction: 73.2%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 781 Mt CO2/yr<br />Reduction: 85.2%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 319 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -5 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -47 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -121 Mt CO2/yr<br />Reduction: 102.6%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_RpEUEff_bio20_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_RpEUEff_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2466,6 +3646,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2892.6100000000001, 2063.5300000000002, 1430.3599999999999, 833.73000000000002, 314.44999999999999, 4.0700000000000003, -40.07, -112.01000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2893 Mt CO2/yr<br />Reduction: 42.5%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2064 Mt CO2/yr<br />Reduction: 59.2%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1430 Mt CO2/yr<br />Reduction: 72.1%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 834 Mt CO2/yr<br />Reduction: 84.1%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 314 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 4 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -40 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -112 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_RpEUEff_bio20_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_RpEUEff_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2899.3200000000002, 2069.6599999999999, 1317.8099999999999, 627.85000000000002, 239.08000000000001, 10.65, -30.02, -71.329999999999998],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio4<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2899 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio4<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2070 Mt CO2/yr<br />Reduction: 59.1%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio4<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1318 Mt CO2/yr<br />Reduction: 74.6%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio4<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 628 Mt CO2/yr<br />Reduction: 88.6%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio4<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 239 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio4<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 11 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio4<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -30 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio4<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -71 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio4<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2478,6 +3678,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_RpEUEff_bio4,1,NA)",
       "legendgroup": "(57,Nzero_57_RpEUEff_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2889.79, 2037.4100000000001, 1270.5799999999999, 593.39999999999998, 234.63, 11.6, -27.149999999999999, -67.599999999999994],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2890 Mt CO2/yr<br />Reduction: 42.5%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2037 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1271 Mt CO2/yr<br />Reduction: 75.5%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 593 Mt CO2/yr<br />Reduction: 89.3%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 235 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 12 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -27 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -68 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_RpEUEff_bio4_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_RpEUEff_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2546,6 +3766,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2909.9899999999998, 2079.8800000000001, 1360.3900000000001, 674.70000000000005, 257.44, 18.25, -18.23, -53.539999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2910 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2080 Mt CO2/yr<br />Reduction: 58.9%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1360 Mt CO2/yr<br />Reduction: 73.7%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 675 Mt CO2/yr<br />Reduction: 87.7%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 257 Mt CO2/yr<br />Reduction: 94.5%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 18 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -54 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_RpEUEff_bio4_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_RpEUEff_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2887.3099999999999, 2052.7600000000002, 1359.3099999999999, 702.67999999999995, 277.26999999999998, -4.3300000000000001, -52.109999999999999, -111.81999999999999],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio7p5<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2887 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio7p5<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2053 Mt CO2/yr<br />Reduction: 59.5%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio7p5<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1359 Mt CO2/yr<br />Reduction: 73.7%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio7p5<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 703 Mt CO2/yr<br />Reduction: 87.1%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio7p5<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 277 Mt CO2/yr<br />Reduction: 94.1%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio7p5<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -4 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio7p5<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -52 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio7p5<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -112 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio7p5<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2558,6 +3798,26 @@
       "hoveron": "points",
       "name": "(57,Nzero_57_RpEUEff_bio7p5,1,NA)",
       "legendgroup": "(57,Nzero_57_RpEUEff_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2886.73, 2051.5500000000002, 1370.04, 746.13999999999999, 297.45999999999998, -8.8800000000000008, -77.180000000000007, -168.37],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2887 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2052 Mt CO2/yr<br />Reduction: 59.5%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1370 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 746 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 297 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -77 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -168 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_RpEUEff_bio7p5_CC,1,NA)",
+      "legendgroup": "(57,Nzero_57_RpEUEff_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2626,6 +3886,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2900.3000000000002, 2082, 1417.4100000000001, 758.66999999999996, 318.49000000000001, 4.2599999999999998, -65.239999999999995, -137.19999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2900 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2082 Mt CO2/yr<br />Reduction: 58.9%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1417 Mt CO2/yr<br />Reduction: 72.5%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 759 Mt CO2/yr<br />Reduction: 85.9%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 318 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 4 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -65 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -137 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "solid"
+      },
+      "hoveron": "points",
+      "name": "(57,Nzero_57_RpEUEff_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(57,Nzero_57_RpEUEff_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2905.9499999999998, 2038.21, 1312.49, 695.47000000000003, 270.91000000000003, -14.09, -69.219999999999999, -118.31],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio12<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2906 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_59_bio12<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2038 Mt CO2/yr<br />Reduction: 60.1%<br />Period: 2030<br />Scenario: Nzero_59_bio12<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1312 Mt CO2/yr<br />Reduction: 75.1%<br />Period: 2035<br />Scenario: Nzero_59_bio12<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 695 Mt CO2/yr<br />Reduction: 87.7%<br />Period: 2040<br />Scenario: Nzero_59_bio12<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 271 Mt CO2/yr<br />Reduction: 94.2%<br />Period: 2045<br />Scenario: Nzero_59_bio12<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -14 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_59_bio12<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_59_bio12<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -118 Mt CO2/yr<br />Reduction: 102.5%<br />Period: 2060<br />Scenario: Nzero_59_bio12<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2638,6 +3918,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_bio12,1,NA)",
       "legendgroup": "(59,Nzero_59_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2910.4499999999998, 2044.22, 1336.1300000000001, 737.75999999999999, 304.60000000000002, 7.8300000000000001, -83.370000000000005, -154.53],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2910 Mt CO2/yr<br />Reduction: 42.2%<br />Period: 2025<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2044 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1336 Mt CO2/yr<br />Reduction: 74.6%<br />Period: 2035<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 738 Mt CO2/yr<br />Reduction: 86.9%<br />Period: 2040<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 305 Mt CO2/yr<br />Reduction: 93.5%<br />Period: 2045<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 8 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -155 Mt CO2/yr<br />Reduction: 103.3%<br />Period: 2060<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_bio12_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2706,6 +4006,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2897.4899999999998, 2039.9000000000001, 1335.46, 705.41999999999996, 266.99000000000001, -16.07, -61.530000000000001, -111.5],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2897 Mt CO2/yr<br />Reduction: 42.4%<br />Period: 2025<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2040 Mt CO2/yr<br />Reduction: 60.1%<br />Period: 2030<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1335 Mt CO2/yr<br />Reduction: 74.6%<br />Period: 2035<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 705 Mt CO2/yr<br />Reduction: 87.4%<br />Period: 2040<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 267 Mt CO2/yr<br />Reduction: 94.3%<br />Period: 2045<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -16 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -62 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2055<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -112 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2060<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_bio12_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2919.4099999999999, 2047.6700000000001, 1358.3, 796.66999999999996, 371.30000000000001, -5.8099999999999996, -57.369999999999997, -115.13],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio20<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2919 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_bio20<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2048 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_bio20<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1358 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_59_bio20<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 797 Mt CO2/yr<br />Reduction: 85.4%<br />Period: 2040<br />Scenario: Nzero_59_bio20<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 371 Mt CO2/yr<br />Reduction: 92.1%<br />Period: 2045<br />Scenario: Nzero_59_bio20<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -6 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_59_bio20<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_bio20<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -115 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2060<br />Scenario: Nzero_59_bio20<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2718,6 +4038,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_bio20,1,NA)",
       "legendgroup": "(59,Nzero_59_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2915.1199999999999, 2047.3199999999999, 1371.48, 825.70000000000005, 403.76999999999998, -0.25, -68.599999999999994, -140.61000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2915 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2047 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1371 Mt CO2/yr<br />Reduction: 73.8%<br />Period: 2035<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 826 Mt CO2/yr<br />Reduction: 84.9%<br />Period: 2040<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 404 Mt CO2/yr<br />Reduction: 91.4%<br />Period: 2045<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 0 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -141 Mt CO2/yr<br />Reduction: 103%<br />Period: 2060<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_bio20_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2786,6 +4126,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2899.7600000000002, 2033.8800000000001, 1386.23, 826.63999999999999, 379.29000000000002, -8.0199999999999996, -56.630000000000003, -116.43000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2900 Mt CO2/yr<br />Reduction: 42.4%<br />Period: 2025<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2034 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1386 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 827 Mt CO2/yr<br />Reduction: 84.8%<br />Period: 2040<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 379 Mt CO2/yr<br />Reduction: 91.9%<br />Period: 2045<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -116 Mt CO2/yr<br />Reduction: 102.5%<br />Period: 2060<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_bio20_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2925.3800000000001, 2052.0300000000002, 1258.96, 580.63, 217.72999999999999, 5.2800000000000002, -25.07, -78.700000000000003],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio4<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2925 Mt CO2/yr<br />Reduction: 41.9%<br />Period: 2025<br />Scenario: Nzero_59_bio4<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2052 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_bio4<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1259 Mt CO2/yr<br />Reduction: 76.2%<br />Period: 2035<br />Scenario: Nzero_59_bio4<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 581 Mt CO2/yr<br />Reduction: 90%<br />Period: 2040<br />Scenario: Nzero_59_bio4<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 218 Mt CO2/yr<br />Reduction: 95.4%<br />Period: 2045<br />Scenario: Nzero_59_bio4<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 5 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_59_bio4<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -25 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_59_bio4<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -79 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2060<br />Scenario: Nzero_59_bio4<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2798,6 +4158,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_bio4,1,NA)",
       "legendgroup": "(59,Nzero_59_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2915.4699999999998, 2042.0599999999999, 1302.8, 672.05999999999995, 280.80000000000001, 5.5599999999999996, -98.200000000000003, -280.86000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2915 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2042 Mt CO2/yr<br />Reduction: 60.1%<br />Period: 2030<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1303 Mt CO2/yr<br />Reduction: 75.3%<br />Period: 2035<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 672 Mt CO2/yr<br />Reduction: 88.2%<br />Period: 2040<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 281 Mt CO2/yr<br />Reduction: 94%<br />Period: 2045<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 6 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -98 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2055<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -281 Mt CO2/yr<br />Reduction: 106%<br />Period: 2060<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_bio4_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2866,6 +4246,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2913.8699999999999, 2045.7, 1269.9100000000001, 605.83000000000004, 234.63999999999999, 14.57, -14.25, -70.390000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2914 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2046 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1270 Mt CO2/yr<br />Reduction: 75.9%<br />Period: 2035<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 606 Mt CO2/yr<br />Reduction: 89.4%<br />Period: 2040<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 235 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 15 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -14 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2055<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -70 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_bio4_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2911.8600000000001, 2050.6900000000001, 1328.1199999999999, 710.77999999999997, 289.45999999999998, 0.42999999999999999, -56.090000000000003, -98.260000000000005],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio7p5<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2912 Mt CO2/yr<br />Reduction: 42.2%<br />Period: 2025<br />Scenario: Nzero_59_bio7p5<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2051 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_bio7p5<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1328 Mt CO2/yr<br />Reduction: 74.8%<br />Period: 2035<br />Scenario: Nzero_59_bio7p5<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 711 Mt CO2/yr<br />Reduction: 87.4%<br />Period: 2040<br />Scenario: Nzero_59_bio7p5<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 289 Mt CO2/yr<br />Reduction: 93.8%<br />Period: 2045<br />Scenario: Nzero_59_bio7p5<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 0 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_59_bio7p5<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -56 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_bio7p5<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -98 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2060<br />Scenario: Nzero_59_bio7p5<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2878,6 +4278,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_bio7p5,1,NA)",
       "legendgroup": "(59,Nzero_59_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2904.04, 2041.29, 1321.21, 705.37, 285.99000000000001, 4.4400000000000004, -69.469999999999999, -144.49000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2904 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2041 Mt CO2/yr<br />Reduction: 60.1%<br />Period: 2030<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1321 Mt CO2/yr<br />Reduction: 74.9%<br />Period: 2035<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 705 Mt CO2/yr<br />Reduction: 87.5%<br />Period: 2040<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 286 Mt CO2/yr<br />Reduction: 93.9%<br />Period: 2045<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 4 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -144 Mt CO2/yr<br />Reduction: 103.1%<br />Period: 2060<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_bio7p5_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -2946,6 +4366,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2901.4200000000001, 2043.8, 1348.3900000000001, 726.66999999999996, 298.72000000000003, 12.01, -35.859999999999999, -79.030000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2901 Mt CO2/yr<br />Reduction: 42.4%<br />Period: 2025<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2044 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1348 Mt CO2/yr<br />Reduction: 74.3%<br />Period: 2035<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 727 Mt CO2/yr<br />Reduction: 87%<br />Period: 2040<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 299 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 12 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -36 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -79 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2060<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(174,0,0,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2916.2399999999998, 2041.79, 1306.0599999999999, 692.62, 276.89999999999998, -11.119999999999999, -64.180000000000007, -109.68000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio12<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2916 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio12<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2042 Mt CO2/yr<br />Reduction: 60.1%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio12<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1306 Mt CO2/yr<br />Reduction: 75.2%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio12<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 693 Mt CO2/yr<br />Reduction: 87.7%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio12<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 277 Mt CO2/yr<br />Reduction: 94.1%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio12<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -11 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio12<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -64 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio12<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -110 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio12<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -2958,6 +4398,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_eedEff_bio12,1,NA)",
       "legendgroup": "(59,Nzero_59_eedEff_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2912.3499999999999, 2046.25, 1334.5599999999999, 738.5, 302.06999999999999, 9.6199999999999992, -78.730000000000004, -151.06999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2912 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2046 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1335 Mt CO2/yr<br />Reduction: 74.6%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 738 Mt CO2/yr<br />Reduction: 86.8%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 302 Mt CO2/yr<br />Reduction: 93.6%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -79 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -151 Mt CO2/yr<br />Reduction: 103.2%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_eedEff_bio12_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_eedEff_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3026,6 +4486,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2916.8499999999999, 2054.1100000000001, 1350.5899999999999, 726.13, 286.29000000000002, -5.6500000000000004, -57.840000000000003, -106.41],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2917 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2054 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1351 Mt CO2/yr<br />Reduction: 74.3%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 726 Mt CO2/yr<br />Reduction: 87%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 286 Mt CO2/yr<br />Reduction: 93.9%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -6 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -58 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -106 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_eedEff_bio12_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_eedEff_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2919.04, 2043.1400000000001, 1354.8499999999999, 793.19000000000005, 380.47000000000003, 11.23, -29.98, -73.829999999999998],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio20<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2919 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio20<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2043 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio20<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1355 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio20<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 793 Mt CO2/yr<br />Reduction: 85.4%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio20<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 380 Mt CO2/yr<br />Reduction: 91.9%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio20<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 11 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio20<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -30 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio20<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -74 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio20<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3038,6 +4518,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_eedEff_bio20,1,NA)",
       "legendgroup": "(59,Nzero_59_eedEff_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2916.3899999999999, 2043.45, 1366.9300000000001, 812.30999999999995, 379.91000000000003, -1.74, -66.790000000000006, -135.38],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2916 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2043 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1367 Mt CO2/yr<br />Reduction: 73.9%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 812 Mt CO2/yr<br />Reduction: 85.1%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 380 Mt CO2/yr<br />Reduction: 91.9%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -67 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -135 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_eedEff_bio20_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_eedEff_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3106,6 +4606,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2921.4899999999998, 2052.4000000000001, 1408.71, 857.10000000000002, 400.04000000000002, 2.3500000000000001, -52.270000000000003, -105.81],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2921 Mt CO2/yr<br />Reduction: 41.9%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2052 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1409 Mt CO2/yr<br />Reduction: 73%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 857 Mt CO2/yr<br />Reduction: 84.1%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 400 Mt CO2/yr<br />Reduction: 91.5%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -52 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -106 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_eedEff_bio20_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_eedEff_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2931.5799999999999, 2053.6500000000001, 1264.6900000000001, 603.26999999999998, 244.91999999999999, 16.66, -16.77, -61.25],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio4<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2932 Mt CO2/yr<br />Reduction: 41.8%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio4<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2054 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio4<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1265 Mt CO2/yr<br />Reduction: 76%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio4<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 603 Mt CO2/yr<br />Reduction: 89.5%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio4<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 245 Mt CO2/yr<br />Reduction: 94.8%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio4<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 17 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio4<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio4<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -61 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio4<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3118,6 +4638,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_eedEff_bio4,1,NA)",
       "legendgroup": "(59,Nzero_59_eedEff_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2922.1799999999998, 2043.6900000000001, 1296.46, 667.73000000000002, 285.01999999999998, 9.6699999999999999, -91.950000000000003, -262.54000000000002],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2922 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2044 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1296 Mt CO2/yr<br />Reduction: 75.4%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 668 Mt CO2/yr<br />Reduction: 88.2%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 285 Mt CO2/yr<br />Reduction: 93.9%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -92 Mt CO2/yr<br />Reduction: 102%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -263 Mt CO2/yr<br />Reduction: 105.6%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_eedEff_bio4_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_eedEff_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3186,6 +4726,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2925.5100000000002, 2056.6900000000001, 1280.8399999999999, 609.54999999999995, 231.16, 10.19, -14.949999999999999, -63.909999999999997],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2926 Mt CO2/yr<br />Reduction: 41.9%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2057 Mt CO2/yr<br />Reduction: 59.7%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1281 Mt CO2/yr<br />Reduction: 75.7%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 610 Mt CO2/yr<br />Reduction: 89.3%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 231 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -15 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -64 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_eedEff_bio4_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_eedEff_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2916.54, 2045.46, 1316.3099999999999, 706.70000000000005, 293.11000000000001, 5.2300000000000004, -51.450000000000003, -95.810000000000002],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio7p5<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2917 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio7p5<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2045 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio7p5<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1316 Mt CO2/yr<br />Reduction: 75%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio7p5<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 707 Mt CO2/yr<br />Reduction: 87.4%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio7p5<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 293 Mt CO2/yr<br />Reduction: 93.8%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio7p5<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 5 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio7p5<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -51 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio7p5<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -96 Mt CO2/yr<br />Reduction: 102%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio7p5<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3198,6 +4758,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_eedEff_bio7p5,1,NA)",
       "legendgroup": "(59,Nzero_59_eedEff_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2919.4499999999998, 2051.5500000000002, 1323.25, 716.99000000000001, 298.48000000000002, 9.2899999999999991, -75.450000000000003, -154.77000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2919 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2052 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1323 Mt CO2/yr<br />Reduction: 74.9%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 717 Mt CO2/yr<br />Reduction: 87.3%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 298 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 9 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -155 Mt CO2/yr<br />Reduction: 103.3%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_eedEff_bio7p5_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_eedEff_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3266,6 +4846,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2916.73, 2052.9400000000001, 1351.51, 721.73000000000002, 284.58999999999997, -3.3999999999999999, -50.030000000000001, -91.629999999999995],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2917 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2053 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1352 Mt CO2/yr<br />Reduction: 74.3%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 722 Mt CO2/yr<br />Reduction: 87.1%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 285 Mt CO2/yr<br />Reduction: 94%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -50 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -92 Mt CO2/yr<br />Reduction: 101.9%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(219,70,70,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_eedEff_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_eedEff_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2911.0300000000002, 2027.6800000000001, 1313.1400000000001, 690.17999999999995, 280.86000000000001, 1.45, -53.399999999999999, -103.66],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio12<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2911 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio12<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2028 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio12<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1313 Mt CO2/yr<br />Reduction: 74.8%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio12<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 690 Mt CO2/yr<br />Reduction: 87.5%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio12<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 281 Mt CO2/yr<br />Reduction: 94%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio12<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio12<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -53 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio12<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -104 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio12<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3278,6 +4878,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_ff55Eff_bio12,1,NA)",
       "legendgroup": "(59,Nzero_59_ff55Eff_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2906.7600000000002, 2025.02, 1334.6400000000001, 720.70000000000005, 301.07999999999998, -7.8899999999999997, -82.920000000000002, -152.93000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2907 Mt CO2/yr<br />Reduction: 42.2%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2025 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1335 Mt CO2/yr<br />Reduction: 74.4%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 721 Mt CO2/yr<br />Reduction: 86.9%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 301 Mt CO2/yr<br />Reduction: 93.6%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -153 Mt CO2/yr<br />Reduction: 103.3%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_ff55Eff_bio12_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_ff55Eff_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3346,6 +4966,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2911.8800000000001, 2024.1199999999999, 1349.9200000000001, 754.40999999999997, 316.49000000000001, 8.2400000000000002, -52.93, -108.06999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2912 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2024 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1350 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 754 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 316 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 8 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -53 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -108 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_ff55Eff_bio12_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_ff55Eff_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2915.4400000000001, 2053.5100000000002, 1380.3599999999999, 786.37, 307.10000000000002, -18.140000000000001, -50.159999999999997, -101.41],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio20<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2915 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio20<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2054 Mt CO2/yr<br />Reduction: 59.6%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio20<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1380 Mt CO2/yr<br />Reduction: 73.4%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio20<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 786 Mt CO2/yr<br />Reduction: 85.3%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio20<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 307 Mt CO2/yr<br />Reduction: 93.5%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio20<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio20<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -50 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio20<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -101 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio20<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3358,6 +4998,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_ff55Eff_bio20,1,NA)",
       "legendgroup": "(59,Nzero_59_ff55Eff_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2911.1700000000001, 2022.6199999999999, 1384.55, 804.04999999999995, 341.04000000000002, 6.2300000000000004, -40.5, -109.40000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2911 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2023 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1385 Mt CO2/yr<br />Reduction: 73.3%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 804 Mt CO2/yr<br />Reduction: 84.9%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 341 Mt CO2/yr<br />Reduction: 92.8%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 6 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -40 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -109 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_ff55Eff_bio20_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_ff55Eff_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3426,6 +5086,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2912.5500000000002, 2022.8099999999999, 1390.72, 817.36000000000001, 374.55000000000001, 16.949999999999999, -22.170000000000002, -67.819999999999993],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2913 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2023 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1391 Mt CO2/yr<br />Reduction: 73.2%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 817 Mt CO2/yr<br />Reduction: 84.7%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 375 Mt CO2/yr<br />Reduction: 92%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 17 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -22 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -68 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_ff55Eff_bio20_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_ff55Eff_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2919.52, 2036.03, 1220.01, 588.61000000000001, 225.91, 3.98, -23.199999999999999, -45.409999999999997],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio4<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2920 Mt CO2/yr<br />Reduction: 41.9%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio4<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2036 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio4<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1220 Mt CO2/yr<br />Reduction: 76.8%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio4<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 589 Mt CO2/yr<br />Reduction: 89.6%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio4<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 226 Mt CO2/yr<br />Reduction: 95.2%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio4<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 4 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio4<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -23 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio4<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -45 Mt CO2/yr<br />Reduction: 101%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio4<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3438,6 +5118,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_ff55Eff_bio4,1,NA)",
       "legendgroup": "(59,Nzero_59_ff55Eff_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2923.21, 2037.0599999999999, 1222.73, 589.64999999999998, 228.41999999999999, -2.8900000000000001, -53.060000000000002, -121.09],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2923 Mt CO2/yr<br />Reduction: 41.9%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2037 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1223 Mt CO2/yr<br />Reduction: 76.7%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 590 Mt CO2/yr<br />Reduction: 89.6%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 228 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -53 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -121 Mt CO2/yr<br />Reduction: 102.6%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_ff55Eff_bio4_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_ff55Eff_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3506,6 +5206,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2918.23, 2024.0699999999999, 1263.45, 616.19000000000005, 235.77000000000001, 13.390000000000001, -7.5, -20.57],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2918 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2024 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1263 Mt CO2/yr<br />Reduction: 75.9%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 616 Mt CO2/yr<br />Reduction: 89%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 236 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 13 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -21 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_ff55Eff_bio4_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_ff55Eff_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2917.3899999999999, 2042.52, 1317.1900000000001, 686.37, 273.36000000000001, -18.609999999999999, -75.189999999999998, -128.97999999999999],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio7p5<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2917 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio7p5<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2043 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio7p5<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1317 Mt CO2/yr<br />Reduction: 74.8%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio7p5<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 686 Mt CO2/yr<br />Reduction: 87.6%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio7p5<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 273 Mt CO2/yr<br />Reduction: 94.2%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio7p5<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -19 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio7p5<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio7p5<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -129 Mt CO2/yr<br />Reduction: 102.7%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio7p5<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3518,6 +5238,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_ff55Eff_bio7p5,1,NA)",
       "legendgroup": "(59,Nzero_59_ff55Eff_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2917.6300000000001, 2038.48, 1350.54, 733.26999999999998, 320.38999999999999, 14.43, -66.329999999999998, -147.44],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2918 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2038 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1351 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 733 Mt CO2/yr<br />Reduction: 86.7%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 320 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 14 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -66 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -147 Mt CO2/yr<br />Reduction: 103.1%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_ff55Eff_bio7p5_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_ff55Eff_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3586,6 +5326,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2916.5700000000002, 2025.8099999999999, 1350.52, 742.62, 295.68000000000001, -18.73, -79.620000000000005, -131.28],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2917 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2026 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1351 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 743 Mt CO2/yr<br />Reduction: 86.5%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 296 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -19 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -80 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -131 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(0,144,171,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_ff55Eff_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_ff55Eff_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2862.0799999999999, 1974.8299999999999, 1273.3199999999999, 640.35000000000002, 255.55000000000001, -11.99, -58.289999999999999, -112.88],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio12<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2862 Mt CO2/yr<br />Reduction: 43.1%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio12<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1975 Mt CO2/yr<br />Reduction: 61.1%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio12<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1273 Mt CO2/yr<br />Reduction: 75.5%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio12<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 640 Mt CO2/yr<br />Reduction: 88.3%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio12<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 256 Mt CO2/yr<br />Reduction: 94.6%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio12<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -12 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio12<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -58 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio12<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -113 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio12<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3598,6 +5358,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_RpEUEff_bio12,1,NA)",
       "legendgroup": "(59,Nzero_59_RpEUEff_bio12,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2861.0999999999999, 1973.8299999999999, 1325.3800000000001, 735.09000000000003, 315.56, 18.010000000000002, -56.939999999999998, -149.06],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2861 Mt CO2/yr<br />Reduction: 43.1%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1974 Mt CO2/yr<br />Reduction: 61.1%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1325 Mt CO2/yr<br />Reduction: 74.4%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 735 Mt CO2/yr<br />Reduction: 86.4%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 316 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 18 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -149 Mt CO2/yr<br />Reduction: 103.2%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_RpEUEff_bio12_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_RpEUEff_bio12_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3666,6 +5446,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2872.27, 2007.6500000000001, 1327.4300000000001, 704.39999999999998, 307.22000000000003, 12.859999999999999, -45.939999999999998, -99.239999999999995],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2872 Mt CO2/yr<br />Reduction: 42.9%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2008 Mt CO2/yr<br />Reduction: 60.4%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1327 Mt CO2/yr<br />Reduction: 74.4%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 704 Mt CO2/yr<br />Reduction: 87%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 307 Mt CO2/yr<br />Reduction: 93.5%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 13 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -46 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -99 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_RpEUEff_bio12_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_RpEUEff_bio12_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2857.9699999999998, 1966.0999999999999, 1316.5599999999999, 730.49000000000001, 257.82999999999998, -12.039999999999999, -36.340000000000003, -82.75],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio20<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 2858 Mt CO2/yr<br />Reduction: 43.2%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio20<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1966 Mt CO2/yr<br />Reduction: 61.2%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio20<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 1317 Mt CO2/yr<br />Reduction: 74.5%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio20<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 730 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio20<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: 258 Mt CO2/yr<br />Reduction: 94.5%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio20<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -12 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio20<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -36 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio20<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio20<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3678,6 +5478,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_RpEUEff_bio20,1,NA)",
       "legendgroup": "(59,Nzero_59_RpEUEff_bio20,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2872.02, 2011.26, 1359.26, 764.20000000000005, 312.32999999999998, 18.210000000000001, -23.010000000000002, -94.609999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2872 Mt CO2/yr<br />Reduction: 42.9%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2011 Mt CO2/yr<br />Reduction: 60.3%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1359 Mt CO2/yr<br />Reduction: 73.6%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 764 Mt CO2/yr<br />Reduction: 85.5%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 312 Mt CO2/yr<br />Reduction: 93.4%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 18 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -23 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -95 Mt CO2/yr<br />Reduction: 102%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_RpEUEff_bio20_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_RpEUEff_bio20_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3746,6 +5566,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2868.0500000000002, 1995.9100000000001, 1362.9000000000001, 771.74000000000001, 307.13999999999999, 16.77, -25.489999999999998, -92.409999999999997],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2868 Mt CO2/yr<br />Reduction: 43%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1996 Mt CO2/yr<br />Reduction: 60.6%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1363 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 772 Mt CO2/yr<br />Reduction: 85.4%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 307 Mt CO2/yr<br />Reduction: 93.5%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 17 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -25 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -92 Mt CO2/yr<br />Reduction: 102%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_RpEUEff_bio20_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_RpEUEff_bio20_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2868.5900000000001, 1983.8299999999999, 1231.6700000000001, 595.50999999999999, 238.00999999999999, 17.420000000000002, -20.300000000000001, -55.579999999999998],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio4<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 2869 Mt CO2/yr<br />Reduction: 42.9%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio4<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1984 Mt CO2/yr<br />Reduction: 60.9%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio4<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 1232 Mt CO2/yr<br />Reduction: 76.4%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio4<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 596 Mt CO2/yr<br />Reduction: 89.3%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio4<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 238 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio4<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: 17 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio4<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -20 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio4<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default", "Emissions: -56 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio4<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3758,6 +5598,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_RpEUEff_bio4,1,NA)",
       "legendgroup": "(59,Nzero_59_RpEUEff_bio4,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2864.2600000000002, 1975.6900000000001, 1172.1199999999999, 534.96000000000004, 195.03, -12.390000000000001, -44.310000000000002, -75.469999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2864 Mt CO2/yr<br />Reduction: 43%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1976 Mt CO2/yr<br />Reduction: 61.1%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1172 Mt CO2/yr<br />Reduction: 77.6%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 535 Mt CO2/yr<br />Reduction: 90.5%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 195 Mt CO2/yr<br />Reduction: 95.9%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -12 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -44 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_RpEUEff_bio4_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_RpEUEff_bio4_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3826,6 +5686,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2879.8000000000002, 2004.76, 1222.3, 577.10000000000002, 206.19, -8.5299999999999994, -35.039999999999999, -59.030000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2880 Mt CO2/yr<br />Reduction: 42.7%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2005 Mt CO2/yr<br />Reduction: 60.5%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1222 Mt CO2/yr<br />Reduction: 76.5%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 577 Mt CO2/yr<br />Reduction: 89.7%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 206 Mt CO2/yr<br />Reduction: 95.6%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -35 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -59 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_RpEUEff_bio4_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_RpEUEff_bio4_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2866.8800000000001, 1984.97, 1292.25, 649.54999999999995, 262.44999999999999, -9.9900000000000002, -55.039999999999999, -105.28],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio7p5<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 2867 Mt CO2/yr<br />Reduction: 43%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio7p5<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1985 Mt CO2/yr<br />Reduction: 60.9%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio7p5<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 1292 Mt CO2/yr<br />Reduction: 75.1%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio7p5<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 650 Mt CO2/yr<br />Reduction: 88.2%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio7p5<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: 262 Mt CO2/yr<br />Reduction: 94.4%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio7p5<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -10 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio7p5<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -55 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio7p5<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default", "Emissions: -105 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio7p5<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3838,6 +5718,26 @@
       "hoveron": "points",
       "name": "(59,Nzero_59_RpEUEff_bio7p5,1,NA)",
       "legendgroup": "(59,Nzero_59_RpEUEff_bio7p5,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2868.9000000000001, 1997.3399999999999, 1341.1400000000001, 728.65999999999997, 300.93000000000001, 10.02, -57.43, -143.55000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2869 Mt CO2/yr<br />Reduction: 42.9%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1997 Mt CO2/yr<br />Reduction: 60.6%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1341 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 729 Mt CO2/yr<br />Reduction: 86.6%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 301 Mt CO2/yr<br />Reduction: 93.6%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -144 Mt CO2/yr<br />Reduction: 103.1%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_RpEUEff_bio7p5_CC,1,NA)",
+      "legendgroup": "(59,Nzero_59_RpEUEff_bio7p5_CC,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -3906,6 +5806,26 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2870.6399999999999, 2002.76, 1323.6500000000001, 702.40999999999997, 298.06, -7.2800000000000002, -68.780000000000001, -126.01000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2871 Mt CO2/yr<br />Reduction: 42.9%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2003 Mt CO2/yr<br />Reduction: 60.5%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1324 Mt CO2/yr<br />Reduction: 74.5%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 702 Mt CO2/yr<br />Reduction: 87.1%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 298 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -7 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -126 Mt CO2/yr<br />Reduction: 102.7%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "lines",
+      "line": {
+        "width": 1.8897637795275593,
+        "color": "rgba(9,87,134,1)",
+        "dash": "dash"
+      },
+      "hoveron": "points",
+      "name": "(59,Nzero_59_RpEUEff_bio7p5_limVRE3,1,NA)",
+      "legendgroup": "(59,Nzero_59_RpEUEff_bio7p5_limVRE3,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3011.9099999999999, 2236.54, 1508.46, 850.13, 360.75999999999999, 15.06, -53.039999999999999, -109.48],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio12<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 3012 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_bio12<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 2237 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_bio12<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 1508 Mt CO2/yr<br />Reduction: 71.1%<br />Period: 2035<br />Scenario: Nzero_55_bio12<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 850 Mt CO2/yr<br />Reduction: 84.6%<br />Period: 2040<br />Scenario: Nzero_55_bio12<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 361 Mt CO2/yr<br />Reduction: 92.3%<br />Period: 2045<br />Scenario: Nzero_55_bio12<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: 15 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_55_bio12<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -53 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_55_bio12<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default", "Emissions: -109 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_55_bio12<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: default"],
       "type": "scatter",
@@ -3932,6 +5852,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3005.8400000000001, 2225.8899999999999, 1527.45, 883.5, 378.45999999999998, 9.3000000000000007, -92.760000000000005, -169.22999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 3006 Mt CO2/yr<br />Reduction: 40.2%<br />Period: 2025<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2226 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1527 Mt CO2/yr<br />Reduction: 70.8%<br />Period: 2035<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 883 Mt CO2/yr<br />Reduction: 83.9%<br />Period: 2040<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 378 Mt CO2/yr<br />Reduction: 92%<br />Period: 2045<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 9 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -93 Mt CO2/yr<br />Reduction: 102%<br />Period: 2055<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -169 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_55_bio12_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3016.0599999999999, 2234.1300000000001, 1420.28, 719.44000000000005, 272.49000000000001, -7.6900000000000004, -45.5, -70.969999999999999],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio12_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 3016 Mt CO2/yr<br />Reduction: 40%<br />Period: 2025<br />Scenario: Nzero_55_bio12_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2234 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_bio12_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1420 Mt CO2/yr<br />Reduction: 72.9%<br />Period: 2035<br />Scenario: Nzero_55_bio12_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 719 Mt CO2/yr<br />Reduction: 87.2%<br />Period: 2040<br />Scenario: Nzero_55_bio12_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 272 Mt CO2/yr<br />Reduction: 94.2%<br />Period: 2045<br />Scenario: Nzero_55_bio12_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_55_bio12_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -45 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_55_bio12_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -71 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_55_bio12_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -3941,7 +5887,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -3993,7 +5939,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4002,6 +5948,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3011.1100000000001, 2231.6300000000001, 1533.6199999999999, 867.24000000000001, 347.37, -14.77, -80.659999999999997, -136.94999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3011 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2232 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1534 Mt CO2/yr<br />Reduction: 70.6%<br />Period: 2035<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 867 Mt CO2/yr<br />Reduction: 84.2%<br />Period: 2040<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 347 Mt CO2/yr<br />Reduction: 92.6%<br />Period: 2045<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -15 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -81 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -137 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_55_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -4036,6 +6008,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3012.1500000000001, 2230.79, 1598.9000000000001, 1002.33, 499.51999999999998, 9.6300000000000008, -84.019999999999996, -164.56999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 3012 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2231 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1599 Mt CO2/yr<br />Reduction: 69.2%<br />Period: 2035<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1002 Mt CO2/yr<br />Reduction: 81.3%<br />Period: 2040<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 500 Mt CO2/yr<br />Reduction: 89.4%<br />Period: 2045<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -84 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -165 Mt CO2/yr<br />Reduction: 103.5%<br />Period: 2060<br />Scenario: Nzero_55_bio20_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3012.6199999999999, 2227.7600000000002, 1551.9400000000001, 927.78999999999996, 445.64999999999998, 6.6799999999999997, -38.799999999999997, -75.209999999999994],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio20_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 3013 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_bio20_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2228 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_bio20_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1552 Mt CO2/yr<br />Reduction: 70.2%<br />Period: 2035<br />Scenario: Nzero_55_bio20_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 928 Mt CO2/yr<br />Reduction: 82.8%<br />Period: 2040<br />Scenario: Nzero_55_bio20_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 446 Mt CO2/yr<br />Reduction: 90.5%<br />Period: 2045<br />Scenario: Nzero_55_bio20_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 7 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_bio20_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -39 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_55_bio20_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2060<br />Scenario: Nzero_55_bio20_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -4045,7 +6043,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4097,7 +6095,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4106,6 +6104,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3019.3499999999999, 2230.96, 1626.51, 1036.71, 514.37, 0.54000000000000004, -80.140000000000001, -153.91],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3019 Mt CO2/yr<br />Reduction: 39.9%<br />Period: 2025<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2231 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1627 Mt CO2/yr<br />Reduction: 68.6%<br />Period: 2035<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1037 Mt CO2/yr<br />Reduction: 80.5%<br />Period: 2040<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 514 Mt CO2/yr<br />Reduction: 89.1%<br />Period: 2045<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -80 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -154 Mt CO2/yr<br />Reduction: 103.3%<br />Period: 2060<br />Scenario: Nzero_55_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -4140,6 +6164,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3020.8800000000001, 2231.8899999999999, 1443.8800000000001, 783.77999999999997, 323.29000000000002, 1.23, -129.84999999999999, -356.36000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 3021 Mt CO2/yr<br />Reduction: 39.9%<br />Period: 2025<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2232 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1444 Mt CO2/yr<br />Reduction: 72.5%<br />Period: 2035<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 784 Mt CO2/yr<br />Reduction: 85.9%<br />Period: 2040<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 323 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -130 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2055<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -356 Mt CO2/yr<br />Reduction: 107.6%<br />Period: 2060<br />Scenario: Nzero_55_bio4_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3027.5799999999999, 2233.8099999999999, 1367.6700000000001, 648.55999999999995, 249.53, 16.890000000000001, 2.1499999999999999, -12.31],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio4_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 3028 Mt CO2/yr<br />Reduction: 39.8%<br />Period: 2025<br />Scenario: Nzero_55_bio4_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2234 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_bio4_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1368 Mt CO2/yr<br />Reduction: 74%<br />Period: 2035<br />Scenario: Nzero_55_bio4_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 649 Mt CO2/yr<br />Reduction: 88.6%<br />Period: 2040<br />Scenario: Nzero_55_bio4_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 250 Mt CO2/yr<br />Reduction: 94.7%<br />Period: 2045<br />Scenario: Nzero_55_bio4_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 17 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_55_bio4_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2055<br />Scenario: Nzero_55_bio4_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -12 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2060<br />Scenario: Nzero_55_bio4_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -4149,7 +6199,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4201,7 +6251,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4210,6 +6260,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3041.1300000000001, 2233.9200000000001, 1431.23, 705.52999999999997, 263.98000000000002, -4.4699999999999998, -72.409999999999997, -168.00999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3041 Mt CO2/yr<br />Reduction: 39.5%<br />Period: 2025<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2234 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1431 Mt CO2/yr<br />Reduction: 72.7%<br />Period: 2035<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 706 Mt CO2/yr<br />Reduction: 87.4%<br />Period: 2040<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 264 Mt CO2/yr<br />Reduction: 94.4%<br />Period: 2045<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -4 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -168 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_55_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -4244,6 +6320,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3011.2399999999998, 2228.1599999999999, 1504.6900000000001, 848.87, 363.66000000000003, 13.640000000000001, -78, -157.65000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 3011 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2228 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1505 Mt CO2/yr<br />Reduction: 71.2%<br />Period: 2035<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 849 Mt CO2/yr<br />Reduction: 84.6%<br />Period: 2040<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 364 Mt CO2/yr<br />Reduction: 92.3%<br />Period: 2045<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 14 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -78 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -158 Mt CO2/yr<br />Reduction: 103.4%<br />Period: 2060<br />Scenario: Nzero_55_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3017.73, 2232.0599999999999, 1430.1400000000001, 739.72000000000003, 293.76999999999998, 7.1200000000000001, -26.809999999999999, -49.619999999999997],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 3018 Mt CO2/yr<br />Reduction: 40%<br />Period: 2025<br />Scenario: Nzero_55_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2232 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1430 Mt CO2/yr<br />Reduction: 72.7%<br />Period: 2035<br />Scenario: Nzero_55_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 740 Mt CO2/yr<br />Reduction: 86.8%<br />Period: 2040<br />Scenario: Nzero_55_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 294 Mt CO2/yr<br />Reduction: 93.8%<br />Period: 2045<br />Scenario: Nzero_55_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 7 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -27 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_55_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -50 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2060<br />Scenario: Nzero_55_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -4253,7 +6355,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4305,7 +6407,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4314,6 +6416,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3025.6399999999999, 2237.4899999999998, 1546.02, 877.96000000000004, 364.97000000000003, 6.6699999999999999, -56.579999999999998, -98.930000000000007],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3026 Mt CO2/yr<br />Reduction: 39.8%<br />Period: 2025<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2237 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1546 Mt CO2/yr<br />Reduction: 70.4%<br />Period: 2035<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 878 Mt CO2/yr<br />Reduction: 84%<br />Period: 2040<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 365 Mt CO2/yr<br />Reduction: 92.2%<br />Period: 2045<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 7 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -99 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2060<br />Scenario: Nzero_55_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -4348,6 +6476,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3008.4699999999998, 2241.54, 1536.8599999999999, 849.63999999999999, 345.38999999999999, -17.670000000000002, -120.04000000000001, -205.58000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 3008 Mt CO2/yr<br />Reduction: 40.2%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2242 Mt CO2/yr<br />Reduction: 55.9%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1537 Mt CO2/yr<br />Reduction: 70.5%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 850 Mt CO2/yr<br />Reduction: 84.5%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 345 Mt CO2/yr<br />Reduction: 92.7%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -120 Mt CO2/yr<br />Reduction: 102.6%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -206 Mt CO2/yr<br />Reduction: 104.4%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_eedEff_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_eedEff_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3006.23, 2230.6399999999999, 1435.53, 696.23000000000002, 258.29000000000002, -10.630000000000001, -49.740000000000002, -80.519999999999996],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 3006 Mt CO2/yr<br />Reduction: 40.2%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2231 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1436 Mt CO2/yr<br />Reduction: 72.5%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 696 Mt CO2/yr<br />Reduction: 87.5%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 258 Mt CO2/yr<br />Reduction: 94.5%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -11 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -50 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -81 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -4357,7 +6511,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4409,7 +6563,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4418,6 +6572,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_eedEff_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_eedEff_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3009.4400000000001, 2221.7600000000002, 1538.0999999999999, 868.64999999999998, 356.94, 1.6799999999999999, -73.909999999999997, -130.94999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3009 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2222 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1538 Mt CO2/yr<br />Reduction: 70.4%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 869 Mt CO2/yr<br />Reduction: 84.1%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 357 Mt CO2/yr<br />Reduction: 92.4%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -74 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -131 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_eedEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_eedEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -4452,6 +6632,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3003.1199999999999, 2228.6100000000001, 1616.27, 1001.5599999999999, 465.87, 3.52, -75.950000000000003, -183.19],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 3003 Mt CO2/yr<br />Reduction: 40.3%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2229 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1616 Mt CO2/yr<br />Reduction: 68.8%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1002 Mt CO2/yr<br />Reduction: 81.2%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 466 Mt CO2/yr<br />Reduction: 90.1%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 4 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -76 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -183 Mt CO2/yr<br />Reduction: 103.9%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_eedEff_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_eedEff_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3003.8000000000002, 2221.0700000000002, 1538.23, 882.59000000000003, 392.85000000000002, -12.85, -55.049999999999997, -106.59],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 3004 Mt CO2/yr<br />Reduction: 40.3%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2221 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1538 Mt CO2/yr<br />Reduction: 70.4%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 883 Mt CO2/yr<br />Reduction: 83.6%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 393 Mt CO2/yr<br />Reduction: 91.7%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -13 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -55 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -107 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -4461,7 +6667,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4513,7 +6719,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4522,6 +6728,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_eedEff_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_eedEff_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3007.1500000000001, 2221.9299999999998, 1617.8900000000001, 988.60000000000002, 475.68000000000001, -7.79, -83.180000000000007, -158.16999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3007 Mt CO2/yr<br />Reduction: 40.2%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2222 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1618 Mt CO2/yr<br />Reduction: 68.7%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 989 Mt CO2/yr<br />Reduction: 81.4%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 476 Mt CO2/yr<br />Reduction: 89.9%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -158 Mt CO2/yr<br />Reduction: 103.4%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_eedEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_eedEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -4556,6 +6788,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3011.0799999999999, 2222.9099999999999, 1411.6800000000001, 717.82000000000005, 292.62, -0.62, -119.06999999999999, -317.17000000000002],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 3011 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2223 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1412 Mt CO2/yr<br />Reduction: 73%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 718 Mt CO2/yr<br />Reduction: 87.2%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 293 Mt CO2/yr<br />Reduction: 93.8%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -119 Mt CO2/yr<br />Reduction: 102.5%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -317 Mt CO2/yr<br />Reduction: 106.7%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_eedEff_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_eedEff_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3013.9000000000001, 2222.4200000000001, 1325.01, 584.34000000000003, 214.78, -1.9099999999999999, -27.32, -50.18],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 3014 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2222 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1325 Mt CO2/yr<br />Reduction: 74.8%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 584 Mt CO2/yr<br />Reduction: 89.8%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 215 Mt CO2/yr<br />Reduction: 95.4%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -27 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -50 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -4565,7 +6823,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4617,7 +6875,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4626,6 +6884,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_eedEff_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_eedEff_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3041.1300000000001, 2246.96, 1430.8499999999999, 676.75999999999999, 250.21000000000001, -6.0999999999999996, -70.760000000000005, -160.46000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3041 Mt CO2/yr<br />Reduction: 39.5%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2247 Mt CO2/yr<br />Reduction: 55.8%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1431 Mt CO2/yr<br />Reduction: 72.6%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 677 Mt CO2/yr<br />Reduction: 88%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 250 Mt CO2/yr<br />Reduction: 94.7%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -6 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -71 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -160 Mt CO2/yr<br />Reduction: 103.4%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_eedEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_eedEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -4660,6 +6944,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3006.9299999999998, 2231.1399999999999, 1495.8900000000001, 801.26999999999998, 321.88, -16.530000000000001, -111.92, -195.68000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 3007 Mt CO2/yr<br />Reduction: 40.2%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2231 Mt CO2/yr<br />Reduction: 56.2%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1496 Mt CO2/yr<br />Reduction: 71.3%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 801 Mt CO2/yr<br />Reduction: 85.5%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 322 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -112 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -196 Mt CO2/yr<br />Reduction: 104.2%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_eedEff_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_eedEff_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 3010.5, 2231.6799999999998, 1439.1700000000001, 701.72000000000003, 262.07999999999998, -18.640000000000001, -53.609999999999999, -81.430000000000007],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 3010 Mt CO2/yr<br />Reduction: 40.1%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2232 Mt CO2/yr<br />Reduction: 56.1%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1439 Mt CO2/yr<br />Reduction: 72.5%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 702 Mt CO2/yr<br />Reduction: 87.5%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 262 Mt CO2/yr<br />Reduction: 94.4%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -19 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -54 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -81 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -4669,7 +6979,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4721,7 +7031,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4730,6 +7040,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_eedEff_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_eedEff_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 3017.29, 2222.75, 1533.99, 848.32000000000005, 344.31, -9.2100000000000009, -83.310000000000002, -128.38],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3017 Mt CO2/yr<br />Reduction: 40%<br />Period: 2025<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2223 Mt CO2/yr<br />Reduction: 56.3%<br />Period: 2030<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1534 Mt CO2/yr<br />Reduction: 70.5%<br />Period: 2035<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 848 Mt CO2/yr<br />Reduction: 84.5%<br />Period: 2040<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 344 Mt CO2/yr<br />Reduction: 92.7%<br />Period: 2045<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -128 Mt CO2/yr<br />Reduction: 102.7%<br />Period: 2060<br />Scenario: Nzero_55_eedEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_eedEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_eedEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -4764,6 +7100,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2949.5700000000002, 2160.3800000000001, 1490.1900000000001, 826.55999999999995, 340.94, 12.49, -70.840000000000003, -166.31999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2950 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2160 Mt CO2/yr<br />Reduction: 57.4%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1490 Mt CO2/yr<br />Reduction: 71.2%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 827 Mt CO2/yr<br />Reduction: 84.7%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 341 Mt CO2/yr<br />Reduction: 92.8%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 12 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -71 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -166 Mt CO2/yr<br />Reduction: 103.5%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio12_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_ff55Eff_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_ff55Eff_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2947.6599999999999, 2149.9099999999999, 1402.98, 684.90999999999997, 254.93000000000001, 0.89000000000000001, -38.710000000000001, -71.939999999999998],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2948 Mt CO2/yr<br />Reduction: 41.4%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2150 Mt CO2/yr<br />Reduction: 57.6%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1403 Mt CO2/yr<br />Reduction: 73%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 685 Mt CO2/yr<br />Reduction: 87.6%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 255 Mt CO2/yr<br />Reduction: 94.6%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -39 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -4773,7 +7135,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4825,7 +7187,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4834,6 +7196,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_ff55Eff_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_ff55Eff_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2965.1999999999998, 2169.6700000000001, 1495.78, 810, 334.70999999999998, 7.25, -66.390000000000001, -141.25],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2965 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2170 Mt CO2/yr<br />Reduction: 57.2%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1496 Mt CO2/yr<br />Reduction: 71.1%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 810 Mt CO2/yr<br />Reduction: 85%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 335 Mt CO2/yr<br />Reduction: 92.9%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 7 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -66 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -141 Mt CO2/yr<br />Reduction: 103%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_ff55Eff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_ff55Eff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -4868,6 +7256,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2949.5700000000002, 2162.6399999999999, 1528.0599999999999, 897.74000000000001, 402.62, -5.0999999999999996, -74.560000000000002, -172.02000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2950 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2163 Mt CO2/yr<br />Reduction: 57.3%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1528 Mt CO2/yr<br />Reduction: 70.3%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 898 Mt CO2/yr<br />Reduction: 83%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 403 Mt CO2/yr<br />Reduction: 91.4%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -5 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -172 Mt CO2/yr<br />Reduction: 103.7%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio20_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_ff55Eff_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_ff55Eff_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2950.6300000000001, 2162.2800000000002, 1494.79, 842.26999999999998, 326.97000000000003, -2.1099999999999999, -20.100000000000001, -64.239999999999995],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2951 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2162 Mt CO2/yr<br />Reduction: 57.3%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1495 Mt CO2/yr<br />Reduction: 71%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 842 Mt CO2/yr<br />Reduction: 84.1%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 327 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -20 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -64 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -4877,7 +7291,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4929,7 +7343,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -4938,6 +7352,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_ff55Eff_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_ff55Eff_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2964.3299999999999, 2174.8299999999999, 1555.3900000000001, 914.12, 368.69, 1.8700000000000001, -53.630000000000003, -135],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2964 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2175 Mt CO2/yr<br />Reduction: 57%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1555 Mt CO2/yr<br />Reduction: 69.8%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 914 Mt CO2/yr<br />Reduction: 82.6%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 369 Mt CO2/yr<br />Reduction: 92.2%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -54 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -135 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_ff55Eff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_ff55Eff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -4972,6 +7412,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2960.5300000000002, 2160.8200000000002, 1348.96, 609.62, 222.86000000000001, 2.9399999999999999, -32.390000000000001, -62.789999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2961 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2161 Mt CO2/yr<br />Reduction: 57.4%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1349 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 610 Mt CO2/yr<br />Reduction: 89.1%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 223 Mt CO2/yr<br />Reduction: 95.3%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 3 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -32 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -63 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio4_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_ff55Eff_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_ff55Eff_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2965.1500000000001, 2164.02, 1373.8399999999999, 641.42999999999995, 246.75, 16.289999999999999, -20.710000000000001, -51.590000000000003],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2965 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2164 Mt CO2/yr<br />Reduction: 57.3%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1374 Mt CO2/yr<br />Reduction: 73.6%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 641 Mt CO2/yr<br />Reduction: 88.5%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 247 Mt CO2/yr<br />Reduction: 94.8%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 16 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -21 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -52 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -4981,7 +7447,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5033,7 +7499,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5042,6 +7508,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_ff55Eff_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_ff55Eff_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2982.0599999999999, 2168.54, 1383.3, 652.88, 238.02000000000001, 9.5999999999999996, -23.460000000000001, -47.75],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2982 Mt CO2/yr<br />Reduction: 40.7%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2169 Mt CO2/yr<br />Reduction: 57.2%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1383 Mt CO2/yr<br />Reduction: 73.4%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 653 Mt CO2/yr<br />Reduction: 88.2%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 238 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -23 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -48 Mt CO2/yr<br />Reduction: 101%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_ff55Eff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_ff55Eff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -5076,6 +7568,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2951.8299999999999, 2161.1799999999998, 1479.5699999999999, 815.53999999999996, 336.74000000000001, 15.58, -67.459999999999994, -165],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2952 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2161 Mt CO2/yr<br />Reduction: 57.4%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1480 Mt CO2/yr<br />Reduction: 71.4%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 816 Mt CO2/yr<br />Reduction: 85%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 337 Mt CO2/yr<br />Reduction: 92.8%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 16 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -67 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -165 Mt CO2/yr<br />Reduction: 103.5%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_ff55Eff_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_ff55Eff_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2951.4400000000001, 2155.3200000000002, 1419.8099999999999, 703.08000000000004, 269.52999999999997, 2.6899999999999999, -38.18, -71.209999999999994],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2951 Mt CO2/yr<br />Reduction: 41.3%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2155 Mt CO2/yr<br />Reduction: 57.5%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1420 Mt CO2/yr<br />Reduction: 72.6%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 703 Mt CO2/yr<br />Reduction: 87.2%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 270 Mt CO2/yr<br />Reduction: 94.3%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 3 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -38 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -71 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -5085,7 +7603,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5137,7 +7655,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5146,6 +7664,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_ff55Eff_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_ff55Eff_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2970.2399999999998, 2177, 1505.54, 806.00999999999999, 327.97000000000003, -8.0899999999999999, -80.349999999999994, -145.43000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2970 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2177 Mt CO2/yr<br />Reduction: 57%<br />Period: 2030<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1506 Mt CO2/yr<br />Reduction: 70.9%<br />Period: 2035<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 806 Mt CO2/yr<br />Reduction: 85.1%<br />Period: 2040<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 328 Mt CO2/yr<br />Reduction: 93%<br />Period: 2045<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -80 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -145 Mt CO2/yr<br />Reduction: 103.1%<br />Period: 2060<br />Scenario: Nzero_55_ff55Eff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_ff55Eff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_ff55Eff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -5180,6 +7724,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2888.5599999999999, 2059.4699999999998, 1396.5599999999999, 784.82000000000005, 325.10000000000002, 3.2999999999999998, -72.269999999999996, -165.91],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2889 Mt CO2/yr<br />Reduction: 42.5%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2059 Mt CO2/yr<br />Reduction: 59.3%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1397 Mt CO2/yr<br />Reduction: 72.9%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 785 Mt CO2/yr<br />Reduction: 85.4%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 325 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 3 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -166 Mt CO2/yr<br />Reduction: 103.5%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio12_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_RpEUEff_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_RpEUEff_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2881.1399999999999, 2028.4000000000001, 1303.29, 646.65999999999997, 253.19, 2.5800000000000001, -39.789999999999999, -83.140000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2881 Mt CO2/yr<br />Reduction: 42.7%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2028 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1303 Mt CO2/yr<br />Reduction: 74.9%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 647 Mt CO2/yr<br />Reduction: 88.2%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 253 Mt CO2/yr<br />Reduction: 94.6%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 3 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -40 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio12_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -5189,7 +7759,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5241,7 +7811,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5250,6 +7820,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_RpEUEff_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_RpEUEff_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2898.4200000000001, 2079.9499999999998, 1406.55, 736.13, 293.18000000000001, -17.309999999999999, -87.280000000000001, -157.80000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2898 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2080 Mt CO2/yr<br />Reduction: 58.9%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1407 Mt CO2/yr<br />Reduction: 72.7%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 736 Mt CO2/yr<br />Reduction: 86.4%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 293 Mt CO2/yr<br />Reduction: 93.8%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -87 Mt CO2/yr<br />Reduction: 101.9%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -158 Mt CO2/yr<br />Reduction: 103.4%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio12_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_RpEUEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_RpEUEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -5284,6 +7880,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2884.6799999999998, 2052.1999999999998, 1411.1600000000001, 790.13, 319.47000000000003, -5.0999999999999996, -48.469999999999999, -122.58],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2885 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2052 Mt CO2/yr<br />Reduction: 59.4%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1411 Mt CO2/yr<br />Reduction: 72.5%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 790 Mt CO2/yr<br />Reduction: 85%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 319 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -5 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -48 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -123 Mt CO2/yr<br />Reduction: 102.6%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio20_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_RpEUEff_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_RpEUEff_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2836.9899999999998, 2000.45, 1322.7, 709.26999999999998, 241.22999999999999, -16.640000000000001, -27.600000000000001, -61.960000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2837 Mt CO2/yr<br />Reduction: 43.6%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2000 Mt CO2/yr<br />Reduction: 60.5%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1323 Mt CO2/yr<br />Reduction: 74.4%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 709 Mt CO2/yr<br />Reduction: 86.6%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 241 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -28 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -62 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio20_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -5293,7 +7915,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5345,7 +7967,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5354,6 +7976,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_RpEUEff_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_RpEUEff_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2897.21, 2080.7199999999998, 1448.8499999999999, 840.70000000000005, 315.44999999999999, 3.46, -41.75, -114.51000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2897 Mt CO2/yr<br />Reduction: 42.4%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2081 Mt CO2/yr<br />Reduction: 58.8%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1449 Mt CO2/yr<br />Reduction: 71.8%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 841 Mt CO2/yr<br />Reduction: 83.9%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 315 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 3 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -42 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -115 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio20_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_RpEUEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_RpEUEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -5388,6 +8036,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2894.3600000000001, 2060.6700000000001, 1298.25, 606, 227.77000000000001, 6.3300000000000001, -31.100000000000001, -68.75],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2894 Mt CO2/yr<br />Reduction: 42.4%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2061 Mt CO2/yr<br />Reduction: 59.3%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1298 Mt CO2/yr<br />Reduction: 75%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 606 Mt CO2/yr<br />Reduction: 89.1%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 228 Mt CO2/yr<br />Reduction: 95.2%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 6 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -31 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio4_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_RpEUEff_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_RpEUEff_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2882.5900000000001, 2020.9300000000001, 1247.72, 575.34000000000003, 217.05000000000001, -4.4299999999999997, -38.719999999999999, -71.739999999999995],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2883 Mt CO2/yr<br />Reduction: 42.7%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2021 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1248 Mt CO2/yr<br />Reduction: 76%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 575 Mt CO2/yr<br />Reduction: 89.7%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 217 Mt CO2/yr<br />Reduction: 95.4%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -4 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -39 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio4_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -5397,7 +8071,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5449,7 +8123,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5458,6 +8132,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_RpEUEff_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_RpEUEff_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2909.27, 2080.1599999999999, 1330.8, 625.45000000000005, 218.11000000000001, -3.1299999999999999, -31.800000000000001, -57.009999999999998],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2909 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2080 Mt CO2/yr<br />Reduction: 58.9%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1331 Mt CO2/yr<br />Reduction: 74.3%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 625 Mt CO2/yr<br />Reduction: 88.7%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 218 Mt CO2/yr<br />Reduction: 95.4%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -32 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio4_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_RpEUEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_RpEUEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -5492,6 +8192,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2886.4299999999998, 2051.02, 1369.1600000000001, 738.57000000000005, 294.26999999999998, -12.550000000000001, -81.629999999999995, -173.11000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2886 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2051 Mt CO2/yr<br />Reduction: 59.5%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1369 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 739 Mt CO2/yr<br />Reduction: 86.3%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 294 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -13 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -82 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -173 Mt CO2/yr<br />Reduction: 103.7%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio7p5_CC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_RpEUEff_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_55_RpEUEff_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2880.6100000000001, 2025.5599999999999, 1304.5899999999999, 651.02999999999997, 253.80000000000001, -1.1200000000000001, -42.340000000000003, -84.640000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2881 Mt CO2/yr<br />Reduction: 42.7%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2026 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1305 Mt CO2/yr<br />Reduction: 74.8%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 651 Mt CO2/yr<br />Reduction: 88.1%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 254 Mt CO2/yr<br />Reduction: 94.6%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -42 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -85 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio7p5_limCC<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -5501,7 +8227,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5553,7 +8279,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5562,6 +8288,32 @@
       "hoveron": "points",
       "name": "(Nzero_55_RpEUEff_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_55_RpEUEff_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2900.6599999999999, 2082.5300000000002, 1419, 760.72000000000003, 321.35000000000002, 9.6999999999999993, -58.450000000000003, -129.46000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2901 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2083 Mt CO2/yr<br />Reduction: 58.8%<br />Period: 2030<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1419 Mt CO2/yr<br />Reduction: 72.5%<br />Period: 2035<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 761 Mt CO2/yr<br />Reduction: 85.9%<br />Period: 2040<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 321 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -58 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -129 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_55_RpEUEff_bio7p5_limVRE3<br />Target 2030: 55%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_55_RpEUEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_55_RpEUEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -5596,6 +8348,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2967.9400000000001, 2147.3899999999999, 1447.6300000000001, 822.44000000000005, 337.31999999999999, -9.0500000000000007, -109.19, -183.90000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2968 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2147 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1448 Mt CO2/yr<br />Reduction: 72.4%<br />Period: 2035<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 822 Mt CO2/yr<br />Reduction: 85.2%<br />Period: 2040<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 337 Mt CO2/yr<br />Reduction: 92.8%<br />Period: 2045<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -109 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2055<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -184 Mt CO2/yr<br />Reduction: 103.9%<br />Period: 2060<br />Scenario: Nzero_57_bio12_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2969.9200000000001, 2141.2199999999998, 1352.9400000000001, 679.11000000000001, 260.62, -2.77, -38.979999999999997, -61.490000000000002],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio12_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2970 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio12_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2141 Mt CO2/yr<br />Reduction: 58.1%<br />Period: 2030<br />Scenario: Nzero_57_bio12_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1353 Mt CO2/yr<br />Reduction: 74.3%<br />Period: 2035<br />Scenario: Nzero_57_bio12_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 679 Mt CO2/yr<br />Reduction: 88%<br />Period: 2040<br />Scenario: Nzero_57_bio12_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 261 Mt CO2/yr<br />Reduction: 94.5%<br />Period: 2045<br />Scenario: Nzero_57_bio12_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_bio12_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -39 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_57_bio12_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -61 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2060<br />Scenario: Nzero_57_bio12_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -5605,7 +8383,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5657,7 +8435,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5666,6 +8444,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2962.1199999999999, 2133.4099999999999, 1447.0999999999999, 815.13999999999999, 328.16000000000003, -11.460000000000001, -71.560000000000002, -125.20999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2962 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2133 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1447 Mt CO2/yr<br />Reduction: 72.3%<br />Period: 2035<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 815 Mt CO2/yr<br />Reduction: 85.2%<br />Period: 2040<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 328 Mt CO2/yr<br />Reduction: 93%<br />Period: 2045<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -11 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -125 Mt CO2/yr<br />Reduction: 102.7%<br />Period: 2060<br />Scenario: Nzero_57_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -5700,6 +8504,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2962.4000000000001, 2127.8800000000001, 1504.6700000000001, 932.96000000000004, 467.50999999999999, 13.74, -70.390000000000001, -147.25],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2962 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2128 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1505 Mt CO2/yr<br />Reduction: 71.1%<br />Period: 2035<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 933 Mt CO2/yr<br />Reduction: 82.7%<br />Period: 2040<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 468 Mt CO2/yr<br />Reduction: 90.1%<br />Period: 2045<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 14 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -70 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -147 Mt CO2/yr<br />Reduction: 103.1%<br />Period: 2060<br />Scenario: Nzero_57_bio20_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2967.7800000000002, 2136.0100000000002, 1468.03, 858.94000000000005, 397.30000000000001, -16.530000000000001, -56.030000000000001, -90.790000000000006],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio20_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2968 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio20_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2136 Mt CO2/yr<br />Reduction: 58.1%<br />Period: 2030<br />Scenario: Nzero_57_bio20_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1468 Mt CO2/yr<br />Reduction: 71.9%<br />Period: 2035<br />Scenario: Nzero_57_bio20_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 859 Mt CO2/yr<br />Reduction: 84.2%<br />Period: 2040<br />Scenario: Nzero_57_bio20_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 397 Mt CO2/yr<br />Reduction: 91.6%<br />Period: 2045<br />Scenario: Nzero_57_bio20_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_bio20_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -56 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_57_bio20_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -91 Mt CO2/yr<br />Reduction: 101.9%<br />Period: 2060<br />Scenario: Nzero_57_bio20_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -5709,7 +8539,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5761,7 +8591,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5770,6 +8600,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2973.0300000000002, 2141.75, 1545.78, 973.02999999999997, 472.82999999999998, 1.3799999999999999, -71.599999999999994, -141.44],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2973 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2142 Mt CO2/yr<br />Reduction: 58%<br />Period: 2030<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1546 Mt CO2/yr<br />Reduction: 70.3%<br />Period: 2035<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 973 Mt CO2/yr<br />Reduction: 81.8%<br />Period: 2040<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 473 Mt CO2/yr<br />Reduction: 90%<br />Period: 2045<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -141 Mt CO2/yr<br />Reduction: 103%<br />Period: 2060<br />Scenario: Nzero_57_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -5804,6 +8660,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2970.96, 2135.7199999999998, 1392.8499999999999, 760.05999999999995, 324.31, 15.119999999999999, -103.76000000000001, -291.81999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2971 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2136 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1393 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 760 Mt CO2/yr<br />Reduction: 86.4%<br />Period: 2040<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 324 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 15 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -104 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2055<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -292 Mt CO2/yr<br />Reduction: 106.2%<br />Period: 2060<br />Scenario: Nzero_57_bio4_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2980.9099999999999, 2142.54, 1319.4000000000001, 622.88, 241.97, 12.800000000000001, -0.41999999999999998, -11.59],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio4_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2981 Mt CO2/yr<br />Reduction: 40.8%<br />Period: 2025<br />Scenario: Nzero_57_bio4_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2143 Mt CO2/yr<br />Reduction: 58%<br />Period: 2030<br />Scenario: Nzero_57_bio4_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1319 Mt CO2/yr<br />Reduction: 74.9%<br />Period: 2035<br />Scenario: Nzero_57_bio4_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 623 Mt CO2/yr<br />Reduction: 89.1%<br />Period: 2040<br />Scenario: Nzero_57_bio4_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 242 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_57_bio4_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 13 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_bio4_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 0 Mt CO2/yr<br />Reduction: 100%<br />Period: 2055<br />Scenario: Nzero_57_bio4_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -12 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2060<br />Scenario: Nzero_57_bio4_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -5813,7 +8695,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5865,7 +8747,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5874,6 +8756,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2983.3899999999999, 2144.79, 1376, 685.10000000000002, 263.31999999999999, 9.2200000000000006, -31.960000000000001, -97.879999999999995],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2983 Mt CO2/yr<br />Reduction: 40.7%<br />Period: 2025<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2145 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1376 Mt CO2/yr<br />Reduction: 73.8%<br />Period: 2035<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 685 Mt CO2/yr<br />Reduction: 87.8%<br />Period: 2040<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 263 Mt CO2/yr<br />Reduction: 94.4%<br />Period: 2045<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 9 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -32 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -98 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2060<br />Scenario: Nzero_57_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -5908,6 +8816,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2974.3299999999999, 2150.21, 1425.6500000000001, 787.57000000000005, 324.25999999999999, -7.7000000000000002, -93.25, -169.25999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2974 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2150 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1426 Mt CO2/yr<br />Reduction: 72.8%<br />Period: 2035<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 788 Mt CO2/yr<br />Reduction: 85.9%<br />Period: 2040<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 324 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -93 Mt CO2/yr<br />Reduction: 102%<br />Period: 2055<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -169 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2976.3299999999999, 2145.8000000000002, 1365.3099999999999, 684.01999999999998, 254.06, -18.050000000000001, -46.979999999999997, -68.700000000000003],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2976 Mt CO2/yr<br />Reduction: 40.8%<br />Period: 2025<br />Scenario: Nzero_57_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2146 Mt CO2/yr<br />Reduction: 58%<br />Period: 2030<br />Scenario: Nzero_57_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1365 Mt CO2/yr<br />Reduction: 74%<br />Period: 2035<br />Scenario: Nzero_57_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 684 Mt CO2/yr<br />Reduction: 87.9%<br />Period: 2040<br />Scenario: Nzero_57_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 254 Mt CO2/yr<br />Reduction: 94.6%<br />Period: 2045<br />Scenario: Nzero_57_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -47 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_57_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_57_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -5917,7 +8851,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5969,7 +8903,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -5978,6 +8912,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2967.27, 2132.6900000000001, 1445.21, 807.51999999999998, 327.17000000000002, -8.3000000000000007, -66.480000000000004, -105.61],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2967 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2133 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1445 Mt CO2/yr<br />Reduction: 72.4%<br />Period: 2035<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 808 Mt CO2/yr<br />Reduction: 85.4%<br />Period: 2040<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 327 Mt CO2/yr<br />Reduction: 93%<br />Period: 2045<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -66 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -106 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_57_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -6012,6 +8972,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2964.9099999999999, 2128.9400000000001, 1457.5699999999999, 825.29999999999995, 341.79000000000002, -0.12, -93.090000000000003, -168.22],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2965 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2129 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1458 Mt CO2/yr<br />Reduction: 72.1%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 825 Mt CO2/yr<br />Reduction: 85.1%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 342 Mt CO2/yr<br />Reduction: 92.7%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 0 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -93 Mt CO2/yr<br />Reduction: 102%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -168 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_eedEff_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_eedEff_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2968.9200000000001, 2128.0900000000001, 1332.52, 651.75, 238.88, -16.100000000000001, -47.630000000000003, -72.870000000000005],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2969 Mt CO2/yr<br />Reduction: 41%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2128 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1333 Mt CO2/yr<br />Reduction: 74.7%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 652 Mt CO2/yr<br />Reduction: 88.5%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 239 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -16 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -48 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -73 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -6021,7 +9007,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6073,7 +9059,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6082,6 +9068,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_eedEff_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_eedEff_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2970.5100000000002, 2130.1599999999999, 1452.24, 814.50999999999999, 326.22000000000003, -14.699999999999999, -72.519999999999996, -121.44],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2971 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2130 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1452 Mt CO2/yr<br />Reduction: 72.2%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 815 Mt CO2/yr<br />Reduction: 85.2%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 326 Mt CO2/yr<br />Reduction: 93.1%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -15 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -73 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -121 Mt CO2/yr<br />Reduction: 102.6%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_eedEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_eedEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -6116,6 +9128,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2971.96, 2124.96, 1490.77, 900.88, 423, -17.859999999999999, -86.170000000000002, -156.59999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2972 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2125 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1491 Mt CO2/yr<br />Reduction: 71.4%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 901 Mt CO2/yr<br />Reduction: 83.2%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 423 Mt CO2/yr<br />Reduction: 91%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -86 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -157 Mt CO2/yr<br />Reduction: 103.3%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_eedEff_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_eedEff_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2975.6900000000001, 2129.9699999999998, 1456.1900000000001, 844.03999999999996, 381.98000000000002, -8.6699999999999999, -39.359999999999999, -66.840000000000003],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2976 Mt CO2/yr<br />Reduction: 40.8%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2130 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1456 Mt CO2/yr<br />Reduction: 72.1%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 844 Mt CO2/yr<br />Reduction: 84.4%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 382 Mt CO2/yr<br />Reduction: 91.9%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -39 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -67 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -6125,7 +9163,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6177,7 +9215,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6186,6 +9224,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_eedEff_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_eedEff_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2973.9499999999998, 2131.25, 1534.3800000000001, 957.15999999999997, 456.33999999999997, -12.35, -74.719999999999999, -133.69],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2974 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2131 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1534 Mt CO2/yr<br />Reduction: 70.5%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 957 Mt CO2/yr<br />Reduction: 82.1%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 456 Mt CO2/yr<br />Reduction: 90.3%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -12 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -134 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_eedEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_eedEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -6220,6 +9284,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2973.9000000000001, 2128.1599999999999, 1357.5899999999999, 703.92999999999995, 280.88, -11.279999999999999, -112.84999999999999, -291.45999999999998],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2974 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2128 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1358 Mt CO2/yr<br />Reduction: 74.2%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 704 Mt CO2/yr<br />Reduction: 87.5%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 281 Mt CO2/yr<br />Reduction: 94%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -11 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -113 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -291 Mt CO2/yr<br />Reduction: 106.2%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_eedEff_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_eedEff_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2979.2399999999998, 2130.1199999999999, 1298.2, 602.11000000000001, 224.93000000000001, -2.1099999999999999, -14.390000000000001, -25.539999999999999],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2979 Mt CO2/yr<br />Reduction: 40.8%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2130 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1298 Mt CO2/yr<br />Reduction: 75.3%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 602 Mt CO2/yr<br />Reduction: 89.5%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 225 Mt CO2/yr<br />Reduction: 95.2%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -14 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -26 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -6229,7 +9319,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6281,7 +9371,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6290,6 +9380,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_eedEff_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_eedEff_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2989.3099999999999, 2145.6399999999999, 1366.3299999999999, 664.39999999999998, 246.18000000000001, -2.6299999999999999, -40.689999999999998, -104.26000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2989 Mt CO2/yr<br />Reduction: 40.6%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2146 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1366 Mt CO2/yr<br />Reduction: 74%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 664 Mt CO2/yr<br />Reduction: 88.2%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 246 Mt CO2/yr<br />Reduction: 94.8%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -41 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -104 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_eedEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_eedEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -6324,6 +9440,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2971.8699999999999, 2130.6700000000001, 1434.49, 787.16999999999996, 319.81, -7.6699999999999999, -92.790000000000006, -168.87],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2972 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2131 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1434 Mt CO2/yr<br />Reduction: 72.6%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 787 Mt CO2/yr<br />Reduction: 85.8%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 320 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -93 Mt CO2/yr<br />Reduction: 102%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -169 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_eedEff_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_eedEff_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2972.8699999999999, 2128.8600000000001, 1348.1400000000001, 672.11000000000001, 248.74000000000001, -18.260000000000002, -44.899999999999999, -66.849999999999994],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2973 Mt CO2/yr<br />Reduction: 40.9%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2129 Mt CO2/yr<br />Reduction: 58.3%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1348 Mt CO2/yr<br />Reduction: 74.4%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 672 Mt CO2/yr<br />Reduction: 88.1%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 249 Mt CO2/yr<br />Reduction: 94.7%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -45 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -67 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -6333,7 +9475,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6385,7 +9527,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6394,6 +9536,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_eedEff_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_eedEff_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2976.0300000000002, 2133.4200000000001, 1455.77, 815.00999999999999, 333.02999999999997, -6.5999999999999996, -65.180000000000007, -105.16],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2976 Mt CO2/yr<br />Reduction: 40.8%<br />Period: 2025<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2133 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1456 Mt CO2/yr<br />Reduction: 72.2%<br />Period: 2035<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 815 Mt CO2/yr<br />Reduction: 85.2%<br />Period: 2040<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 333 Mt CO2/yr<br />Reduction: 92.9%<br />Period: 2045<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -7 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -65 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -105 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_57_eedEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_eedEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_eedEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -6428,6 +9596,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2941.9099999999999, 2127.4299999999998, 1466.4000000000001, 811.91999999999996, 331.56, 2.4700000000000002, -83.379999999999995, -170.91],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2942 Mt CO2/yr<br />Reduction: 41.5%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2127 Mt CO2/yr<br />Reduction: 58.1%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1466 Mt CO2/yr<br />Reduction: 71.7%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 812 Mt CO2/yr<br />Reduction: 85%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 332 Mt CO2/yr<br />Reduction: 93%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -171 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio12_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_ff55Eff_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_ff55Eff_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2940.96, 2121.0599999999999, 1368.22, 668.82000000000005, 259.19, 6.9100000000000001, -35.810000000000002, -71.75],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2941 Mt CO2/yr<br />Reduction: 41.5%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2121 Mt CO2/yr<br />Reduction: 58.2%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1368 Mt CO2/yr<br />Reduction: 73.7%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 669 Mt CO2/yr<br />Reduction: 87.9%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 259 Mt CO2/yr<br />Reduction: 94.5%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 7 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -36 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -6437,7 +9631,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6489,7 +9683,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6498,6 +9692,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_ff55Eff_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_ff55Eff_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2954.27, 2133.8000000000002, 1457.76, 795.57000000000005, 345.00999999999999, 17.289999999999999, -57.399999999999999, -129.47],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2954 Mt CO2/yr<br />Reduction: 41.2%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2134 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1458 Mt CO2/yr<br />Reduction: 71.9%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 796 Mt CO2/yr<br />Reduction: 85.3%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 345 Mt CO2/yr<br />Reduction: 92.7%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 17 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -129 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_ff55Eff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_ff55Eff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -6532,6 +9752,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2943, 2133.0900000000001, 1497.95, 886.78999999999996, 405.19999999999999, 7.8300000000000001, -54.630000000000003, -138.28],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2943 Mt CO2/yr<br />Reduction: 41.5%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2133 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1498 Mt CO2/yr<br />Reduction: 70.9%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 887 Mt CO2/yr<br />Reduction: 83.2%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 405 Mt CO2/yr<br />Reduction: 91.4%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 8 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -55 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -138 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio20_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_ff55Eff_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_ff55Eff_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2942.54, 2130.96, 1463.75, 813.64999999999998, 308.48000000000002, -8.5700000000000003, -26.920000000000002, -69.959999999999994],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2943 Mt CO2/yr<br />Reduction: 41.5%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2131 Mt CO2/yr<br />Reduction: 58%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1464 Mt CO2/yr<br />Reduction: 71.6%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 814 Mt CO2/yr<br />Reduction: 84.7%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 308 Mt CO2/yr<br />Reduction: 93.4%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -27 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -70 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -6541,7 +9787,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6593,7 +9839,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6602,6 +9848,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_ff55Eff_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_ff55Eff_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2960.73, 2149.3000000000002, 1529.3900000000001, 897.01999999999998, 363.95999999999998, -4.1799999999999997, -59.640000000000001, -140.72999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2961 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2149 Mt CO2/yr<br />Reduction: 57.6%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1529 Mt CO2/yr<br />Reduction: 70.3%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 897 Mt CO2/yr<br />Reduction: 83%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 364 Mt CO2/yr<br />Reduction: 92.3%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -4 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -60 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -141 Mt CO2/yr<br />Reduction: 103%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_ff55Eff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_ff55Eff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -6636,6 +9908,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2953.0799999999999, 2131.0100000000002, 1314.8299999999999, 596.71000000000004, 233.72999999999999, 15.470000000000001, -17.469999999999999, -45.299999999999997],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2953 Mt CO2/yr<br />Reduction: 41.2%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2131 Mt CO2/yr<br />Reduction: 58%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1315 Mt CO2/yr<br />Reduction: 74.8%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 597 Mt CO2/yr<br />Reduction: 89.4%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 234 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 15 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -45 Mt CO2/yr<br />Reduction: 101%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio4_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_ff55Eff_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_ff55Eff_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2954.0700000000002, 2134.6399999999999, 1332.5699999999999, 612.92999999999995, 240.25999999999999, 14.800000000000001, -19.82, -47.979999999999997],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2954 Mt CO2/yr<br />Reduction: 41.2%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2135 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1333 Mt CO2/yr<br />Reduction: 74.4%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 613 Mt CO2/yr<br />Reduction: 89.1%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 240 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 15 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -20 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -48 Mt CO2/yr<br />Reduction: 101%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -6645,7 +9943,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6697,7 +9995,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6706,6 +10004,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_ff55Eff_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_ff55Eff_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2973.9299999999998, 2137.7399999999998, 1345.6500000000001, 634.45000000000005, 242.81999999999999, 13.59, -20.48, -51.68],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2974 Mt CO2/yr<br />Reduction: 40.8%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2138 Mt CO2/yr<br />Reduction: 57.9%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1346 Mt CO2/yr<br />Reduction: 74.2%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 634 Mt CO2/yr<br />Reduction: 88.6%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 243 Mt CO2/yr<br />Reduction: 94.8%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 14 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -20 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -52 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_ff55Eff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_ff55Eff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -6740,6 +10064,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2944.1399999999999, 2128.4899999999998, 1438.6400000000001, 750.37, 298.22000000000003, -17.670000000000002, -99.900000000000006, -190.22999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2944 Mt CO2/yr<br />Reduction: 41.4%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2128 Mt CO2/yr<br />Reduction: 58.1%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1439 Mt CO2/yr<br />Reduction: 72.3%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 750 Mt CO2/yr<br />Reduction: 86.3%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 298 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -100 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -190 Mt CO2/yr<br />Reduction: 104%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_ff55Eff_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_ff55Eff_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2945.0599999999999, 2125.6199999999999, 1375.23, 670.22000000000003, 253.78, -6.2000000000000002, -47.789999999999999, -81],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2945 Mt CO2/yr<br />Reduction: 41.4%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2126 Mt CO2/yr<br />Reduction: 58.1%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1375 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 670 Mt CO2/yr<br />Reduction: 87.9%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 254 Mt CO2/yr<br />Reduction: 94.6%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -6 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -48 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -81 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -6749,7 +10099,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6801,7 +10151,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6810,6 +10160,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_ff55Eff_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_ff55Eff_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2960.9200000000001, 2140.8299999999999, 1460.5799999999999, 779.89999999999998, 317.43000000000001, -17.949999999999999, -89.909999999999997, -149.25999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2961 Mt CO2/yr<br />Reduction: 41.1%<br />Period: 2025<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2141 Mt CO2/yr<br />Reduction: 57.8%<br />Period: 2030<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1461 Mt CO2/yr<br />Reduction: 71.8%<br />Period: 2035<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 780 Mt CO2/yr<br />Reduction: 85.7%<br />Period: 2040<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 317 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -90 Mt CO2/yr<br />Reduction: 101.9%<br />Period: 2055<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -149 Mt CO2/yr<br />Reduction: 103.2%<br />Period: 2060<br />Scenario: Nzero_57_ff55Eff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_ff55Eff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_ff55Eff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -6844,6 +10220,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2887.2600000000002, 2055.46, 1385.8900000000001, 772.01999999999998, 320.43000000000001, -3.2000000000000002, -75.700000000000003, -168.53],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2887 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2055 Mt CO2/yr<br />Reduction: 59.4%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1386 Mt CO2/yr<br />Reduction: 73.2%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 772 Mt CO2/yr<br />Reduction: 85.7%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 320 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -76 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -169 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio12_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_RpEUEff_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_RpEUEff_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2876.3899999999999, 2014.3900000000001, 1299.79, 652.16999999999996, 264.77999999999997, 15.92, -26.52, -70.870000000000005],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2876 Mt CO2/yr<br />Reduction: 42.8%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2014 Mt CO2/yr<br />Reduction: 60.3%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1300 Mt CO2/yr<br />Reduction: 74.9%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 652 Mt CO2/yr<br />Reduction: 88.1%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 265 Mt CO2/yr<br />Reduction: 94.4%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 16 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -27 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -71 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio12_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -6853,7 +10255,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6905,7 +10307,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -6914,6 +10316,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_RpEUEff_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_RpEUEff_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2899.46, 2081.6999999999998, 1411.5999999999999, 742.44000000000005, 301.11000000000001, -9.0500000000000007, -80.25, -152.34999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2899 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2082 Mt CO2/yr<br />Reduction: 58.9%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1412 Mt CO2/yr<br />Reduction: 72.6%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 742 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 301 Mt CO2/yr<br />Reduction: 93.6%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -80 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -152 Mt CO2/yr<br />Reduction: 103.2%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio12_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_RpEUEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_RpEUEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -6948,6 +10376,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2877.3400000000001, 2023.47, 1381.1500000000001, 781.04999999999995, 319.10000000000002, -4.8399999999999999, -47.450000000000003, -120.72],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2877 Mt CO2/yr<br />Reduction: 42.8%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2023 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1381 Mt CO2/yr<br />Reduction: 73.2%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 781 Mt CO2/yr<br />Reduction: 85.2%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 319 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -5 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -47 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -121 Mt CO2/yr<br />Reduction: 102.6%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio20_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_RpEUEff_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_RpEUEff_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2880.54, 2046.53, 1374.0599999999999, 749.01999999999998, 260.08999999999997, -17.48, -30.800000000000001, -69.620000000000005],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2881 Mt CO2/yr<br />Reduction: 42.7%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2047 Mt CO2/yr<br />Reduction: 59.6%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1374 Mt CO2/yr<br />Reduction: 73.3%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 749 Mt CO2/yr<br />Reduction: 85.8%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 260 Mt CO2/yr<br />Reduction: 94.5%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -31 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -70 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio20_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -6957,7 +10411,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7009,7 +10463,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7018,6 +10472,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_RpEUEff_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_RpEUEff_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2892.6100000000001, 2063.5300000000002, 1430.3599999999999, 833.73000000000002, 314.44999999999999, 4.0700000000000003, -40.07, -112.01000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2893 Mt CO2/yr<br />Reduction: 42.5%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2064 Mt CO2/yr<br />Reduction: 59.2%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1430 Mt CO2/yr<br />Reduction: 72.1%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 834 Mt CO2/yr<br />Reduction: 84.1%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 314 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 4 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -40 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -112 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio20_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_RpEUEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_RpEUEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -7052,6 +10532,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2889.79, 2037.4100000000001, 1270.5799999999999, 593.39999999999998, 234.63, 11.6, -27.149999999999999, -67.599999999999994],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2890 Mt CO2/yr<br />Reduction: 42.5%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2037 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1271 Mt CO2/yr<br />Reduction: 75.5%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 593 Mt CO2/yr<br />Reduction: 89.3%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 235 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 12 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -27 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -68 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio4_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_RpEUEff_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_RpEUEff_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2876.9699999999998, 2004.0999999999999, 1232.1199999999999, 575.64999999999998, 220.03, 0.11, -34.170000000000002, -67.680000000000007],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2877 Mt CO2/yr<br />Reduction: 42.8%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2004 Mt CO2/yr<br />Reduction: 60.5%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1232 Mt CO2/yr<br />Reduction: 76.3%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 576 Mt CO2/yr<br />Reduction: 89.7%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 220 Mt CO2/yr<br />Reduction: 95.3%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 0 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -34 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -68 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio4_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -7061,7 +10567,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7113,7 +10619,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7122,6 +10628,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_RpEUEff_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_RpEUEff_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2909.9899999999998, 2079.8800000000001, 1360.3900000000001, 674.70000000000005, 257.44, 18.25, -18.23, -53.539999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2910 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2080 Mt CO2/yr<br />Reduction: 58.9%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1360 Mt CO2/yr<br />Reduction: 73.7%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 675 Mt CO2/yr<br />Reduction: 87.7%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 257 Mt CO2/yr<br />Reduction: 94.5%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 18 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -54 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio4_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_RpEUEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_RpEUEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -7156,6 +10688,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2886.73, 2051.5500000000002, 1370.04, 746.13999999999999, 297.45999999999998, -8.8800000000000008, -77.180000000000007, -168.37],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2887 Mt CO2/yr<br />Reduction: 42.6%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2052 Mt CO2/yr<br />Reduction: 59.5%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1370 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 746 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 297 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -77 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -168 Mt CO2/yr<br />Reduction: 103.6%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio7p5_CC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_RpEUEff_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_57_RpEUEff_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2868.3899999999999, 1988.8, 1255.54, 609.91999999999996, 234.91, -15.960000000000001, -53.009999999999998, -90.269999999999996],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2868 Mt CO2/yr<br />Reduction: 43%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1989 Mt CO2/yr<br />Reduction: 60.8%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1256 Mt CO2/yr<br />Reduction: 75.8%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 610 Mt CO2/yr<br />Reduction: 88.9%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 235 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -16 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -53 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -90 Mt CO2/yr<br />Reduction: 101.9%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio7p5_limCC<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -7165,7 +10723,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7217,7 +10775,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7226,6 +10784,32 @@
       "hoveron": "points",
       "name": "(Nzero_57_RpEUEff_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_57_RpEUEff_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2900.3000000000002, 2082, 1417.4100000000001, 758.66999999999996, 318.49000000000001, 4.2599999999999998, -65.239999999999995, -137.19999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2900 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2082 Mt CO2/yr<br />Reduction: 58.9%<br />Period: 2030<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1417 Mt CO2/yr<br />Reduction: 72.5%<br />Period: 2035<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 759 Mt CO2/yr<br />Reduction: 85.9%<br />Period: 2040<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 318 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 4 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -65 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -137 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_57_RpEUEff_bio7p5_limVRE3<br />Target 2030: 57%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_57_RpEUEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_57_RpEUEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -7260,6 +10844,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2910.4499999999998, 2044.22, 1336.1300000000001, 737.75999999999999, 304.60000000000002, 7.8300000000000001, -83.370000000000005, -154.53],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2910 Mt CO2/yr<br />Reduction: 42.2%<br />Period: 2025<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2044 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1336 Mt CO2/yr<br />Reduction: 74.6%<br />Period: 2035<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 738 Mt CO2/yr<br />Reduction: 86.9%<br />Period: 2040<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 305 Mt CO2/yr<br />Reduction: 93.5%<br />Period: 2045<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 8 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -155 Mt CO2/yr<br />Reduction: 103.3%<br />Period: 2060<br />Scenario: Nzero_59_bio12_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2919.2399999999998, 2046.72, 1272.96, 621.39999999999998, 241.65000000000001, 2.04, -31.010000000000002, -53.939999999999998],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio12_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2919 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_bio12_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2047 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_bio12_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1273 Mt CO2/yr<br />Reduction: 75.9%<br />Period: 2035<br />Scenario: Nzero_59_bio12_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 621 Mt CO2/yr<br />Reduction: 89.1%<br />Period: 2040<br />Scenario: Nzero_59_bio12_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 242 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_59_bio12_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_59_bio12_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -31 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_59_bio12_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -54 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2060<br />Scenario: Nzero_59_bio12_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -7269,7 +10879,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7321,7 +10931,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7330,6 +10940,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2897.4899999999998, 2039.9000000000001, 1335.46, 705.41999999999996, 266.99000000000001, -16.07, -61.530000000000001, -111.5],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2897 Mt CO2/yr<br />Reduction: 42.4%<br />Period: 2025<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2040 Mt CO2/yr<br />Reduction: 60.1%<br />Period: 2030<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1335 Mt CO2/yr<br />Reduction: 74.6%<br />Period: 2035<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 705 Mt CO2/yr<br />Reduction: 87.4%<br />Period: 2040<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 267 Mt CO2/yr<br />Reduction: 94.3%<br />Period: 2045<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -16 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -62 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2055<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -112 Mt CO2/yr<br />Reduction: 102.4%<br />Period: 2060<br />Scenario: Nzero_59_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -7364,6 +11000,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2915.1199999999999, 2047.3199999999999, 1371.48, 825.70000000000005, 403.76999999999998, -0.25, -68.599999999999994, -140.61000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2915 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2047 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1371 Mt CO2/yr<br />Reduction: 73.8%<br />Period: 2035<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 826 Mt CO2/yr<br />Reduction: 84.9%<br />Period: 2040<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 404 Mt CO2/yr<br />Reduction: 91.4%<br />Period: 2045<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 0 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -141 Mt CO2/yr<br />Reduction: 103%<br />Period: 2060<br />Scenario: Nzero_59_bio20_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2917.0999999999999, 2039.3599999999999, 1341, 771.75, 368.36000000000001, 16.390000000000001, -16.039999999999999, -47.799999999999997],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio20_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2917 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_bio20_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2039 Mt CO2/yr<br />Reduction: 60.1%<br />Period: 2030<br />Scenario: Nzero_59_bio20_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1341 Mt CO2/yr<br />Reduction: 74.5%<br />Period: 2035<br />Scenario: Nzero_59_bio20_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 772 Mt CO2/yr<br />Reduction: 85.9%<br />Period: 2040<br />Scenario: Nzero_59_bio20_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 368 Mt CO2/yr<br />Reduction: 92.2%<br />Period: 2045<br />Scenario: Nzero_59_bio20_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 16 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_bio20_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -16 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2055<br />Scenario: Nzero_59_bio20_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -48 Mt CO2/yr<br />Reduction: 101%<br />Period: 2060<br />Scenario: Nzero_59_bio20_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -7373,7 +11035,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7425,7 +11087,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7434,6 +11096,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2899.7600000000002, 2033.8800000000001, 1386.23, 826.63999999999999, 379.29000000000002, -8.0199999999999996, -56.630000000000003, -116.43000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2900 Mt CO2/yr<br />Reduction: 42.4%<br />Period: 2025<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2034 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1386 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 827 Mt CO2/yr<br />Reduction: 84.8%<br />Period: 2040<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 379 Mt CO2/yr<br />Reduction: 91.9%<br />Period: 2045<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -116 Mt CO2/yr<br />Reduction: 102.5%<br />Period: 2060<br />Scenario: Nzero_59_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -7468,6 +11156,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2915.4699999999998, 2042.0599999999999, 1302.8, 672.05999999999995, 280.80000000000001, 5.5599999999999996, -98.200000000000003, -280.86000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2915 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2042 Mt CO2/yr<br />Reduction: 60.1%<br />Period: 2030<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1303 Mt CO2/yr<br />Reduction: 75.3%<br />Period: 2035<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 672 Mt CO2/yr<br />Reduction: 88.2%<br />Period: 2040<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 281 Mt CO2/yr<br />Reduction: 94%<br />Period: 2045<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 6 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -98 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2055<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -281 Mt CO2/yr<br />Reduction: 106%<br />Period: 2060<br />Scenario: Nzero_59_bio4_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2930.5900000000001, 2061.3099999999999, 1253.24, 580.83000000000004, 231.75999999999999, 16.309999999999999, 2.2599999999999998, -8.7799999999999994],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio4_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2931 Mt CO2/yr<br />Reduction: 41.8%<br />Period: 2025<br />Scenario: Nzero_59_bio4_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2061 Mt CO2/yr<br />Reduction: 59.7%<br />Period: 2030<br />Scenario: Nzero_59_bio4_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1253 Mt CO2/yr<br />Reduction: 76.3%<br />Period: 2035<br />Scenario: Nzero_59_bio4_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 581 Mt CO2/yr<br />Reduction: 89.9%<br />Period: 2040<br />Scenario: Nzero_59_bio4_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 232 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_59_bio4_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 16 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_bio4_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2055<br />Scenario: Nzero_59_bio4_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2060<br />Scenario: Nzero_59_bio4_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -7477,7 +11191,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7529,7 +11243,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7538,6 +11252,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2913.8699999999999, 2045.7, 1269.9100000000001, 605.83000000000004, 234.63999999999999, 14.57, -14.25, -70.390000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2914 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2046 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1270 Mt CO2/yr<br />Reduction: 75.9%<br />Period: 2035<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 606 Mt CO2/yr<br />Reduction: 89.4%<br />Period: 2040<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 235 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 15 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -14 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2055<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -70 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_59_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -7572,6 +11312,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2904.04, 2041.29, 1321.21, 705.37, 285.99000000000001, 4.4400000000000004, -69.469999999999999, -144.49000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2904 Mt CO2/yr<br />Reduction: 42.3%<br />Period: 2025<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2041 Mt CO2/yr<br />Reduction: 60.1%<br />Period: 2030<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1321 Mt CO2/yr<br />Reduction: 74.9%<br />Period: 2035<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 705 Mt CO2/yr<br />Reduction: 87.5%<br />Period: 2040<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 286 Mt CO2/yr<br />Reduction: 93.9%<br />Period: 2045<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 4 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -144 Mt CO2/yr<br />Reduction: 103.1%<br />Period: 2060<br />Scenario: Nzero_59_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2920.4099999999999, 2051.6199999999999, 1279.97, 617.88, 230.63999999999999, -16.760000000000002, -43.770000000000003, -64.920000000000002],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2920 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2052 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1280 Mt CO2/yr<br />Reduction: 75.8%<br />Period: 2035<br />Scenario: Nzero_59_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 618 Mt CO2/yr<br />Reduction: 89.2%<br />Period: 2040<br />Scenario: Nzero_59_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 231 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_59_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_59_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -44 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_59_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -65 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_59_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -7581,7 +11347,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7633,7 +11399,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7642,6 +11408,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2901.4200000000001, 2043.8, 1348.3900000000001, 726.66999999999996, 298.72000000000003, 12.01, -35.859999999999999, -79.030000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2901 Mt CO2/yr<br />Reduction: 42.4%<br />Period: 2025<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2044 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1348 Mt CO2/yr<br />Reduction: 74.3%<br />Period: 2035<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 727 Mt CO2/yr<br />Reduction: 87%<br />Period: 2040<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 299 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 12 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -36 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -79 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2060<br />Scenario: Nzero_59_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: reference<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -7676,6 +11468,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2912.3499999999999, 2046.25, 1334.5599999999999, 738.5, 302.06999999999999, 9.6199999999999992, -78.730000000000004, -151.06999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2912 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2046 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1335 Mt CO2/yr<br />Reduction: 74.6%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 738 Mt CO2/yr<br />Reduction: 86.8%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 302 Mt CO2/yr<br />Reduction: 93.6%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -79 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -151 Mt CO2/yr<br />Reduction: 103.2%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_eedEff_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_eedEff_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2915.1199999999999, 2034.3599999999999, 1251.79, 604.55999999999995, 230.59, -4.5499999999999998, -35.100000000000001, -58.859999999999999],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2915 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2034 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1252 Mt CO2/yr<br />Reduction: 76.3%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 605 Mt CO2/yr<br />Reduction: 89.4%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 231 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -5 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -35 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -59 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -7685,7 +11503,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7737,7 +11555,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7746,6 +11564,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_eedEff_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_eedEff_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2916.8499999999999, 2054.1100000000001, 1350.5899999999999, 726.13, 286.29000000000002, -5.6500000000000004, -57.840000000000003, -106.41],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2917 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2054 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1351 Mt CO2/yr<br />Reduction: 74.3%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 726 Mt CO2/yr<br />Reduction: 87%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 286 Mt CO2/yr<br />Reduction: 93.9%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -6 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -58 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -106 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_eedEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_eedEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -7780,6 +11624,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2916.3899999999999, 2043.45, 1366.9300000000001, 812.30999999999995, 379.91000000000003, -1.74, -66.790000000000006, -135.38],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2916 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2043 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1367 Mt CO2/yr<br />Reduction: 73.9%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 812 Mt CO2/yr<br />Reduction: 85.1%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 380 Mt CO2/yr<br />Reduction: 91.9%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -67 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -135 Mt CO2/yr<br />Reduction: 102.9%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_eedEff_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_eedEff_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2922.5799999999999, 2047.29, 1340.8199999999999, 760.32000000000005, 338.44, -18.57, -45.229999999999997, -71.930000000000007],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2923 Mt CO2/yr<br />Reduction: 41.9%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2047 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1341 Mt CO2/yr<br />Reduction: 74.4%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 760 Mt CO2/yr<br />Reduction: 86.1%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 338 Mt CO2/yr<br />Reduction: 92.8%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -19 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -45 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -72 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -7789,7 +11659,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7841,7 +11711,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7850,6 +11720,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_eedEff_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_eedEff_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2921.4899999999998, 2052.4000000000001, 1408.71, 857.10000000000002, 400.04000000000002, 2.3500000000000001, -52.270000000000003, -105.81],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2921 Mt CO2/yr<br />Reduction: 41.9%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2052 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1409 Mt CO2/yr<br />Reduction: 73%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 857 Mt CO2/yr<br />Reduction: 84.1%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 400 Mt CO2/yr<br />Reduction: 91.5%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2 Mt CO2/yr<br />Reduction: 100%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -52 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -106 Mt CO2/yr<br />Reduction: 102.2%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_eedEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_eedEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -7884,6 +11780,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2922.1799999999998, 2043.6900000000001, 1296.46, 667.73000000000002, 285.01999999999998, 9.6699999999999999, -91.950000000000003, -262.54000000000002],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2922 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2044 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1296 Mt CO2/yr<br />Reduction: 75.4%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 668 Mt CO2/yr<br />Reduction: 88.2%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 285 Mt CO2/yr<br />Reduction: 93.9%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -92 Mt CO2/yr<br />Reduction: 102%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -263 Mt CO2/yr<br />Reduction: 105.6%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_eedEff_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_eedEff_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2934.5700000000002, 2055.6799999999998, 1235.0599999999999, 560.12, 215.27000000000001, 4.6600000000000001, -6.1799999999999997, -15.550000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2935 Mt CO2/yr<br />Reduction: 41.7%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2056 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1235 Mt CO2/yr<br />Reduction: 76.6%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 560 Mt CO2/yr<br />Reduction: 90.3%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 215 Mt CO2/yr<br />Reduction: 95.4%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 5 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -6 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -16 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -7893,7 +11815,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7945,7 +11867,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -7954,6 +11876,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_eedEff_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_eedEff_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2925.5100000000002, 2056.6900000000001, 1280.8399999999999, 609.54999999999995, 231.16, 10.19, -14.949999999999999, -63.909999999999997],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2926 Mt CO2/yr<br />Reduction: 41.9%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2057 Mt CO2/yr<br />Reduction: 59.7%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1281 Mt CO2/yr<br />Reduction: 75.7%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 610 Mt CO2/yr<br />Reduction: 89.3%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 231 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -15 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -64 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_eedEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_eedEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -7988,6 +11936,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2919.4499999999998, 2051.5500000000002, 1323.25, 716.99000000000001, 298.48000000000002, 9.2899999999999991, -75.450000000000003, -154.77000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2919 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2052 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1323 Mt CO2/yr<br />Reduction: 74.9%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 717 Mt CO2/yr<br />Reduction: 87.3%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 298 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 9 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -155 Mt CO2/yr<br />Reduction: 103.3%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_eedEff_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_eedEff_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2921.6999999999998, 2046.46, 1272.6300000000001, 616.96000000000004, 232.36000000000001, -13.4, -39.68, -60.299999999999997],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2922 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2046 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1273 Mt CO2/yr<br />Reduction: 75.9%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 617 Mt CO2/yr<br />Reduction: 89.2%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 232 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -13 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -40 Mt CO2/yr<br />Reduction: 100.8%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -60 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -7997,7 +11971,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8049,7 +12023,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8058,6 +12032,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_eedEff_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_eedEff_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2916.73, 2052.9400000000001, 1351.51, 721.73000000000002, 284.58999999999997, -3.3999999999999999, -50.030000000000001, -91.629999999999995],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2917 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2053 Mt CO2/yr<br />Reduction: 59.8%<br />Period: 2030<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1352 Mt CO2/yr<br />Reduction: 74.3%<br />Period: 2035<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 722 Mt CO2/yr<br />Reduction: 87.1%<br />Period: 2040<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 285 Mt CO2/yr<br />Reduction: 94%<br />Period: 2045<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -50 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -92 Mt CO2/yr<br />Reduction: 101.9%<br />Period: 2060<br />Scenario: Nzero_59_eedEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: EED 2018 Eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_eedEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_eedEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -8092,6 +12092,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2906.7600000000002, 2025.02, 1334.6400000000001, 720.70000000000005, 301.07999999999998, -7.8899999999999997, -82.920000000000002, -152.93000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2907 Mt CO2/yr<br />Reduction: 42.2%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2025 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1335 Mt CO2/yr<br />Reduction: 74.4%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 721 Mt CO2/yr<br />Reduction: 86.9%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 301 Mt CO2/yr<br />Reduction: 93.6%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -83 Mt CO2/yr<br />Reduction: 101.8%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -153 Mt CO2/yr<br />Reduction: 103.3%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio12_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_ff55Eff_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_ff55Eff_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2911.3699999999999, 2038.8599999999999, 1271.71, 606.49000000000001, 216.43000000000001, -17.719999999999999, -52.640000000000001, -81.129999999999995],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2911 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2039 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1272 Mt CO2/yr<br />Reduction: 75.7%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 606 Mt CO2/yr<br />Reduction: 89.2%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 216 Mt CO2/yr<br />Reduction: 95.4%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -53 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -81 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -8101,7 +12127,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8153,7 +12179,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8162,6 +12188,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_ff55Eff_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_ff55Eff_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2911.8800000000001, 2024.1199999999999, 1349.9200000000001, 754.40999999999997, 316.49000000000001, 8.2400000000000002, -52.93, -108.06999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2912 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2024 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1350 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 754 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 316 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 8 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -53 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -108 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_ff55Eff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_ff55Eff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -8196,6 +12248,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2911.1700000000001, 2022.6199999999999, 1384.55, 804.04999999999995, 341.04000000000002, 6.2300000000000004, -40.5, -109.40000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2911 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2023 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1385 Mt CO2/yr<br />Reduction: 73.3%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 804 Mt CO2/yr<br />Reduction: 84.9%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 341 Mt CO2/yr<br />Reduction: 92.8%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 6 Mt CO2/yr<br />Reduction: 99.9%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -40 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -109 Mt CO2/yr<br />Reduction: 102.3%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio20_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_ff55Eff_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_ff55Eff_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2911.52, 2024.5699999999999, 1349.8699999999999, 741.50999999999999, 298.73000000000002, -4.7300000000000004, -16.75, -44.560000000000002],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2912 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2025 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1350 Mt CO2/yr<br />Reduction: 74%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 742 Mt CO2/yr<br />Reduction: 86.2%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 299 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -5 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -17 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -45 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -8205,7 +12283,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8257,7 +12335,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8266,6 +12344,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_ff55Eff_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_ff55Eff_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2912.5500000000002, 2022.8099999999999, 1390.72, 817.36000000000001, 374.55000000000001, 16.949999999999999, -22.170000000000002, -67.819999999999993],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2913 Mt CO2/yr<br />Reduction: 42.1%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2023 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1391 Mt CO2/yr<br />Reduction: 73.2%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 817 Mt CO2/yr<br />Reduction: 84.7%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 375 Mt CO2/yr<br />Reduction: 92%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 17 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -22 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -68 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_ff55Eff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_ff55Eff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -8300,6 +12404,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2923.21, 2037.0599999999999, 1222.73, 589.64999999999998, 228.41999999999999, -2.8900000000000001, -53.060000000000002, -121.09],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2923 Mt CO2/yr<br />Reduction: 41.9%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2037 Mt CO2/yr<br />Reduction: 60%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1223 Mt CO2/yr<br />Reduction: 76.7%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 590 Mt CO2/yr<br />Reduction: 89.6%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 228 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -3 Mt CO2/yr<br />Reduction: 100.1%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -53 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -121 Mt CO2/yr<br />Reduction: 102.6%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio4_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_ff55Eff_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_ff55Eff_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2915.21, 2029.9300000000001, 1231.4000000000001, 605.03999999999996, 241.72999999999999, 16.93, -10.49, -32.5],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2915 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2030 Mt CO2/yr<br />Reduction: 60.1%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1231 Mt CO2/yr<br />Reduction: 76.5%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 605 Mt CO2/yr<br />Reduction: 89.3%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 242 Mt CO2/yr<br />Reduction: 94.9%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 17 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -10 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -32 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -8309,7 +12439,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8361,7 +12491,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8370,6 +12500,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_ff55Eff_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_ff55Eff_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2918.23, 2024.0699999999999, 1263.45, 616.19000000000005, 235.77000000000001, 13.390000000000001, -7.5, -20.57],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2918 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2024 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1263 Mt CO2/yr<br />Reduction: 75.9%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 616 Mt CO2/yr<br />Reduction: 89%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 236 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 13 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -8 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -21 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_ff55Eff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_ff55Eff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -8404,6 +12560,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2917.6300000000001, 2038.48, 1350.54, 733.26999999999998, 320.38999999999999, 14.43, -66.329999999999998, -147.44],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2918 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2038 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1351 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 733 Mt CO2/yr<br />Reduction: 86.7%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 320 Mt CO2/yr<br />Reduction: 93.2%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 14 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -66 Mt CO2/yr<br />Reduction: 101.4%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -147 Mt CO2/yr<br />Reduction: 103.1%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_ff55Eff_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_ff55Eff_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2917.0300000000002, 2037.8900000000001, 1286.8900000000001, 636.08000000000004, 237.19, -11.81, -46.719999999999999, -71.379999999999995],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2917 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2038 Mt CO2/yr<br />Reduction: 59.9%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1287 Mt CO2/yr<br />Reduction: 75.4%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 636 Mt CO2/yr<br />Reduction: 88.6%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 237 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -12 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -47 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -71 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -8413,7 +12595,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8465,7 +12647,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8474,6 +12656,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_ff55Eff_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_ff55Eff_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2916.5700000000002, 2025.8099999999999, 1350.52, 742.62, 295.68000000000001, -18.73, -79.620000000000005, -131.28],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2917 Mt CO2/yr<br />Reduction: 42%<br />Period: 2025<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2026 Mt CO2/yr<br />Reduction: 60.2%<br />Period: 2030<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1351 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 743 Mt CO2/yr<br />Reduction: 86.5%<br />Period: 2040<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 296 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -19 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -80 Mt CO2/yr<br />Reduction: 101.7%<br />Period: 2055<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -131 Mt CO2/yr<br />Reduction: 102.8%<br />Period: 2060<br />Scenario: Nzero_59_ff55Eff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: FitFor55 eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_ff55Eff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_ff55Eff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -8508,6 +12716,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2861.0999999999999, 1973.8299999999999, 1325.3800000000001, 735.09000000000003, 315.56, 18.010000000000002, -56.939999999999998, -149.06],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 2861 Mt CO2/yr<br />Reduction: 43.1%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1974 Mt CO2/yr<br />Reduction: 61.1%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 1325 Mt CO2/yr<br />Reduction: 74.4%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 735 Mt CO2/yr<br />Reduction: 86.4%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 316 Mt CO2/yr<br />Reduction: 93.3%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: 18 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS", "Emissions: -149 Mt CO2/yr<br />Reduction: 103.2%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio12_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_RpEUEff_bio12_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_RpEUEff_bio12_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2875.46, 2013.3499999999999, 1298.54, 651.35000000000002, 263.88999999999999, 15.49, -27.050000000000001, -70.900000000000006],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2875 Mt CO2/yr<br />Reduction: 42.8%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 2013 Mt CO2/yr<br />Reduction: 60.3%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 1299 Mt CO2/yr<br />Reduction: 75%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 651 Mt CO2/yr<br />Reduction: 88.1%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 264 Mt CO2/yr<br />Reduction: 94.4%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: 15 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -27 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS", "Emissions: -71 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio12_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -8517,7 +12751,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8569,7 +12803,7 @@
         "color": "rgba(0,144,171,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8578,6 +12812,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_RpEUEff_bio12_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_RpEUEff_bio12_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2872.27, 2007.6500000000001, 1327.4300000000001, 704.39999999999998, 307.22000000000003, 12.859999999999999, -45.939999999999998, -99.239999999999995],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2872 Mt CO2/yr<br />Reduction: 42.9%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2008 Mt CO2/yr<br />Reduction: 60.4%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1327 Mt CO2/yr<br />Reduction: 74.4%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 704 Mt CO2/yr<br />Reduction: 87%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 307 Mt CO2/yr<br />Reduction: 93.5%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 13 Mt CO2/yr<br />Reduction: 99.7%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -46 Mt CO2/yr<br />Reduction: 101%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -99 Mt CO2/yr<br />Reduction: 102.1%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio12_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim12<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(0,144,171,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_RpEUEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_RpEUEff_bio12_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -8612,6 +12872,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2872.02, 2011.26, 1359.26, 764.20000000000005, 312.32999999999998, 18.210000000000001, -23.010000000000002, -94.609999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2872 Mt CO2/yr<br />Reduction: 42.9%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 2011 Mt CO2/yr<br />Reduction: 60.3%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 1359 Mt CO2/yr<br />Reduction: 73.6%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 764 Mt CO2/yr<br />Reduction: 85.5%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 312 Mt CO2/yr<br />Reduction: 93.4%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: 18 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -23 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS", "Emissions: -95 Mt CO2/yr<br />Reduction: 102%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio20_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_RpEUEff_bio20_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_RpEUEff_bio20_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2860.8899999999999, 1970.6800000000001, 1312.8599999999999, 696.84000000000003, 230.99000000000001, -17.870000000000001, -27.550000000000001, -60.280000000000001],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 2861 Mt CO2/yr<br />Reduction: 43.1%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1971 Mt CO2/yr<br />Reduction: 61.1%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 1313 Mt CO2/yr<br />Reduction: 74.6%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 697 Mt CO2/yr<br />Reduction: 86.9%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: 231 Mt CO2/yr<br />Reduction: 95.1%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -18 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -28 Mt CO2/yr<br />Reduction: 100.6%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS", "Emissions: -60 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio20_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -8621,7 +12907,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8673,7 +12959,7 @@
         "color": "rgba(9,87,134,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8682,6 +12968,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_RpEUEff_bio20_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_RpEUEff_bio20_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2868.0500000000002, 1995.9100000000001, 1362.9000000000001, 771.74000000000001, 307.13999999999999, 16.77, -25.489999999999998, -92.409999999999997],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2868 Mt CO2/yr<br />Reduction: 43%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1996 Mt CO2/yr<br />Reduction: 60.6%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1363 Mt CO2/yr<br />Reduction: 73.5%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 772 Mt CO2/yr<br />Reduction: 85.4%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 307 Mt CO2/yr<br />Reduction: 93.5%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 17 Mt CO2/yr<br />Reduction: 99.6%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -25 Mt CO2/yr<br />Reduction: 100.5%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -92 Mt CO2/yr<br />Reduction: 102%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio20_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim20<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(9,87,134,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_RpEUEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_RpEUEff_bio20_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -8716,6 +13028,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2864.2600000000002, 1975.6900000000001, 1172.1199999999999, 534.96000000000004, 195.03, -12.390000000000001, -44.310000000000002, -75.469999999999999],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 2864 Mt CO2/yr<br />Reduction: 43%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1976 Mt CO2/yr<br />Reduction: 61.1%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 1172 Mt CO2/yr<br />Reduction: 77.6%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 535 Mt CO2/yr<br />Reduction: 90.5%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: 195 Mt CO2/yr<br />Reduction: 95.9%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -12 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -44 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS", "Emissions: -75 Mt CO2/yr<br />Reduction: 101.6%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio4_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_RpEUEff_bio4_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_RpEUEff_bio4_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2864.1700000000001, 1971.8399999999999, 1199.48, 559.86000000000001, 219.52000000000001, 9.9800000000000004, -19.140000000000001, -44.5],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 2864 Mt CO2/yr<br />Reduction: 43%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1972 Mt CO2/yr<br />Reduction: 61.2%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 1199 Mt CO2/yr<br />Reduction: 77%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 560 Mt CO2/yr<br />Reduction: 90%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 220 Mt CO2/yr<br />Reduction: 95.3%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -19 Mt CO2/yr<br />Reduction: 100.4%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS", "Emissions: -45 Mt CO2/yr<br />Reduction: 100.9%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio4_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -8725,7 +13063,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8777,7 +13115,7 @@
         "color": "rgba(174,0,0,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8786,6 +13124,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_RpEUEff_bio4_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_RpEUEff_bio4_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2879.8000000000002, 2004.76, 1222.3, 577.10000000000002, 206.19, -8.5299999999999994, -35.039999999999999, -59.030000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2880 Mt CO2/yr<br />Reduction: 42.7%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2005 Mt CO2/yr<br />Reduction: 60.5%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1222 Mt CO2/yr<br />Reduction: 76.5%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 577 Mt CO2/yr<br />Reduction: 89.7%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 206 Mt CO2/yr<br />Reduction: 95.6%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -9 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -35 Mt CO2/yr<br />Reduction: 100.7%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -59 Mt CO2/yr<br />Reduction: 101.3%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio4_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim4<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(174,0,0,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_RpEUEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_RpEUEff_bio4_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -8820,6 +13184,32 @@
     },
     {
       "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2868.9000000000001, 1997.3399999999999, 1341.1400000000001, 728.65999999999997, 300.93000000000001, 10.02, -57.43, -143.55000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 2869 Mt CO2/yr<br />Reduction: 42.9%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1997 Mt CO2/yr<br />Reduction: 60.6%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 1341 Mt CO2/yr<br />Reduction: 74.1%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 729 Mt CO2/yr<br />Reduction: 86.6%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 301 Mt CO2/yr<br />Reduction: 93.6%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: 10 Mt CO2/yr<br />Reduction: 99.8%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -57 Mt CO2/yr<br />Reduction: 101.2%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS", "Emissions: -144 Mt CO2/yr<br />Reduction: 103.1%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio7p5_CC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: unlimCCS"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "triangle-up",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_RpEUEff_bio7p5_CC,unlimCCS,1,NA)",
+      "legendgroup": "(Nzero_59_RpEUEff_bio7p5_CC,unlimCCS,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
       "y": [3467.8200000000002, 2868.1300000000001, 1991.45, 1257.2, 610.95000000000005, 235.68000000000001, -15.9, -53.390000000000001, -90.719999999999999],
       "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 2868 Mt CO2/yr<br />Reduction: 43%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1991 Mt CO2/yr<br />Reduction: 60.8%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 1257 Mt CO2/yr<br />Reduction: 75.8%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 611 Mt CO2/yr<br />Reduction: 88.9%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: 236 Mt CO2/yr<br />Reduction: 95%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -16 Mt CO2/yr<br />Reduction: 100.3%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -53 Mt CO2/yr<br />Reduction: 101.1%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS", "Emissions: -91 Mt CO2/yr<br />Reduction: 101.9%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio7p5_limCC<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limCCS"],
       "type": "scatter",
@@ -8829,7 +13219,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "square",
+        "symbol": "triangle-down",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8881,7 +13271,7 @@
         "color": "rgba(219,70,70,1)",
         "opacity": 1,
         "size": 11.338582677165356,
-        "symbol": "triangle-up",
+        "symbol": "square",
         "line": {
           "width": 1.8897637795275593,
           "color": "rgba(0,0,0,1)"
@@ -8890,6 +13280,32 @@
       "hoveron": "points",
       "name": "(Nzero_59_RpEUEff_bio7p5_limVRE,limVRE,1,NA)",
       "legendgroup": "(Nzero_59_RpEUEff_bio7p5_limVRE,limVRE,1,NA)",
+      "showlegend": true,
+      "xaxis": "x",
+      "yaxis": "y",
+      "hoverinfo": "text",
+      "frame": null
+    },
+    {
+      "x": [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055, 2060],
+      "y": [3467.8200000000002, 2870.6399999999999, 2002.76, 1323.6500000000001, 702.40999999999997, 298.06, -7.2800000000000002, -68.780000000000001, -126.01000000000001],
+      "text": ["Emissions: 3468 Mt CO2/yr<br />Reduction: 30.7%<br />Period: 2020<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2871 Mt CO2/yr<br />Reduction: 42.9%<br />Period: 2025<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 2003 Mt CO2/yr<br />Reduction: 60.5%<br />Period: 2030<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 1324 Mt CO2/yr<br />Reduction: 74.5%<br />Period: 2035<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 702 Mt CO2/yr<br />Reduction: 87.1%<br />Period: 2040<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: 298 Mt CO2/yr<br />Reduction: 93.7%<br />Period: 2045<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -7 Mt CO2/yr<br />Reduction: 100.2%<br />Period: 2050<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -69 Mt CO2/yr<br />Reduction: 101.5%<br />Period: 2055<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt", "Emissions: -126 Mt CO2/yr<br />Reduction: 102.7%<br />Period: 2060<br />Scenario: Nzero_59_RpEUEff_bio7p5_limVRE3<br />Target 2030: 59%<br />Efficiency: RePowerEU eff<br />Biomass Limit: BioLim7.5<br />Sensititivy limit: limVRE_strgLimInt"],
+      "type": "scatter",
+      "mode": "markers",
+      "marker": {
+        "autocolorscale": false,
+        "color": "rgba(219,70,70,1)",
+        "opacity": 1,
+        "size": 11.338582677165356,
+        "symbol": "square-open-dot",
+        "line": {
+          "width": 1.8897637795275593,
+          "color": "rgba(0,0,0,1)"
+        }
+      },
+      "hoveron": "points",
+      "name": "(Nzero_59_RpEUEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
+      "legendgroup": "(Nzero_59_RpEUEff_bio7p5_limVRE3,limVRE_strgLimInt,1,NA)",
       "showlegend": true,
       "xaxis": "x",
       "yaxis": "y",
@@ -8975,10 +13391,10 @@
       "automargin": true,
       "type": "linear",
       "autorange": false,
-      "range": [-450.791, 5056.9309999999996],
+      "range": [-614.50700000000006, 5064.7269999999999],
       "tickmode": "array",
       "ticktext": ["0", "1000", "2000", "3000", "4000", "5000"],
-      "tickvals": [0, 999.99999999999977, 2000.0000000000002, 3000, 4000, 5000],
+      "tickvals": [0, 999.99999999999977, 2000, 3000, 3999.9999999999995, 5000],
       "categoryorder": "array",
       "categoryarray": ["0", "1000", "2000", "3000", "4000", "5000"],
       "nticks": null,
@@ -9022,6 +13438,7 @@
         },
         "yref": "paper",
         "xref": "paper",
+        "layer": "below",
         "x0": 0,
         "x1": 1,
         "y0": 0,
@@ -9050,39 +13467,39 @@
   },
   "source": "A",
   "attrs": {
-    "54fc45b450f": {
+    "7968412b79e0": {
       "yintercept": {},
       "type": "scatter"
     },
-    "54fc7f022f3b": {
+    "7968709954d7": {
       "xintercept": {}
     },
-    "54fc54383e67": {
+    "79683f3d1eb1": {
       "x": {},
       "y": {},
       "linetype": {},
       "colour": {},
       "text": {}
     },
-    "54fc7ad3633": {
+    "79682b641050": {
       "x": {},
       "y": {},
       "shape": {},
       "fill": {},
       "text": {}
     },
-    "54fc584247f0": {
+    "79687ec97bf5": {
       "x": {},
       "y": {}
     }
   },
-  "cur_data": "54fc45b450f",
+  "cur_data": "7968412b79e0",
   "visdat": {
-    "54fc45b450f": ["function (y) ", "x"],
-    "54fc7f022f3b": ["function (y) ", "x"],
-    "54fc54383e67": ["function (y) ", "x"],
-    "54fc7ad3633": ["function (y) ", "x"],
-    "54fc584247f0": ["function (y) ", "x"]
+    "7968412b79e0": ["function (y) ", "x"],
+    "7968709954d7": ["function (y) ", "x"],
+    "79683f3d1eb1": ["function (y) ", "x"],
+    "79682b641050": ["function (y) ", "x"],
+    "79687ec97bf5": ["function (y) ", "x"]
   },
   "highlight": {
     "on": "plotly_click",

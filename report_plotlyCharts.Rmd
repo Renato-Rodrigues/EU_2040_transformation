@@ -77,6 +77,9 @@ dir.create(jsOutputFolder, recursive = TRUE, showWarnings = FALSE)
 
 ```{r loadAuxFunction, echo=FALSE, include = FALSE}
 
+mainScen <- "Nzero_57_bio7p5"
+tgt2030Scen <- c(55,57,59)
+
 source("./R/plotly2js.R") 
 
 ```
@@ -140,7 +143,7 @@ g <- NULL
     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
     scale_color_manual(values = scenarioColor, guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
     theme_doubleColumn() +
     theme(strip.text.y = element_blank()) +
     #guides(fill = guide_legend(nrow = 2, byrow = T)) +
@@ -202,7 +205,7 @@ g <- NULL
     geom_line(data=h,size=0.5, color = "#000000") +
     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) +   scale_color_manual(values = scenarioColor, guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
     theme_doubleColumn() +
     theme(strip.text.y = element_blank()) +
     #guides(fill = guide_legend(nrow = 2, byrow = T)) +
@@ -262,7 +265,7 @@ g <- NULL
     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
     scale_color_manual(values = scenarioColor, guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
     theme_doubleColumn() +
     theme(strip.text.y = element_blank()) +
     #guides(fill = guide_legend(nrow = 2, byrow = T)) +
@@ -334,7 +337,7 @@ g <- NULL
     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
     scale_color_manual(values = scenarioColor) + 
     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
     theme_doubleColumn() +
     scale_y_continuous(breaks = seq(0, 1, 0.2),labels = scales::percent) +
     expand_limits(y=c(0,1)) +
@@ -393,7 +396,7 @@ g <- NULL
     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
     scale_color_manual(values = scenarioColor) + 
     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
     theme_doubleColumn() +
     theme(legend.position = "none") +
     theme(axis.title.y=element_blank()) 
@@ -438,7 +441,7 @@ g <- NULL
     #scale_color_manual(values = c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786"), guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
     #scale_fill_manual(values = c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e"), guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
     theme_doubleColumn() +
     theme(strip.text.y = element_blank()) +
     #guides(fill = guide_legend(nrow = 2, byrow = T)) +
@@ -490,7 +493,7 @@ g <- NULL
     #scale_color_manual(values = c("reference"="#ae0000", "EED 2018 Eff"="#db4646", "FitFor55 eff"="#0090ab", "RePowerEU eff"="#095786"), guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) + 
     #scale_fill_manual(values = c("BioLim4"="#fedc97", "BioLim7.5"="#b5b682", "BioLim12"="#7c9885", "BioLim20"="#28666e"), guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
     theme_doubleColumn() +
     theme(strip.text.y = element_blank()) +
     #guides(fill = guide_legend(nrow = 2, byrow = T)) +
@@ -554,7 +557,7 @@ g <- NULL
     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
     scale_color_manual(values = scenarioColor) + 
     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
     theme_doubleColumn() +
     theme(legend.position = "none") +
     theme(axis.title.y=element_blank()) 
@@ -610,7 +613,7 @@ g <- NULL
     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
     scale_color_manual(values = scenarioColor) + 
     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
     theme_doubleColumn() +
     theme(legend.position = "none") +
     theme(axis.title.y=element_blank()) 
@@ -679,7 +682,7 @@ g <- NULL
     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) + 
     scale_color_manual(values = scenarioColor) + 
     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) +
-    scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
+    scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) +
     theme_doubleColumn() +
     theme(legend.position = "none") +
     theme(axis.title.y=element_blank()) 
@@ -733,7 +736,7 @@ g <- NULL
 <!--     #geom_line(data=h,size=0.5, color = "#000000") + -->
 <!--     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) +   scale_color_manual(values = scenarioColor, guide = guide_legend(nrow =4, byrow = T, order = 2, override.aes = list(linewidth = 1.5))) +  -->
 <!--     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) + -->
-<!--     scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) + -->
+<!--     scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) + -->
 <!--     theme_doubleColumn() + -->
 <!--     theme(strip.text.y = element_blank()) + -->
 <!--     #guides(fill = guide_legend(nrow = 2, byrow = T)) + -->
@@ -795,7 +798,7 @@ g <- NULL
 <!-- #     scale_linetype_manual(values = c("55"="twodash", "57"="solid", "59"="dashed"), guide = guide_legend(nrow =1, byrow = T, order = 1, override.aes = list(linewidth = 1.5))) +  -->
 <!-- #     scale_color_manual(values = scenarioColor) +  -->
 <!-- #     scale_fill_manual(values = scenarioFill, guide = guide_legend(nrow =2, byrow = T, override.aes = list(shape = 21, size = 8), order = 3)) + -->
-<!-- #     scale_shape_manual(values = c("default"=21,"limCCS"=22,"limH2"=23,"limVRE"=24), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) + -->
+<!-- #     scale_shape_manual(values = c("default"=21,"unlimCCS"=24,"limCCS"=25,"limH2"=23,"limVRE"=22,"limVRE_limInt"=12,"limVRE_strgLimInt"=14), guide = guide_legend(nrow =2, byrow = T, order = 4, override.aes = list(size = 8))) + -->
 <!-- #     theme_doubleColumn() + -->
 <!-- #     theme(legend.position = "none") + -->
 <!-- #     theme(axis.title.y=element_blank())  -->

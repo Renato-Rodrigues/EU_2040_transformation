@@ -40,9 +40,12 @@ modifyData <- function(data){
   )
 
   limList <- c(
-    "limCC" = "limCCS",
-    "limH2" = "limH2",
-    "limVRE" = "limVRE"
+    "CC"     = "unlimCCS",
+    "limCC"  = "limCCS",
+	  "limH2"  = "limH2",
+    "limVRE" = "limVRE",
+	  "limVRE2" = "limVRE_limInt",
+	  "limVRE3" = "limVRE_strgLimInt"
   )
 
   data <- data %>%
@@ -51,7 +54,7 @@ modifyData <- function(data){
       tgt2030 = str_extract(scenario,"(55|57|59)"),
       efficiency = effList[str_extract(scenario,"(eedEff|ff55Eff|RpEUEff)")],
       bioLim = bioLimList[str_extract(scenario,"(bio4|bio7p5|bio12|bio20)")],
-      lim = limList[str_extract(scenario,"(limCC|limH2|limVRE)")]) %>%
+      lim = limList[str_extract(scenario, paste0("(", paste(names(limList)[order(nchar(names(limList)), decreasing = TRUE)], collapse = "|"), ")"))]) %>%
     replace_na(
       list(bioLim = "HiBio", efficiency = "reference", tgt2030 = "none", lim = "default")
       )
@@ -201,12 +204,20 @@ if((forceUpdateData) || ! file.exists(paste0(dataFolder,"/data_EU27andDEU.rds"))
   print("Preparing data")
 
   ### Load data
-  dfFull <- loadMifFiles(dataFolder,read.csv2("./map/filterVars.csv")$variable,forceUpdateData)
+  if (length(list.files(path = dataFolder, pattern = "\\.mif$", full.names = TRUE)) > 0) {
+    dfFull <- loadMifFiles(dataFolder,read.csv2("./map/filterVars.csv")$variable,forceUpdateData)
+  } else {
+    dfFull <- readRDS(paste0(dataFolder,"/data.rds"))
+  }
 
   #modify data
   print("Preparing data - caculating additional variables")
   dfraw <- modifyData(dfFull)
   dfraw <- addVariables(dfraw)
+  
+  #filter out extra scenarios
+  dfraw <- dfraw %>%
+    filter(lim != "limVRE_limInt") # "limVRE_limInt" "limVRE_strgLimInt"
   saveRDS(dfraw,paste0(dataFolder,"/data_EU27andDEU.rds"))
 
 } else {
