@@ -730,16 +730,6 @@ errData <- boxData %>%
     .groups = "drop"
   )
 
-  geom_errorbar(
-    data = errData,
-    inherit.aes = FALSE,
-    aes(xmin = xmin, xmax = xmax, y = ymid),
-    width = 4,
-    colour = "black",
-    linewidth = 0.8
-  ) 
-
-
 g[["2040 Net Emissions - Energy and Industrial Processes - horizontal bar - net only"]] <- plotData %>%
   ggplot(aes(xmid, ymid, fill = ext_Var)) +
   geom_rect(aes(xmin = xmin, xmax = xmax+CCData, ymin = ymin, ymax = ymax,
@@ -824,7 +814,7 @@ grid.draw(g[["Figure 1"]])
 
 ```
 
-Figure 1. Greenhouse gas emissions for scenarios reaching climate neutrality by 2050. Central values are given for the reference scenario (57% reduction by 2030, reference final energy projections, biomass availability limited to 7.5 EJ/yr and default CCS assumption), ranges for the full scenario ensemble. Percentage values in plot (b) are based on GHG emissions with LULUCF and intra-EU aviation for years 2030-2040, and based on GHG emissions with LULUC and all bunkers for years 2045 and 2050. Percentage values in plot (c) stand for residual emissions in a sector compared to 1990 emissions.
+Figure 1. Greenhouse gas emissions for scenarios reaching climate neutrality by 2050. (a) Total greenhouse gas (GHG) emissions (Mt CO₂eq/yr). Dashed line shows historical emissions; solid line shows the reference scenario (57% reduction by 2030, reference final energy projections, biomass availability limited to 7.5 EJ/yr and default CCS assumption), with shading indicating the range across the full scenario ensemble. (b) GHG emission reductions relative to 1990 (%). Bars indicate reference-scenario values; error bars show the scenario range. Labels denote the minimum–maximum reduction across the ensemble. Reductions are based on GHG emissions including LULUCF and intra-EU aviation for 2030–2040, and including LULUCF and all bunkers for 2045–2050. (c) Sectoral breakdown of gross GHG emissions in the reference scenario (Mt CO₂/yr). (d) Sectoral breakdown of residual CO₂ emissions reduction per decade. Bars show residual emissions by sector relative to 1990 levels; percentages indicate the remaining share of sectoral emissions compared to 1990. Error bars indicate the scenario range. Box plots show the median (centre line), interquartile range (box, Q1–Q3), whiskers extending to minimum and maximum values.
 
 ---
 
@@ -1101,7 +1091,8 @@ grid.newpage()
 grid.draw(g[["Figure 2"]])
 
 ```
-Figure 2. Electricity supply and demand. (a) Electricity decarbonisation in terms of shares, (b) upscaling of photovoltaics, and (c) the transition to electricity as the main energy carrier.
+
+Figure 2. Electricity supply and demand. (a) Electricity generation shares by technology in the reference scenario. (b) Upscaling of solar photovoltaics capacity in the reference scenario compared with REPowerEU targets; shaded areas indicate the range across the full scenario ensemble. (c) The transition to electricity as the main energy carrier, shown as the electricity share by sector.
 
 
 ---
@@ -1186,7 +1177,7 @@ g[["Primary Energy"]] <- ggplot(plotData,aes(x=period,y=value)) +
               vjust= c(1.2,1.5,-1,1.5),
               #nudge_x = -1,         # Shift slightly left to avoid overlapping the line start
               fontface = "bold", 
-              size = 4, 
+              #size = 4, 
               show.legend = FALSE) +
     scale_color_manual(values = c(setNames(options$aesthetics$legend$color[names(vars)],vars)), labels = setNames(names(vars), vars)) +
     scale_fill_manual(values = c(setNames(options$aesthetics$legend$color[names(vars)],vars)), labels = setNames(names(vars), vars)) +
@@ -1433,7 +1424,7 @@ grid.draw(g[["Figure 3"]])
 
 ```
 
-Figure 3. Fuel Supply and Demand. Primary Energy use (a), fossil energy carriers trade (b), Gases final energy demand (c), hydrogen production (d).
+Figure 3. Fuel Supply and Demand. (a) Primary Energy demand by fuel. (b) Net imports of fossil energy carriers. (c) Final energy demand for gaseous fuels. (d) Hydrogen production by supply type. Box plots show the median (centre line), interquartile range (box, Q1–Q3), whiskers extending to minimum and maximum values. 
 
 ---
 
@@ -1997,7 +1988,7 @@ grid.draw(g[["Figure 4"]])
 
 ```
 
-Figure 4. Sectoral transformation indicators. (a) Transport final energy; (b) Light duty vehicles sales shares (bars) and share of ICEs in total LDV stock (line); (c) Useful energy demand for heating in buildings; (d) Industry emissions; (e) Carbon Capture and Storage by activity (upper bar), origin (middle bar) and by destination (lower bar).
+Figure 4. Sectoral transformation indicators. (a) Transport final energy; (b) Light duty vehicles sales shares (bars) and share of ICEs in total LDV stock (line); (c) Useful energy demand for heating in buildings; (d) Industry emissions; (e) Carbon Capture and Storage by activity (upper bar), origin (middle bar) and by destination (lower bar). Box plots show the median (centre line), interquartile range (box, Q1–Q3), whiskers extending to minimum and maximum values.
 
 ---
 
@@ -2518,7 +2509,7 @@ grid.draw(g[["Figure 5"]])
 
 ```
 
-Figure 5. Comparison of key energy transformation indicators including fit-for-55 policy targets for 2030 and 2040. Red cross symbols represent the results of the reference scenario. Box-plots show the range from first to third quartile of the sensitivity scenarios, while the shaded areas show the distribution of the scenario results. More information about the chart symbols and indicators can be found at the supplementary notes. 
+Figure 5. Comparison of key energy transformation indicators including fit-for-55 policy targets for 2030 and 2040. Red cross symbols represent the results of the reference scenario. Box plots show the median (centre line), interquartile range (box, Q1–Q3), whiskers extending to minimum and maximum values of the sensitivity scenarios, while the shaded areas show the distribution of the scenario results. More information about the chart symbols and indicators can be found at the supplementary notes. 
 
 
 <!-- ```{r, echo=FALSE, include=FALSE} -->
@@ -2749,6 +2740,7 @@ grid.newpage()
 grid.draw(g[["Supplementary figure 1"]])
 
 ```
+
 Supplementary figure 1. EU-27 carbon price. Carbon price across all scenarios (a), and variation per sensitivity dimension (b). The black line in (a) and red cross symbols in (b) represent the results of the reference scenario. Box-plots in (b) show the range from first to third quartile of the sensitivity scenarios.
 
 ---
@@ -2831,6 +2823,7 @@ ggsave(paste0(outChartsFolder,"/png/Supplementary figure 2. EU-27 mitigation cos
 g[["Supplementary figure 2"]]
 
 ```
+
 Supplementary figure 2. EU-27 mitigation costs. Energy supply investments in the reference scenario.
 
 
@@ -3477,6 +3470,7 @@ grid.newpage()
 grid.draw(g[["Supplementary figure 5"]])
 
 ```
+
 Supplementary figure 5. EU-27 Emissions. Energy and non-energy use in the reference scenario (a) per sector and carrier and (b) per fossil content.
 
 ---
