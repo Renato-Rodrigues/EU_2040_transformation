@@ -436,7 +436,12 @@ plotData <- plotData %>%
 
 g[["target"]] <- ggplot(data=plotData,aes(x=period,y=reduction,fill=bar)) +
   geom_bar(data=plotData %>% filter(scenario == mainScen), stat='identity', show.legend = FALSE, alpha = 0.7, color="black") +
-  geom_errorbar(aes(ymin=min, ymax=max), width=1, colour="black", alpha=0.9, linewidth=1.3) +
+  geom_errorbar(aes(ymin=min, ymax=max), width=2, colour="black", alpha=0.9, linewidth=1.3) +
+  geom_boxplot(data = plotData, 
+               aes(x=period, y=reduction, group=period),
+               fill = "white",
+               outlier.shape = NA, 
+               width=2) +
   geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
   scale_fill_manual(values = c("emi" = "black", "2040" = "#5a788b")) + 
   guides(y = "none") +
@@ -681,7 +686,7 @@ plotData <- fulldata %>%
          ymax = ymid + 4, ymin = ymid - 4,
          xmin = c(0, head(cumsum(value), -1)),
          xmax = cumsum(value),
-         xmid = (xmax + xmin) / 2,
+         xmid = (xmax + xmin) / 2
          ) %>%
   ungroup() %>%
   filter(complement == FALSE)
@@ -697,14 +702,60 @@ plotData <- fulldata %>%
 #    mutate(diff= round(net-mean,2),
 #           pctg=round((diff/net)*100,2))
 
+boxData <- fulldata %>%
+  filter(period == 2040) %>%
+  group_by(variable, scenario) %>%
+  summarize(
+    net = sum(net),
+    CCData = sum(CCData),
+    .groups = "drop"
+  ) %>%
+  left_join(
+    plotData %>%
+      filter(period == 2040) %>%
+      select(variable, xmin),
+    by = "variable"
+  ) %>%
+  mutate(
+    x = xmin + net,   # shifted by main-scenario 2040 stack
+    ymid = 2040
+  )
+
+errData <- boxData %>%
+  group_by(variable) %>%
+  summarize(
+    xmin = quantile(x, 0),
+    xmax = quantile(x, 1),
+    ymid = 2040,
+    .groups = "drop"
+  )
 
 g[["2040 Net Emissions - Energy and Industrial Processes - horizontal bar - net only"]] <- plotData %>%
   ggplot(aes(xmid, ymid, fill = ext_Var)) +
   geom_rect(aes(xmin = xmin, xmax = xmax+CCData, ymin = ymin, ymax = ymax,
                 alpha = factor(period), color = variable)) +
-  geom_errorbar(data=plotData %>% filter(period == 2040), aes(xmin=xmax-value+min+CCData, xmax=xmax-value+max+CCData), width=4, colour="black", alpha=0.9, linewidth=0.8) +
+  geom_errorbar(
+    data = errData,
+    inherit.aes = FALSE,
+    aes(xmin = xmin, xmax = xmax, y = ymid),
+    width = 4,
+    colour = "black",
+    linewidth = 0.8, 
+    position = "identity"
+  ) +
+  geom_boxplot(
+    data = boxData,
+    aes(x = x, y = ymid, group = variable),
+    inherit.aes = FALSE,
+    width = 4,
+    fill = "white",
+    color = "black",
+    linewidth = 0.6,
+    outlier.shape = NA, 
+    position = "identity"
+  ) +
   geom_text(data=plotData %>% filter(period == 1990), aes(y = 2005, label = labels, group = labels, hjust=1, angle = 90), vjust=0.5, hjust=1.1, na.rm=TRUE, size = geomText.size * 0.8, angle = 90, lineheight = 0.8) +
-  geom_text(data=plotData %>% filter(period == 2040), aes(x=xmid , y = 2045, label = pct1990), vjust=0.5, hjust=-0.1, na.rm=TRUE, size = geomText.size * 0.8, angle = 90) +
+  geom_text(data=plotData %>% filter(period == 2040), aes(x=xmin + (xmax-xmin)/2, y = 2045, label = pct1990), vjust=0.5, hjust=-0.1, na.rm=TRUE, size = geomText.size * 0.8, angle = 90) +
   scale_fill_manual(values = c(setNames(plotColor[names(vars)],vars)), labels = setNames(names(vars), vars)) + 
   scale_alpha_manual(values = c(0.2, 0.2, 0.3, 1)) +
   scale_color_manual(values = c(setNames(plotColor[names(vars)],vars)), labels = setNames(names(vars), vars)) +
@@ -721,6 +772,9 @@ g[["2040 Net Emissions - Energy and Industrial Processes - horizontal bar - net 
         axis.title.y=element_blank(),
         plot.margin = margin(t = 25, r = 0, b = 60, l = 0, unit = "pt"),
         plot.title = element_text(margin=margin(t=0,r=0,b=35,l=0), hjust=1))
+
+
+
 
 ```
 
@@ -760,7 +814,7 @@ grid.draw(g[["Figure 1"]])
 
 ```
 
-Figure 1. Greenhouse gas emissions for scenarios reaching climate neutrality by 2050. Central values are given for the reference scenario (57% reduction by 2030, reference final energy projections, biomass availability limited to 7.5 EJ/yr and default CCS assumption), ranges for the full scenario ensemble. Percentage values in plot (b) are based on GHG emissions with LULUCF and intra-EU aviation for years 2030-2040, and based on GHG emissions with LULUC and all bunkers for years 2045 and 2050. Percentage values in plot (c) stand for residual emissions in a sector compared to 1990 emissions.
+Figure 1. Greenhouse gas emissions for scenarios reaching climate neutrality by 2050. (a) Total greenhouse gas (GHG) emissions (Mt CO₂eq/yr). Dashed line shows historical emissions; solid line shows the reference scenario (57% reduction by 2030, reference final energy projections, biomass availability limited to 7.5 EJ/yr and default CCS assumption), with shading indicating the range across the full scenario ensemble. (b) GHG emission reductions relative to 1990 (%). Bars indicate reference-scenario values; error bars show the scenario range. Labels denote the minimum–maximum reduction across the ensemble. Reductions are based on GHG emissions including LULUCF and intra-EU aviation for 2030–2040, and including LULUCF and all bunkers for 2045–2050. (c) Sectoral breakdown of gross GHG emissions in the reference scenario (Mt CO₂/yr). (d) Sectoral breakdown of residual CO₂ emissions reduction per decade. Bars show residual emissions by sector relative to 1990 levels; percentages indicate the remaining share of sectoral emissions compared to 1990. Error bars indicate the scenario range. Box plots show the median (centre line), interquartile range (box, Q1–Q3), whiskers extending to minimum and maximum values.
 
 ---
 
@@ -1037,7 +1091,8 @@ grid.newpage()
 grid.draw(g[["Figure 2"]])
 
 ```
-Figure 2. Electricity supply and demand. (a) Electricity decarbonisation in terms of shares, (b) upscaling of photovoltaics, and (c) the transition to electricity as the main energy carrier.
+
+Figure 2. Electricity supply and demand. (a) Electricity generation shares by technology in the reference scenario. (b) Upscaling of solar photovoltaics capacity in the reference scenario compared with REPowerEU targets; shaded areas indicate the range across the full scenario ensemble. (c) The transition to electricity as the main energy carrier, shown as the electricity share by sector.
 
 
 ---
@@ -1093,6 +1148,17 @@ if(energyInMtoe){
            unit = "Mtoe/yr")
 }
 
+label_map <- c("PE|Oil" = "Oil", 
+               "PE|Gas" = "Gas", 
+               "PE|Coal" = "Coal", 
+               "PE|Biomass" = "Biomass")
+
+# Create a subset for the labels at the year 2010
+label_data <- h %>%
+  filter(period == 2005,                   # Filter for the year 2010
+         variable %in% names(label_map)) %>%
+  mutate(clean_label = label_map[as.character(variable)]) # Add clean names
+
 g[["Primary Energy"]] <- ggplot(plotData,aes(x=period,y=value)) +
     geom_hline(yintercept=0, color = "black", linewidth=2, alpha = 0.5) +
     geom_vline(xintercept=2020, color = "black", linewidth=1.5, alpha = 0.5,linetype="dashed") +
@@ -1103,6 +1169,16 @@ g[["Primary Energy"]] <- ggplot(plotData,aes(x=period,y=value)) +
     #geom_point(data=plotData[plotData$period %in% c(2020,2030,2040),],size=4,shape=21,fill="white") +
     geom_point(data=plotData %>% filter(scenario == mainScen, period == 2040),aes(color=variable),size=3,shape=21,fill="white",stroke=1.5) +
     #annotate(geom = "text", x = 2020, y = plotDataRenewables[plotDataRenewables$period == 2020,]$percentage, label = "renewables\nand nuclear", color = "#666666",angle = 26, hjust=0, vjust=1, size=geomText.size) +
+    geom_text(data = label_data, 
+              aes(y = value, label = clean_label, color = variable), 
+              size = geomText.size*0.7,
+              x = 2005,             # Force x position to 2010
+              hjust = 0,            # Right align text so it ends at 2010
+              vjust= c(1.2,1.5,-1,1.5),
+              #nudge_x = -1,         # Shift slightly left to avoid overlapping the line start
+              fontface = "bold", 
+              #size = 4, 
+              show.legend = FALSE) +
     scale_color_manual(values = c(setNames(options$aesthetics$legend$color[names(vars)],vars)), labels = setNames(names(vars), vars)) +
     scale_fill_manual(values = c(setNames(options$aesthetics$legend$color[names(vars)],vars)), labels = setNames(names(vars), vars)) +
     expand_limits(y=c(0,1)) +
@@ -1143,6 +1219,7 @@ plotData <- df %>%
 if(energyInMtoe){
   plotData <- plotData %>%
     mutate(value = value * EJ2Mtoe,
+           sum = sum * EJ2Mtoe,
            ribbon.min = ribbon.min * EJ2Mtoe,
            ribbon.max = ribbon.max * EJ2Mtoe,
            ribbon.min.total = ribbon.min.total * EJ2Mtoe,
@@ -1154,6 +1231,11 @@ g[["FE Gases"]] <-
   ggplot(plotData,aes(x=period,y=value)) +
   geom_col(data=plotData %>% filter(scenario == mainScen), aes(fill = variable, alpha=factor(period))) +
   geom_errorbar(data=plotData %>% filter(period != 2020, variable == vars[1], scenario == mainScen), aes(ymin=ribbon.min.total, ymax=ribbon.max.total), width=4, colour="black", alpha=0.9, linewidth=1,position = position_dodge(width=2)) +
+  geom_boxplot(data = plotData %>% 
+                 filter(period %in% c(2030, 2040, 2050), variable == vars[1]), 
+               aes(x=period, y=sum, group=period),
+               outlier.shape = NA, 
+               width=2) +
   coord_flip() +
   scale_fill_manual(values = setNames(options$aesthetics$legend$color[names(vars)],vars), labels = setNames(names(vars), vars), guide = guide_legend(reverse = TRUE, nrow = 1)) +
   scale_alpha_manual(values = c("2020"=0.7,"2030"=0.7,"2040"=1,"2050"=0.7), guide = 'none') +
@@ -1220,7 +1302,10 @@ if(energyInMtoe){
 g[["security of supply - net fossil with range"]] <- 
   ggplot(plotData,aes(x=period,y=value)) +
   geom_col(data=plotData %>% filter(scenario == mainScen), aes(fill = factor(period), alpha=factor(period))) +
-  geom_errorbar(data=plotData %>% filter(period == 2040, scenario == mainScen), aes(ymin=ribbon.min, ymax=ribbon.max), width=4, colour="black", alpha=0.9, linewidth=1,position = position_dodge(width=2)) +
+  geom_errorbar(data=plotData %>% filter(period == 2040, scenario == mainScen), aes(ymin=ribbon.min, ymax=ribbon.max), width=4, colour="black", alpha=0.9, linewidth=1, position = "identity") +
+  geom_boxplot(data = plotData %>% filter(period == 2040),
+               outlier.shape = NA,
+               width=4, position = "identity") +
   facet_wrap(~carrier,nrow=1) +
   scale_fill_manual(values = c("2020" = "black", "2030"= "black", "2040" = "#5a788b", "2050" = "black")) +
   scale_alpha_manual(values = c("2020"=0.7,"2030"=0.7,"2040"=1,"2050"=0.7), guide = 'none') +
@@ -1278,6 +1363,7 @@ target <- data.frame(target=c("REPowerEU","REPowerEU"),type=c("domestic","total"
 if(energyInMtoe){
   plotData <- plotData %>%
     mutate(value = value * EJ2MtH2,
+           sum = sum * EJ2MtH2,
            ribbon.min = ribbon.min * EJ2MtH2,
            ribbon.max = ribbon.max * EJ2MtH2,
            ribbon.min.total = ribbon.min.total * EJ2MtH2,
@@ -1296,6 +1382,11 @@ g[["Hydrogen"]] <-
   annotate("text", x = 2015, y = target %>% filter(type == "total", period == 2030) %>% pull(value), label = "REPowerEU\ntotal", angle=90, vjust = 0.4, hjust = 0, color = "black", alpha = 0.5, size = geomText.size * 0.8) +
   geom_col(data=plotData %>% filter(scenario == mainScen), aes(fill = type, alpha=factor(period))) +
   geom_errorbar(data=plotData %>% filter(period != 2020, type == names(vars)[1], scenario == mainScen), aes(ymin=ribbon.min.total, ymax=ribbon.max.total), width=4, colour="black", alpha=0.9, linewidth=1,position = position_dodge(width=2)) +
+  geom_boxplot(data = plotData %>% 
+                 filter(period %in% c(2030, 2040, 2050), type == names(color)[1]), 
+               aes(x=period, y=sum, group=period),
+               outlier.shape = NA, 
+               width=2) +
   coord_flip() +
   scale_fill_manual(values = color, guide = guide_legend(nrow = 3, reverse = TRUE)) +
   scale_alpha_manual(values = c("2020"=0.7,"2030"=0.7,"2040"=1,"2050"=0.7), guide = 'none') +
@@ -1333,7 +1424,7 @@ grid.draw(g[["Figure 3"]])
 
 ```
 
-Figure 3. Fuel Supply and Demand. Primary Energy use (a), fossil energy carriers trade (b), Gases final energy demand (c), hydrogen production (d).
+Figure 3. Fuel Supply and Demand. (a) Primary Energy demand by fuel. (b) Net imports of fossil energy carriers. (c) Final energy demand for gaseous fuels. (d) Hydrogen production by supply type. Box plots show the median (centre line), interquartile range (box, Q1–Q3), whiskers extending to minimum and maximum values. 
 
 ---
 
@@ -1759,6 +1850,7 @@ plotColor <- c(
 if(energyInMtoe){
   plotData <- plotData %>%
     mutate(value = value * EJ2Mtoe,
+           sum = sum * EJ2Mtoe,
            ribbon.max = ribbon.max * EJ2Mtoe,
            ribbon.min = ribbon.min * EJ2Mtoe,
            ribbon.max.total = ribbon.max.total * EJ2Mtoe,
@@ -1770,6 +1862,11 @@ g[["Buildings heating useful energy"]] <-
   ggplot(plotData,aes(x=period,y=value)) +
   geom_col(data=plotData %>% filter(scenario == mainScen), aes(fill = name, alpha=factor(period))) +
   geom_errorbar(data=plotData %>% filter(period != 2020, variable == vars["Electricity (heat pumps)"], scenario == mainScen), aes(ymin=ribbon.min.total, ymax=ribbon.max.total), width=4, colour="black", alpha=0.9, linewidth=1,position = position_dodge(width=2)) +
+  geom_boxplot(data = plotData %>% 
+                 filter(period %in% c(2030, 2040, 2050), name == "Electricity (resistence)"), 
+               aes(x=period, y=sum, group=period),
+               outlier.shape = NA, 
+               width=3) +
   coord_flip() +
   scale_fill_manual(values = plotColor, guide = guide_legend(reverse = TRUE, nrow = 3)) +
   scale_alpha_manual(values = c("2020"=0.7,"2030"=0.7,"2040"=1,"2050"=0.7), guide = 'none') +
@@ -1836,6 +1933,13 @@ plotData <- df %>%
  g[["Carbon Management"]] <- ggplot(plotData,aes(x=CDRGroup,y=value)) +
   geom_bar(data=plotData %>% filter(scenario == mainScen), aes(fill=variable, alpha=factor(period)),stat='identity') + 
   geom_errorbar(data=plotData %>% filter(variable == vars[4], scenario == mainScen), aes(ymin=ribbon.min.total, ymax=ribbon.max.total), width=0.4, colour="black", alpha=0.9, linewidth=1) +
+   
+  geom_boxplot(data = plotData %>% 
+               filter(period %in% c(2030, 2040, 2050), variable == vars[4]), 
+             aes(x=CDRGroup, y=sum, group=period),
+             outlier.shape = NA, 
+             width=0.4) +
+   
   facet_wrap(period ~ ., ncol=1, strip.position="left") +
   coord_flip() +
   scale_fill_manual(values = c(setNames(plotColor[names(vars)],vars), "empty1" = "transparent", "empty2" = "transparent", "destination" = "transparent", "origin" = "transparent", "activity" = "transparent"), 
@@ -1884,7 +1988,7 @@ grid.draw(g[["Figure 4"]])
 
 ```
 
-Figure 4. Sectoral transformation indicators. (a) Transport final energy; (b) Light duty vehicles sales shares (bars) and share of ICEs in total LDV stock (line); (c) Useful energy demand for heating in buildings; (d) Industry emissions; (e) Carbon Capture and Storage by activity (upper bar), origin (middle bar) and by destination (lower bar).
+Figure 4. Sectoral transformation indicators. (a) Transport final energy; (b) Light duty vehicles sales shares (bars) and share of ICEs in total LDV stock (line); (c) Useful energy demand for heating in buildings; (d) Industry emissions; (e) Carbon Capture and Storage by activity (upper bar), origin (middle bar) and by destination (lower bar). Box plots show the median (centre line), interquartile range (box, Q1–Q3), whiskers extending to minimum and maximum values.
 
 ---
 
@@ -2392,8 +2496,8 @@ g[["Figure 5"]] <- gridExtra::arrangeGrob(
   ncol = 2
 )
 
-ggsave(paste0(outChartsFolder,"/svg/Figure 5. Comparison of key energy transformation indicators including fit-for-55 policy targets for 2030 and 2040.svg"), g[["Figure 5"]] , device="svg", width = 12, height = 14, dpi=100, units = "in")
-ggsave(paste0(outChartsFolder,"/png/Figure 5. Comparison of key energy transformation indicators including fit-for-55 policy targets for 2030 and 2040.png"), g[["Figure 5"]] , device="png", width = 12, height = 14, dpi=300, units = "in")
+ggsave(paste0(outChartsFolder,"/svg/Figure 5. Key energy transformation indicators.svg"), g[["Figure 5"]] , device="svg", width = 12, height = 14, dpi=100, units = "in")
+ggsave(paste0(outChartsFolder,"/png/Figure 5. Key energy transformation indicators.png"), g[["Figure 5"]] , device="png", width = 12, height = 14, dpi=300, units = "in")
 
 ```
 
@@ -2405,7 +2509,7 @@ grid.draw(g[["Figure 5"]])
 
 ```
 
-Figure 5. Comparison of key energy transformation indicators including fit-for-55 policy targets for 2030 and 2040. Red cross symbols represent the results of the reference scenario. Box-plots show the range from first to third quartile of the sensitivity scenarios, while the shaded areas show the distribution of the scenario results. More information about the chart symbols and indicators can be found at the supplementary notes. 
+Figure 5. Comparison of key energy transformation indicators including fit-for-55 policy targets for 2030 and 2040. Red cross symbols represent the results of the reference scenario. Box plots show the median (centre line), interquartile range (box, Q1–Q3), whiskers extending to minimum and maximum values of the sensitivity scenarios, while the shaded areas show the distribution of the scenario results. More information about the chart symbols and indicators can be found at the supplementary notes. 
 
 
 <!-- ```{r, echo=FALSE, include=FALSE} -->
@@ -2636,6 +2740,7 @@ grid.newpage()
 grid.draw(g[["Supplementary figure 1"]])
 
 ```
+
 Supplementary figure 1. EU-27 carbon price. Carbon price across all scenarios (a), and variation per sensitivity dimension (b). The black line in (a) and red cross symbols in (b) represent the results of the reference scenario. Box-plots in (b) show the range from first to third quartile of the sensitivity scenarios.
 
 ---
@@ -2718,6 +2823,7 @@ ggsave(paste0(outChartsFolder,"/png/Supplementary figure 2. EU-27 mitigation cos
 g[["Supplementary figure 2"]]
 
 ```
+
 Supplementary figure 2. EU-27 mitigation costs. Energy supply investments in the reference scenario.
 
 
@@ -3364,6 +3470,7 @@ grid.newpage()
 grid.draw(g[["Supplementary figure 5"]])
 
 ```
+
 Supplementary figure 5. EU-27 Emissions. Energy and non-energy use in the reference scenario (a) per sector and carrier and (b) per fossil content.
 
 ---
